@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-hover:hover {
+  transform: translateY(-5px);
+} 
