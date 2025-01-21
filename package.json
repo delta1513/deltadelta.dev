@@ -16,7 +16,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwindcss -i ./styles.css -o ./dist/output.css",
-    "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch"
+    "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+    "serve": "python3 -m http.server"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
