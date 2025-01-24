@@ -17,7 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwindcss -i ./styles.css -o ./dist/output.css",
     "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
-    "serve": "python3 -m http.server"
+    "serve": "python3 -m http.server",
+    "dev": "npm run watch & npm run serve"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
