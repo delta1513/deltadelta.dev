@@ -3,7 +3,6 @@
 directories=(
     "/home/mark/apps/deltadelta.dev"
     "/home/mark/apps/ffmpeg.deltadelta.dev"
-    "/path/to/third/directory"
 )
 
 for dir in "${directories[@]}"; do
