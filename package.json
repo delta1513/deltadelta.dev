@@ -15,10 +15,16 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./styles.css -o ./dist/output.css",
-    "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+    "tailwind:watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./styles.css -o ./dist/output.css && npm run eleventy:build",
+    "watch": "npm run tailwind:watch & npm run eleventy:watch",
     "serve": "python3 -m http.server",
+    "eleventy:build": "eleventy",
+    "eleventy:watch": "eleventy --watch",
     "dev": "npm run watch & npm run serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

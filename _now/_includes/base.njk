@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now - Delta's Timeline</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-jockey">
+    <header class="container mx-auto px-4 py-16 text-center">
+        <p class="text-xl text-gray-300">
+            <a href="https://nownownow.com/about" class="text-neon-green hover:text-neon-green-accent">Something</a> that I thought was cool
+        </p>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
+        <a href="/" class="text-neon-green hover:text-neon-green-accent">← Back to Home</a>
+    </footer>
+</body>
+</html> 
