@@ -2,8 +2,10 @@
 module.exports = {
   content: [
     "./*.{html,js,njk}",
-    "./_now/**/*.{html,js,njk}",
+    "./_now/**/*.{html,js,njk,md}",
     "./now/**/*.{html,js,njk}",
+    "./_blog/**/*.{html,js,njk,md}",
+    "./blog/**/*.{html,js,njk}"
   ],
   theme: {
     extend: {
@@ -26,13 +28,47 @@ module.exports = {
       },
       animation: {
         blink: 'blink 1s step-end infinite'
-      }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#D1D5DB',
+            a: {
+              color: '#39FF14',
+              '&:hover': {
+                color: '#69fcbc',
+              },
+            },
+            h1: {
+              color: '#39FF14',
+            },
+            h2: {
+              color: '#39FF14',
+            },
+            h3: {
+              color: '#39FF14',
+            },
+            strong: {
+              color: '#39FF14',
+            },
+            code: {
+              color: '#39FF14',
+            },
+            blockquote: {
+              borderLeftColor: '#39FF14',
+              color: '#D1D5DB',
+            },
+          },
+        },
+      },
     },
     fontFamily: {
       'jockey': ['"Jockey One"', 'sans-serif'],
       'rubik': ['Rubik', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 

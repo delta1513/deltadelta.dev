@@ -31,10 +31,17 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("_now/posts/*.md");
   });
 
+  // Add blog collection
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("_blog/*.md");
+  });
+
+  // Update input/output config
   return {
     dir: {
-      input: "_now",
-      output: "./"
+      input: ".",
+      output: "writing",
+      includes: "_includes"
     }
   };
 };
