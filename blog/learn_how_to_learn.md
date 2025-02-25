@@ -4,8 +4,6 @@ description: My journey in understanding what it means to truly learn and adapt
 layout: blog-base.njk
 ---
 
-# Learn how to learn
-
 I'm not sure if I came up with this saying myself or if I heard it from someone. It's probably out there somewhere anyway.
 
 This is something that I drilled into myself in highschool so that I could keep ahead in my grades. At the time, I was aiming to be an exemplar academic, and maybe I'll tell you why I think that may have been a mistake in another post.
@@ -155,3 +153,7 @@ In a sense, the passion for the thing you like is the hypothesis and sharing it'
 ---
 
 I hope this article reminds you that you need to find your passion, cherish it, and hone it. Don't ever let who you are vanish.
+
+---
+
+Signed 25th Feb 2025.

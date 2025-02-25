@@ -28,13 +28,13 @@ module.exports = function(eleventyConfig) {
 
   // Create a collection for posts
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("_now/posts/*.md");
+    return collectionApi.getFilteredByGlob("now/posts/*.md");
   });
 
   // Add blog collection
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("_blog/*.md");
-  });
+  })
 
   // Update input/output config
   return {

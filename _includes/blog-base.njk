@@ -19,11 +19,12 @@
             {{ content | safe }}
         </article>
     </main>
-
     <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
         <div class="space-x-4">
-            <a href="/" class="text-neon-green hover:text-neon-green-accent">← Back to Home</a>
-            <a href="/blog" class="text-neon-green hover:text-neon-green-accent">Blog Index</a>
+            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
+            {% if page.url != '/blog/' %}
+                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
+            {% endif %}
         </div>
     </footer>
 </body>
