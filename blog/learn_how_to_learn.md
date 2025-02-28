@@ -128,7 +128,7 @@ What the scientific method does in my eyes is it accepts that we all have biases
 
 When I started Yora, my hypothesis was that this would become a money making machine that would launch me into silicon valley. I didn't really treat it as a hypothesis tho, I treated it as scripture. A set of made up rules to follow, an algorithm that I devised which I thought would get me somewhere so long as I never change them. But really I wasn't rolling with it because I wanted the money, I just wanted to work on interesting problems that no one has ever worked on before, and I thought somehow that it would evolve to be that way.
 
-Why did I do this to myself? I'm not sure, maybe it's just the way I was. Or it might be the natural human need to have faith in something, because of you don't have anything you believe in for the future, then how do you keep yourself going?
+Why did I do this to myself? I'm not sure, maybe it's just the way I was. Or it might be the natural human need to have faith in something, because if you don't have anything you believe in for the future, then how do you keep yourself going?
 
 I guess my key take-aways from this story are:
 1. You are no better than the guy next to you
