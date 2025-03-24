@@ -1,6 +1,6 @@
 ---
-title: Learn how to learn
-description: My journey in understanding what it means to truly learn and adapt
+title: Go and ask someone how they are
+description: An alternative cure for depression
 layout: blog-base.njk
 ---
 
