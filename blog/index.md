@@ -6,6 +6,8 @@ layout: blog-base.njk
 
 ## Tech blogs
 
+- [Migrating from IMDSv1 -> IMDSv2 on AWS EC2](/writing/blog/aws_imdsv2_migration_guide/) - Just a guide that I wrote and thought might save a few people a couple hours
+
 - [Cool Tech](/writing/blog/cool_technologies/) - Tech that I use personally and for work that I think deserves a shout.
 
 ## Personal Blogs
