@@ -35,7 +35,7 @@ IMDSv2 is more secure because it actually uses authentication.
 ## What's the difference between v1 and v2?
 
 Not much:
-- Different endpoint
+- Different method of access
 - Different features
 - Different security methods
 
@@ -60,8 +60,7 @@ Could be any of the following:
 - You have some special use-case where you need granular control over instances using your own specialised setup/software instead of something like an Auto-scaling group or other automations
 - You directly need to collect metadata of your EC2 instances (for some reason)
 
-
-
+You can also double-check if you are currently using IMDS anywhere in your codebase (and prevent a production outage) by searching for this IP in your codebase(s) `169.254.169.254`. If you don't pass the token from the IMDS service into any interactions with this host then it's likely you are using IMDSv1.
 
 
 ## How do I know if I need to upgrade?
@@ -144,4 +143,10 @@ When changing the launch template, all current instances will not be changed to 
 - Make sure under the "Desired configuration" section that you select "Update launch template" and then select the new launch template.
 
 
-...Enjoy!
+
+
+## Bless AWS for really prioritising what's important 🙏
+
+[https://github.com/boto/boto3/issues/313](https://github.com/boto/boto3/issues/313)
+
+![](/media/1743220268.png)

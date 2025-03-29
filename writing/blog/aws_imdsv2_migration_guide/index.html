@@ -34,7 +34,7 @@
 <h2>What's the difference between v1 and v2?</h2>
 <p>Not much:</p>
 <ul>
-<li>Different endpoint</li>
+<li>Different method of access</li>
 <li>Different features</li>
 <li>Different security methods</li>
 </ul>
@@ -50,6 +50,7 @@
 <li>You have some special use-case where you need granular control over instances using your own specialised setup/software instead of something like an Auto-scaling group or other automations</li>
 <li>You directly need to collect metadata of your EC2 instances (for some reason)</li>
 </ul>
+<p>You can also double-check if you are currently using IMDS anywhere in your codebase (and prevent a production outage) by searching for this IP in your codebase(s) <code>169.254.169.254</code>. If you don't pass the token from the IMDS service into any interactions with this host then it's likely you are using IMDSv1.</p>
 <h2>How do I know if I need to upgrade?</h2>
 <p>There are two places you should look...</p>
 <h3>I'm using an Auto-scaling group (ASG)</h3>
@@ -102,7 +103,9 @@
 <li>Select launch before terminate (So that your capacity is similar and there's minimal end-user impact)</li>
 <li>Make sure under the &quot;Desired configuration&quot; section that you select &quot;Update launch template&quot; and then select the new launch template.</li>
 </ul>
-<p>...Enjoy!</p>
+<h2>Bless AWS for really prioritising what's important 🙏</h2>
+<p><a href="https://github.com/boto/boto3/issues/313">https://github.com/boto/boto3/issues/313</a></p>
+<p><img src="/media/1743220268.png" alt=""></p>
 
         </article>
     </main>
