@@ -12,6 +12,8 @@ layout: blog-base.njk
 
 ## Personal Blogs
 
+- [Rock Climbing](/writing/blog/rock_climbing) - I've done rock climbing for a while now, this is my take on the sport and a short guide if you're just getting into it.
+
 - [Go and ask someone how they are](/writing/blog/go_ask_someone_how_they_are)
 
 - [Learn how to learn](/writing/blog/learn_how_to_learn/) - An exploration of how I got to where I am today and also the tale of my failed startup.
