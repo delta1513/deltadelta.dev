@@ -9,6 +9,7 @@ for dir in "${directories[@]}"; do
     if [ -d "$dir" ]; then
         echo "Processing directory: $dir"
         cd "$dir" || continue
+        git reset --hard
         git pull
         npm install
         npm run build
