@@ -12,6 +12,8 @@ layout: blog-base.njk
 
 ## Personal Blogs
 
+- [The Exercise Diary](/writing/blog/exercise_diary/) - I did an experiment to see what would happen if I exercised every day of the week for a few weeks.
+
 - [Rock Climbing](/writing/blog/rock_climbing) - I've done rock climbing for a while now, this is my take on the sport and a short guide if you're just getting into it.
 
 - [Go and ask someone how they are](/writing/blog/go_ask_someone_how_they_are)
