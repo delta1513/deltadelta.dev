@@ -1,0 +1,48 @@
+---
+title: Dopamine Detox
+description: Dopamine explained, and how you can control your behaviour by understanding it more
+layout: blog-base.njk
+---
+
+Slightly click-baity title but I think this is a really important step in managing your mental health because it gets you to better understand that you are a human and your mind and body are not caught up to this modern world just yet.
+
+Now I'm not going to tell you to go cold turkey on Instagram or to unplug your home internet for a day. I've watched a few videos that talk about anything from simply switching off your phone for most of one day every week to literally going and living in the bush with no technology for one week.
+
+I believe there is a smarter approach here and I'd like to share what's been working for me.
+
+---
+
+I think it's worth spending a few paragraphs on what dopamine actually is. My understanding is that it's a chemical in the brain that, when released, targets neurons and receptors that are responsible for the feelings of happiness, reward and pleasure (among other things too). But put simply, it's like a feel-good drug. It gets released when we do something that is rewarding or pleasurable. Like for example, when you are really thirsty, and you chug that whole bottle of water, you feel this massive relief, right? It feels good. That's dopamine. It's your brain telling you that what you did is good for you and it slowly carves pathways that get you to do it more often so that you can chase the same feeling. It's a biological function used over thousands of years to keep us alive. It's important, but also not adapted to modern life as we know it. Dopamine was meant for when we lived as tribes in small groups in huts and villages with fire being the closest thing to electricity. It hasn't caught up to the mobile phone, we need another couple hundred thousand years for that.
+
+Like all drugs, dopamine can be addictive. Too much of it all at once and then you'll crash so hard that you'll wish you were never alive. Too little of it and you will experience fatigue and depression.
+
+As dopamine floods your body at different parts of the day given different activities, over a long-term you will build up some sort of resistance. This will cause you to not feel as rewarded or satisfied by the things you do.
+
+Like have you ever noticed yourself going from one coffee per day to two, then three? This is a similar resistance effect with dopamine, you need more of it to get the same effect.
+
+Once I understood this balance, I could see myself starting to dig myself into holes that I could only get out of by becoming super irritable and doing the stupidest shit so I could crash and then reset myself.
+
+So what I slowly started to do was wean myself off dopamine...
+
+It started with setting an app timer for Instagram to 30min each day. Then committing myself to only ever watching Netflix when friends are around. Then leaving a bunch of Discord servers that I only use for memes. Then I uninstalled X. Then I lowered my Instagram time to 15min per day. Then now as of writing this, I've started to switch off my music that I listen to for most of the day and put on slow/melodic stuff instead of my usual fast-paced stuff. Then also doing things like riding the metro without headphones.
+
+I went into this wanting to experiment and see what it was like, bit by bit. At the time I didn't really mind because my mind was still getting a decent amount of dopamine each day and it didn't really seem to notice that it was actually slowly being lowered. But one thing I did notice was my behaviour was starting to change.
+
+Like for example, I started reading more books. I also started to do journaling again. As stupid as it sounds, I was able to stand on my balcony and appreciate the view that I had. Literally just staring at trees on a beautiful spring afternoon. I gained a better sense of second-order thinking. I was able to listen to myself more. I was calmer around people. Less stressed in general. Less distracted at work. Less interested in doing chores. Willing to spend more time on actual hobbies and stuff that has tangible value to myself. And also finding the high-dopamine activities I do every now and then to be exceptionally rewarding.
+
+These new behaviours I was developing had a small bit of dopamine release, but I noticed a handful of them that were playing into a really important concept which I'll probably write about in a different article. They were helping me to build really brilliant and large things with small but regular actions.
+
+More journaling meant I could have a story to read back on when I'm older. More appreciation for things in general meant I paid attention more and would probably have remembered a lot of small observations that might come in handy in the future. I had more capacity to remember and hold onto details of other people that I 
+gathered from social interactions (I used to forget people's names a lot).
+
+The effect of this so far is that my brain is actually starting to re-wire itself. I'm able to consciously stop myself for a second before I go and do something on impulse. I ask myself what the outcome of that action is and also why I am drawn towards doing it. And with this amount of control and introspection, you can actually negotiate yourself out of some dopamine rabbit holes. Here's an example of that:
+
+Often when I'm working, I'll need to have some sugar here and there to keep me going (I don't eat a lot of sugar anyway) so I usually keep something chocolatey I can snack on in the fridge at all times. Usually I'll go and snack on a few pieces of chocolate after I finish a task or section of work, but then, I'd have the urge about 5min later to go and get another piece. So what I do now is I stop and ask myself why I want another piece of chocolate. You can be a child and say "it tastes so yummy!", or you can be mature and ask your body why.
+
+Sometimes I've found that I went and snacked just because I haven't had a solid lunch yet and my body just needs something filling. Sometimes I've stopped myself because there actually is no reason other than the pleasure of it. Once I know this, I'm able to say no to my body and instead give it what it actually wants.
+
+After this little journey, I tend to model my relationship with dopamine in my head as a local maxima problem. If you keep seeking that higher high, you'll keep seeking things for short-term gain and digging yourself deeper and deeper into your local maxima. Yes this high might be higher than all the last ones, but there might be another, higher-high if you just stop and take a look from a further perspective. But even this is a fallacy because there will always be a higher-high.
+
+Instead, what I think should be focused on is the gradient of the maxima. If it's a slow gradient, it tends to result in a better reward in the end. You spend a lit of small bits of effort here and there to accomplish something great. Like creating small blog-posts on mental health in the hopes that one day you'll be able to turn them into a book!
+
+At the very least, I hope this post gets you to be more curious about the chemistry inside our brains and how emotions are just a particular cocktail of this and other chemicals at any one point in time.

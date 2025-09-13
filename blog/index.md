@@ -19,3 +19,13 @@ layout: blog-base.njk
 - [Go and ask someone how they are](/writing/blog/go_ask_someone_how_they_are)
 
 - [Learn how to learn](/writing/blog/learn_how_to_learn/) - An exploration of how I got to where I am today and also the tale of my failed startup.
+
+## Mental Health
+
+- [Foreword](/writing/blog/mental_health_foreword/) - About this section
+
+- [You are stupider than you think and you need to find a way to feel it](/writing/blog/mental_health_stupidity/)
+
+- [Labelling](/writing/blog/mental_health_labelling/) - A structured way to understand unstructured things, like emotions
+
+- [Dopamine Detox](/writing/blog/mental_health_dopamine/) - Dopamine explained, and how you can control your behaviour by understanding it more
