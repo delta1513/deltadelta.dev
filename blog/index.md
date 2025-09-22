@@ -29,3 +29,5 @@ layout: blog-base.njk
 - [Labelling](/writing/blog/mental_health_labelling/) - A structured way to understand unstructured things, like emotions
 
 - [Dopamine Detox](/writing/blog/mental_health_dopamine/) - Dopamine explained, and how you can control your behaviour by understanding it more
+
+- [Work on your vocabulary](/writing/blog/mental_health_vocabulary/)

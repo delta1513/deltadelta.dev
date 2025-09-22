@@ -28,7 +28,7 @@ You can safely assume that 2+2=4, right? Yet that's still an assumption, you hav
 
 I got 2 carrots and 2 onions. That makes 4 vegetables, right?
 
-To you this might work, but Big Brain Billy over there says that "vegetables don't exist" (search it up, it's a fun read). So in his mind, there's just a collection of 4 bits of plants.
+To you this might work, but some dude over there says that "vegetables don't exist" (search it up, it's a fun read). So in his mind, there's just a collection of 4 bits of plants.
 
 This is, what I like to call, your mental model. It's made up of all of the assumptions that you've learned over your entire life. All the knowledge that you gain by living, travelling, playing, conversing, and studying isn't actually valuable until it's battle-tested by actually implementing it and trying it out.
 
