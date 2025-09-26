@@ -48,6 +48,9 @@ module.exports = {
             h3: {
               color: '#39FF14',
             },
+            h4: {
+              color: '#39FF14',
+            },
             strong: {
               color: '#39FF14',
             },

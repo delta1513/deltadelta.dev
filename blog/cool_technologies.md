@@ -21,21 +21,39 @@ layout: blog-base.njk
 - [The discord music bot software I use](https://github.com/Just-Some-Bots/MusicBot) - This one does all the stuff that my friends love (like round-robin playlists/queues) and also support spotify and anything that [yt-dl](https://github.com/yt-dlp/yt-dlp) supports.
 - [microsocks](https://github.com/rofl0r/microsocks) - great if you need a HTTP proxy really quickly
 - [Syncthing](https://syncthing.net/) - E2E encrypted folder synchronisation (Basically your own dropbox)
+- [Immich](https://immich.app/) is a great photo hosting service
 
-## Link fixers
+
+## Tech stacks 🏗️
+
+#### Micro-services
+
+- I'm a big fan of doing everything in-house. If you're going to use serverless functions, I recommend docker + AWS lambda + terraform
+- Making an admin panel in a micro-services architecture is hard. Consider using [GraphQL federation](https://www.youtube.com/watch?v=QrEOvHdH2Cg&pp=ygUbbmV0ZmxpeCBncmFwaHFsIGZlZWRlcmF0aW9u) with [Apollo](https://www.apollographql.com/docs/graphos/routing/get-started). Supergraphs can be composed with [Mesh](https://the-guild.dev/graphql/mesh/v1/getting-started)
+
+## AI 🤖
+
+- I use [Cursor](https://cursor.com/) as my IDE of choice
+
+#### Model Context Protocol (MCP)
+
+- [Apollo MCP](https://www.apollographql.com/docs/apollo-mcp-server/quickstart) can turn any GraphQL service into an MCP server.
+
+
+## Link fixers 🔧
 
 These are services that help embed things properly into chat apps like Discord
 
-### Twitter
+#### Twitter
 
 "twitter.com" -> "[vxtwitter.com](https://vxtwitter.com/)"
 
 "x.com" -> "[fixupx.com](https://fixupx.com/)"
 
-### Instagram
+#### Instagram
 
 "instagram.com" -> "[ddinstagram.com](https://ddinstagram.com/)"
 
-### Tik-tok
+#### Tik-tok
 
 "tiktok.com" -> "[tiktxk.com](https://tiktxk.com/)"
