@@ -16,9 +16,9 @@ I think it's worth spending a few paragraphs on what dopamine actually is. My un
 
 Like all drugs, dopamine can be addictive. Too much of it all at once and then you'll crash so hard that you'll wish you were never alive. Too little of it and you will experience fatigue and depression.
 
-As dopamine floods your body at different parts of the day given different activities, over a long-term you will build up some sort of resistance. This will cause you to not feel as rewarded or satisfied by the things you do.
+I find that people tend to say that as you expose yourself more and more to dopamine, you'll build up a resistance to it. I personally don't like to put it in this way because it implies that you have no control over it. Instead, I believe in the fact that the prehistoric development of your brain has hardwired you to chase the next big hit of dopamine every time. So what I'm trying to say is that after you watch a fairly funny meme on instagram from one reel in the first 5 mins or so, your brain craves an even bigger hit so it keep scrolling for another 30min to try and find an even funnier one. It's like your century-old ancestors finding a small berry bush in the forest, then venturing out just a litle bit more and finding an even bigger one.
 
-Like have you ever noticed yourself going from one coffee per day to two, then three? This is a similar resistance effect with dopamine, you need more of it to get the same effect.
+Like have you ever noticed yourself going from one coffee per day to two, then three? Or scrolling a new social media platform for a few minutes and getting bored, then coming back and finding you scroll for a little longer each time?
 
 Once I understood this balance, I could see myself starting to dig myself into holes that I could only get out of by becoming super irritable and doing the stupidest shit so I could crash and then reset myself.
 

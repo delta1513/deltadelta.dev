@@ -12,7 +12,7 @@ Shit like this is what I used to do and it's super toxic. For a very long time, 
 1. I was not open to reflecting on my own actions and introspecting on myself
 2. I was evaluating rather than observing
 
-I believe these sorts of behaviours are a form of childish behaviour. It signals (to me at least) that you have a closed mind and are not capable of realising how insignificant and idiotic you actually are.
+I believe these sorts of behaviours are a form of childish behaviour. When manifested into a grown adult, it signals (to me at least) that you have a closed mind and are not capable of realising how insignificant and idiotic you actually are.
 
 Now onto the topic. I really hope you did some basic science lessons in school because I'm about to talk a bit about the scientific method. In case you don't know, it goes something like this:
 1. You have a hypothesis (an existing assumption about how something works)
@@ -28,7 +28,7 @@ You can safely assume that 2+2=4, right? Yet that's still an assumption, you hav
 
 I got 2 carrots and 2 onions. That makes 4 vegetables, right?
 
-To you this might work, but some dude over there says that "vegetables don't exist" (search it up, it's a fun read). So in his mind, there's just a collection of 4 bits of plants.
+To you this might work, but some dude over there says that "vegetables don't exist" (search it up, it's a fun read). So in his mind, there's just a collection of 4 bits of plants. Somewhat right but not the way that you want to see it.
 
 This is, what I like to call, your mental model. It's made up of all of the assumptions that you've learned over your entire life. All the knowledge that you gain by living, travelling, playing, conversing, and studying isn't actually valuable until it's battle-tested by actually implementing it and trying it out.
 

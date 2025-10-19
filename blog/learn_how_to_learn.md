@@ -24,7 +24,7 @@ In the end, I scored pretty well and I was happy with my results.
 
 So you're probably like: ok, congrats... But now what?
 
-Yeah I know, boring as fuck, but I guess I just had the <u>[engineering knack](/media/the_knack.mp4)</u> ever since I was a kid, always trying to solve problems, then solve them better, and make the system work for myself. (I had a social life! I swear! 😭)
+Yeah I know, boring as fuck, maybe I just had the <u>[engineering knack](/media/the_knack.mp4)</u> ever since I was a kid, always trying to solve problems, then solve them better, and make the system work for myself.
 
 There was a problem with all of this tho.
 
@@ -82,7 +82,7 @@ Let me tell you a bit about my life after graduating from university.
 
 After university, I wanted one of two things:
 1. A job at a place that works on really interesting tech (like quantum computers)
-2. To make my own startup and maybe knock on silicon valley's front door (I know, cheesy right? 😂)
+2. To make my own startup and maybe knock on silicon valley's front door (So cheesy!)
 
 So I decided to go with number 2 and start something with my mates because I found it more interesting and it would be easier than finding a graduate role somewhere.
 
@@ -90,13 +90,13 @@ At the time, crypto was growing in popularity and I knew a decent amount about i
 
 The collective thought between my mates and I was that this could essentially create a "money printer" where we could just sit back and let the money roll in as people make trades and we wouldn't have to lift a finger.
 
-It turns out that it's a little more harder than it seems... 😅 
+It turns out that it's a little more harder than it seems...
 
 If you want to see the end product, you can probably find <u>[yora.tech on archive.org](https://web.archive.org/web/20240518081826/http://yora.tech/)</u>.
 
 Eventually we pivoted and started doing some random tech work for people we were lucky enough to share some hot-desks with. That turned into consultancy work and led us to a new business where we were making some money called <u>[Western Sydney software](https://ws3.au/)</u>.
 
-Unfortunately, although that was making *some* cash, it wasn't sustainable and it required us all to do tons of work with no anticipated reduction or automation of it (this was before the AI boom btw). We did make some pretty cool things tho, like <u>[a digital paging system](https://buzz.ws3.au/)</u>.
+Unfortunately, although that was making *some* cash, it wasn't sustainable and it required us all to do tons of work with no anticipated reduction or automation of it (this was before the AI boom btw). We did make some pretty cool things tho, like create <u>[a digital paging system](https://buzz.ws3.au/)</u>.
 
 In the end, we decided to close up shop and just divvy up the remaining cash between ourselves and the ATO. Most of us had full time jobs at that point and we're making way more money.
 
@@ -104,11 +104,13 @@ There are some good things, some bad and some straight up embarrassing things th
 
 At the time I didn't know anything about startup culture or the best way to get one up off the ground, but I did know how to set up a business structure in Australia along with a python flask backend working with a job processing daemon!
 
-University didn't adequately teach agile to us in my opinion, so what I was left with was a vague recollection of the studies I did in IPT in high school and some random pieces of knowledge spread about in there. If someone had told me that agile was all about minimizing time to value, then I think a lot of things would have gone differently 😅.
+University didn't adequately teach agile to us in my opinion, so what I was left with was a vague recollection of the studies I did in IPT in high school and some random pieces of knowledge spread about in there. If someone had told me that agile was all about minimizing time to value, then I think a lot of things would have gone differently.
 
 Essentially we almost treated this like a waterfall project. Took about two years and a bit to get some sort of MVP (half of which was in university). Not only that but we decided to get registered with AUSTRAC (the regulator for crypto exchanges and banks) which I believe was the first major mistake. Really we didn't need this until we started turning over decent cash.
 
-All this time I was assuming that when we build this, we will get customers, but I was so wrong 😂. I was also assuming that our systems had to be state-of-the-art. I've heard so many eye-gouging stories of tech catastrophes or just terrible software and I knew this product couldn't be like that. Looking back on it now, it was far from state-of-the-art. I had this vision in my head that what we had as the MVP was impeccable and I checked it thoroughly for bugs so it shouldn't have any errors. This perception led me to sell it as such to other people with no existing basis other than my word. It also leads to a perfectionist mindset, which is toxic to both yourself and the product.
+All this time I was assuming that when we build this, we will get customers. And you can probably guess the result of that... 
+
+I was also assuming that our systems had to be state-of-the-art. I've heard so many eye-gouging stories of tech catastrophes or just terrible software and I knew this product couldn't be like that. Looking back on it now, it was far from state-of-the-art. I had this vision in my head that what we had as the MVP was impeccable and I checked it thoroughly for bugs so it shouldn't have any errors. This perception led me to sell it as such to other people with no existing basis other than my word. It also leads to a perfectionist mindset, which is toxic to both yourself and the product.
 
 I would go on to continue to justify this product by continuously making it better because it had to be, not because customers wanted it to be, and I would keep coming up with solutions to try and make it better.
 
@@ -118,7 +120,7 @@ By this time I could feel myself getting uncomfortable with my idea, itching mys
 
 I'm glad that I had the guts to cut it off before I made a bigger fool out of myself. That mould is something that I created in my head to give me value. It was a fallacy which would ultimately lead nowhere. And it was later in my career that I realized human connections are what's needed to accomplish amazing things that aim to help others.
 
-I do however wish that someone would ask me why I'm doing it, and not just at face value, but to dig deeper. I didn't really have anyone that was skeptical of what I did in my life, either because they didn't care, or because they were scared of how I'd react (and I'm not sure why they would be 🤔 ).
+I do however wish that someone would ask me why I'm doing it, and not just at face value, but to dig deeper. I didn't really have anyone that was skeptical of what I did in my life, mayber because they didn't care, or because they were scared of how I'd react?
 
 I guess this now brings us back to the solutioning style of stubbornness...
 
@@ -134,7 +136,7 @@ I guess my key take-aways from this story are:
 1. You are no better than the guy next to you
 2. Fail as fast as you can
 3. Encourage failures with low risk
-4. Actually read a book on what you are about to do before you do it 😂 
+4. Actually read a book on what you are about to do before you do it
 
 But there is one take-away that I think is genuinely important, and it's figuring out whether or not you're doing something because you actually want to. The best things in the world are made with passion. 
 
