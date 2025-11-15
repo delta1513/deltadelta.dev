@@ -1,5 +1,5 @@
 ---
-title: You are stupider than you think and you need to find a way to feel it
+title: Don't call yourself stupid, feel it instead
 description: A post about taming your ego or quelling your need to try so hard for validation
 layout: blog-base.njk
 ---

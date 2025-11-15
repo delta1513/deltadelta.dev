@@ -12,6 +12,8 @@ layout: blog-base.njk
 
 ## Personal Blogs
 
+- [South Korea](/writing/blog/south_korea/) - A small note on my travels to Korea
+
 - [The Exercise Diary](/writing/blog/exercise_diary/) - I did an experiment to see what would happen if I exercised every day of the week for a few weeks.
 
 - [Rock Climbing](/writing/blog/rock_climbing) - I've done rock climbing for a while now, this is my take on the sport and a short guide if you're just getting into it.
@@ -22,10 +24,14 @@ layout: blog-base.njk
 
 - [Foreword](/writing/blog/mental_health_foreword/) - About this section
 
-- [You are stupider than you think and you need to find a way to feel it](/writing/blog/mental_health_stupidity/)
+- [Don't call yourself stupid, feel it instead](/writing/blog/mental_health_stupidity/)
 
 - [Labelling](/writing/blog/mental_health_labelling/) - A structured way to understand unstructured things, like emotions
 
 - [Dopamine Detox](/writing/blog/mental_health_dopamine/) - Dopamine explained, and how you can control your behaviour by understanding it more
 
 - [Work on your vocabulary](/writing/blog/mental_health_vocabulary/)
+
+- [Be your own island](/writing/blog/mental_health_being_your_own_island/) - One cool strategy that I use to improve connections with others
+
+- [Living like it's your last day alive](/writing/blog/mental_health_live_like_its_your_last_day/) - My take on this popular quote and similar ideas

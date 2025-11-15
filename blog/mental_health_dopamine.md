@@ -4,6 +4,8 @@ description: Dopamine explained, and how you can control your behaviour by under
 layout: blog-base.njk
 ---
 
+# NOTE: This article is outdated, and my views on this topic have changed, I just haven't had any time to update it!!!
+
 Slightly click-baity title but I think this is a really important step in managing your mental health because it gets you to better understand that you are a human and your mind and body are not caught up to this modern world just yet.
 
 Now I'm not going to tell you to go cold turkey on Instagram or to unplug your home internet for a day. I've watched a few videos that talk about anything from simply switching off your phone for most of one day every week to literally going and living in the bush with no technology for one week.
