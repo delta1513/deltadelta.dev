@@ -22,6 +22,10 @@ layout: blog-base.njk
 
 - [Go and ask someone how they are](/writing/blog/go_ask_someone_how_they_are)
 
+## Creative Writing
+
+- [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
+
 ## Mental Health
 
 - [Foreword](/writing/blog/mental_health_foreword/) - About this section
