@@ -6,7 +6,7 @@ layout: blog-base.njk
 
 ...Or something like that. I remember hearing this as one part of a broader explanation of the idea of stoicism and I was very confused with how someone could actually do this in the modern world.
 
-Like am I supposed to just abandon everything like work, money, material possessions and my home to go and do a backing trip across Europe? I'd love to do it, but now doesn't feel like the right time.
+Like am I supposed to just abandon everything like work, money, material possessions and my home to go and do a backpacking trip across Europe? I'd love to do it, but now doesn't feel like the right time.
 
 That's how I first thought about this phrase and I knew I had to be wrong about it.
 
@@ -24,7 +24,7 @@ It sounds dark, but I actually believe this to be a stroke of artistic realism: 
 
 This is the feeling that I want to chase at the end of every single day.
 
-It might be as simple as sitting down on my couch in the dark and appreciating that I managed to do a full set of calisthenics after work, or I made a little realization about myself that's helped me to see the world better. Recognizing this helps me to know that I'm doing my best and every day, and makes the small improvements visible.
+It might be as simple as sitting down on my couch in the dark and appreciating that I managed to do a full set of calisthenics after work, or I made a little realization about myself that's helped me to see the world better. Recognizing this helps me to know that I'm doing my best every day, and it makes the small improvements visible.
 
 ---
 
@@ -58,6 +58,6 @@ I want to tell you to trust me when I say that sleep is actually the most import
 1. Book something you really love well in advance (let's use a concert as an example)
 2. For the first concert, get less than 4 hours of sleep the previous night
 3. For the second concert, get at least 7 hours of sleep the night before
-4. After each concert, note how you felt, specifically your energy levels. Were you exhausted? Was it easy to socialize or did it feel like wading through mud?
+4. After each concert, note how you felt, specifically your energy levels. Were you exhausted? Was it easy to socialize or did it feel like you were wading through mud?
 
 Hopefully once you actually start tracking this, it will make a lot more sense to you, just like it did for me.
