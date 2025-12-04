@@ -6,6 +6,8 @@ layout: blog-base.njk
 
 ## Tech blogs
 
+- [How I use AI](/writing/blog/how_i_use_ai/) - A series of narritives that paint a picture about how I work with AI
+
 - [Incident stories - Lambda Memory Pressure](/writing/blog/incident_lambda_memory_pressure/) - A deep-dive into an incident that was exceptionally mysterious
 
 - [Migrating from IMDSv1 -> IMDSv2 on AWS EC2](/writing/blog/aws_imdsv2_migration_guide/) - Just a guide that I wrote and thought might save a few people a couple hours
