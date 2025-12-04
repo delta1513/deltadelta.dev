@@ -41,3 +41,5 @@ layout: blog-base.njk
 - [Be your own island](/writing/blog/mental_health_being_your_own_island/) - One cool strategy that I use to improve connections with others
 
 - [Living like it's your last day alive](/writing/blog/mental_health_live_like_its_your_last_day/) - My take on this popular quote and similar ideas
+
+- [The end of the Journey](/writing/blog/mental_health_the_end/) - What I'm marking as the end of my mental health recovery and the start of something better
