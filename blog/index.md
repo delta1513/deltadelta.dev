@@ -28,20 +28,3 @@ layout: blog-base.njk
 
 - [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
 
-## Mental Health
-
-- [Foreword](/writing/blog/mental_health_foreword/) - About this section
-
-- [Don't call yourself stupid, feel it instead](/writing/blog/mental_health_stupidity/)
-
-- [Labelling](/writing/blog/mental_health_labelling/) - A structured way to understand unstructured things, like emotions
-
-- [Dopamine Detox](/writing/blog/mental_health_dopamine/) - Dopamine explained, and how you can control your behaviour by understanding it more
-
-- [Work on your vocabulary](/writing/blog/mental_health_vocabulary/)
-
-- [Be your own island](/writing/blog/mental_health_being_your_own_island/) - One cool strategy that I use to improve connections with others
-
-- [Living like it's your last day alive](/writing/blog/mental_health_live_like_its_your_last_day/) - My take on this popular quote and similar ideas
-
-- [The end of the Journey](/writing/blog/mental_health_the_end/) - What I'm marking as the end of my mental health recovery and the start of something better
