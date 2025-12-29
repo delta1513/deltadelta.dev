@@ -10,13 +10,13 @@ At our workplace, we like to do what are called "Lunch-and-Learns" where one pre
 
 Usually how I'd approach this is I'd brainstorm and note down important sections, and ideas I should include which would be beneficial to the team. I typically undertake this ad-hoc, and as the ideas manifest in my head during random daydreams, I'll grab them and jot them down. Then a week or so before the presentation, I'll set aside 2-3 hours to set it up in Google Slides.
 
-As AI has drastrically improved, I've started generating images to put into my presentations in an attempt to keep people engaged and tell a story, and I've also experimented with AI-driven slideshow software.
+As AI has drastically improved, I've started generating images to put into my presentations in an attempt to keep people engaged and tell a story, and I've also experimented with AI-driven slideshow software.
 
 My personal feelings towards this AI-driven slide software is quite apathetic. I personally think that too much creative control is taken away from you in the process of generating the slides. Since the LLM has to interact with (what I'm assuming to be) an MCP server of some sort, there are clearly defined limits to what it can do.
 
 I was deeply unhappy with these limitations, so I decided to vibe-code a presentation.
 
-I wanted to let my creativity pour out and have full control over the look and feel of everything, and I know that with code, I can significantly elevate the experience viewers would have with my presentation. But in a time before AI, this would be a frivolous rabbit-hole, and I'd probably be met with some suspicious looks from my boss and colleagues given it would have likely taken a few days to develop less than an hour worth of presentation. But now with AI, this timeframe has shrinked significantly!
+I wanted to let my creativity pour out and have full control over the look and feel of everything, and I know that with code, I can significantly elevate the experience viewers would have with my presentation. But in a time before AI, this would be a frivolous rabbit-hole, and I'd probably be met with some suspicious looks from my boss and colleagues given it would have likely taken a few days to develop less than an hour worth of presentation. But now with AI, this timeframe has shrunk significantly!
 
 So the other week, I decided to vibe-code this presentation. Here's the first slide if you are curious to see what it looks like:
 
@@ -24,7 +24,7 @@ So the other week, I decided to vibe-code this presentation. Here's the first sl
 
 Yes, it moves!
 
-The whole presentation was modeled around a retro-arcade, RPG-themed story where the protaganist was venturing up "Compliance peak" to obtain the "Amulet of Certification". Cheesy, I know, but I enjoy the act of story-writing. It wasn't a full story, but I find that having this model presented to you as a viewer helps you to stay engaged. After all, it's a lot easier to listen to a story instead of a mouth full of facts and numbers.
+The whole presentation was modeled around a retro-arcade, RPG-themed story where the protagonist was venturing up "Compliance peak" to obtain the "Amulet of Certification". Cheesy, I know, but I enjoy the act of story-writing. It wasn't a full story, but I find that having this model presented to you as a viewer helps you to stay engaged. After all, it's a lot easier to listen to a story instead of a mouth full of facts and numbers.
 
 A lot goes into making a presentation like this from a code perspective. You have to think about how to architect it, manage differences in components to keep things DRY and easy to move-forward with, all while ensuring you still have the creative liberty you want. This is very mentally exhausting, and I'd much rather be spending my energy figuring out what to write next, how to make the flow better, and how to make the slides as visually appealing as possible.
 
@@ -43,7 +43,7 @@ How long did it take in the end?
 
 This was the first time I've ever experimented with doing something like this, so I knew it was going to take a while. I'd say all-up, it took about 5 hours, with the longest time spent on content, ideas, small tweaks, testing the web page, and generating/editing the images.
 
-This might seem like an arduous process, but in fact, it felt exceptionally liberating. It almost felt like I was on crack getting this thing developed, it was actually exhilerating. (I'll talk more on this feeling later in this post!)
+This might seem like an arduous process, but in fact, it felt exceptionally liberating. It almost felt like I was on crack getting this thing developed, it was actually exhilarating. (I'll talk more on this feeling later in this post!)
 
 This feeling also extended to the presentation itself. Usually I feel quite nervous doing presentations, and I believe that feeling stems from the fact that I am quite detached from the content. Like if I could have spent longer on it, flexed more of my creative muscle, and actually make sure I was talking about something I *wanted* to talk about, then I would have felt more connected and confident. With this vibe-coded presentation, I felt almost none of these stage-fright feelings, and instead, I felt like I could engage playfully with my presentation instead of drearily presenting some dry software engineering content that probably no one will remember a week later.
 
@@ -121,7 +121,7 @@ Something just hits different when you feel like you've got something great and 
 
 A lot of your time in this industry is spent on the tools, and if you aren't coding, then you're probably moving onto the next ticket, looking for high-value, low-effort improvements, or investing in education to get you some new skills. Some may claim that this is just what the nature of this line of work. Sure, but I don't like that. I think there is genuine room in every organisation to be creative and let people be human.
 
-I wouldn't call myself merticulous, but I feel like others would describe me that way if they saw how I went about building these things. I don't think I would have been this merticulous if it weren't for the fact that building and modifying these projects is made so much easier with an AI agent. All I'd have to do is give it a few lines of words to fix whatever displacement, colour, text or whatever there was that needed fixing. So without the need to worry about coding, my mind was 100% focused on "How can I make this presentation even better?".
+I wouldn't call myself meticulous, but I feel like others would describe me that way if they saw how I went about building these things. I don't think I would have been this meticulous if it weren't for the fact that building and modifying these projects is made so much easier with an AI agent. All I'd have to do is give it a few lines of words to fix whatever displacement, colour, text or whatever there was that needed fixing. So without the need to worry about coding, my mind was 100% focused on "How can I make this presentation even better?".
 
 I'm sure you've come across some things online or in-person that you would not only appreciate, but genuinely understand the time and effort put-into it. A lot of stuff is mass-manufactured nowadays (including code!), so when you see a presentation like this, your immediate thought is "Okay, so he's used AI to build this, that means all of his efforts have gone into the content of this presentation and into the experience that us as viewers will have. Wow! This actually looks really cool. I feel like he's really thought about us as the viewers and wanted to make this experience more lively and engaging for us! Where can I pay a monthly subscription to his YouTube channel?!"
 
