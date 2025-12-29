@@ -24,6 +24,8 @@ layout: blog-base.njk
 
 - [Go and ask someone how they are](/writing/blog/go_ask_someone_how_they_are)
 
+- [Books I've read](/writing/blog/books_ive_read/)
+
 ## Creative Writing
 
 - [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
