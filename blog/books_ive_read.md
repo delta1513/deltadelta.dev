@@ -4,7 +4,7 @@ description: This blog is basically my digital bookshelf (I have a real one tho)
 layout: blog-base.njk
 ---
 
-Here you'll find the list of books I've read **in no particular order**. This goes as far back as I can accurately remember. I spent a great deal of time in my primary and high-school days reading non-fiction books so there's a vast amount not covered in this list, however the texts I engaged in during this time were mostly shortform pieces I found interesting in the libraries at the time.
+Here you'll find the list of books I've read **in no particular order**. This goes as far back as I can accurately remember. I spent a great deal of time in my primary and high-school days reading non-fiction books so there's a vast amount not covered in this list, however the texts I engaged in during this time were mostly shortform pieces I found interesting in the libraries at the time, whereas nowadays, it tends to be a lot more philosophical or nuanced.
 
 
 ## Nineteen Eighty-Four (George Orwell)
@@ -19,7 +19,7 @@ Quirky, taboo and, just like 1984, deeply anthropological. This book encouraged 
 
 ## The Fall (Albert Camus)
 
-A birds-eye view of the life of a seemingly selfless and successful lawyer that eventually turns around and hits you with a philosophical truck. I believe this book holds an answer to why selflessness and generosity exists, why it is not as virtuous as it seems, and hence why it is unsustainable. 
+A birds-eye view of the life of a seemingly selfless and successful lawyer that eventually turns around and hits you with a philosophical truck. I believe this book holds an answer to why some people tend to build an identity centered around selflessness and innocence, why it is not as virtuous as it seems, and hence why it is unsustainable. 
 
 
 ## The Initial D Series (Shuichi Shigeno)
