@@ -6,6 +6,8 @@ layout: blog-base.njk
 
 ## Tech blogs
 
+- [The age of disposable code](/writing/blog/disposable_code/) - How AI is enabling us to perform more creative works in software engineering.
+
 - [How I use AI](/writing/blog/how_i_use_ai/) - A series of narritives that paint a picture about how I work with AI
 
 - [Incident stories - Lambda Memory Pressure](/writing/blog/incident_lambda_memory_pressure/) - A deep-dive into an incident that was exceptionally mysterious
