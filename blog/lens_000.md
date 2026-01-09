@@ -1,0 +1,23 @@
+---
+title: Lens 000 - The definition of a Lens
+description: The preamble to all my other meditations in the line of what I call "The Lenses"
+layout: blog-base.njk
+---
+
+For a while now, I've been studying philosophy and anthropology furiously. With so much vigour in fact, that I feel like I've become an entirely different person than what I was 6 months ago. It is an art-form which I find exceptionally virtuous for myself, and believe that if it can make me a better person, then it can also make someone else a better person too.
+
+This series of works will be called "The Lenses". I anticipate for it to be a series of documented world-views which I find are congruent with my morals, and I've tested thoroughly enough to be endowed as second-nature for myself, and clear enough to be communicated as written text. 
+
+Lenses are neither right nor wrong, they are axioms, they are simply a way of organised thinking when interpreting reality. Lenses act to translate a physical act of reality into a series of assumptions that aim to help someone justify their observations. The act of architecting a lens is to get as close as possible to how humans naturally, subconsciously think when presented with any form of stimuli. Take for example if you were to spot a tiger in the jungle. As a human being, you already know, from your prior knowledge, that tigers are apex predators and are more than capable of tearing you to shreds. So the human lens, would be to run because the tiger is a threat. But consider yourself an alien who just arrived on earth. You do not know what this creature is or is capable of since you did not grow up with it and do not have any knowledge passed down by your ancestors. The alien's lens here might be to remain cautious as all new things should not be assumed to be safe regardless of what it is.
+
+I want to exemplify the significance of the word "assumptions" here. A core belief of mine is that if you have complete knowledge of everything, i.e., every piece of information possible, an answer to every axiom, then we would have no need for lenses, we would be gods. It is this which brings the human race to its knees, the fact that we are imperfect. The lenses I document here will undergo my own ongoing scrutiny, and these will likely update over time as I observe more things with them to test them out and see where they break.
+
+The aim of this series of lenses is two-fold:
+1. To encourage one to formulate their own inventory of lenses
+2. To provide materials which may challenge or enhance your core beliefs
+
+If you were lost for a while (like I once was), one thing that gave me hope was surrounding myself with materials like these. I read many books, a lot of which had philosophy as a common theme amongst them, or at least books that detailed concepts so vast that I spent weeks racking my brain over them and trying to make sense of it all. The act of putting myself in abundance of other people's virtues made it exceptionally easy to play the role of the observer, and then eventually define my own beliefs based on what I felt made the most sense to me. So my hope here is to give you that abundance, or at least give you a place to start.
+
+These lenses are in no particular order. I will simply create a new lens when one arrives in my mind or when I feel like writing.
+
+Thank you for choosing to read this.

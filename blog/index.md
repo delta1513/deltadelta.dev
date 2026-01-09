@@ -32,3 +32,10 @@ layout: blog-base.njk
 
 - [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
 
+## The Lenses
+
+- [Lens 000](/writing/blog/lens_000/) - Introducing my lenses
+
+- [Lens 001](/writing/blog/lens_001/) - Anthropological products are a function of pain and pleasure
+
+
