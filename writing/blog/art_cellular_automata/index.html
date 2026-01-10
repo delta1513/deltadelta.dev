@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellular Automata</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
+    <header class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Cellular Automata</h1>
+    </header>
+
+    <main class="container mx-auto px-4 max-w-4xl">
+        <article class="prose prose-invert prose-lg mx-auto">
+            <p>I recently had an idea to make a cellular automata that follows some rules around RGB colours on a grid of pixels. In general, the rules are:</p>
+<ul>
+<li>There exists a grid of pixels and organisms that live on the grid, these are individual pixels that can move.</li>
+<li>Each organism consists of a RGB value</li>
+<li>When an organism traverses a tile, we 'mix' the colour of the pixel into the organism with a coefficient of <code>C</code>, and conversely, we 'mix' the colour value of the organism into the tile with a coefficient of <code>1 - C</code></li>
+<li>An organism will always move in the direction that brings it closest to the one organism out of all which is closest to its current colour (using euclidean distance)</li>
+<li>If an organism collides with another organism, they will merge and the average of their colours becomes the RGB value of the remaining organism</li>
+</ul>
+<p>I AI-generated the code that generates these simulations and used p5js.</p>
+<p>These are some of the more interesting results I found.</p>
+<p><img src="/media/art/output.png" alt=""></p>
+<p><img src="/media/art/output+1.png" alt=""></p>
+<p><img src="/media/art/output+2.png" alt=""></p>
+<p><img src="/media/art/output+3.png" alt=""></p>
+<p>This one here I just think is quite pretty, it was a single frame:</p>
+<p><img src="/media/art/this-is-just-pretty.png" alt=""></p>
+<p>These pieces were heavily influenced by a recent video I watched on <a href="https://www.youtube.com/watch?v=0HqUYpGQIfs">emergent complexity</a> and also by <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a></p>
+<p>After writing this, I now wonder what would happen if the coefficient was asymmetric, that is, for example, the organism will replicate itself as the tile instead of &quot;mixing&quot;. Or maybe what would happen if the organisms searched for the closest match of all pixels on the grid instead of themselves?</p>
+
+        </article>
+    </main>
+    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
+        <div class="space-x-4">
+            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
+            
+                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
+            
+        </div>
+    </footer>
+</body>
+</html> 

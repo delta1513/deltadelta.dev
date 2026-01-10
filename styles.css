@@ -8,4 +8,11 @@
 
 .button-hover:hover {
   transform: translateY(-5px);
+}
+
+/* Center markdown images in blog posts */
+.prose img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 } 
