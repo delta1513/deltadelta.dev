@@ -34,11 +34,11 @@ layout: blog-base.njk
 
 ## Art
 
+- [Photography](/writing/blog/art_photography/)
+
 - [Gymkhana and motorsports](https://www.youtube.com/@delta_1512) - Click here to get to my youtube channel with all my motorsports footage
 
 - [Turbulent Flow](/writing/blog/art_turbulent_flow/) - Images I've made surrounding the phenomena of turbulent flow
-
-- [Photography]()
 
 - [Cellular Automata](/writing/blog/art_cellular_automata/) - A collection of random cellular automata I've experimented with cos I'm bored
 

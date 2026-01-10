@@ -5,3 +5,4 @@ media/art/output+2.png filter=lfs diff=lfs merge=lfs -text
 media/art/output+3.png filter=lfs diff=lfs merge=lfs -text
 media/art/output.png filter=lfs diff=lfs merge=lfs -text
 media/art/this-is-just-pretty.png filter=lfs diff=lfs merge=lfs -text
+media/art/starlink.jpg filter=lfs diff=lfs merge=lfs -text
