@@ -31,6 +31,11 @@ layout: blog-base.njk
 - I'm a big fan of doing everything in-house. If you're going to use serverless functions, I recommend docker + AWS lambda + terraform
 - Making an admin panel in a micro-services architecture is hard. Consider using [GraphQL federation](https://www.youtube.com/watch?v=QrEOvHdH2Cg&pp=ygUbbmV0ZmxpeCBncmFwaHFsIGZlZWRlcmF0aW9u) with [Apollo](https://www.apollographql.com/docs/graphos/routing/get-started). Supergraphs can be composed with [Mesh](https://the-guild.dev/graphql/mesh/v1/getting-started)
 
+#### Lesser-known frameworks I love
+
+- [p5js](https://p5js.org/) - Great for coding-art
+
+
 ## AI 🤖
 
 - I use [Cursor](https://cursor.com/) as my IDE of choice
