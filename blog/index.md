@@ -32,6 +32,16 @@ layout: blog-base.njk
 
 - [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
 
+## Art
+
+- [Gymkhana and motorsports](https://www.youtube.com/@delta_1512) - Click here to get to my youtube channel with all my motorsports footage
+
+- [Turbulent Flow](/writing/blog/art_turbulent_flow/) - Images I've made surrounding the phenomena of turbulent flow
+
+- [Photography]()
+
+- [Cellular Automata]()
+
 ## The Lenses
 
 - [Lens 000](/writing/blog/lens_000/) - Introducing my lenses
