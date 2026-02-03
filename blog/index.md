@@ -30,6 +30,8 @@ layout: blog-base.njk
 
 ## Creative Writing
 
+- [Un-natured](/writing/blog/writing_un-natured/) - 2026
+
 - [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
 
 ## Art

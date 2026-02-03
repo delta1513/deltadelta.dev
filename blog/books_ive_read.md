@@ -77,6 +77,13 @@ I believe this is a dandy and cushy introduction to game theory. This book is gr
 Personally none of the concepts stuck since I don't study or apply it regularly, but it has some fun little tricks in there if you want something to bring up at a party (one not comprised of computer scientists and statisticians of course!).
 
 
+## The Pigeon (Patrick Suskind)
+
+A short absurdist novel about a man who does the same thing every day for 30 years and has his entire world turned upside-down after an encounter with a pigeon.
+
+This is a very short read (I finished it within about a week of reading it during my commutes to and from work) and the prose is quite simple and engaging.
+
+
 ## Philosophical Classics (James M. Russel, et al.)
 
 (Currently reading...)
