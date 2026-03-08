@@ -50,4 +50,6 @@ layout: blog-base.njk
 
 - [Lens 001](/writing/blog/lens_001/) - Anthropological products are a function of pain and pleasure
 
+- [Lens 002](/writing/blog/lens_002/) - The human will as a search algorithm
+
 
