@@ -97,6 +97,15 @@ Each synopsis is roughly 3 pages in length, and each of them have an opinionated
 You can tell that there is an enormous amount of bias in the way the author review these texts, however, I believe this irrelevant given my aim for this book was as an atlas to show me what lies out there.
 
 
+## Animal Farm - George Orwell
+
+A quite enjoyable, satirical take on the rule of Stalin. For someone who hasn't studied history, it was deeply intriguing and insightful to get a feel for what life may have been like on the ground during this time.
+
+It's a short story (mine was only 94 pages), so I'd recommend it as a small weekend muse.
+
+My favourite character is Benjamin the Donkey!
+
+
 ## Meditations - Marcus Aurelius
 
 Currently reading...
