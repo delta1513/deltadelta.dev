@@ -8,3 +8,4 @@ media/art/this-is-just-pretty.png filter=lfs diff=lfs merge=lfs -text
 media/art/starlink.jpg filter=lfs diff=lfs merge=lfs -text
 media/art/havoc.jpg filter=lfs diff=lfs merge=lfs -text
 media/art/this-little-piggy.jpg filter=lfs diff=lfs merge=lfs -text
+media/art/rouse-hill-rain.jpg filter=lfs diff=lfs merge=lfs -text
