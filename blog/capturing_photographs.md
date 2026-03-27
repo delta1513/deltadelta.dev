@@ -1,0 +1,94 @@
+---
+title: Capturing Photographs
+description: A bit of my philosophy on the importance of photography
+layout: blog-base.njk
+---
+
+Why do you keep photos?
+
+Not meaning yourself specifically, but rather what's your personal reason for keeping photos of things? Do you keep all your photos on your phone? Or do you have an organised and shareable cloud album like myself?
+
+Back when smartphones didn't exist, people often used film or digital cameras, then often developed the photos onto paper in order to see them (as there would be no other way to revisit them, and share them with others). If you've ever flicked through a photo album with family members, you'll probably notice the feeling that they have towards the photos of themselves or the photos that they took. Quite often, there's something they hold sacred about these. Is it the scarcity? Or is it something deeper? In this blog post, we will keep these philosophical questions rhetorical, and rather, I will explain why you should cherish this feeling and think about it whenever you take a photo.
+
+---
+
+I've taken plenty of photos of others, and of moments, and I've had plenty of photos taken of me. Over the years, I've closely analyzed a lot of them, and the thought that gets put into capturing it. The best photos in this lot make me feel as if I am flying - they exhilarate me. It's as if I am there once again and living in that moment, or as if everyone who is in the photo is unified by a common understanding - not by knowledge of this, or by utterances, but rather by simply observing the body language, smiles and emotions everyone is showing. Conversely, the worst photos were those with not a lot of thought put into the shot. The lighting might be off, people framed incorrectly, someone deliberately hitting the shoot button multiple times. These are all behaviours that signal to me that the person is not willing to put in the effort to capture something so beautiful that it can be framed, or at least does not have the regard to make someone else's day by capturing the best possible picture they can. It's hard to go back to these photos and feel the same way I felt at the time, and it truly desecrates the memory.
+
+I was at a night club (on Oxford Street, Sydney) a while ago, and in the middle of the dance-floor, there were these two fine ladies who were discovering what each other's tongues tasted like. It was so beautiful that I thought the moment had to be captured - not for myself, but for them. So I tapped one of them on the shoulder, asked if they wanted a picture, and snapped some for them. I got them to pose for the photo, then kiss for another photo. All up I captured roughly 6 photos (double-ups in case the lights in the club didn't play nice). When I was on the train home, I trashed the ones that were the worst, and kept the best, then sent it to them. Although I didn't get much of a reaction out of them, I'm sure I made their night just that little bit more special, and that's all that mattered to me. Furthermore, if the photos had been ingenuously captured, it could be assumed that they were for my own titillation.
+
+When looking at a photo, I don't want to recall a fact, place or anecdote, I want to relive the feeling that it was like being there. I want to help my mind imagine once again, and recall a short few seconds of what happened on that day or at that place. I want to remember it like a narrative, with all the same emotions that I had there. The point of this is that if I am taking photos for this purpose, then I should make sure I take photos of others are for this purpose too.
+
+If you're reading this and you say you are terrible with taking photos, only continue if you are prepared to listen to some small tips that can turn photos from bland and ugly, into a masterpiece. For those that are already versed in such, I hope you might find my ruminations here as entertaining or insightful.
+
+---
+
+# Basic tips for taking good photos
+
+For the record, I am no photography expert, I just like to pay attention to some very simple details that make photos better for me.
+
+## Breathe
+
+This is more of a philosophical recommendation rather than a physical one. Put simply, there is usually no rush in taking a photo. You are here, in the moment, make it count.
+Give yourself the space to see your surroundings, find the best angle, make the moment yours, and make it the best you can. Essentially you'll want to meditate yourself into a trance where you are hyper-focused on the camera preview, and the subject. You'll want to reach the state where everything else around you is gone, you'll contort your body into all sorts of strange positions in order to get the right shot.
+
+You might be in a situation where there are others around you and a scarce resource, such as at an art museum. You'll feel pressure of the people behind you, waiting to see the sculpture or whatever - this is normal. Deal with this as you will, but how I'd deal with such a situation is to put *some* effort into the photo rather than none, and to avoid putting so much effort as to come off as pompous (that is unless you are using a DSLR etc.).
+
+Sometimes it also helps to give yourself a few minutes looking at your surroundings in order to find the best angle and location to shoot. A little planning goes a long way. But in the end, think about how the person you are capturing would feel. A little bit of discomfort or some extended time spent getting the best angle will pay off once they see the image.
+
+## Framing
+
+Framing I will define as the position and space that the subject of the photo occupies. If you've ever seen that setting in your phone camera that gives you a grid, this is what I am talking about. Generally you want the subject of the photo to occupy any one of these tiles in the grid. I believe this is best explained with a few examples.
+
+Take this picture I captured in Ron Mueck's exhibition.
+
+![](/media/art/this-little-piggy.jpg)
+
+I had deliberately captured this piece in the bottom area of my camera because I believe the space above the image gives this artwork a grandiose feeling when looking at it. Almost some sort of divinity actually, as if a diety had bestowed upon us this metaphor in the form of a sculpture.
+
+It's hard to find images that I can share publicly which show-off the importance of center-framing as often these are family photos or photos that I take of others. Here I think I've found something that can show this not only explicitly, but also comparatively. Below are two different pictures of the same car.
+
+![](/media/art/wrx-1.jpg)
+
+![](/media/art/wrx-2.jpg)
+
+So in the first image, I have explicitly tried to keep the space above and below the car the exact same, and similar with the sides. This gives the car center framing. The effect of this is that the car is the most important thing in this image, it is the first thing that grabs your attention and helps your brain understand that everything else around it is mostly irrelevant.
+
+In the second image, I deliberately make the vertical alignment asymmetric to shift the importance slightly away from the car and more towards the feeling of a dream that might follow its ownership. I do this by creating some more space in the sky. No longer do you feel as if you have a desire for the car itself, as if browsing a dealership, but now you should desire the feeling that you get from owning the car - the liberating feeling of being able to drive anywhere you want at any time that suits.
+
+
+## Lighting
+
+There are a few photos that I have where the lighting just isn't right. The subject is too dark whereas the background is very light. Sometimes there's glare. This one is generally very simple to solve:
+
+- There's glare -> Angle the camera differently, try and get the sun out of the shot
+- Contrasting brightness -> Change position of the subject, move them into a spotlight, or take the picture somewhere else.
+- People are squinting -> If the sun is behind you, it will be hard for people to keep their eyes open. Have the sun to your side instead.
+
+## Zoom
+
+Zoom is a great feature, and I encourage you to play with it as much as you can. Zoom can give you amazing effects on images, and generally I have these recommendations:
+
+- Normal zoom -> Great for parties and events, also great for medium-range photos of vast spaces
+- <1x zoom -> Great for if you want to make a space feel huge, like a giant city or a vast lookout
+- \>1x zoom -> Great for capturing special moments, especially to capture the grace of a particular subject such as a flower. Zooming in also creates emotion in pictures with people in it, almost a form of intimacy. I find that this works best if you are trying to capture a photo of people who are unaware of their photo being taken.
+
+## Height
+
+If you want to aggrandize something, or want something to be awed, then you should crouch down and point the camera up.
+
+When capturing other people, you want people to be as comfortable as possible, so ensure your camera is at their eye level. When people are comfortable, they can be their best selves, they don't need to force a smile.
+
+If you want to convey a sense of superiority, then you should have the camera higher than the subject.
+
+## You are the Picasso
+
+If you don't think the photo is going to turn out well, then change something, and it is important to know that you can ask others (and more importantly, the subject) for help with this. Additionally, you should create the energy that they should match. For example, saying "cheese" is meant to be something fun to lift people's spirits and allow them to be vulnerable - to show their emotions using their body.
+
+You are the artist and the scene is your oyster. Move people around, get them to pose, make them gleam with joy.
+
+## Quality Assurance
+
+The preview exists for a reason. Pay attention to the preview of the photo, and also the captured photo!
+
+And a reminder for those that don't: You should clean your lenses!!!
+

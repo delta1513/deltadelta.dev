@@ -18,7 +18,9 @@ layout: blog-base.njk
 
 ## Personal Blogs
 
-- [South Korea](/writing/blog/south_korea/) - A small note on my travels to Korea
+- [Capturing Photographs](/writing/blog/capturing_photographs/) - My philosophy for capturing photos that I think everyone should read.
+
+- [South Korea](/writing/blog/south_korea/) - A small note on my travels to Korea.
 
 - [The Exercise Diary](/writing/blog/exercise_diary/) - I did an experiment to see what would happen if I exercised every day of the week for a few weeks.
 

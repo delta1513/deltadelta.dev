@@ -32,6 +32,15 @@ The second is called This Little Piggy. This is my true favourite out of all of 
 
 ---
 
-This here is a picture of Rouse Hill Town Center during a stormy night on my way home from work and gym.
+This here is a picture of Rouse Hill Town Center in 2026 during a stormy night on my way home from work and gym.
 
 ![](/media/art/rouse-hill-rain.jpg)
+
+
+---
+
+Just had to put it here because it's sexy. This is a Subaru WRX-STI that I captured at the show-and-shine during the Adelaide Rally in 2025
+
+
+![](/media/art/wrx-2.jpg)
+
