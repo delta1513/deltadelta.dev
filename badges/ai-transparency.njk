@@ -1,0 +1,50 @@
+{% macro icon(level) %}{% if level == "ai" %}🤖{% elif level == "assist" %}🤖🙋{% elif level == "human" %}🙋{% endif %}{% endmacro %}
+  <div style="font-family: Roboto; background: #050f05; width: 100%; height: 100%; display: flex; flex-direction: column; border: 10px solid #00ff41;">
+
+    <div style="padding: 50px 90px; border-bottom: 10px solid #00ff41; display: flex; flex-direction: row; align-items: center; background: #001400;">
+      <span style="font-weight: 700; font-size: 75px; color: #00ff41;">ℹ️ AI Transparency Info</span>
+    </div>
+
+    {% if c1 %}
+    <div style="display: flex; flex-direction: row; align-items: center; padding: 45px 90px; border-bottom: 5px solid #1a3a1a; flex-grow: 1;">
+      <span style="font-weight: 700; font-size: 65px; color: #00ff41; flex-grow: 1;">{{ c1 }}</span>
+      <span style="font-size: 90px; margin-left: 60px;">{{ icon(l1) }}</span>
+    </div>
+    {% endif %}
+
+    {% if c2 %}
+    <div style="display: flex; flex-direction: row; align-items: center; padding: 45px 90px; border-bottom: 5px solid #1a3a1a; flex-grow: 1;">
+      <span style="font-weight: 700; font-size: 65px; color: #00ff41; flex-grow: 1;">{{ c2 }}</span>
+      <span style="font-size: 90px; margin-left: 60px;">{{ icon(l2) }}</span>
+    </div>
+    {% endif %}
+
+    {% if c3 %}
+    <div style="display: flex; flex-direction: row; align-items: center; padding: 45px 90px; border-bottom: 5px solid #1a3a1a; flex-grow: 1;">
+      <span style="font-weight: 700; font-size: 65px; color: #00ff41; flex-grow: 1;">{{ c3 }}</span>
+      <span style="font-size: 90px; margin-left: 60px;">{{ icon(l3) }}</span>
+    </div>
+    {% endif %}
+
+    {% if c4 %}
+    <div style="display: flex; flex-direction: row; align-items: center; padding: 45px 90px; border-bottom: 5px solid #1a3a1a; flex-grow: 1;">
+      <span style="font-weight: 700; font-size: 65px; color: #00ff41; flex-grow: 1;">{{ c4 }}</span>
+      <span style="font-size: 90px; margin-left: 60px;">{{ icon(l4) }}</span>
+    </div>
+    {% endif %}
+
+    {% if c5 %}
+    <div style="display: flex; flex-direction: row; align-items: center; padding: 45px 90px; border-bottom: 5px solid #1a3a1a; flex-grow: 1;">
+      <span style="font-weight: 700; font-size: 65px; color: #00ff41; flex-grow: 1;">{{ c5 }}</span>
+      <span style="font-size: 90px; margin-left: 60px;">{{ icon(l5) }}</span>
+    </div>
+    {% endif %}
+
+    {% if c6 %}
+    <div style="display: flex; flex-direction: row; align-items: center; padding: 45px 90px; border-bottom: 5px solid #1a3a1a; flex-grow: 1;">
+      <span style="font-weight: 700; font-size: 65px; color: #00ff41; flex-grow: 1;">{{ c6 }}</span>
+      <span style="font-size: 90px; margin-left: 60px;">{{ icon(l6) }}</span>
+    </div>
+    {% endif %}
+
+  </div>
