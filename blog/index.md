@@ -6,6 +6,8 @@ layout: blog-base.njk
 
 ## Tech blogs
 
+- [Linux Stories](/writing/blog/linux_index/) - A collection of blog posts describing issues that I've had to solve on linux
+
 - [The age of disposable code](/writing/blog/disposable_code/) - How AI is enabling us to perform more creative works in software engineering.
 
 - [How I use AI](/writing/blog/how_i_use_ai/) - A series of narritives that paint a picture about how I work with AI

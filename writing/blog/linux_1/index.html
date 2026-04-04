@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux 001 - A firmware crash?</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
+    <header class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Linux 001 - A firmware crash?</h1>
+    </header>
+
+    <main class="container mx-auto px-4 max-w-4xl">
+        <article class="prose prose-invert prose-lg mx-auto">
+            <p>So if you hadn't guessed already, I use linux as my main OS for my dektop PC (other than Windows 10 for games - however this may change soon. I've been informed of some promising developments in proton and wine), specifically, pure Arch Linux. I've been running this OS for as long as I remember (probably all the way back to highschool), and I've been through hell and back multiple times, but I've never bothered to write down any of my woes with this beast of a system. I'm worried that the problems that people experience like this are no longer going to be documented anymore with the advent of AI since you can just ask it to help fix it for you. Heck, I even used AI to fix the issue I'm about to tell you about! And not a thought entered my head that I wanted to write this down. I needed this fixed now. I can't wait for someone who prowls the forums to help me with this, I have a video to edit! But once I found the issue, I thought it was so profound that I just had to tell someone, so here it is...</p>
+<hr>
+<p>My Arch linux machine rarely gets much heavy use nowadays. Currently I've just been using it for normal PC stuff like talking to friends and browsing the web, or doing some technical stuff. Today I wanted to patch some videos together in KDEnlive like I usually do.</p>
+<p>So I go ahead and get all my videos off my file server, then I try to download a video using <code>yt-dlp</code> so that I can put the music in my video. As usual, HTTP 4XX. Time to update <code>ytdl</code>!</p>
+<p>Into <code>pacman</code> I go to update just <code>yt-dlp</code>. Find myself stuck with an error of files already existing in the fs - so I do what I usually do and move them away to a backup folder and then let <code>pacman</code> replace them. So off I go and move the gcc .so files out to a temp dir, completely forgetting that basically everything depends on them! <em>Nervous laughter ensues</em>~~</p>
+<p>This was actually kinda weird. So first thing that happened is that <code>sudo</code> stopped working, and it was at this point that I knew that I fucked up - I couldn't replace the .so files because <code>/usr/lib</code> is owned by root!</p>
+<p>Oh well, I guess I'll just save my current progress on my video. As soon as I hit save, my whole screen went black in what I assumed to be a kernel panic. Amazing! I think we all learned something here!</p>
+<p>I knew exactly what I did, and I'm glad that I saved the .so files somewhere with persistent storage. This will be an easy fix. I just had to load up my Arch Linux USB and get into a chroot on my NVME drive and replace the files. So I did just that.</p>
+<p>Now that I'm back into my PC again, I decide to upgrade <code>yt-dlp</code> the right way with <code>pacman -Syu</code>. So I anxiously watch in anticipation for the eventual black screen I'm going to get for whatever nvidia decides to fuck up this time.</p>
+<p>After that goes through, I decide to reboot and make sure everything is working.</p>
+<p>And our good friends from Silicon Valley brought us the gift I was just expecting - As soon as the linux kernel and initramfs were loaded into memory, I get a blinking cursor forever!</p>
+<p>Okay, time for the chroot again! USB in, and away we go.</p>
+<p>First culprit is always Xorg. So I open the logs and I get this:</p>
+<pre><code>[    96.036] (EE) NVIDIA: Failed to initialize the NVIDIA kernel module. Please see the
+[    96.036] (EE) NVIDIA:     system's kernel log for additional error messages and
+[    96.036] (EE) NVIDIA:     consult the NVIDIA README for details.
+[    96.038] (EE) NVIDIA: Failed to initialize the NVIDIA kernel module. Please see the
+[    96.038] (EE) NVIDIA:     system's kernel log for additional error messages and
+[    96.038] (EE) NVIDIA:     consult the NVIDIA README for details.
+[    96.038] (EE) No devices detected.
+[    96.038] (EE) 
+Fatal server error:
+[    96.038] (EE) no screens found(EE)
+</code></pre>
+<p>Brilliant! But also useless - there's no stack trace or error message. But at least we know it has something to do with graphics.</p>
+<p>I was guessing that a recent Nvidia driver update caused this, so I looked for the last version I had in my pacman cache. I found it, and before I load it back into my system via <code>pacman -U</code>, I thought I'd check to see if I was connected to the internet just in case pacman needs some connectivity.</p>
+<p>It was then after I wrote <code>ip a</code>, a chill went down my spine - there was no ethernet interface!</p>
+<p>There should be one, unless some cosmic ray had hit my RAM chip again (I swear this did happen to me one time before!). Dazed and confused, I just decide to reboot. Perhaps I was just dreaming.</p>
+<p>After the reboot, I load into my Arch USB again, only to find that the ethernet had not returned. Puzzling indeed! I had never seen anything like this before - it just... doesn't exist. I see my WiFi interface, but not the ethernet. I see the lights on the back of my PC flashing so I know there's traffic, yet on the computer, it just doesn't show up. <code>lspci</code> shows that the adapter (the hardware) does exist, and after some sleuthing I stumbled upon an error in <code>dmesg</code>. Something similar to <code>igc failed with error code -13</code>. The message appeared around the same line that the adapter was detected. Intriguing...</p>
+<p>I had no idea what this meant, so I enlisted the help of Gemini to help me figure out what I should check. Its immediate recommendation upon giving it the errors was almost amusing. It was such a wild idea that I thought it had to be hallucinating. It had said something along the lines of &quot;The intel XXX network chips are notorious for having their firmware crash for unknown reasons. You should cold-boot your computer...&quot;. This was preposterous to me, but it was easy enough to try. This had given me an itch of curiosity that I had to scratch!</p>
+<p>So here's what a cold boot is:</p>
+<ol>
+<li>Shut down your computer like normal.</li>
+<li>Unplug it from the power or flip the switch to the off position on the power supply.</li>
+<li>Hold down the power button for 10-15 seconds.</li>
+</ol>
+<p>The idea here, as it had said, was that holding down the power button while the PC is fully disconnected from the power supply will short the circuits necessary to drain all power from the capacitors on the board. It makes sense to me, and if there's anything running on the motherboard (like firmware) it will kill it. I don't know how many of you notice that the ethernet ports on the back of your PC will twinkle even when your PC is off - stuff like PXE depends on this interface being up even if the PC is off.</p>
+<p>So once I had everything back in, it was time to hop back into the live USB.</p>
+<p>I had leapt out of my chair when I had seen that the ethernet interface was back and up when the Arch live USB had finished its boot process! Was it a cosmic ray? Did it hit my network card and the network card only? This was truly bizzare.</p>
+<p>After donning a tin-foil hat, I had returned to finish my job.</p>
+<p>Let's quickfire this:</p>
+<ol>
+<li>Let's chroot and check <code>dmesg</code> to see if there are any kernel messages from the <code>nvidia</code> module - Zilch - which was kinda concerning.</li>
+<li>Try rebooting by adding <code>nomodeset</code> to the kernel parameters - No luck.</li>
+<li>Try a deeper examination of <code>dmesg</code> - here I noticed a few lines mentioning <code>nouveau</code>, my sworn enemy.</li>
+<li>Now that I know that my kernel is actually falling back to the <code>nouveau</code> drivers, I know that there is an issue loading the nvidia module.</li>
+<li>I ask Gemini for some suggestions for things to try, and one of them is to check <code>dkms</code> to see if the module exists and is loading correctly - this had reminded me that the initramfs needs to be rebuilt every time a kernel or kernel module gets updated/installed. I know specifically that this fails silently in <code>pacman</code>, so to eliminate that possibility, I simply re-installed my current nvidia drivers.</li>
+</ol>
+<p>After a reboot, I'm back where I need to be. Finally...</p>
+
+        </article>
+    </main>
+    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
+        <div class="space-x-4">
+            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
+            
+                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
+            
+        </div>
+    </footer>
+</body>
+</html> 
