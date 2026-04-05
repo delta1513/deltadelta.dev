@@ -56,4 +56,5 @@ layout: blog-base.njk
 
 - [Lens 002](/writing/blog/lens_002/) - The human will as a search algorithm
 
+- [Lens 003](/writing/blog/lens_003/) - Eddies
 
