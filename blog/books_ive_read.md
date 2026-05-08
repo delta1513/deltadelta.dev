@@ -106,6 +106,27 @@ It's a short story (mine was only 94 pages), so I'd recommend it as a small week
 My favourite character is Benjamin the Donkey!
 
 
+## The Trial - Franz Kafka
+
+This is quite possibly the most bizzare book I've read. After a while since reading, I am still befuddled by the level of absurdity that this book conveys. It's hard to derive anything meaningful from it other than a vague sense of the mental state of Kafka during the time of writing. 
+
+A platitude that I might describe this by is as if someone speaks a lot of words, but doesn't really say anything - there's plenty of dialogue like this in the book!
+
+What I found most jarring was the author/translator's introduction. He framed Kafka as quite a pathetic individual, and it's really hard to figure out why Kafka seems to be fairly acclaimed with such a dreary introduction given.
+
+What I found more interesting than the book was Kafka's biography. I implore you to go and take a look at his Wikipedia page at least.
+
+
 ## Meditations - Marcus Aurelius
 
-Currently reading...
+Currently Reading...
+
+
+## Fictions - Jorge Louis Borges
+
+Currently Reading...
+
+
+## Optimum Nutrition for the Mind - Patrick Holford
+
+Currently Reading...

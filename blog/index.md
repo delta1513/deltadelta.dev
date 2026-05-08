@@ -6,6 +6,8 @@ layout: blog-base.njk
 
 ## Tech blogs
 
+- [Software Sophistry](/writing/blog/software-sophistry/) - A collection of aphorisms that represent my thought process around developing commercial software.
+
 - [Linux Stories](/writing/blog/linux_index/) - A collection of blog posts describing issues that I've had to solve on linux
 
 - [The age of disposable code](/writing/blog/disposable_code/) - How AI is enabling us to perform more creative works in software engineering.
