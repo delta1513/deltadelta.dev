@@ -4,6 +4,11 @@ description: Welcome to my personal and dev blog!
 layout: blog-base.njk
 ---
 
+## Web Directory
+
+- [Check out my bookmarks](/writing/blog/bookmarks/)
+
+
 ## Tech blogs
 
 - [Software Sophistry](/writing/blog/software-sophistry/) - A collection of aphorisms that represent my thought process around developing commercial software.
@@ -18,7 +23,6 @@ layout: blog-base.njk
 
 - [Migrating from IMDSv1 -> IMDSv2 on AWS EC2](/writing/blog/aws_imdsv2_migration_guide/) - Just a guide that I wrote and thought might save a few people a couple hours
 
-- [Cool Tech](/writing/blog/cool_technologies/) - Tech that I use personally and for work that I think deserves a shout.
 
 ## Personal Blogs
 
@@ -34,11 +38,13 @@ layout: blog-base.njk
 
 - [Books I've read](/writing/blog/books_ive_read/)
 
+
 ## Creative Writing
 
 - [Un-natured](/writing/blog/writing_un-natured/) - 2026
 
 - [Timberwolf](/writing/blog/writing_timberwolf/) - 2017
+
 
 ## Art
 
@@ -49,6 +55,7 @@ layout: blog-base.njk
 - [Turbulent Flow](/writing/blog/art_turbulent_flow/) - Images I've made surrounding the phenomena of turbulent flow
 
 - [Cellular Automata](/writing/blog/art_cellular_automata/) - A collection of random cellular automata I've experimented with cos I'm bored
+
 
 ## The Lenses
 
