@@ -4,13 +4,6 @@ description: Collection of various things that I keep as bookmarks, and you migh
 layout: blog-base.njk
 ---
 
-# Blogs and stuff to read
-
-- [guide.world](https://guide.world/) - A collection of travel blogs
-- [Killed By Google](https://killedbygoogle.com/) - Projects that Google has abandoned or shut-down
-- [Geoffrey Huntly](https://ghuntley.com/)
-- [Raghav's site](https://www.raghav.wiki/)
-
 
 # Directories, Collections and Search
 
@@ -21,6 +14,14 @@ layout: blog-base.njk
 - [Webster's 1913](https://www.websters1913.com/)
 - [Archive.md](https://archive.md/) - An alternative internet archive service
 - [Awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) - awesome list of awesome stuff you can self-host.
+
+
+# News and Newsletters
+
+- [Australian Computer Society ICT News](https://ia.acs.org.au/category/analysis.html)
+- [TLDR](https://tldr.tech/) - Tech newsletter separated into various topics.
+- [Latent Space](https://www.latent.space/) - AI engineering newsletter.
+- [Fast.ai](https://www.fast.ai/) - An AI engineering blog and community.
 
 
 # Tools
@@ -76,6 +77,22 @@ layout: blog-base.njk
 - [Wundermap](https://www.wunderground.com/wundermap) - An awesome weather dashboard
 - [Endoflife.date](https://endoflife.date/) - Learn when major software frameworks wil lreach their end of life
 - [Lipsum](https://www.lipsum.com/) - Lipsum generator
+
+
+# Informational
+
+- [guide.world](https://guide.world/) - A collection of travel blogs
+- [Killed By Google](https://killedbygoogle.com/) - Projects that Google has abandoned or shut-down
+
+
+# Personal websites
+
+(I like to collect sites that people make)
+
+- [Geoffrey Huntly](https://ghuntley.com/)
+- [Raghav's site](https://www.raghav.wiki/)
+- [Matt's site](https://mattjegan.com/)
+- [CongusBongus' site](https://cxong.github.io/)
 
 
 # Link fixers
