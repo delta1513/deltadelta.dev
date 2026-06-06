@@ -141,3 +141,5 @@ writing/_now
 writing/posts
 writing/about
 writing/ai_prompts
+# Playwright CLI scratch (screenshots, snapshots)
+.playwright-cli/

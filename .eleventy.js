@@ -36,6 +36,9 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("_blog/*.md");
   })
 
+  // Copy the directory-viewer icons through to the output
+  eleventyConfig.addPassthroughCopy("directory/icons");
+
   // Update input/output config
   return {
     dir: {

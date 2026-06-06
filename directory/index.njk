@@ -1,0 +1,160 @@
+---
+permalink: /directory/index.html
+---
+{%- macro node(n) -%}
+{%- if n.node_type == "folder" -%}
+  <details class="folder">
+    <summary title="{{ n.tooltip }}">{{ n.name }}</summary>
+    <div class="children">
+      {%- for child in n.nodes -%}{{ node(child) }}{%- endfor -%}
+    </div>
+  </details>
+{%- else -%}
+  <div class="leaf {{ n.node_type }}">
+    <a href="{{ n.href }}" title="{{ n.tooltip }}"{% if n.node_type == "hyperlink" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ n.name }}</a>
+  </div>
+{%- endif -%}
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --border: #000000;      /* solid black window border */
+      --line: #bcb8ad;        /* tree guide lines */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;            /* borders sit flush against the browser window */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* toolbar + window are flush: toolbar drops its bottom border, the
+       window's top border becomes the single divider between them */
+    .toolbar {
+      border: 2px solid var(--border);
+      border-bottom: none;
+      padding: 0.25rem;
+      text-align: right;     /* right-align the toggle */
+    }
+    #toggle {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      border: none;
+      padding: 0.1rem 0.25rem;
+      cursor: pointer;
+    }
+    #toggle img { display: block; width: 16px; height: 16px; }
+    #toggle:hover { background: rgba(0, 0, 0, 0.06); }
+
+    .window {
+      border: 2px solid var(--border);
+      padding: 8px 0 0 8px;   /* extra left + top breathing room for content */
+      flex: 1 1 auto;         /* stretch the window to the bottom of the screen */
+    }
+
+    /* node lines: hide native marker, emoji shows folder state */
+    summary { list-style: none; cursor: pointer; user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+
+    /* node icons: 16x16 Windows XP PNGs rendered via ::before background */
+    .folder > summary::before,
+    .leaf > a::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 0.4em;
+      vertical-align: -3px;          /* sit the icon on the text baseline */
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+    }
+    .folder > summary::before        { background-image: url("icons/folder-closed.png"); }
+    .folder[open] > summary::before  { background-image: url("icons/folder-open.png"); }
+    .leaf.hyperlink > a::before      { background-image: url("icons/web-link.png"); }
+    .leaf.file > a::before           { background-image: url("icons/file.png"); }
+
+    /* every nested node reserves a gutter for its connector; deeper levels
+       inherit their indent from the parent folder's own gutter padding */
+    .children > .folder,
+    .children > .leaf {
+      position: relative;
+      padding-left: 1.25em;
+    }
+
+    /* vertical guide: spans the node's FULL height. Because a <details>
+       grows to contain its expanded children, this line keeps running down
+       the gutter past the subtree, so the next sibling stays connected. */
+    .children > .folder::before,
+    .children > .leaf::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-left: 1px solid var(--line);
+    }
+
+    /* last child: vertical stops at the elbow, forming └ */
+    .children > .folder:last-child::before,
+    .children > .leaf:last-child::before {
+      bottom: auto;
+      height: 0.8em;
+    }
+
+    /* horizontal elbow reaching from the gutter toward the label */
+    .children > .folder::after,
+    .children > .leaf::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.8em;
+      width: 0.85em;
+      border-top: 1px solid var(--line);
+    }
+
+    .leaf a { color: inherit; text-decoration: none; }
+
+    /* hover: highlight any node in hyperlink blue + underline */
+    summary:hover,
+    .leaf a:hover { color: var(--hover); text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button type="button" id="toggle" data-expanded="false" title="expand all"><img id="toggle-icon" src="icons/expand.png" alt="expand all"></button>
+  </div>
+
+  <div class="window" id="tree">
+    {%- for n in webdirectory.nodes -%}{{ node(n) }}{%- endfor -%}
+  </div>
+
+  <script>
+    var toggle = document.getElementById('toggle');
+    var toggleIcon = document.getElementById('toggle-icon');
+    toggle.addEventListener('click', function () {
+      var expand = toggle.getAttribute('data-expanded') !== 'true';
+      document.querySelectorAll('#tree details.folder').forEach(function (d) { d.open = expand; });
+      toggle.setAttribute('data-expanded', String(expand));
+      toggleIcon.src = expand ? 'icons/collapse.png' : 'icons/expand.png';
+      toggleIcon.alt = expand ? 'collapse all' : 'expand all';
+      toggle.title = expand ? 'collapse all' : 'expand all';
+    });
+  </script>
+</body>
+</html>
