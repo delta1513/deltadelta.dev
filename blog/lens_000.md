@@ -1,7 +1,7 @@
 ---
 title: Lens 000 - The definition of a Lens
 description: The preamble to all my other meditations in the line of what I call "The Lenses"
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 For a while now, I've been studying philosophy and anthropology furiously. With so much vigour in fact, that I feel like I've become an entirely different person than what I was in 2025. It is an art-form which I find exceptionally pleasurable for myself, so I'd like to share them. I believe that if this genre of information can make me a better person, then it can also make someone else a better person too. I want to share that.

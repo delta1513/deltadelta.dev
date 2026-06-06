@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photography</title>
+  <title>{{ title }}</title>
   <link rel="icon" href="/favicon.png" type="image/png">
   <style>
     :root {
@@ -67,27 +67,10 @@
 <body>
   <main>
     <header class="post-head">
-      <h1>Photography</h1>
-      <p class="description">Various photographs that I&#39;ve captured and think are worth sharing</p>
+      <h1>{{ title }}</h1>
+      {% if description %}<p class="description">{{ description }}</p>{% endif %}
     </header>
-    <p>These here are the tree-tops from beneath the canopy of Stanley Park in Vancouver BC. I've altered the image using some filters in GIMP. I thought this came out quite nice.</p>
-<p><img src="/media/art/treeeeeee.jpg" alt=""></p>
-<hr>
-<p>I captured this from my apartment one night. This is a very shaky high-exposure shot of the Starlink satellites orbiting the earth.</p>
-<p><img src="/media/art/starlink.jpg" alt=""></p>
-<hr>
-<p>Below are my two most favourite pieces from Ron Mueck's Encounter exhibition.</p>
-<p>The first Is called Havoc, and it is quite a spectacular display of raw primal nature at work. As soon as I turned the corner in the showroom, I got goosebumps.</p>
-<p>The second is called This Little Piggy. This is my true favourite out of all of them because, to me, I feel this conveys a very clear and powerful aphorism. That is, we are all animals, no matter our clothes, possessions, or our means.</p>
-<p><img src="/media/art/havoc.jpg" alt=""></p>
-<p><img src="/media/art/this-little-piggy.jpg" alt=""></p>
-<hr>
-<p>This here is a picture of Rouse Hill Town Center in 2026 during a stormy night on my way home from work and gym.</p>
-<p><img src="/media/art/rouse-hill-rain.jpg" alt=""></p>
-<hr>
-<p>Just had to put it here because it's sexy. This is a Subaru WRX-STI that I captured at the show-and-shine during the Adelaide Rally in 2025</p>
-<p><img src="/media/art/wrx-2.jpg" alt=""></p>
-
+    {{ content | safe }}
   </main>
 </body>
 </html>

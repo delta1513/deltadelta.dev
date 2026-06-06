@@ -1,7 +1,7 @@
 ---
 title: Software Sophistry
 description: Some aphorisms that I live by when developing software.
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 

@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouroboros</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.png" type="image/png">
-</head>
-<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Ouroboros</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ouroboros</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
 
-    <main class="container mx-auto px-4 max-w-4xl">
-        <article class="prose prose-invert prose-lg mx-auto">
-            <h2>Entry 1</h2>
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>Ouroboros</h1>
+      <p class="description">A short narritive relating to AI.</p>
+    </header>
+    <h2>Entry 1</h2>
 <p>You of all people would have known my resignation as forthcoming, it was not surprising to see the faces of Gerard and Fitzsimmons at the sight of my letter and subsequent meetings to plead me to stay. I've never seen someone beg me as diligently as Gerard did, I would be lying if I said it didn't stroke my ego a little.</p>
 <p>You of course are my fondest companion both inside and outside of this organisation so I was hoping we may maintain correspondence - as good friends. As you know I will be moving to Canada, but to clarify more specifically, I will be moving to some property on a lakeside on Vancouver Island where I'll be building myself a log cabin. Contact with myself will be via email at best - cell reception is spotty, but I frequent a local bookstore with free Wi-Fi. The time difference is a bit hefty, I do hope we may call, but it will have to be during late at night or on weekends if I am to catch you outside business hours. I believe the Boston Pizza in town is open late, I am eager to converse with you over a late dinner if possible.</p>
 <p>Disregarding logistics, there is something important that I wished to clarify.</p>
@@ -58,15 +111,6 @@
 <p>- Jared</p>
 <h2>Entry 5</h2>
 
-        </article>
-    </main>
-    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
-        <div class="space-x-4">
-            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
-            
-                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
-            
-        </div>
-    </footer>
+  </main>
 </body>
-</html> 
+</html>

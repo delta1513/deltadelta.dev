@@ -1,7 +1,7 @@
 ---
 title: Capturing Photographs
 description: A bit of my philosophy on the importance of photography
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 Why do you keep photos?

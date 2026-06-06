@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lens 002 - Human Will as a Search Algorithm</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.png" type="image/png">
-</head>
-<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Lens 002 - Human Will as a Search Algorithm</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lens 002 - Human Will as a Search Algorithm</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
 
-    <main class="container mx-auto px-4 max-w-4xl">
-        <article class="prose prose-invert prose-lg mx-auto">
-            <p>I would like to preface this lens with a short detour on 'energy'. This energy I believe comes in two forms, the first I will explain as a finite reservoir that models the caloric battery which exists inside all human beings. This energy brings life to our daily activities and is what sustains us through times of growth and suffering, pleasure and pain. We replenish the reserves of this reservoir by consuming nutrients from our environment, and utilise it for both physical and mental activities. Consider the food you eat both regularly and on occasion. Consider how different types of food make you feel after eating them, both immediately, shortly after, and also many hours after.</p>
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>Lens 002 - Human Will as a Search Algorithm</h1>
+      <p class="description">Human will as a drive to seek pleasure, materials, and novel experiences or knowledge. Limited by our finite environment.</p>
+    </header>
+    <p>I would like to preface this lens with a short detour on 'energy'. This energy I believe comes in two forms, the first I will explain as a finite reservoir that models the caloric battery which exists inside all human beings. This energy brings life to our daily activities and is what sustains us through times of growth and suffering, pleasure and pain. We replenish the reserves of this reservoir by consuming nutrients from our environment, and utilise it for both physical and mental activities. Consider the food you eat both regularly and on occasion. Consider how different types of food make you feel after eating them, both immediately, shortly after, and also many hours after.</p>
 <p>What I can tell you from carefully monitoring the feelings I get after eating certain foods, and altering my diet to 'smooth-out' the energy release during the day, is that I have noticed profound effects, those of which have contributed to the paving of this particular lens. For example, during a typical day in the office, my day begins with one small productive piece of work at home (such as preparing my knapsack) in order to burn the initial jolt of energy after waking and await the first hunger. Once the feeling strikes, I craft myself a bowl of cereal, often two Wheet-bix with a few tablespoons of another, more sedimentary cereal, then topped with something that has a high sugar content. This generally provides my body with enough energy to ride my bicycle to the metro and survive the train ride to work. Then when I reach work, my body has begun releasing the energy stored in the milk and cereal. This next burn lasts until lunch. Then once lunch strikes, I have a main meal and also a small, sugary treat to supplement the delay between the meal and its digestion. This then generally satiates me until I make it back home for dinner.</p>
 <p>There is also another reservior of energy that I am still yet to fully grasp, that is the one of a carnal nature. My hypothesis is that it is bottomless, and I believe my own personal experiences have led me to fleeting experiences that only scratch the surface. Take for example, an exceptionally pleasurable experience at an art gallery that I had visited recently. Coming out of the museum, I immediately was overcome with the desire to get the next best 'hit'. One might argue this to be the rush of anticipation produced by dopamine. At the time, I could imagine some scenarios in my head that would be ideal in sating this. Perhaps a lavish Korean dinner followed by a night at a niche bar, lots of whiskey, some heavy tunes, and a sardined pack of shirtless patrons crowding the dancefloor. I could imagine this in my head, but I did not know enough about my local environment to know if it was in fact possible to find such a place. My predispositions regarding my geography had given me the tendency toward seeing this exploration as a certainly fruitless endeavour. I have some personal contempt about the culture, government and environment where I live, but I didn't see this as important at the time since I was 'here now', so I had to make-do. Consider an additional piece to this, that which I was engaging at this time with other people - my friends. As such, I must also respect their wishes and desires, and also understand that what appears at the conjunction of my desires, their desires, and the environment, may be limited - or even an empty set.</p>
 <p>That said, my hypothesis postulates an ideal environment where there exists an infinite set of resources/stimuli (including people). An environment where in your immediate locality, there exists all potential things that you could desire, all novel enough to dismay even the slightest apprehension of the mundane, and to also stimulate your natural curiosity. The people in this environment would have such a conjunction of desires that you would almost certainly get along well with this mob, however, there is enough diversity to keep things interesting and genuine. In such environment, and ignoring any necessary bodily function (such as sleep), is there anything stopping you from continuing to engage in all of these activities? Reading this from the perspective of someone employed full-time, there exists a particular, and childish yearning for such an environment. Perhaps the aesthetic of such a hypothetical is only significant when one is enduring an absence of it. That is, if this were a real lifestyle, would it appear as the same grandiose utopia that we see it currently as a bystander? Or would we see this as mundane if we were to live our lives in this particular world?</p>
@@ -58,15 +111,6 @@
 <p>Always be skeptical about the root of your personal 'random walk'. It is honorable to turn around and go back in a different direction so long as it is saddled upon your full volition.</p>
 <p>Know that comfort is a sign that you have reached the limits of what you know, and that there is always more that you can attain so long as you wish to expend the energy to chase it.</p>
 
-        </article>
-    </main>
-    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
-        <div class="space-x-4">
-            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
-            
-                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
-            
-        </div>
-    </footer>
+  </main>
 </body>
-</html> 
+</html>

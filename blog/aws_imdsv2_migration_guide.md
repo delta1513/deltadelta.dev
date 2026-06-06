@@ -1,7 +1,7 @@
 ---
 title: Dead simple IMDSv1 -> IMDSv2 migration guide
 description: All you need to know for migrating between AWS IMDSv1 and IMDSv2
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 I was recently asked to upgrade our AWS EC2 instances such that they use the new IMDSv2 service from AWS and not accept any more requests to the IMDSv1 endpoint.

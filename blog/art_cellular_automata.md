@@ -1,7 +1,7 @@
 ---
 title: Cellular Automata
 description: Collection of artworks and experimentations using cellular automata
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 I recently had an idea to make a cellular automata that follows some rules around RGB colours on a grid of pixels. In general, the rules are:

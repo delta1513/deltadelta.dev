@@ -1,7 +1,7 @@
 ---
 title: Go and ask someone how they are
 description: An alternative cure for depression
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 When's the last time you felt down or depressed?

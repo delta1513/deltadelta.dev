@@ -1,142 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content and apps that you never asked for!</title>
-    <link href="./dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>deltadelta.dev</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --border: #000000;      /* solid black window border */
+      --line: #bcb8ad;        /* tree guide lines */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;            /* borders sit flush against the browser window */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* toolbar + window are flush: toolbar drops its bottom border, the
+       window's top border becomes the single divider between them */
+    .toolbar {
+      border: 2px solid var(--border);
+      border-bottom: none;
+      padding: 0.25rem;
+      text-align: right;     /* right-align the toggle */
+    }
+    #toggle {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      border: none;
+      padding: 0.1rem 0.25rem;
+      cursor: pointer;
+    }
+    #toggle img { display: block; width: 16px; height: 16px; }
+    #toggle:hover { background: rgba(0, 0, 0, 0.06); }
+
+    .window {
+      border: 2px solid var(--border);
+      padding: 8px 0 0 8px;   /* extra left + top breathing room for content */
+      flex: 1 1 auto;         /* stretch the window to the bottom of the screen */
+    }
+
+    /* node lines: hide native marker, emoji shows folder state */
+    summary { list-style: none; cursor: pointer; user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+
+    /* node icons: 16x16 Windows XP PNGs rendered via ::before background */
+    .folder > summary::before,
+    .leaf > a::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 0.4em;
+      vertical-align: -3px;          /* sit the icon on the text baseline */
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+    }
+    .folder > summary::before        { background-image: url("/directory/icons/folder-closed.png"); }
+    .folder[open] > summary::before  { background-image: url("/directory/icons/folder-open.png"); }
+    .leaf.hyperlink > a::before      { background-image: url("/directory/icons/web-link.png"); }
+    .leaf.file > a::before           { background-image: url("/directory/icons/file.png"); }
+
+    /* every nested node reserves a gutter for its connector; deeper levels
+       inherit their indent from the parent folder's own gutter padding */
+    .children > .folder,
+    .children > .leaf {
+      position: relative;
+      padding-left: 1.25em;
+    }
+
+    /* vertical guide: spans the node's FULL height. Because a <details>
+       grows to contain its expanded children, this line keeps running down
+       the gutter past the subtree, so the next sibling stays connected. */
+    .children > .folder::before,
+    .children > .leaf::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-left: 1px solid var(--line);
+    }
+
+    /* last child: vertical stops at the elbow, forming └ */
+    .children > .folder:last-child::before,
+    .children > .leaf:last-child::before {
+      bottom: auto;
+      height: 0.8em;
+    }
+
+    /* horizontal elbow reaching from the gutter toward the label */
+    .children > .folder::after,
+    .children > .leaf::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.8em;
+      width: 0.85em;
+      border-top: 1px solid var(--line);
+    }
+
+    .leaf a { color: inherit; text-decoration: none; }
+
+    /* hover: highlight any node in hyperlink blue + underline */
+    summary:hover,
+    .leaf a:hover { color: var(--hover); text-decoration: underline; }
+  </style>
 </head>
-<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen flex flex-col shadow-inner-even shadow-neon-green font-jockey">
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-neon-green mb-4 drop-shadow-md">Δ deltadelta.dev<span class="animate-blink">_</span></h1>
-        <p class="text-xl text-gray-300">This is my homepage! Here is a mix of personal projects and other links. Be sure to check the bottom of this page for my blog and other content ⬇️</p>
-    </header>
+<body>
+  <div class="toolbar">
+    <button type="button" id="toggle" data-expanded="false" title="expand all"><img id="toggle-icon" src="/directory/icons/expand.png" alt="expand all"></button>
+  </div>
 
-    <main class="container mx-auto px-4 flex-grow">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://deltadelta.dev/writing/blog/bookmarks/" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">🔖 Bookmarks</p>
-                        <p class="text-gray-300">A curated list of links I find interesting</p>
-                    </a>
-                </div>
-            </div>
+  <div class="window" id="tree"><details class="folder">
+    <summary title="Apps I&#39;ve built and my profiles around the web">my_stuff</summary>
+    <div class="children"><details class="folder">
+    <summary title="Web apps and tools I host">apps</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://emoji.deltadelta.dev/" title="A super simple emoji picker" target="_blank" rel="noopener noreferrer">emoji_picker</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://wastebin.deltadelta.dev/" title="Self-hosted pastebin" target="_blank" rel="noopener noreferrer">wastebin</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://lastfmwall.deltadelta.dev/?username=delta1512" title="Generate an art wall of your last.fm top albums" target="_blank" rel="noopener noreferrer">lastfm_wall</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://ffmpeg.deltadelta.dev/" title="No bullshit, in-browser video converter" target="_blank" rel="noopener noreferrer">video_converter</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://delta1513.github.io/stateless-reversi/" title="A stateless implementation of the classic board game" target="_blank" rel="noopener noreferrer">stateless_reversi</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="My profiles around the web">accounts</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://soundcloud.com/delta-d-694387557" title="I like to curate playlists. Take a listen!" target="_blank" rel="noopener noreferrer">soundcloud</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.last.fm/user/delta1512" title="My last.fm profile" target="_blank" rel="noopener noreferrer">lastfm</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.youtube.com/@delta_1512" title="My YouTube channel with all my motorsports footage" target="_blank" rel="noopener noreferrer">youtube</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://orcid.org/0009-0007-1218-1549" title="My ORCID researcher profile" target="_blank" rel="noopener noreferrer">orcid</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://gitlab.com/delta1512" title="My GitLab profile" target="_blank" rel="noopener noreferrer">gitlab</a>
+  </div></div>
+  </details></div>
+  </details><details class="folder">
+    <summary title="A directory of things worth keeping">web_directory</summary>
+    <div class="children"><details class="folder">
+    <summary title="Places to find other places">directories_collections_and_search</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://www.producthunt.com/" title="" target="_blank" rel="noopener noreferrer">product_hunt</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.programming-idioms.org/" title="" target="_blank" rel="noopener noreferrer">programming_idioms</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.shodan.io/" title="IoT and web system search engine" target="_blank" rel="noopener noreferrer">shodan</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://sourcegraph.com/search" title="Global code search engine" target="_blank" rel="noopener noreferrer">sourcegraph</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.websters1913.com/" title="" target="_blank" rel="noopener noreferrer">websters_1913</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://archive.md/" title="An alternative internet archive service" target="_blank" rel="noopener noreferrer">archive_md</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" title="Awesome list of awesome stuff you can self-host" target="_blank" rel="noopener noreferrer">awesome_selfhosted</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Keeping up with things">news_and_newsletters</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://ia.acs.org.au/category/analysis.html" title="" target="_blank" rel="noopener noreferrer">australian_computer_society_ict_news</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://tldr.tech/" title="Tech newsletter separated into various topics" target="_blank" rel="noopener noreferrer">tldr</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.latent.space/" title="AI engineering newsletter" target="_blank" rel="noopener noreferrer">latent_space</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.fast.ai/" title="An AI engineering blog and community" target="_blank" rel="noopener noreferrer">fast_ai</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Things that do things">tools</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://myhomesearcher.com/" title="A vibe-coded app made by a colleague I worked with" target="_blank" rel="noopener noreferrer">my_home_searcher</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://email2sms.info/" title="Learn how to send SMS via email" target="_blank" rel="noopener noreferrer">email2sms</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://librespeed.org/#" title="A no-BS FOSS speedtest site that you can host yourself" target="_blank" rel="noopener noreferrer">librespeed_speedtest</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://chmod-calculator.com/" title="" target="_blank" rel="noopener noreferrer">chmod_calculator</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://crontab.guru/" title="" target="_blank" rel="noopener noreferrer">crontab_guru</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.ssllabs.com/ssltest/analyze.html" title="" target="_blank" rel="noopener noreferrer">ssl_tester</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://mimetype.io/" title="Search and analyze mimetypes" target="_blank" rel="noopener noreferrer">mimetype_io</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.virustotal.com/gui/home/upload" title="Quickly check if a file is infected by uploading it" target="_blank" rel="noopener noreferrer">virustotal</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://mortgage.monster/" title="Calculate what your mortgage would cost and how you&#39;ll build wealth over time" target="_blank" rel="noopener noreferrer">mortgage_monster</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://paycalculator.com.au/" title="" target="_blank" rel="noopener noreferrer">australian_income_tax_calculator</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.desmos.com/" title="Mathematical graphing calculator" target="_blank" rel="noopener noreferrer">desmos</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://txtify.it/" title="Turn web pages into raw text" target="_blank" rel="noopener noreferrer">txtify</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://mprimi.github.io/portable-secret/creator/" title="Create and share locked files with zero-install" target="_blank" rel="noopener noreferrer">portable_secret_creator</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.worldtimebuddy.com/" title="The best world clock and time converter I&#39;ve ever used" target="_blank" rel="noopener noreferrer">world_time_buddy</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://file.pizza/" title="P2P file transfer via the web browser" target="_blank" rel="noopener noreferrer">file_pizza</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.ventoy.net/en/index.html" title="Boot any OS without having to re-flash your drive" target="_blank" rel="noopener noreferrer">ventoy</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://gchq.github.io/CyberChef/" title="Tools for text manipulation" target="_blank" rel="noopener noreferrer">cyberchef</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://cobalt.tools/" title="Download videos and other content from various platforms or URLs" target="_blank" rel="noopener noreferrer">cobalt_tools</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.lexilogos.com/keyboard/latin.htm" title="Latin Keyboard" target="_blank" rel="noopener noreferrer">lexilogos</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://swimlanes.io/" title="Create sequence diagrams in your web browser" target="_blank" rel="noopener noreferrer">swimlanes</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://deepwiki.com/" title="Documentation for anything" target="_blank" rel="noopener noreferrer">deepwiki</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://github.com/rofl0r/microsocks" title="Tiny HTTP SOCKS proxy" target="_blank" rel="noopener noreferrer">microsocks</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Interesting things people have built">projects</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://lbc.cryptoguru.org/about" title="A distributed network methodically searching the whole bitcoin address space" target="_blank" rel="noopener noreferrer">the_large_bitcoin_collider</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.random.org/" title="Is there such a thing as truly random? This is the closest we&#39;ll get" target="_blank" rel="noopener noreferrer">random_org</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://immich.app/" title="One of the best photo organisers I&#39;ve used" target="_blank" rel="noopener noreferrer">immich</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.atlasofsurveillance.org/" title="A community-driven project tracking the expansion of mass surveillance" target="_blank" rel="noopener noreferrer">atlas_of_surveillance</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://chatjimmy.ai/" title="POC for Taalas — AI models as a chip" target="_blank" rel="noopener noreferrer">chatjimmy</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://github.com/n0-computer/dumbpipe" title="Transfer data between any two computers in the world via NAT hole-punching" target="_blank" rel="noopener noreferrer">iroh_dumbpipe</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://syncthing.net/" title="E2E encrypted folder synchronisation (basically your own Dropbox)" target="_blank" rel="noopener noreferrer">syncthing</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://p5js.org/" title="Great for coding-art" target="_blank" rel="noopener noreferrer">p5js</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.11ty.dev/" title="They had me with the opossum! I use this to generate my blog pages" target="_blank" rel="noopener noreferrer">eleventy</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Time wasters">fun_and_games</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://therandombutton.github.io/" title="" target="_blank" rel="noopener noreferrer">the_random_button</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.zalgo.org/" title="Cook any text" target="_blank" rel="noopener noreferrer">zalgotext</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://neal.fun/" title="" target="_blank" rel="noopener noreferrer">neal_fun</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Numbers and views">data_and_dashboards</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://steamcharts.com/" title="" target="_blank" rel="noopener noreferrer">steam_charts</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.json" title="Inputs known to be problematic — use this to test your software" target="_blank" rel="noopener noreferrer">big_list_of_naughty_strings</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.wunderground.com/wundermap" title="An awesome weather dashboard" target="_blank" rel="noopener noreferrer">wundermap</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://endoflife.date/" title="Learn when major software frameworks reach end of life" target="_blank" rel="noopener noreferrer">endoflife_date</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.lipsum.com/" title="Lipsum generator" target="_blank" rel="noopener noreferrer">lipsum</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Good to know">informational</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://guide.world/" title="A collection of travel blogs" target="_blank" rel="noopener noreferrer">guide_world</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://killedbygoogle.com/" title="Projects that Google has abandoned or shut down" target="_blank" rel="noopener noreferrer">killed_by_google</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="I like to collect sites that people make">personal_websites</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://ghuntley.com/" title="" target="_blank" rel="noopener noreferrer">geoffrey_huntly</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.raghav.wiki/" title="" target="_blank" rel="noopener noreferrer">raghavs_site</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://mattjegan.com/" title="" target="_blank" rel="noopener noreferrer">matts_site</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://cxong.github.io/" title="" target="_blank" rel="noopener noreferrer">congusbongus_site</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Swap these domains for better embeds">link_fixers</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://vxtwitter.com/" title="" target="_blank" rel="noopener noreferrer">twitter_com_to_vxtwitter_com</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://fixupx.com/" title="" target="_blank" rel="noopener noreferrer">x_com_to_fixupx_com</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://ddinstagram.com/" title="" target="_blank" rel="noopener noreferrer">instagram_com_to_ddinstagram_com</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://tiktxk.com/" title="" target="_blank" rel="noopener noreferrer">tiktok_com_to_tiktxk_com</a>
+  </div></div>
+  </details></div>
+  </details><details class="folder">
+    <summary title="My personal and dev blog">blog</summary>
+    <div class="children"><details class="folder">
+    <summary title="Software, infrastructure and the craft">tech_blogs</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/software-sophistry/" title="Aphorisms on developing commercial software">software_sophistry</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/disposable_code/" title="How AI is enabling more creative work in software engineering">disposable_code</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/how_i_use_ai/" title="How I work with AI, as a series of personas">how_i_use_ai</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/incident_lambda_memory_pressure/" title="A deep-dive into an exceptionally mysterious incident">incident_lambda_memory_pressure</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/aws_imdsv2_migration_guide/" title="Dead simple IMDSv1 to IMDSv2 migration guide">aws_imdsv2_migration_guide</a>
+  </div><details class="folder">
+    <summary title="My woes with linux">linux</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/linux_index/" title="Linux Posting — collection of linux issues I&#39;ve solved">linux_index</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/linux_1/" title="A firmware crash?">linux_001</a>
+  </div></div>
+  </details></div>
+  </details><details class="folder">
+    <summary title="Life, experiments and reflections">personal_blogs</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/capturing_photographs/" title="My philosophy on the importance of photography">capturing_photographs</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/south_korea/" title="A small note on my travels to Korea">south_korea</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/exercise_diary/" title="What happens when you exercise a little every day?">exercise_diary</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/rock_climbing/" title="My take on the sport and a short starter guide">rock_climbing</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/go_ask_someone_how_they_are/" title="An alternative cure for depression">go_ask_someone_how_they_are</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/books_ive_read/" title="My digital bookshelf">books_ive_read</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/learn_how_to_learn/" title="Understanding what it means to truly learn and adapt">learn_how_to_learn</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Short creative pieces">creative_writing</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/writing_un-natured/" title="Un-natured — 2026">un_natured</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/writing_timberwolf/" title="Timberwolf — 2017">timberwolf</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/writing-ouroboros/" title="Ouroboros">ouroboros</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Visual work and experiments">art</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/art_photography/" title="Photographs I&#39;ve captured and think are worth sharing">photography</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.youtube.com/@delta_1512" title="My YouTube channel with all my motorsports footage" target="_blank" rel="noopener noreferrer">gymkhana_and_motorsports</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/art_turbulent_flow/" title="Images surrounding the phenomena of turbulent flow">turbulent_flow</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/art_cellular_automata/" title="Random cellular automata I&#39;ve experimented with">cellular_automata</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="A line of meditations I call The Lenses">the_lenses</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/lens_000/" title="The definition of a Lens">lens_000</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/lens_001/" title="Anthropological products are a function of pain and pleasure">lens_001</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/lens_002/" title="Human will as a search algorithm">lens_002</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/lens_003/" title="Eddies">lens_003</a>
+  </div></div>
+  </details></div>
+  </details><div class="leaf file">
+    <a href="/writing/webring/" title="Sites from myself and people close to me">webring</a>
+  </div><div class="leaf file">
+    <a href="/writing/about/" title="Who I am and what this site is">about</a>
+  </div></div>
 
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://soundcloud.com/delta-d-694387557" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">📻 Soundcloud</p>
-                        <p class="text-gray-300">I like to curate playlists. Take a listen!</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://www.last.fm/user/delta1512" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">🎵 Last.fm</p>
-                        <p class="text-gray-300">Link to my last.fm profile</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://emoji.deltadelta.dev/" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">😀 Emoji Picker</p>
-                        <p class="text-gray-300">A super simple emoji picker</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="/writing/blog/art_photography/" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">📷 Photography</p>
-                        <p class="text-gray-300">Some of the photos I've taken during my adventures</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://www.youtube.com/@delta_1512" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">📺 YouTube</p>
-                        <p class="text-gray-300">My youtube channel with all my motorsports footage</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://wastebin.deltadelta.dev/" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">💬 Wastebin</p>
-                        <p class="text-gray-300">Self-hosted pastebin</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://lastfmwall.deltadelta.dev/?username=delta1512" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">🎹 Last.fm Wall</p>
-                        <p class="text-gray-300">Generate an art wall of your last.fm top albums</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://ffmpeg.deltadelta.dev/" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">🎥 Video Converter</p>
-                        <p class="text-gray-300">No bullshit, in-browser video converter</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://delta1513.github.io/stateless-reversi/" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">⚫ Stateless Reversi</p>
-                        <p class="text-gray-300">A stateless implementation of the classic board game</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="https://orcid.org/0009-0007-1218-1549" target="_blank" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">🔬 ORCID</p>
-                        <p class="text-gray-300">My ORCID researcher profile</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="button-hover bg-gradient-to-bl from-neon-green to-neon-green-accent rounded-md p-1">
-                <div class="bg-button-purple rounded-md p-4 hover:bg-button-purple-hover h-full">
-                    <a href="webring.html" class="">
-                        <p class="text-neon-green text-2xl drop-shadow-md">🔗 Webring</p>
-                        <p class="text-gray-300">Arrive here via a webring? Click here!</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
-        <div class="space-x-4">
-            <a href="about.html" class="text-neon-green hover:text-neon-green-accent">About</a>
-            <a href="/writing/now/" class="text-neon-green hover:text-neon-green-accent">Now</a>
-            <a href="/writing/blog/" class="text-neon-green hover:text-neon-green-accent">Blog</a>
-            <a href="https://gitlab.com/delta1512" class="text-neon-green hover:text-neon-green-accent">GitLab</a>
-            <a href="mailto:boincosdelta@gmail.com" class="text-neon-green hover:text-neon-green-accent">Email</a>
-        </div>
-    </footer>
+  <script>
+    var toggle = document.getElementById('toggle');
+    var toggleIcon = document.getElementById('toggle-icon');
+    toggle.addEventListener('click', function () {
+      var expand = toggle.getAttribute('data-expanded') !== 'true';
+      document.querySelectorAll('#tree details.folder').forEach(function (d) { d.open = expand; });
+      toggle.setAttribute('data-expanded', String(expand));
+      toggleIcon.src = expand ? '/directory/icons/collapse.png' : '/directory/icons/expand.png';
+      toggleIcon.alt = expand ? 'collapse all' : 'expand all';
+      toggle.title = expand ? 'collapse all' : 'expand all';
+    });
+  </script>
 </body>
 </html>

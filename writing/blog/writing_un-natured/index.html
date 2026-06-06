@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un-natured</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.png" type="image/png">
-</head>
-<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Un-natured</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un-natured</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
 
-    <main class="container mx-auto px-4 max-w-4xl">
-        <article class="prose prose-invert prose-lg mx-auto">
-            <p>What is man if it were merely him?</p>
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>Un-natured</h1>
+      <p class="description">A narrative on the journey to resolve the human hubris.</p>
+    </header>
+    <p>What is man if it were merely him?</p>
 <p>Existentialism permeates my day, I am it. The pondering is a tumor - a cancer.</p>
 <p>The air is frigid. I sit atop a stone at the edge of an incline. The dusk sky is calm and clear, the horizon like an attenuated whitewash, cleansing the nature before the darkness that will soon roll in. I should set my tent across this concave...</p>
 <p>My beard itches of a thousand ants, a frivolous vanity. My belly aches with the quarrels of a million pigeons, an unwanted testament. Lying down is merely a trek itself, these hasty thoughts.</p>
@@ -46,15 +99,6 @@
 <p>I stagger back, and land on my rump. I cup my head with one hand, and notice an unfamiliar slime cross my fingertips. I hold my hands in front. It was blood. Never before had I sat as the prosecution to the sapping of my own life essence. I giggled, and my chirps then turned into absurd laughter followed by tears of relief. It was wholly ignoble that the greatest beast to ever scrape claw over skin would be that of a rock. I laughed harder, wrenching my diaphragm with each bout and letting the saline tears mix with my sweet blood. As I lay writhing on the granite, I begin to feel cold tingles, ones similar to that of having left your arm splayed awkwardly across the rock over the duration of a nightfall - except this was pervading my entire body. Had I been drained? I must see if I have been granted Valhalla. I rub the mixture away from my lashes and put myself at attention of the sky. It drizzles. Like ballerinas featherfalling, pitying my coarseness.</p>
 <p>The rhythm of their dance intensifies to that of an Irish tapdance. A shower was forming within the thunderstorm, and in the distance I could hear the steaming of the cool droplets wrecking havoc to the front. I sprint to my feet to witness for myself the tsunami formed by god simply turning his shoulder to me. The front stopped marching, leaving a clear border between that of living and deceased, as if a sign so prominent that one would be worse than dunce to miss. I took a moment to realise that the tiger, bear, goat, and even the flowers may not have survived this inferno, that they were given eternal salvation from the thought of having to encounter such hubris once more. No more would they need to wilt. No more would they need to seek respite. No longer will they wallow in stench cast from another. Never again will they need to stare through that apparition. Neither them nor their mourning relatives of the west.</p>
 
-        </article>
-    </main>
-    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
-        <div class="space-x-4">
-            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
-            
-                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
-            
-        </div>
-    </footer>
+  </main>
 </body>
-</html> 
+</html>

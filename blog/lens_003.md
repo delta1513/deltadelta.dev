@@ -1,7 +1,7 @@
 ---
 title: Lens 003 - Eddies
 description: Symbiosis represented as fleeting systems of feedback loops
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 If you grew up in a family home with a pool, I'm sure a fun thing that your dad may have taught you was how to make a whirlpool. He'd tell you to follow him around the edges, and keep going around in circles forever. Eventually, you'd feel a strange force pushing you along. Walking feels easier and easier until you create a current so fast that it practically sweeps you off your feet. The limit here is yourself, unless you are including the strength and speed of your father.

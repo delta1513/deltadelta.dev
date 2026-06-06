@@ -1,7 +1,7 @@
 ---
 title: Books I've Read
 description: This blog is basically my digital bookshelf (I have a real one tho)
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 Here you'll find the list of books I've read **in no particular order**. This goes as far back as I can accurately remember. I spent a great deal of time in my primary and high-school days reading non-fiction books so there's a vast amount not covered in this list, but I wish I had written them down.

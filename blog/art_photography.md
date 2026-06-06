@@ -1,7 +1,7 @@
 ---
 title: Photography
 description: Various photographs that I've captured and think are worth sharing
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 

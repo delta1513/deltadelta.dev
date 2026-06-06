@@ -1,7 +1,7 @@
 ---
 title: The age of disposable code
 description: A small rant about my thoughts on a particular aspect of how software engineering has changed with AI
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 On the last week of the work week this year, I revealed two very exciting things that I created at my work. Let me tell you a bit about them.

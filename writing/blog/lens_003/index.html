@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lens 003 - Eddies</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.png" type="image/png">
-</head>
-<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Lens 003 - Eddies</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lens 003 - Eddies</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
 
-    <main class="container mx-auto px-4 max-w-4xl">
-        <article class="prose prose-invert prose-lg mx-auto">
-            <p>If you grew up in a family home with a pool, I'm sure a fun thing that your dad may have taught you was how to make a whirlpool. He'd tell you to follow him around the edges, and keep going around in circles forever. Eventually, you'd feel a strange force pushing you along. Walking feels easier and easier until you create a current so fast that it practically sweeps you off your feet. The limit here is yourself, unless you are including the strength and speed of your father.</p>
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>Lens 003 - Eddies</h1>
+      <p class="description">Symbiosis represented as fleeting systems of feedback loops</p>
+    </header>
+    <p>If you grew up in a family home with a pool, I'm sure a fun thing that your dad may have taught you was how to make a whirlpool. He'd tell you to follow him around the edges, and keep going around in circles forever. Eventually, you'd feel a strange force pushing you along. Walking feels easier and easier until you create a current so fast that it practically sweeps you off your feet. The limit here is yourself, unless you are including the strength and speed of your father.</p>
 <p>This is an eddy in the traditional sense. We call it a whirlpool supposedly because it's much bigger and longer-lasting, but if you were to look at it on a grander scale, then it would just be a regular eddy. A much better example would be if you were to stir something. Consider the 'tornado' effect that gets produced when you quickly swish your spoon in a glass of water - or even better, pour milk into your coffee. You will find that as the milk starts mixing with the coffee, you get these really cool turbulent patterns. Those are eddies, and I think that we can model certain events and features of reality around this concept.</p>
 <hr>
 <p>When I travelled to South Korea in 2025, I was in immense awe at their infrastructure and ways of living. Part of me wondered how a society like this was capable of constructing such huge buildings and cultivating such lavish lifestyles. Perhaps there was a lot of human labour? Maybe massive investments from government? Laissez-faire political regime? Why aren't other parts of the world like this? It was unlike anything I had seen, and I had no explanation for it. I would go to one suburb and find a mall that had more floor space than a couple football fields, then in the suburb over, another one. Every nook in the city had a shop within walking distance. You were never really far away from anything. Driving to and from the airport took us across enormous bridges and mega-highways. It was built as if it were made to service millions of people for eons - such care, craft, rigor, engineering, thought, and dedication. I would even go as far as to say that there was no way that I could think it can be better.</p>
@@ -56,15 +109,6 @@
 <hr>
 <p>I want to end this lens with one small note for myself. I might come back to this piece sometime later once I better study the laws of thermodynamics. I believe that the concept of eddies here runs far deeper than simply an interaction of two agents. I believe thermodynamics can be used to explain why this is pleasureable - because it is a law of the universe.</p>
 
-        </article>
-    </main>
-    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
-        <div class="space-x-4">
-            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
-            
-                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
-            
-        </div>
-    </footer>
+  </main>
 </body>
-</html> 
+</html>

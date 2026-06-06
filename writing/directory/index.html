@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>deltadelta.dev</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
   <style>
     :root {
       --bg: #fbfbf9;          /* near-white */
@@ -67,10 +68,10 @@
       background-repeat: no-repeat;
       background-size: 16px 16px;
     }
-    .folder > summary::before        { background-image: url("icons/folder-closed.png"); }
-    .folder[open] > summary::before  { background-image: url("icons/folder-open.png"); }
-    .leaf.hyperlink > a::before      { background-image: url("icons/web-link.png"); }
-    .leaf.file > a::before           { background-image: url("icons/file.png"); }
+    .folder > summary::before        { background-image: url("/directory/icons/folder-closed.png"); }
+    .folder[open] > summary::before  { background-image: url("/directory/icons/folder-open.png"); }
+    .leaf.hyperlink > a::before      { background-image: url("/directory/icons/web-link.png"); }
+    .leaf.file > a::before           { background-image: url("/directory/icons/file.png"); }
 
     /* every nested node reserves a gutter for its connector; deeper levels
        inherit their indent from the parent folder's own gutter padding */
@@ -120,10 +121,39 @@
 </head>
 <body>
   <div class="toolbar">
-    <button type="button" id="toggle" data-expanded="false" title="expand all"><img id="toggle-icon" src="icons/expand.png" alt="expand all"></button>
+    <button type="button" id="toggle" data-expanded="false" title="expand all"><img id="toggle-icon" src="/directory/icons/expand.png" alt="expand all"></button>
   </div>
 
   <div class="window" id="tree"><details class="folder">
+    <summary title="Apps I&#39;ve built and my profiles around the web">my_stuff</summary>
+    <div class="children"><details class="folder">
+    <summary title="Web apps and tools I host">apps</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://emoji.deltadelta.dev/" title="A super simple emoji picker" target="_blank" rel="noopener noreferrer">emoji_picker</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://wastebin.deltadelta.dev/" title="Self-hosted pastebin" target="_blank" rel="noopener noreferrer">wastebin</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://lastfmwall.deltadelta.dev/?username=delta1512" title="Generate an art wall of your last.fm top albums" target="_blank" rel="noopener noreferrer">lastfm_wall</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://ffmpeg.deltadelta.dev/" title="No bullshit, in-browser video converter" target="_blank" rel="noopener noreferrer">video_converter</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://delta1513.github.io/stateless-reversi/" title="A stateless implementation of the classic board game" target="_blank" rel="noopener noreferrer">stateless_reversi</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="My profiles around the web">accounts</summary>
+    <div class="children"><div class="leaf hyperlink">
+    <a href="https://soundcloud.com/delta-d-694387557" title="I like to curate playlists. Take a listen!" target="_blank" rel="noopener noreferrer">soundcloud</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.last.fm/user/delta1512" title="My last.fm profile" target="_blank" rel="noopener noreferrer">lastfm</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.youtube.com/@delta_1512" title="My YouTube channel with all my motorsports footage" target="_blank" rel="noopener noreferrer">youtube</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://orcid.org/0009-0007-1218-1549" title="My ORCID researcher profile" target="_blank" rel="noopener noreferrer">orcid</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://gitlab.com/delta1512" title="My GitLab profile" target="_blank" rel="noopener noreferrer">gitlab</a>
+  </div></div>
+  </details></div>
+  </details><details class="folder">
     <summary title="A directory of things worth keeping">web_directory</summary>
     <div class="children"><details class="folder">
     <summary title="Places to find other places">directories_collections_and_search</summary>
@@ -273,7 +303,82 @@
     <a href="https://tiktxk.com/" title="" target="_blank" rel="noopener noreferrer">tiktok_com_to_tiktxk_com</a>
   </div></div>
   </details></div>
+  </details><details class="folder">
+    <summary title="My personal and dev blog">blog</summary>
+    <div class="children"><details class="folder">
+    <summary title="Software, infrastructure and the craft">tech_blogs</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/software-sophistry/" title="Aphorisms on developing commercial software">software_sophistry</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/disposable_code/" title="How AI is enabling more creative work in software engineering">disposable_code</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/how_i_use_ai/" title="How I work with AI, as a series of personas">how_i_use_ai</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/incident_lambda_memory_pressure/" title="A deep-dive into an exceptionally mysterious incident">incident_lambda_memory_pressure</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/aws_imdsv2_migration_guide/" title="Dead simple IMDSv1 to IMDSv2 migration guide">aws_imdsv2_migration_guide</a>
+  </div><details class="folder">
+    <summary title="My woes with linux">linux</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/linux_index/" title="Linux Posting — collection of linux issues I&#39;ve solved">linux_index</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/linux_1/" title="A firmware crash?">linux_001</a>
+  </div></div>
   </details></div>
+  </details><details class="folder">
+    <summary title="Life, experiments and reflections">personal_blogs</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/capturing_photographs/" title="My philosophy on the importance of photography">capturing_photographs</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/south_korea/" title="A small note on my travels to Korea">south_korea</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/exercise_diary/" title="What happens when you exercise a little every day?">exercise_diary</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/rock_climbing/" title="My take on the sport and a short starter guide">rock_climbing</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/go_ask_someone_how_they_are/" title="An alternative cure for depression">go_ask_someone_how_they_are</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/books_ive_read/" title="My digital bookshelf">books_ive_read</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/learn_how_to_learn/" title="Understanding what it means to truly learn and adapt">learn_how_to_learn</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Short creative pieces">creative_writing</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/writing_un-natured/" title="Un-natured — 2026">un_natured</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/writing_timberwolf/" title="Timberwolf — 2017">timberwolf</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/writing-ouroboros/" title="Ouroboros">ouroboros</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="Visual work and experiments">art</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/art_photography/" title="Photographs I&#39;ve captured and think are worth sharing">photography</a>
+  </div><div class="leaf hyperlink">
+    <a href="https://www.youtube.com/@delta_1512" title="My YouTube channel with all my motorsports footage" target="_blank" rel="noopener noreferrer">gymkhana_and_motorsports</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/art_turbulent_flow/" title="Images surrounding the phenomena of turbulent flow">turbulent_flow</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/art_cellular_automata/" title="Random cellular automata I&#39;ve experimented with">cellular_automata</a>
+  </div></div>
+  </details><details class="folder">
+    <summary title="A line of meditations I call The Lenses">the_lenses</summary>
+    <div class="children"><div class="leaf file">
+    <a href="/writing/blog/lens_000/" title="The definition of a Lens">lens_000</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/lens_001/" title="Anthropological products are a function of pain and pleasure">lens_001</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/lens_002/" title="Human will as a search algorithm">lens_002</a>
+  </div><div class="leaf file">
+    <a href="/writing/blog/lens_003/" title="Eddies">lens_003</a>
+  </div></div>
+  </details></div>
+  </details><div class="leaf file">
+    <a href="/writing/webring/" title="Sites from myself and people close to me">webring</a>
+  </div><div class="leaf file">
+    <a href="/writing/about/" title="Who I am and what this site is">about</a>
+  </div></div>
 
   <script>
     var toggle = document.getElementById('toggle');
@@ -282,7 +387,7 @@
       var expand = toggle.getAttribute('data-expanded') !== 'true';
       document.querySelectorAll('#tree details.folder').forEach(function (d) { d.open = expand; });
       toggle.setAttribute('data-expanded', String(expand));
-      toggleIcon.src = expand ? 'icons/collapse.png' : 'icons/expand.png';
+      toggleIcon.src = expand ? '/directory/icons/collapse.png' : '/directory/icons/expand.png';
       toggleIcon.alt = expand ? 'collapse all' : 'expand all';
       toggle.title = expand ? 'collapse all' : 'expand all';
     });

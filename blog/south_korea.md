@@ -1,7 +1,7 @@
 ---
 title: South Korea
 description: Just some quick notes about how south Korea felt to me
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 I'm bored on the plane back to Australia so I'm just going to take some notes about my trip to South Korea.

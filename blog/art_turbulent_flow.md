@@ -1,7 +1,7 @@
 ---
 title: Turbulent Flow
 description: Artworks relating to turbulent flow
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 ![](/media/art/delta-turbulent-flow-glowy-nowatermark.png)

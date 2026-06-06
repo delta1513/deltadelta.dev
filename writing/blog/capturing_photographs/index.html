@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capturing Photographs</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.png" type="image/png">
-</head>
-<body class="bg-gradient-to-b from-page-bg-start to-page-bg min-h-screen font-rubik">
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-neon-green mb-4 font-jockey">Capturing Photographs</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capturing Photographs</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
 
-    <main class="container mx-auto px-4 max-w-4xl">
-        <article class="prose prose-invert prose-lg mx-auto">
-            <p>Why do you keep photos?</p>
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>Capturing Photographs</h1>
+      <p class="description">A bit of my philosophy on the importance of photography</p>
+    </header>
+    <p>Why do you keep photos?</p>
 <p>Not meaning yourself specifically, but rather what's your personal reason for keeping photos of things? Do you keep all your photos on your phone? Or do you have an organised and shareable cloud album like myself?</p>
 <p>Back when smartphones didn't exist, people often used film or digital cameras, then often developed the photos onto paper in order to see them (as there would be no other way to revisit them, and share them with others). If you've ever flicked through a photo album with family members, you'll probably notice the feeling that they have towards the photos of themselves or the photos that they took. Quite often, there's something they hold sacred about these. Is it the scarcity? Or is it something deeper? In this blog post, we will keep these philosophical questions rhetorical, and rather, I will explain why you should cherish this feeling and think about it whenever you take a photo.</p>
 <hr>
@@ -68,15 +121,6 @@ Give yourself the space to see your surroundings, find the best angle, make the 
 <p>The preview exists for a reason. Pay attention to the preview of the photo, and also the captured photo!</p>
 <p>And a reminder for those that don't: You should clean your lenses!!!</p>
 
-        </article>
-    </main>
-    <footer class="container mx-auto px-4 py-8 text-center text-gray-300">
-        <div class="space-x-4">
-            <a href="/" class="text-neon-green hover:text-neon-green-accent font-bold">← Back to Home</a>
-            
-                <a href="/writing/blog" class="text-neon-green hover:text-neon-green-accent font-bold">Blog Index</a>
-            
-        </div>
-    </footer>
+  </main>
 </body>
-</html> 
+</html>

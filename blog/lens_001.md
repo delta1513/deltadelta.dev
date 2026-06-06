@@ -1,7 +1,7 @@
 ---
 title: Lens 001 - Anthropological products are a function of pain and pleasure
 description: A method of explaining all human behaviour.
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 One thing that helps bring peace to one's world is to understand that there is meaning behind one's actions, and that there is a rational explanation for everything that occurs in the world. Seemingly you may have been living your life just letting your actions stand for themselves, beckoning no explanations. However others often seek to inquire on the meaning of their behaviours and events in the world, most frequently in times of suffering or tragedy. It beckons us to be able to explain things, and I would encourage you to think of something you don't really understand, and then think about something you could comfortably deliver a lecture about. One does feel more "easy", right?

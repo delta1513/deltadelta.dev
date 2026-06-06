@@ -1,7 +1,7 @@
 ---
 title: Ouroboros
 description: A short narritive relating to AI.
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 ## Entry 1

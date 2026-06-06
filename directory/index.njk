@@ -21,6 +21,7 @@ permalink: /directory/index.html
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
   <style>
     :root {
       --bg: #fbfbf9;          /* near-white */
@@ -84,10 +85,10 @@ permalink: /directory/index.html
       background-repeat: no-repeat;
       background-size: 16px 16px;
     }
-    .folder > summary::before        { background-image: url("icons/folder-closed.png"); }
-    .folder[open] > summary::before  { background-image: url("icons/folder-open.png"); }
-    .leaf.hyperlink > a::before      { background-image: url("icons/web-link.png"); }
-    .leaf.file > a::before           { background-image: url("icons/file.png"); }
+    .folder > summary::before        { background-image: url("/directory/icons/folder-closed.png"); }
+    .folder[open] > summary::before  { background-image: url("/directory/icons/folder-open.png"); }
+    .leaf.hyperlink > a::before      { background-image: url("/directory/icons/web-link.png"); }
+    .leaf.file > a::before           { background-image: url("/directory/icons/file.png"); }
 
     /* every nested node reserves a gutter for its connector; deeper levels
        inherit their indent from the parent folder's own gutter padding */
@@ -137,7 +138,7 @@ permalink: /directory/index.html
 </head>
 <body>
   <div class="toolbar">
-    <button type="button" id="toggle" data-expanded="false" title="expand all"><img id="toggle-icon" src="icons/expand.png" alt="expand all"></button>
+    <button type="button" id="toggle" data-expanded="false" title="expand all"><img id="toggle-icon" src="/directory/icons/expand.png" alt="expand all"></button>
   </div>
 
   <div class="window" id="tree">
@@ -151,7 +152,7 @@ permalink: /directory/index.html
       var expand = toggle.getAttribute('data-expanded') !== 'true';
       document.querySelectorAll('#tree details.folder').forEach(function (d) { d.open = expand; });
       toggle.setAttribute('data-expanded', String(expand));
-      toggleIcon.src = expand ? 'icons/collapse.png' : 'icons/expand.png';
+      toggleIcon.src = expand ? '/directory/icons/collapse.png' : '/directory/icons/expand.png';
       toggleIcon.alt = expand ? 'collapse all' : 'expand all';
       toggle.title = expand ? 'collapse all' : 'expand all';
     });

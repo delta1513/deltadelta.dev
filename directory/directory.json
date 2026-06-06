@@ -3,6 +3,37 @@
   "webdirectory": {
     "nodes": [
       {
+        "name": "my_stuff",
+        "tooltip": "Apps I've built and my profiles around the web",
+        "node_type": "folder",
+        "nodes": [
+          {
+            "name": "apps",
+            "tooltip": "Web apps and tools I host",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "emoji_picker", "tooltip": "A super simple emoji picker", "node_type": "hyperlink", "href": "https://emoji.deltadelta.dev/" },
+              { "name": "wastebin", "tooltip": "Self-hosted pastebin", "node_type": "hyperlink", "href": "https://wastebin.deltadelta.dev/" },
+              { "name": "lastfm_wall", "tooltip": "Generate an art wall of your last.fm top albums", "node_type": "hyperlink", "href": "https://lastfmwall.deltadelta.dev/?username=delta1512" },
+              { "name": "video_converter", "tooltip": "No bullshit, in-browser video converter", "node_type": "hyperlink", "href": "https://ffmpeg.deltadelta.dev/" },
+              { "name": "stateless_reversi", "tooltip": "A stateless implementation of the classic board game", "node_type": "hyperlink", "href": "https://delta1513.github.io/stateless-reversi/" }
+            ]
+          },
+          {
+            "name": "accounts",
+            "tooltip": "My profiles around the web",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "soundcloud", "tooltip": "I like to curate playlists. Take a listen!", "node_type": "hyperlink", "href": "https://soundcloud.com/delta-d-694387557" },
+              { "name": "lastfm", "tooltip": "My last.fm profile", "node_type": "hyperlink", "href": "https://www.last.fm/user/delta1512" },
+              { "name": "youtube", "tooltip": "My YouTube channel with all my motorsports footage", "node_type": "hyperlink", "href": "https://www.youtube.com/@delta_1512" },
+              { "name": "orcid", "tooltip": "My ORCID researcher profile", "node_type": "hyperlink", "href": "https://orcid.org/0009-0007-1218-1549" },
+              { "name": "gitlab", "tooltip": "My GitLab profile", "node_type": "hyperlink", "href": "https://gitlab.com/delta1512" }
+            ]
+          }
+        ]
+      },
+      {
         "name": "web_directory",
         "tooltip": "A directory of things worth keeping",
         "node_type": "folder",
@@ -131,7 +162,83 @@
             ]
           }
         ]
-      }
+      },
+      {
+        "name": "blog",
+        "tooltip": "My personal and dev blog",
+        "node_type": "folder",
+        "nodes": [
+          {
+            "name": "tech_blogs",
+            "tooltip": "Software, infrastructure and the craft",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "software_sophistry", "tooltip": "Aphorisms on developing commercial software", "node_type": "file", "href": "/writing/blog/software-sophistry/" },
+              { "name": "disposable_code", "tooltip": "How AI is enabling more creative work in software engineering", "node_type": "file", "href": "/writing/blog/disposable_code/" },
+              { "name": "how_i_use_ai", "tooltip": "How I work with AI, as a series of personas", "node_type": "file", "href": "/writing/blog/how_i_use_ai/" },
+              { "name": "incident_lambda_memory_pressure", "tooltip": "A deep-dive into an exceptionally mysterious incident", "node_type": "file", "href": "/writing/blog/incident_lambda_memory_pressure/" },
+              { "name": "aws_imdsv2_migration_guide", "tooltip": "Dead simple IMDSv1 to IMDSv2 migration guide", "node_type": "file", "href": "/writing/blog/aws_imdsv2_migration_guide/" },
+              {
+                "name": "linux",
+                "tooltip": "My woes with linux",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "linux_index", "tooltip": "Linux Posting — collection of linux issues I've solved", "node_type": "file", "href": "/writing/blog/linux_index/" },
+                  { "name": "linux_001", "tooltip": "A firmware crash?", "node_type": "file", "href": "/writing/blog/linux_1/" }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "personal_blogs",
+            "tooltip": "Life, experiments and reflections",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "capturing_photographs", "tooltip": "My philosophy on the importance of photography", "node_type": "file", "href": "/writing/blog/capturing_photographs/" },
+              { "name": "south_korea", "tooltip": "A small note on my travels to Korea", "node_type": "file", "href": "/writing/blog/south_korea/" },
+              { "name": "exercise_diary", "tooltip": "What happens when you exercise a little every day?", "node_type": "file", "href": "/writing/blog/exercise_diary/" },
+              { "name": "rock_climbing", "tooltip": "My take on the sport and a short starter guide", "node_type": "file", "href": "/writing/blog/rock_climbing/" },
+              { "name": "go_ask_someone_how_they_are", "tooltip": "An alternative cure for depression", "node_type": "file", "href": "/writing/blog/go_ask_someone_how_they_are/" },
+              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" },
+              { "name": "learn_how_to_learn", "tooltip": "Understanding what it means to truly learn and adapt", "node_type": "file", "href": "/writing/blog/learn_how_to_learn/" }
+            ]
+          },
+          {
+            "name": "creative_writing",
+            "tooltip": "Short creative pieces",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "un_natured", "tooltip": "Un-natured — 2026", "node_type": "file", "href": "/writing/blog/writing_un-natured/" },
+              { "name": "timberwolf", "tooltip": "Timberwolf — 2017", "node_type": "file", "href": "/writing/blog/writing_timberwolf/" },
+              { "name": "ouroboros", "tooltip": "Ouroboros", "node_type": "file", "href": "/writing/blog/writing-ouroboros/" }
+            ]
+          },
+          {
+            "name": "art",
+            "tooltip": "Visual work and experiments",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "photography", "tooltip": "Photographs I've captured and think are worth sharing", "node_type": "file", "href": "/writing/blog/art_photography/" },
+              { "name": "gymkhana_and_motorsports", "tooltip": "My YouTube channel with all my motorsports footage", "node_type": "hyperlink", "href": "https://www.youtube.com/@delta_1512" },
+              { "name": "turbulent_flow", "tooltip": "Images surrounding the phenomena of turbulent flow", "node_type": "file", "href": "/writing/blog/art_turbulent_flow/" },
+              { "name": "cellular_automata", "tooltip": "Random cellular automata I've experimented with", "node_type": "file", "href": "/writing/blog/art_cellular_automata/" }
+            ]
+          },
+          {
+            "name": "the_lenses",
+            "tooltip": "A line of meditations I call The Lenses",
+            "node_type": "folder",
+            "nodes": [
+              { "name": "lens_000", "tooltip": "The definition of a Lens", "node_type": "file", "href": "/writing/blog/lens_000/" },
+              { "name": "lens_001", "tooltip": "Anthropological products are a function of pain and pleasure", "node_type": "file", "href": "/writing/blog/lens_001/" },
+              { "name": "lens_002", "tooltip": "Human will as a search algorithm", "node_type": "file", "href": "/writing/blog/lens_002/" },
+              { "name": "lens_003", "tooltip": "Eddies", "node_type": "file", "href": "/writing/blog/lens_003/" }
+            ]
+          }
+        ]
+      },
+      { "name": "webring", "tooltip": "Sites from myself and people close to me", "node_type": "file", "href": "/writing/webring/" },
+      { "name": "about", "tooltip": "Who I am and what this site is", "node_type": "file", "href": "/writing/about/" }
     ]
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: How I use AI
 description: My usage of AI in my work as a series of personas
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 I use AI and LLMs for a lot of stuff. The code for this website was almost fully vibe-coded. Even the infrastructure and ops in place for managing my blog is vibe-coded (but the content is all me apart from spell-checks).

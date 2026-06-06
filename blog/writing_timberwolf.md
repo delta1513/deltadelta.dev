@@ -1,7 +1,7 @@
 ---
 title: Timberwolf
 description: A creative piece from my Highschool days
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 I dug-up this piece from an old writing archive. The document is dated 2017, this is roughly when I was in high-school.

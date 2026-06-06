@@ -1,7 +1,7 @@
 ---
 title: Un-natured
 description: A narrative on the journey to resolve the human hubris.
-layout: blog-base.njk
+layout: markdown.njk
 ---
 
 What is man if it were merely him?
