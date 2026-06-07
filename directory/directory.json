@@ -136,7 +136,8 @@
             "node_type": "folder",
             "nodes": [
               { "name": "guide_world", "tooltip": "A collection of travel blogs", "node_type": "hyperlink", "href": "https://guide.world/" },
-              { "name": "killed_by_google", "tooltip": "Projects that Google has abandoned or shut down", "node_type": "hyperlink", "href": "https://killedbygoogle.com/" }
+              { "name": "killed_by_google", "tooltip": "Projects that Google has abandoned or shut down", "node_type": "hyperlink", "href": "https://killedbygoogle.com/" },
+              { "name": "amazon_science", "tooltip": "Did you know that Amazon creates research papers for its technologies? You'll be able to find some of them here.", "node_type": "hyperlink", "href": "https://www.amazon.science/" }
             ]
           },
           {
@@ -209,8 +210,7 @@
             "node_type": "folder",
             "nodes": [
               { "name": "un_natured", "tooltip": "Un-natured — 2026", "node_type": "file", "href": "/writing/blog/writing_un-natured/" },
-              { "name": "timberwolf", "tooltip": "Timberwolf — 2017", "node_type": "file", "href": "/writing/blog/writing_timberwolf/" },
-              { "name": "ouroboros", "tooltip": "Ouroboros", "node_type": "file", "href": "/writing/blog/writing-ouroboros/" }
+              { "name": "timberwolf", "tooltip": "Timberwolf — 2017", "node_type": "file", "href": "/writing/blog/writing_timberwolf/" }
             ]
           },
           {
