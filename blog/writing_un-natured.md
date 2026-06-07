@@ -2,6 +2,7 @@
 title: Un-natured
 description: A narrative on the journey to resolve the human hubris.
 layout: markdown.njk
+date: 2026-02-03
 ---
 
 What is man if it were merely him?

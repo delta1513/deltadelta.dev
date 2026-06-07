@@ -2,6 +2,7 @@
 title: Timberwolf
 description: A creative piece from my Highschool days
 layout: markdown.njk
+date: 2025-11-30
 ---
 
 I dug-up this piece from an old writing archive. The document is dated 2017, this is roughly when I was in high-school.

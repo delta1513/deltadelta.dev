@@ -2,6 +2,7 @@
 title: Software Sophistry
 description: Some aphorisms that I live by when developing software.
 layout: markdown.njk
+date: 2026-05-05
 ---
 
 

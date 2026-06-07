@@ -2,6 +2,7 @@
 title: Incident stories - Lambda Memory Pressure
 description: An alternative cure for depression
 layout: markdown.njk
+date: 2025-11-19
 ---
 
 One thing I love about my job are the opportunities I get to work with huge and complicated infrastructure in the cloud. What makes it fun for me is scaling this infrastructure to solve commercial-grade problems and the issues that show up as a result of that. You don't usually get that opportunity as a hobbyist, and you certainly won't have the cash flow to be able to invest in that sort of infra on your own, which is why I find it quite the delicacy to work on.

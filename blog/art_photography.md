@@ -2,6 +2,7 @@
 title: Photography
 description: Various photographs that I've captured and think are worth sharing
 layout: markdown.njk
+date: 2026-01-10
 ---
 
 

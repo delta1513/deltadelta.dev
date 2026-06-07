@@ -2,6 +2,7 @@
 title: Cellular Automata
 description: Collection of artworks and experimentations using cellular automata
 layout: markdown.njk
+date: 2026-01-10
 ---
 
 I recently had an idea to make a cellular automata that follows some rules around RGB colours on a grid of pixels. In general, the rules are:

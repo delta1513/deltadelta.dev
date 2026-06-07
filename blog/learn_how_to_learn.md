@@ -2,6 +2,7 @@
 title: Learn how to learn
 description: My journey in understanding what it means to truly learn and adapt
 layout: markdown.njk
+date: 2025-02-25
 ---
 
 I'm not sure if I came up with this saying myself or if I heard it from someone. It's probably out there somewhere anyway.

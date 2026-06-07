@@ -2,6 +2,7 @@
 title: What happens when you do a little bit of exercise every day?
 description: I did an experiment to see what would happen if I exercised every day of the week for a few weeks.
 layout: markdown.njk
+date: 2025-07-08
 ---
 
 So I personally think I do a fair amount of exercise, could probably do a bit more tho. However, I wanted to see what would happen to my body if I tried to do exercise every day for a few weeks. Given I was going overseas soon, this was probably the perfect opportunity to give it a shot!

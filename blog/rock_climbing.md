@@ -2,6 +2,7 @@
 title: Rock Climbing
 description: Thinking of doing rock climbing? Read this.
 layout: markdown.njk
+date: 2025-05-04
 ---
 
 I recently started indoor rock climbing for realsies. By that I mean instead of usually going once every couple of months or so with friends, I bought a subscription and decided to go roughly twice per week after work either on my own or with friends.

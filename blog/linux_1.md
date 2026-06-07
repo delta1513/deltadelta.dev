@@ -2,6 +2,7 @@
 title: Linux 001 - A firmware crash?
 description: A strange issue I debugged today
 layout: markdown.njk
+date: 2026-04-04
 ---
 
 So if you hadn't guessed already, I use linux as my main OS for my dektop PC (other than Windows 10 for games - however this may change soon. I've been informed of some promising developments in proton and wine), specifically, pure Arch Linux. I've been running this OS for as long as I remember (probably all the way back to highschool), and I've been through hell and back multiple times, but I've never bothered to write down any of my woes with this beast of a system. I'm worried that the problems that people experience like this are no longer going to be documented anymore with the advent of AI since you can just ask it to help fix it for you. Heck, I even used AI to fix the issue I'm about to tell you about! And not a thought entered my head that I wanted to write this down. I needed this fixed now. I can't wait for someone who prowls the forums to help me with this, I have a video to edit! But once I found the issue, I thought it was so profound that I just had to tell someone, so here it is...

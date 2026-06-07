@@ -2,6 +2,7 @@
 title: My Internet Bookmarks
 description: Collection of various things that I keep as bookmarks, and you might want to keep them too!
 layout: markdown.njk
+date: 2026-05-16
 ---
 
 

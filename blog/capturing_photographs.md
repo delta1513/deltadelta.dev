@@ -2,6 +2,7 @@
 title: Capturing Photographs
 description: A bit of my philosophy on the importance of photography
 layout: markdown.njk
+date: 2026-03-28
 ---
 
 Why do you keep photos?

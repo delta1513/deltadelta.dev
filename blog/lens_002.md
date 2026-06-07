@@ -2,6 +2,7 @@
 title: Lens 002 - Human Will as a Search Algorithm
 description: Human will as a drive to seek pleasure, materials, and novel experiences or knowledge. Limited by our finite environment.
 layout: markdown.njk
+date: 2026-03-08
 ---
 
 I would like to preface this lens with a short detour on 'energy'. This energy I believe comes in two forms, the first I will explain as a finite reservoir that models the caloric battery which exists inside all human beings. This energy brings life to our daily activities and is what sustains us through times of growth and suffering, pleasure and pain. We replenish the reserves of this reservoir by consuming nutrients from our environment, and utilise it for both physical and mental activities. Consider the food you eat both regularly and on occasion. Consider how different types of food make you feel after eating them, both immediately, shortly after, and also many hours after.

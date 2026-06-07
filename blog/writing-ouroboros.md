@@ -1,7 +1,8 @@
 ---
 title: Ouroboros
-description: A short narritive relating to AI.
+description: A short, satirical narritive relating to AI.
 layout: markdown.njk
+date: 2026-05-05
 ---
 
 ## Entry 1

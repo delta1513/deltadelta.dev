@@ -2,6 +2,7 @@
 title: Turbulent Flow
 description: Artworks relating to turbulent flow
 layout: markdown.njk
+date: 2026-01-10
 ---
 
 ![](/media/art/delta-turbulent-flow-glowy-nowatermark.png)

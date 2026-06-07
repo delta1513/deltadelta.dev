@@ -2,6 +2,7 @@
 title: Go and ask someone how they are
 description: An alternative cure for depression
 layout: markdown.njk
+date: 2025-03-24
 ---
 
 When's the last time you felt down or depressed?
