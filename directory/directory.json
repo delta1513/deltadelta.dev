@@ -84,7 +84,15 @@
               { "name": "world_time_buddy", "tooltip": "The best world clock and time converter I've ever used", "node_type": "hyperlink", "href": "https://www.worldtimebuddy.com/" },
               { "name": "file_pizza", "tooltip": "P2P file transfer via the web browser", "node_type": "hyperlink", "href": "https://file.pizza/" },
               { "name": "ventoy", "tooltip": "Boot any OS without having to re-flash your drive", "node_type": "hyperlink", "href": "https://www.ventoy.net/en/index.html" },
-              { "name": "cyberchef", "tooltip": "Tools for text manipulation", "node_type": "hyperlink", "href": "https://gchq.github.io/CyberChef/" },
+              {
+                "name": "toolkits",
+                "tooltip": "Multi-tool utilities",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "cyberchef", "tooltip": "Tools for text manipulation", "node_type": "hyperlink", "href": "https://gchq.github.io/CyberChef/" },
+                  { "name": "devina_io", "tooltip": "A Swiss army knife of developer utilities", "node_type": "hyperlink", "href": "https://devina.io/" }
+                ]
+              },
               { "name": "cobalt_tools", "tooltip": "Download videos and other content from various platforms or URLs", "node_type": "hyperlink", "href": "https://cobalt.tools/" },
               { "name": "lexilogos", "tooltip": "Latin Keyboard", "node_type": "hyperlink", "href": "https://www.lexilogos.com/keyboard/latin.htm" },
               { "name": "swimlanes", "tooltip": "Create sequence diagrams in your web browser", "node_type": "hyperlink", "href": "https://swimlanes.io/" },
