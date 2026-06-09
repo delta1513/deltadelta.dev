@@ -97,7 +97,8 @@
               { "name": "lexilogos", "tooltip": "Latin Keyboard", "node_type": "hyperlink", "href": "https://www.lexilogos.com/keyboard/latin.htm" },
               { "name": "swimlanes", "tooltip": "Create sequence diagrams in your web browser", "node_type": "hyperlink", "href": "https://swimlanes.io/" },
               { "name": "deepwiki", "tooltip": "Documentation for anything", "node_type": "hyperlink", "href": "https://deepwiki.com/" },
-              { "name": "microsocks", "tooltip": "Tiny HTTP SOCKS proxy", "node_type": "hyperlink", "href": "https://github.com/rofl0r/microsocks" }
+              { "name": "microsocks", "tooltip": "Tiny HTTP SOCKS proxy", "node_type": "hyperlink", "href": "https://github.com/rofl0r/microsocks" },
+              { "name": "codepoints_net", "tooltip": "Search and browse Unicode code points", "node_type": "hyperlink", "href": "https://codepoints.net/" }
             ]
           },
           {
