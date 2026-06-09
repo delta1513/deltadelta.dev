@@ -35,6 +35,7 @@
     .post-head { margin-bottom: 1.75rem; }
     h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
     .description { color: var(--muted); font-style: italic; margin: 0; }
+    .post-date { color: var(--muted); font-size: 0.85em; margin: 0.25rem 0 0; }
 
     /* links: blue, underline on hover — same interaction as the directory tree */
     a { color: var(--hover); text-decoration: none; }
@@ -69,6 +70,7 @@
     <header class="post-head">
       <h1>Dead simple IMDSv1 -&gt; IMDSv2 migration guide</h1>
       <p class="description">All you need to know for migrating between AWS IMDSv1 and IMDSv2</p>
+      <p class="post-date">March 2025</p>
     </header>
     <p>I was recently asked to upgrade our AWS EC2 instances such that they use the new IMDSv2 service from AWS and not accept any more requests to the IMDSv1 endpoint.</p>
 <p>I probably had to go about this problem 3 or so times because every deployment either didn't work or caused some sort of outage in our staging environment so I thought I'd write it here in an attempt to save you maybe an extra couple hours if you have to do it yourself. Enjoy!</p>

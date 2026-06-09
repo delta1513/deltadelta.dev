@@ -1,0 +1,127 @@
+<h1>AGENTS.md</h1>
+<h2>What this is</h2>
+<p><code>deltadelta.dev</code> — a personal website built with <a href="https://www.11ty.dev/">Eleventy (11ty)</a>
+and deployed old-school: nginx serves the <strong>repository root</strong> directly, and the server
+redeploys by running <code>git pull</code> + <code>npm run build</code> (see <code>update_all.sh</code>).</p>
+<p>The homepage is an intentionally archaic, hierarchical, collapsible <strong>directory-tree</strong>
+interface, generated from a JSON definition. Theme everywhere: near-white background
+(<code>#fbfbf9</code>), de-saturated grey monospace text, traditional hyperlink-blue links, and a
+bordered &quot;window&quot;.</p>
+<h2>Build</h2>
+<p><code>npm run build</code> runs three steps:</p>
+<ol>
+<li>Tailwind compiles <code>styles.css</code> → <code>dist/output.css</code> (legacy CSS; the directory theme is self-contained inline CSS).</li>
+<li>Eleventy builds with <code>input: &quot;.&quot;</code>, <code>output: &quot;writing/&quot;</code>, <code>includes: &quot;_includes&quot;</code>.</li>
+<li><code>cp writing/directory/index.html index.html</code> — copies the rendered tree to the repo-root <code>index.html</code>, which nginx serves as <code>/</code>.</li>
+</ol>
+<p>Because Eleventy outputs to <code>writing/</code>, all generated pages live under <strong><code>/writing/...</code></strong>
+(the homepage is the one exception — it's copied to the root). <code>.eleventyignore</code> excludes <code>.claude</code>.</p>
+<h2>Pages</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Output URL</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>directory/index.njk</code> + <code>directory/directory.json</code></td>
+<td><code>/</code> (and <code>/writing/directory/</code>)</td>
+<td>The directory-tree homepage. Recursive Nunjucks macro renders the JSON; icons in <code>directory/icons/</code> (Windows XP set).</td>
+</tr>
+<tr>
+<td><code>blog/*.md</code></td>
+<td><code>/writing/blog/&lt;slug&gt;/</code></td>
+<td>Blog posts. Use the <code>_includes/markdown.njk</code> layout (a minimal themed markdown renderer).</td>
+</tr>
+<tr>
+<td><code>about/index.html</code></td>
+<td><code>/writing/about/</code></td>
+<td>Custom themed about page (with a live traffic chart).</td>
+</tr>
+<tr>
+<td><code>webring/index.html</code></td>
+<td><code>/writing/webring/</code></td>
+<td>Custom themed webring page.</td>
+</tr>
+<tr>
+<td><code>ai_prompts/*.md</code></td>
+<td><code>/writing/ai_prompts/&lt;slug&gt;/</code></td>
+<td>Prompt pages (not linked from the tree).</td>
+</tr>
+<tr>
+<td><code>badges/ai-transparency.njk</code></td>
+<td><code>/writing/badges/ai-transparency/</code></td>
+<td>Badge embedded externally — keep this path stable.</td>
+</tr>
+<tr>
+<td><code>media/</code></td>
+<td><code>/media/...</code></td>
+<td>Static images (tracked via Git LFS).</td>
+</tr>
+</tbody>
+</table>
+<p><code>_includes/base.njk</code> and <code>_includes/blog-base.njk</code> are legacy layouts, no longer used.
+<code>writing/</code> is committed build output (regenerated on deploy).</p>
+<h2>The directory JSON definition</h2>
+<p><code>directory/directory.json</code> is an Eleventy <strong>directory data file</strong>, so its keys are
+available to templates in <code>directory/</code>. It exposes:</p>
+<ul>
+<li><code>title</code> — the page <code>&lt;title&gt;</code>.</li>
+<li><code>webdirectory.nodes</code> — the ordered top-level list of tree nodes.</li>
+</ul>
+<p>Each <strong>node</strong> is one of three <code>node_type</code>s:</p>
+<table>
+<thead>
+<tr>
+<th><code>node_type</code></th>
+<th>Meaning</th>
+<th>Required fields</th>
+<th>Icon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>folder</code></td>
+<td>Collapsible accordion (<code>&lt;details&gt;</code>).</td>
+<td><code>nodes</code> (array of children); <strong>no</strong> <code>href</code></td>
+<td>folder</td>
+</tr>
+<tr>
+<td><code>file</code></td>
+<td>A page hosted on this site.</td>
+<td><code>href</code> (site-relative); <strong>no</strong> <code>nodes</code></td>
+<td>file</td>
+</tr>
+<tr>
+<td><code>hyperlink</code></td>
+<td>An external link (opens in a new tab).</td>
+<td><code>href</code> (absolute URL); <strong>no</strong> <code>nodes</code></td>
+<td>web-link</td>
+</tr>
+</tbody>
+</table>
+<p>Common fields on every node: <code>name</code> (display label, snake_case by convention) and
+<code>tooltip</code> (hover text; rendered as the <code>title</code> attribute; may be <code>&quot;&quot;</code>).</p>
+<p>Folders nest arbitrarily deep — the template renders them recursively.</p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;deltadelta.dev&quot;,
+  &quot;webdirectory&quot;: {
+    &quot;nodes&quot;: [
+      {
+        &quot;name&quot;: &quot;my_stuff&quot;,
+        &quot;tooltip&quot;: &quot;Apps I've built and my profiles&quot;,
+        &quot;node_type&quot;: &quot;folder&quot;,
+        &quot;nodes&quot;: [
+          { &quot;name&quot;: &quot;wastebin&quot;, &quot;tooltip&quot;: &quot;Self-hosted pastebin&quot;, &quot;node_type&quot;: &quot;hyperlink&quot;, &quot;href&quot;: &quot;https://wastebin.deltadelta.dev/&quot; }
+        ]
+      },
+      { &quot;name&quot;: &quot;about&quot;, &quot;tooltip&quot;: &quot;Who I am and what this site is&quot;, &quot;node_type&quot;: &quot;file&quot;, &quot;href&quot;: &quot;/writing/about/&quot; }
+    ]
+  }
+}
+</code></pre>
+<p><strong>To change the tree, edit <code>directory/directory.json</code></strong> — node order in the file is the
+display order. No template changes are needed to add/move/remove entries.</p>
