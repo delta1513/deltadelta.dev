@@ -60,7 +60,8 @@
               { "name": "australian_computer_society_ict_news", "tooltip": "", "node_type": "hyperlink", "href": "https://ia.acs.org.au/category/analysis.html" },
               { "name": "tldr", "tooltip": "Tech newsletter separated into various topics", "node_type": "hyperlink", "href": "https://tldr.tech/" },
               { "name": "latent_space", "tooltip": "AI engineering newsletter", "node_type": "hyperlink", "href": "https://www.latent.space/" },
-              { "name": "fast_ai", "tooltip": "An AI engineering blog and community", "node_type": "hyperlink", "href": "https://www.fast.ai/" }
+              { "name": "fast_ai", "tooltip": "An AI engineering blog and community", "node_type": "hyperlink", "href": "https://www.fast.ai/" },
+              { "name": "google_ai_blog", "tooltip": "Google's blog on AI innovation and research", "node_type": "hyperlink", "href": "https://blog.google/innovation-and-ai/" }
             ]
           },
           {
