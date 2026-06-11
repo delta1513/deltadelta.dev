@@ -99,7 +99,15 @@
               { "name": "swimlanes", "tooltip": "Create sequence diagrams in your web browser", "node_type": "hyperlink", "href": "https://swimlanes.io/" },
               { "name": "deepwiki", "tooltip": "Documentation for anything", "node_type": "hyperlink", "href": "https://deepwiki.com/" },
               { "name": "microsocks", "tooltip": "Tiny HTTP SOCKS proxy", "node_type": "hyperlink", "href": "https://github.com/rofl0r/microsocks" },
-              { "name": "codepoints_net", "tooltip": "Search and browse Unicode code points", "node_type": "hyperlink", "href": "https://codepoints.net/" }
+              { "name": "codepoints_net", "tooltip": "Search and browse Unicode code points", "node_type": "hyperlink", "href": "https://codepoints.net/" },
+              {
+                "name": "mcp_servers",
+                "tooltip": "MCP servers that I like using",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "aws_documentation_mcp_server", "tooltip": "MCP server for querying AWS documentation", "node_type": "hyperlink", "href": "https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server" }
+                ]
+              }
             ]
           },
           {
