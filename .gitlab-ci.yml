@@ -39,6 +39,10 @@ spec:
   - npm run build
   - git config user.name "GitLab CI"
   - git config user.email "ci@deltadelta.dev"
+  # The runner injects Git LFS hooks, whose pre-push/pre-commit abort when the
+  # git-lfs binary is absent (it isn't in node:24). We touch no LFS-tracked
+  # files here, so disable hooks by pointing core.hooksPath at an empty dir.
+  - mkdir -p /tmp/no-hooks && git config core.hooksPath /tmp/no-hooks
   - git remote set-url origin "https://oauth2:${PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
   - git add -A
   - git commit -m "$COMMIT_MESSAGE"
