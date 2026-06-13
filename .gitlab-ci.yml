@@ -1,24 +1,35 @@
-# Manually-triggered pipelines to edit the web directory tree.
+# Manually-triggered pipeline to edit the web directory tree.
 #
-# Two independent jobs, each launched on its own from the GitLab web UI
-# (works from mobile too): Build → Pipelines → Run pipeline → pick branch
-# `main` → add the variables below → Run. Only the job whose variables you
-# fill in will do meaningful work; run one at a time.
-#
-#   add-link    LINK_URL      (required) e.g. https://example.com/
-#               LINK_FOLDER   (optional) slash path, e.g. web_directory/tools/toolkits
-#                                        omit to add at the top level
-#               LINK_TOOLTIP  (optional) hover description
-#               LINK_NAME     (optional) snake_case label; derived from URL if omitted
-#
-#   add-folder  FOLDER_NAME   (required) snake_case label for the new folder
-#               FOLDER_PARENT (optional) slash path to the parent folder,
-#                                        e.g. web_directory/tools; omit for top level
-#               FOLDER_TOOLTIP(optional) hover description
+# Launch from the GitLab web UI (works on mobile too):
+#   Build → Pipelines → Run pipeline → pick branch `main`.
+# The form below ("Inputs") shows named fields with descriptions, so there are
+# no CI/CD variable names to remember — just pick an action and fill it in.
 #
 # One-time setup: create a Project Access Token (role: Maintainer, scope:
 # write_repository) and store it as a masked CI/CD variable named PUSH_TOKEN
-# (Settings → CI/CD → Variables). This lets the jobs push the commit back.
+# (Settings → CI/CD → Variables). This lets the pipeline push the commit back.
+
+spec:
+  inputs:
+    action:
+      description: "What to do: add a link, or add an (empty) folder."
+      default: add-link
+      options:
+        - add-link
+        - add-folder
+    parent:
+      description: "Slash path to the containing folder, e.g. web_directory/tools. Leave empty for the top level."
+      default: ""
+    url:
+      description: "The link's URL (add-link only), e.g. https://example.com/"
+      default: ""
+    name:
+      description: "snake_case label. Required for add-folder; optional for add-link (auto-derived from the URL when blank)."
+      default: ""
+    tooltip:
+      description: "Hover description shown in the directory. Optional."
+      default: ""
+---
 
 # Shared shell steps: build so committed output (writing/, index.html, dist/)
 # stays in sync, then commit & push back to the triggering branch. Each job
@@ -37,9 +48,6 @@
 .directory-edit:
   stage: build
   image: node:24
-  # Only run when launched manually from the web UI — never on normal pushes.
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "web"'
   variables:
     # Don't fetch the whole history; we only need the tip to commit on top of.
     GIT_DEPTH: "1"
@@ -48,6 +56,14 @@
 
 add-link:
   extends: .directory-edit
+  # Only the selected action runs; nothing runs on a normal push.
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web" && "$[[ inputs.action ]]" == "add-link"'
+  variables:
+    LINK_URL: "$[[ inputs.url ]]"
+    LINK_FOLDER: "$[[ inputs.parent ]]"
+    LINK_NAME: "$[[ inputs.name ]]"
+    LINK_TOOLTIP: "$[[ inputs.tooltip ]]"
   script:
     # Insert first; if it fails (bad input), the job stops before committing.
     - node scripts/add-link.js
@@ -56,6 +72,12 @@ add-link:
 
 add-folder:
   extends: .directory-edit
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web" && "$[[ inputs.action ]]" == "add-folder"'
+  variables:
+    FOLDER_NAME: "$[[ inputs.name ]]"
+    FOLDER_PARENT: "$[[ inputs.parent ]]"
+    FOLDER_TOOLTIP: "$[[ inputs.tooltip ]]"
   script:
     - node scripts/add-folder.js
     - export COMMIT_MESSAGE="Add folder ${FOLDER_NAME} to ${FOLDER_PARENT:-top level}"
