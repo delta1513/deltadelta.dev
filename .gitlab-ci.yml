@@ -1,18 +1,40 @@
-# Manually-triggered pipeline to add a link to the web directory.
+# Manually-triggered pipelines to edit the web directory tree.
 #
-# How to run (works from the GitLab mobile web UI too):
-#   Build → Pipelines → Run pipeline → pick branch `main` → add variables:
-#     LINK_URL      (required) e.g. https://example.com/
-#     LINK_FOLDER   (optional) slash path, e.g. web_directory/tools/toolkits
-#                              omit to add at the top level
-#     LINK_TOOLTIP  (optional) hover description
-#     LINK_NAME     (optional) snake_case label; derived from the URL if omitted
+# Two independent jobs, each launched on its own from the GitLab web UI
+# (works from mobile too): Build → Pipelines → Run pipeline → pick branch
+# `main` → add the variables below → Run. Only the job whose variables you
+# fill in will do meaningful work; run one at a time.
+#
+#   add-link    LINK_URL      (required) e.g. https://example.com/
+#               LINK_FOLDER   (optional) slash path, e.g. web_directory/tools/toolkits
+#                                        omit to add at the top level
+#               LINK_TOOLTIP  (optional) hover description
+#               LINK_NAME     (optional) snake_case label; derived from URL if omitted
+#
+#   add-folder  FOLDER_NAME   (required) snake_case label for the new folder
+#               FOLDER_PARENT (optional) slash path to the parent folder,
+#                                        e.g. web_directory/tools; omit for top level
+#               FOLDER_TOOLTIP(optional) hover description
 #
 # One-time setup: create a Project Access Token (role: Maintainer, scope:
 # write_repository) and store it as a masked CI/CD variable named PUSH_TOKEN
-# (Settings → CI/CD → Variables). This lets the job push the commit back.
+# (Settings → CI/CD → Variables). This lets the jobs push the commit back.
 
-add-link:
+# Shared shell steps: build so committed output (writing/, index.html, dist/)
+# stays in sync, then commit & push back to the triggering branch. Each job
+# sets COMMIT_MESSAGE before invoking this. GitLab flattens the nested list.
+.commit_and_push: &commit_and_push
+  - npm ci
+  - npm run build
+  - git config user.name "GitLab CI"
+  - git config user.email "ci@deltadelta.dev"
+  - git remote set-url origin "https://oauth2:${PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+  - git add -A
+  - git commit -m "$COMMIT_MESSAGE"
+  # -o ci.skip keeps the pushed commit from triggering any future push pipelines.
+  - git push -o ci.skip origin "HEAD:${CI_COMMIT_REF_NAME}"
+
+.directory-edit:
   stage: build
   image: node:24
   # Only run when launched manually from the web UI — never on normal pushes.
@@ -21,18 +43,20 @@ add-link:
   variables:
     # Don't fetch the whole history; we only need the tip to commit on top of.
     GIT_DEPTH: "1"
-  script:
+  before_script:
     - test -n "$PUSH_TOKEN" || { echo "PUSH_TOKEN CI/CD variable is not set"; exit 1; }
-    # 1. Insert the new node (fails loudly on bad input, leaving the tree intact).
+
+add-link:
+  extends: .directory-edit
+  script:
+    # Insert first; if it fails (bad input), the job stops before committing.
     - node scripts/add-link.js
-    # 2. Build so committed output (writing/, index.html, dist/) stays in sync.
-    - npm ci
-    - npm run build
-    # 3. Commit and push back to the triggering branch.
-    - git config user.name "GitLab CI (add-link)"
-    - git config user.email "ci@deltadelta.dev"
-    - git remote set-url origin "https://oauth2:${PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
-    - git add -A
-    - git commit -m "Add ${LINK_NAME:-link} to ${LINK_FOLDER:-top level}"
-    # -o ci.skip keeps the pushed commit from triggering any future push pipelines.
-    - git push -o ci.skip origin "HEAD:${CI_COMMIT_REF_NAME}"
+    - export COMMIT_MESSAGE="Add ${LINK_NAME:-link} to ${LINK_FOLDER:-top level}"
+    - *commit_and_push
+
+add-folder:
+  extends: .directory-edit
+  script:
+    - node scripts/add-folder.js
+    - export COMMIT_MESSAGE="Add folder ${FOLDER_NAME} to ${FOLDER_PARENT:-top level}"
+    - *commit_and_push
