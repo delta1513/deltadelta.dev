@@ -1,0 +1,38 @@
+# Manually-triggered pipeline to add a link to the web directory.
+#
+# How to run (works from the GitLab mobile web UI too):
+#   Build → Pipelines → Run pipeline → pick branch `main` → add variables:
+#     LINK_URL      (required) e.g. https://example.com/
+#     LINK_FOLDER   (optional) slash path, e.g. web_directory/tools/toolkits
+#                              omit to add at the top level
+#     LINK_TOOLTIP  (optional) hover description
+#     LINK_NAME     (optional) snake_case label; derived from the URL if omitted
+#
+# One-time setup: create a Project Access Token (role: Maintainer, scope:
+# write_repository) and store it as a masked CI/CD variable named PUSH_TOKEN
+# (Settings → CI/CD → Variables). This lets the job push the commit back.
+
+add-link:
+  stage: build
+  image: node:24
+  # Only run when launched manually from the web UI — never on normal pushes.
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+  variables:
+    # Don't fetch the whole history; we only need the tip to commit on top of.
+    GIT_DEPTH: "1"
+  script:
+    - test -n "$PUSH_TOKEN" || { echo "PUSH_TOKEN CI/CD variable is not set"; exit 1; }
+    # 1. Insert the new node (fails loudly on bad input, leaving the tree intact).
+    - node scripts/add-link.js
+    # 2. Build so committed output (writing/, index.html, dist/) stays in sync.
+    - npm ci
+    - npm run build
+    # 3. Commit and push back to the triggering branch.
+    - git config user.name "GitLab CI (add-link)"
+    - git config user.email "ci@deltadelta.dev"
+    - git remote set-url origin "https://oauth2:${PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+    - git add -A
+    - git commit -m "Add ${LINK_NAME:-link} to ${LINK_FOLDER:-top level}"
+    # -o ci.skip keeps the pushed commit from triggering any future push pipelines.
+    - git push -o ci.skip origin "HEAD:${CI_COMMIT_REF_NAME}"
