@@ -118,16 +118,22 @@ What I found most jarring was the author/translator's introduction. He framed Ka
 What I found more interesting than the book was Kafka's biography. I implore you to go and take a look at his Wikipedia page at least.
 
 
+## Optimum Nutrition for the Mind - Patrick Holford
+
+I picked up this book during a trip to Vancouver Island in Canada purely out of curiousity and a desire to learn more about how to give myself the best nutrition possible. I've seen some reviews about this particular book online after I began reading it, and I'm sure that in some of them you'll find skepticism over the content of this book. Some of this skepticism is directed at the fact that Patrick might be shilling the benefits of these nutrients so that it can act as marketing for his own remedies and such. Other skepticisms include the biased selection of studies that favour his own views or have questionable grounding. The former I believe is malarkey. Not once did I read in his book anything that he himself was selling other than his participation in some institute for nutrition.
+
+In terms of the latter, this book has taught me a lot about the subjectiveness of scientific study. Patrick cites many medical experiments on nutrition, but it remains difficult to find any that are significantly conclusive because there are so many confounding variables to be dealt with. For example, there was one medical experiment mentioned which was conducted on gold miners. The experiment had something to do with the connection with aluminium inhalation and cognition. The results showed something along the lines of aluminium causing a decline in cognition, however, nothing was mentioned about some other potentially confounding substance that these people may have been exposed to in the mines.
+
+This book contains a vast amount of knowledge about nuutrition, and I have found this exceptionally valuable. He even explains, in detail, bodily processes like synthesis of neurotransmitters, methylation and chelation. Even if most of the causations mentioned in this book are not statistically significant, the general advice is sound - that is, why would you not want to make sure you are getting the best nutrition possible?
+
+Am I convinced that orthomollecular psychiatry is effective? I don't swing either way, rather I believe it is an affectation of something that all humans should be allowed to have: Adequate nutrition.
+
+
 ## Meditations - Marcus Aurelius
 
 Currently Reading...
 
 
 ## Fictions - Jorge Louis Borges
-
-Currently Reading...
-
-
-## Optimum Nutrition for the Mind - Patrick Holford
 
 Currently Reading...
