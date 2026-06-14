@@ -63,7 +63,7 @@ It was during this time that I had unknowingly engaged in distributed system des
 
 The year that this re-design occured was the year that OpenAPI/Swagger was being popularised, and I really liked how you could just write the spec, then it would just generate most of the stub code for you. As dumb as it sounds, I had depended on the online Swagger editor for not only development of the spec, but also the generation of the stub code (also for subsequent updates!) - I know, cringy, but I didn't know any better at this time.
 
-So wha this system looked like now was:
+So what this system looked like now was:
 1. A Discord bot that would talk to a HTTP REST API
 2. A HTTP REST API that would perform any function on the Wallet Bot that required the database in some way
 3. A job runner that would perform all write operations and anything that dealt with transacting. This was a hand-rolled system that I called the [RYU Sequential Orchestrator](https://gitlab.com/delta1512/ryu-sequential-orchestrator)

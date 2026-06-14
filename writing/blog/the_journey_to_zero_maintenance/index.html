@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Journey to Zero-Maintenance</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
+
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+    .post-date { color: var(--muted); font-size: 0.85em; margin: 0.25rem 0 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>The Journey to Zero-Maintenance</h1>
+      <p class="description">A blog article about a system that I ran for about 8 years</p>
+      <p class="post-date">June 2026</p>
+    </header>
+    <p>In my early life, I was eager to solve technical problems for people, and the people I was solving them for usually gave me the benefit of the doubt because of my age, and hence they let me solve it for them. The problems that soon followed was that my way of understanding and solving the problem was usually not the same mental model that they envisioned the problem. The young and free-spirited version of myself had always made certain assumptions when building websites, web apps, or setting up third-party solutions for people, and this always led to the dreaded 're-work'.</p>
+<p>After enough times failing, I soon realised that I was spreading myself thin over so many things. I would make a solution for one person, thinking that it would solve it for them indefinitely, but soon realise that there's infrastructure that needs to be maintained over long-periods, uptime expectations, changing scope, and just regular iterations on the problem from client requests. All of this just to hold up my promises to the people I know.</p>
+<p>As a result, and partially unknowingly, I had been sharpening a skill that would allow me to scale all of these projects - the art of zero-maintenance systems.</p>
+<p>Now when I look at a problem that someone presents me, I don't involve myself at all. If the solution is to work, then it's to be a tool that the person is capable of exploring and using themselves to get the work done. It might not be the best tool, it might only get them 80% there, but that's usually good enough, and I get the benefit of knowing that I'm not involved in the slightest. Doing this allows me to scale one of my own (and hopefully one of your) virtues - helping people!</p>
+<h1>My first big project</h1>
+<p>I very recently had to let go of a very long-running project of mine, the <a href="https://gitlab.com/delta1512/grc-wallet-bot">Gridcoin Wallet Bot</a>, and this project is going to be the focus of this post. This project is a Discord chat-bot (not AI) that let's you store, stake and transfer GRC. I started it many years ago - the commit history dates back to 2018. This was just before I started attending university. It's a bit sad to be letting this go, it means that no longer will I have that little tickle in the back of my head knowing that there is something autonomous that I've made which is running in the background.</p>
+<p>The reason I had to let it go was because of a number of reasons:</p>
+<ol>
+<li>Discord gave me a notice stating that I need to perform a verification step now that I service &gt;10k users</li>
+<li>The code has not been significantly maintained for many years now</li>
+<li>Every now and then I need to perform a tiny bit of maintenance, and sometimes I catch some scalability issues along the way that keep me up at night</li>
+</ol>
+<p>Back in 2018, crypto was getting bigger, and I wanted to immerse myself in it because I thought that there was a genuine opportunity to engage in something technologically transformative. Back then, Discord was also starting to take-off, and one thing that was popular were chat-bots, especially ones that let you store and transfer crypto - these were very simple gateways for people to start dipping their toes in without having to get into the technical depths of hosting their own wallets/nodes. So given I was learning CS, and had a knack for crypto, I decided to dip my toes in too, and I created the Gridcoin Wallet Bot.</p>
+<h2>The initial architecture</h2>
+<p>Back in the day, the libraries that were used to interact with discord were in its infancy, and generally, it was more comfortable for me to keep everything all in one synchronous app. The app consisted simply of a discord bot app that would listen for messages in a channel, filter the ones with a prefix, then, respond to any valid command from that prefix (lots of regex and string ops here).</p>
+<p>Often there were instances where I needed to interact with the GRC wallet directly, and this was also done synchronously as the computer that was hosting the bot was also hosting the wallet.</p>
+<p>At the time, I had barely stared uni, and had no commercial software engineering practice, so I had no idea how much of an anti-pattern this was, and I was left to feel the invisible pain from my users as I watched people wait tremendously long times for the bot to respond because the message was queued synchronously. It was at this point that I started understanding the term we now call &quot;Scalability&quot;. It was also problematic that around this time I had started attending classes, so most of my time was slurped up.</p>
+<p>I started to feel Murphy's cloud looming over my head. A worry that something will go wrong with this system at any moment, and I'd have to be accountable for it. The system felt fragile, like it couldn't withstand the brutish demands of my end users. So to save my sanity, and also (eventually) my time, I decided to re-factor the whole thing.</p>
+<h2>The first rebuild</h2>
+<p>It was around this time that the original library I had been using for discord was about to be deprecated in replacement of a library that took full advantage of Python's async capabilities. Now I could respond to multiple messages concurrenty using co-routines!</p>
+<p>I spent however long I needed to rebuilding the system, and pulling my hair out trying to wrap my head around how async works (I haven't done the uni course on it yet). But eventually I hobbled together some horrific contraption that was compatible with the new libs and had all the features as before. Back in the day, I had QAed this myself with the help of some friends.</p>
+<p>The basic architecture hadn't changed in this version. I still had the Discord bot still attached directly to the GRC wallet. As I'm sure you might be able to guess, <em>this led to some strange behaviour...</em></p>
+<p>One day I decided to check-in on the balance sheet of the app (to make sure I have enough GRC to pay out everyone if they all withdrew their coins), and I noticed that the balances were off by a small amount. I had owed more money than I had!</p>
+<p>In the GRC Wallet Bot, there is a feature called a 'faucet'. This is commonplace in the crypto world, as it is a simple means for people to get their hands on a small amount of crypto and try sending it around to see how it works without any financial commitment. I had noticed that the amount that I was out by was roughly equivalent to a recent faucet claim, so I took a look at the logs to try and find the culprit. If I remember correctly, the logs would show the before and after of the faucet balance, and I noticed that two logs had the same 'before' value - our first race condition! (Again, I hadn't actually learned about this at uni just yet)</p>
+<p>At the time, I don't think I had considered DB locking, instead I thought about the issue from a totally different perspective, one that would get me closer to zero-maintenance.</p>
+<h2>The final re-build</h2>
+<p>Now this rebuild I was quite proud of, and probably the one I'm going to talk about the most here.</p>
+<p>The GRC Wallet Bot was becoming bigger. More users, more GRC, more Discord servers. Not only did this reveal more race conditions it also gave me a lot more anxiety. Mainly thoughts like this were going on in my head:</p>
+<ul>
+<li>What if the bot gets hacked? The wallet is coupled to the Discord app, if they manage to access that, they can take everything!</li>
+<li>What if there's a race condition with withdrawals? That can deal with a much larger amount.</li>
+<li>What if someone spams the bot? That would cause compunding race conditions, and who knows what else!</li>
+</ul>
+<p>I needed an architecture that can not only let me sleep at night, but be so durable that I wouldn't have to even keep the thought of it in my brain.</p>
+<p>It was during this time that I had unknowingly engaged in distributed system design.</p>
+<p>The year that this re-design occured was the year that OpenAPI/Swagger was being popularised, and I really liked how you could just write the spec, then it would just generate most of the stub code for you. As dumb as it sounds, I had depended on the online Swagger editor for not only development of the spec, but also the generation of the stub code (also for subsequent updates!) - I know, cringy, but I didn't know any better at this time.</p>
+<p>So what this system looked like now was:</p>
+<ol>
+<li>A Discord bot that would talk to a HTTP REST API</li>
+<li>A HTTP REST API that would perform any function on the Wallet Bot that required the database in some way</li>
+<li>A job runner that would perform all write operations and anything that dealt with transacting. This was a hand-rolled system that I called the <a href="https://gitlab.com/delta1512/ryu-sequential-orchestrator">RYU Sequential Orchestrator</a></li>
+<li>A piece of OpenAPI client software that would run on a separate host, and interact with the HTTP REST API in order to perform all GRC Wallet operations</li>
+</ol>
+<p>This was an abolute behemoth, and I am very proud of how I evolved this architecture. Let me take you on a little tour...</p>
+<h3>The GWB server (REST API)</h3>
+<p>I'm skipping the description of the Discord bot since it is trivial. This OpenAPI-compliant REST API was for any operation that required a DB read or write (everything else was performed by the Wallet Bot directly). The rest API was the primary obelisk that stood between the DB and the rest of the system. Naturally, it was multi-threaded, so it can handle a large number of requests - enough for noisy discord servers.</p>
+<p>It also hosted important internal endpoints that the client would use to receive instructions on what wallet operations to use, and also to deliver information about deposits.</p>
+<p>This API is publicly exposed, but secured using static-key authorisation.</p>
+<h3>The RYU Sequential Orchestrator</h3>
+<p>This was a funny piece of software. It's basically an artifact of me re-inventing the wheel because I didn't know that <a href="https://pypi.org/project/celery/">Celery</a> or <a href="https://python-rq.org/">RQ</a> existed at the time. This was a very fun experience tho!</p>
+<p>The Sequential Orchestrator (SO) is a spec-driven, sequential job runner. Other than the sequential nature and spec-driven architecture, it was essentially just like Celery or RQ. It did however have one opinionated flaire that set it apart from the existing job management systems - it supported disaster recovery through reversals of a job. I can't remember the exact structure, but it went something like this:</p>
+<ul>
+<li>Each job has steps.</li>
+<li>Each step has a sibling reversal step which will 'undo' the state in any data store that may have been altered if anything goes wrong with this step.</li>
+</ul>
+<p>The SO's role was to durably process all transactions in a synchronous manner. The job queue was literally the queue of socket connections to the orchestrator (risky, I know!), and all of this was running on one thread. At a point, I was using this for another project of mine, and I had measured it to be able to support 150 transactions per second for the GRC Wallet Bot spec! This was more than enough for the volume of the Discord bot.</p>
+<h3>The GWB Client</h3>
+<p>This is where the security comes into play. I needed a way to get piece of mind that the GRC Wallet that was holding many thousands of dollars worth of crypto would not get hacked.</p>
+<p>Back in the day, supply-chain attacks weren't that prevalent, so basically the only way for someone to get into your system was through an open port with something listening to it. So in my head, I thought: &quot;Well, you can't get into my system if there's no port open, right?&quot;. This was the day that I discovered the <a href="https://en.wikipedia.org/wiki/Reverse_connection">Reverse Connection Architecture</a>.</p>
+<p>By having the GRC wallet running on my home server (where nothing is exposed to the web except maybe a minecraft server every now and then), I was able to isolate the GRC Wallet so that no one could access it. Then, I would have some client software that would occasionally poll my API for instructions on withdrawals that people want to make, and also submit information to the API regarding deposits that are made in people's wallets.</p>
+<p>At the time, I thought this was such an ingenious design!</p>
+<p>I had a few issues here and there when I realised my DB queries were O(N+1). The jobs would take so long that the cron tick would cause two jobs to spawn at the same time and cascade over each other. But after that was fixed, she was running smoothly.</p>
+<h3>Maintenance</h3>
+<p>So in effect, all that needed maintaining was:</p>
+<ul>
+<li>Every now and then, I'd find an inefficient SQL query in my code, and I'd have to add an index or change it up somehow</li>
+<li>Every time there was an update to the GRC Wallet, I'd have to update the wallet on the client</li>
+<li>Every now and then I'd have to come in and clean up the <a href="https://www.coingecko.com/learn/dusting-attack">dust</a> in the wallet (because it would cause the wallet to chug and the transaction fee to explode). This was easy to implement with cron, but I quite enjoyed doing this myself and looking at the huge size of the transactions.</li>
+<li>Sometimes the amount of users that were registering with the bot depleted the reservoir of available crypto addresses I could serve. So every now and then, I'd get pinged, an up the amount of addresses that get generated on the cron-job that replenishes them.</li>
+</ul>
+<p>These things happened fairly rarely, which was good enough for my busy lifestyle, and I was also content enough with the durability of my architecture that I felt I could just forget about the whole thing and it would be fine. In effect, I was checking this system roughly once per month.</p>
+<p>So in effect, this is not exactly zero-maintenance, although that's what I was striving for, and in some cases, it felt like this - the system could hum along in the background. If I were to point out that there is not any need to update libraries or operating systems in this particular project since the stakes are not that high, then you should be even more convinced that this project is nowhere near being zero-maintenance.</p>
+<h1>Final thoughts</h1>
+<p>This particular goal is something that I consider as an important philosophy (among many others) that you should have when writing commercial, scalable software. You should want to be able to build something, then move on and not have to keep it in your mind. There are more important things that I think you should be filling your mind with instead of the dread of having to maintain some ugly monolith.</p>
+<p>Looking back on this project in general, I would consider it as probably my most epic feat of trial by fire that I've ever embarked on. I was literally walking through this whole project with a blindfold, but still managed to find my way. Looking back on some of the code now, I want to puke - it's really bad! But there's also a part of me that admires the journey it took to get there. There's a glint in my eye when I look back at it and thought about how I felt when I was doing it. I thought I was building something remarkable. Something that no one else had thought of. It was the bliss of ignorance!</p>
+
+  </main>
+</body>
+</html>
