@@ -120,3 +120,23 @@ What triggered the wave of messages that got sent out to people was the fact tha
 At about midday today, I listened-in to a press conference hosted by the federal treasurer, and he has reported the fact that they are having "technical difficulties in ensuring the AI systems adhere to the new legislation". I've followed this up and since read rumours that AccountAnt is unable to effectively coerce or fine-tune their models to correctly deduct R&D tax from customer's returns. The treasurer also mentioned that they might ammend the date on the legislation to become effective in the next financial year instead which would give time for AccountAnt to get their shit together and for them to clean up all of the legal records.
 
 I can't even imagine what hell would have broken loose if this had been one of those fully-autonomous states in the US. Imagine 5% or more of a country's entire population requiring imprisonment overnight!
+
+
+## Entry 7
+
+I was preparing a lovely update for you on my progress in building my cabin, but it's been overshadowed by this latest development in the US with NLink's advancements on LLM HID tech and the growing proportion of non-intellectual gen-alpha teens. The government of Philadelphia had allowed NLink to experiment with a device which uses a real-time NN and LLM to interface between the brains of intellectually disabled gen-alpha teens and other people in the world. Currently they've stated that inference is done on-device, and there is no connection to the internet (you need to see a doctor to get an update), however, the LLM can easily access it by simply getting the controller to use an internet-connected device.
+
+NLink has said that the purpose of this device is purely to experiment with the prospect of giving these teens the ability to interface with life, and receive the capability of autonomy, hence easing the burden on the caregiving sector. Definitely BS, but it's crazy stuff. Whoever is using it will remain non-verbal, and the device will use a speaker to communicate their thoughts externally, but will use its in-built neurons to process certain stimuli from organs like the eyes and ears, and translate it into something that only their brain will understand. So instead of reading text word-for-word, they can absorb all of the text on a screen all at once and have it make sense in their head. The only thing it can't do right now is control motor function, so it's just spacial and informational processing currently.
+
+I was thinking what this might imply if it were widespread. For example, could I somehow display a message to one of these people that tells them to yell at the top of their lungs, and that would give them the compulsion to do so? I've also been thinking about what this means for the workforce. These people are inept at anything that requires fine motor skills, but they are exceptional at informational tasks. Potentially these people could replace general office workers? They would be far better at basically everything except interfacing with computers.
+
+I'm also quite concerned of the behaviours of these people. Traditionally, I recall that when they were children, they were exceptionally irrational and coupled to instant entertainment and gratification. They were the "iPad kids" if you remember that colloquialism. They received abysmal grades and most never learned to say anything beyond a grade 5-ish vocabulary, but they knew perfectly well how to get their fix of short-form content. If they act like that at work, then I think we could see some very bi-polar behaviours, or potentially unethical coercion that looks more like slavery, except the subjugated are unaware of that fact.
+
+Anyway, moving on from today's Black-Mirror episode, I'd like to tell you about my cabin!
+
+I've got the foundations laid and I've decided where everything is going to go. It's going to be a single room, a bit smaller than I initially wanted. It will have space for a bed, a fire pit, a bookshelf, a lounge (more like a pillow pile), a kitchen and a bathroom (in an immediately adjacent shed connected via a door on the inside). Tomorrow I get started lowering the logs onto the foundations. It's really exciting!
+
+Attatched is a picture for you to see!
+
+Regards,
+Jared
