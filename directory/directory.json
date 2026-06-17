@@ -182,6 +182,12 @@
               { "name": "instagram_com_to_ddinstagram_com", "tooltip": "", "node_type": "hyperlink", "href": "https://ddinstagram.com/" },
               { "name": "tiktok_com_to_tiktxk_com", "tooltip": "", "node_type": "hyperlink", "href": "https://tiktxk.com/" }
             ]
+          },
+          {
+            "name": "stuff_to_read",
+            "tooltip": "Interesting things I've read",
+            "node_type": "folder",
+            "nodes": []
           }
         ]
       },
