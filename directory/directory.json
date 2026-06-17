@@ -187,7 +187,14 @@
             "name": "stuff_to_read",
             "tooltip": "Interesting things I've read",
             "node_type": "folder",
-            "nodes": []
+            "nodes": [
+              {
+                "name": "blog_posts",
+                "tooltip": "blog posts that I like",
+                "node_type": "folder",
+                "nodes": []
+              }
+            ]
           }
         ]
       },
