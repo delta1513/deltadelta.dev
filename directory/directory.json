@@ -193,6 +193,12 @@
                 "tooltip": "blog posts that I like",
                 "node_type": "folder",
                 "nodes": []
+              },
+              {
+                "name": "short_stories",
+                "tooltip": "short stories that I've read on the web",
+                "node_type": "folder",
+                "nodes": []
               }
             ]
           }
