@@ -192,7 +192,9 @@
                 "name": "blog_posts",
                 "tooltip": "blog posts that I like",
                 "node_type": "folder",
-                "nodes": []
+                "nodes": [
+                  { "name": "banned_book_library", "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe", "node_type": "hyperlink", "href": "https://www.richardosgood.com/posts/banned-book-library/" }
+                ]
               },
               {
                 "name": "short_stories",
