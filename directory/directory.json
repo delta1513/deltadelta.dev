@@ -193,7 +193,8 @@
                 "tooltip": "blog posts that I like",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "banned_book_library", "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe", "node_type": "hyperlink", "href": "https://www.richardosgood.com/posts/banned-book-library/" }
+                  { "name": "banned_book_library", "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe", "node_type": "hyperlink", "href": "https://www.richardosgood.com/posts/banned-book-library/" },
+                  { "name": "ai_agent_battle_royale", "tooltip": "An interesting experiment", "node_type": "hyperlink", "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/" }
                 ]
               },
               {
