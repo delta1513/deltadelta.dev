@@ -65,7 +65,8 @@
               { "name": "drone_xl", "tooltip": "News and advancements in drone technology", "node_type": "hyperlink", "href": "https://dronexl.co/" },
               { "name": "ycombinator_hackernews", "tooltip": "The one we all know and love", "node_type": "hyperlink", "href": "https://news.ycombinator.com/" },
               { "name": "lwn", "tooltip": "Linux and Free Software news", "node_type": "hyperlink", "href": "https://lwn.net/" },
-              { "name": "phoronix", "tooltip": "Linux hardware news", "node_type": "hyperlink", "href": "https://www.phoronix.com/" }
+              { "name": "phoronix", "tooltip": "Linux hardware news", "node_type": "hyperlink", "href": "https://www.phoronix.com/" },
+              { "name": "science_daily", "tooltip": "", "node_type": "hyperlink", "href": "https://www.sciencedaily.com/" }
             ]
           },
           {
