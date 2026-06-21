@@ -172,7 +172,8 @@
               { "name": "geoffrey_huntly", "tooltip": "", "node_type": "hyperlink", "href": "https://ghuntley.com/" },
               { "name": "raghavs_site", "tooltip": "", "node_type": "hyperlink", "href": "https://www.raghav.wiki/" },
               { "name": "matts_site", "tooltip": "", "node_type": "hyperlink", "href": "https://mattjegan.com/" },
-              { "name": "congusbongus_site", "tooltip": "", "node_type": "hyperlink", "href": "https://cxong.github.io/" }
+              { "name": "congusbongus_site", "tooltip": "", "node_type": "hyperlink", "href": "https://cxong.github.io/" },
+              { "name": "hank_green", "tooltip": "Science communicator and epic guy", "node_type": "hyperlink", "href": "https://www.hankgreen.com/" }
             ]
           },
           {
