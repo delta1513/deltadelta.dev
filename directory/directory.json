@@ -209,6 +209,12 @@
                 "nodes": [
                   { "name": "library", "tooltip": "a short story about a community-run digital archive", "node_type": "hyperlink", "href": "https://benbrown.com/library/" }
                 ]
+              },
+              {
+                "name": "scientific_papers",
+                "tooltip": "Any scientific papers that I've read and think are really cool.",
+                "node_type": "folder",
+                "nodes": []
               }
             ]
           }
