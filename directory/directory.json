@@ -214,7 +214,14 @@
                 "name": "scientific_papers",
                 "tooltip": "Any scientific papers that I've read and think are really cool.",
                 "node_type": "folder",
-                "nodes": []
+                "nodes": [
+                  {
+                    "name": "psychology",
+                    "tooltip": "Psychology papers",
+                    "node_type": "folder",
+                    "nodes": []
+                  }
+                ]
               }
             ]
           }
