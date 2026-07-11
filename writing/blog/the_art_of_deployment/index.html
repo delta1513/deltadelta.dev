@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art Of Deployment</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <style>
+    :root {
+      --bg: #fbfbf9;          /* near-white */
+      --fg: #4a4a48;          /* de-saturated black/grey */
+      --muted: #8a8780;       /* subtitles, captions */
+      --border: #000000;      /* solid black window border */
+      --line: #d8d4ca;        /* rules, code bg edges */
+      --code-bg: #efeee9;     /* code background */
+      --hover: #0000ee;       /* traditional hyperlink blue */
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem 1rem;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--border);
+      padding: 1.5rem 1.75rem;
+    }
+
+    .post-head { margin-bottom: 1.75rem; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.4rem; }
+    .description { color: var(--muted); font-style: italic; margin: 0; }
+    .post-date { color: var(--muted); font-size: 0.85em; margin: 0.25rem 0 0; }
+
+    /* links: blue, underline on hover — same interaction as the directory tree */
+    a { color: var(--hover); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h2, h3, h4 { line-height: 1.3; margin: 2rem 0 0.5rem; }
+    p, ul, ol, blockquote, pre, table { margin: 1rem 0; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin: 0.25rem 0; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border: 1px solid var(--line); }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--line);
+      color: var(--muted);
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+    code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
+    pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
+    pre code { background: none; padding: 0; font-size: 0.85em; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="post-head">
+      <h1>The Art Of Deployment</h1>
+      <p class="description">A journey through everything that I know about deploying software</p>
+      <p class="post-date">June 2026</p>
+    </header>
+    <h1>A Short Preface</h1>
+<p>The idea for this blog article came to me when I was using an AI agent <a href="">gas town</a> at work one day. Part of me stopped to wonder about something that made tangent with my thoughts.</p>
+<p>A lot of what I enjoy working on is something that runs without much intervention. Something that completes a repeatable task without any manual input from a human. Take for example, the time where I often had to manually deploy a system at work by shelling-into an EC2 instance, and later I had worked out a way to deploy it automatically when someone merged a PR. This is generally the scope of what software engineers do on a daily basis - they find solutions to repeatable problems.</p>
+<p>But some of these problems are far more rare than others. Consider parts of your codebase that go untouched for eons until something breaks enough layers deep. Think about that Nginx instance that sits between the LB and your app on a unix socket. Think about the authentication backend in your Django app. These are rare problems that seem to often be solved once, and for good, and very rarely we work on them or improve them because they are already good enough. These sorts of problems are what I enjoy. They provide a necessary difficulty, and challenge, like where an answer is hidden deep within one particular interpretation of the AWS documentation and there are no Medium posts that you can find about it. As-if you are the only one with this problem in the entire world.</p>
+<p>Problems like these are ones that I worry are going unspoken or documented, yet they are so valuable in what they can teach. So I'd like to share an accumulation of some of this knowledge from the time I've been spending building software systems for scale.</p>
+<h1>Stage 1 - The VPS (or home linux box)</h1>
+<p>I've made plenty of systems that I've wanted to share with others. Whether it be a minecraft server, a website, a prototype, chat, tunnels, sockets, or anything, they've all required a machine with access to the public internet, and also the ability to open ports. This is what I think is the simplest form of deployment - you've literally just run it on the host machine in a cloud environment or behind a NAT on a home network.</p>
+<p>It doesn't have to be pretty. Some of my first apps were systemd units that spun-up a Flask app. Others were frameworks that exposed a unix socket that was proxied through nginx to the public internet via a virtual host. The point of this section is to reminisce in the beauty of such simplicity, in the days of a handful of users.</p>
+<p>Also, don't forget the deployment process for this. When you made a change, you need to actually shell-into this sytem, pull the latest code, then refresh nginx or systemd. Or perhaps maybe you have cron running to periodically update some static files. Whatever it was, the fact that it was on a single VPS or home computer meant that coupling it to a CI was generally cumbersome (or maybe I just couldn't figure it out when I was 15-16. Although I think the fact that it escapes my mind now is some sort of indication that letting CI alter something within an always on, private VPS is just not a desirable process to follow).</p>
+<p>Ignoring all the glaring issues with scalability and availability, you can see that this is a really nifty way to host any project big or small for a small number of people. Actually, as-of writing this, this website is hosted on a VPS, and I don't really plan to change that fact anytime soon, it just brings back way too much nostalgia.</p>
+
+  </main>
+</body>
+</html>
