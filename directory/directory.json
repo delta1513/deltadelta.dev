@@ -217,7 +217,9 @@
               { "name": "product_hunt", "tooltip": "", "node_type": "hyperlink", "href": "https://www.producthunt.com/" },
               { "name": "archive_md", "tooltip": "An alternative internet archive service", "node_type": "hyperlink", "href": "https://archive.md/" },
               { "name": "awesome_selfhosted", "tooltip": "Awesome list of awesome stuff you can self-host", "node_type": "hyperlink", "href": "https://github.com/awesome-selfhosted/awesome-selfhosted" },
-              { "name": "opentools_studio", "tooltip": "", "node_type": "hyperlink", "href": "https://www.opentools.studio/" }
+              { "name": "opentools_studio", "tooltip": "", "node_type": "hyperlink", "href": "https://www.opentools.studio/" },
+              { "name": "annas_archive", "tooltip": "A shadow library search engine mirroring books, papers, and more", "node_type": "hyperlink", "href": "https://annas-archive.gl/" },
+              { "name": "shadow_libraries", "tooltip": "A directory and history of shadow libraries", "node_type": "hyperlink", "href": "https://shadowlibraries.github.io/" }
             ]
           },
           {
