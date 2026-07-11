@@ -72,7 +72,17 @@
                     "node_type": "folder",
                     "nodes": [
                       { "name": "librespeed_speedtest", "tooltip": "A no-BS FOSS speedtest site that you can host yourself", "node_type": "hyperlink", "href": "https://librespeed.org/#" },
-                      { "name": "ssl_tester", "tooltip": "", "node_type": "hyperlink", "href": "https://www.ssllabs.com/ssltest/analyze.html" }
+                      { "name": "ssl_tester", "tooltip": "", "node_type": "hyperlink", "href": "https://www.ssllabs.com/ssltest/analyze.html" },
+                      { "name": "endoflife_date", "tooltip": "Learn when major software frameworks reach end of life", "node_type": "hyperlink", "href": "https://endoflife.date/" }
+                    ]
+                  },
+                  {
+                    "name": "testing",
+                    "tooltip": "Tools for testing software",
+                    "node_type": "folder",
+                    "nodes": [
+                      { "name": "big_list_of_naughty_strings", "tooltip": "Inputs known to be problematic — use this to test your software", "node_type": "hyperlink", "href": "https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.json" },
+                      { "name": "lipsum", "tooltip": "Lipsum generator", "node_type": "hyperlink", "href": "https://www.lipsum.com/" }
                     ]
                   },
                   {
@@ -227,10 +237,7 @@
             "node_type": "folder",
             "nodes": [
               { "name": "steam_charts", "tooltip": "", "node_type": "hyperlink", "href": "https://steamcharts.com/" },
-              { "name": "big_list_of_naughty_strings", "tooltip": "Inputs known to be problematic — use this to test your software", "node_type": "hyperlink", "href": "https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.json" },
-              { "name": "wundermap", "tooltip": "An awesome weather dashboard", "node_type": "hyperlink", "href": "https://www.wunderground.com/wundermap" },
-              { "name": "endoflife_date", "tooltip": "Learn when major software frameworks reach end of life", "node_type": "hyperlink", "href": "https://endoflife.date/" },
-              { "name": "lipsum", "tooltip": "Lipsum generator", "node_type": "hyperlink", "href": "https://www.lipsum.com/" }
+              { "name": "wundermap", "tooltip": "An awesome weather dashboard", "node_type": "hyperlink", "href": "https://www.wunderground.com/wundermap" }
             ]
           },
           {
