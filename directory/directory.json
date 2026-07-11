@@ -28,7 +28,8 @@
               { "name": "lastfm", "tooltip": "My last.fm profile", "node_type": "hyperlink", "href": "https://www.last.fm/user/delta1512" },
               { "name": "youtube", "tooltip": "My YouTube channel with all my motorsports footage", "node_type": "hyperlink", "href": "https://www.youtube.com/@delta_1512" },
               { "name": "orcid", "tooltip": "My ORCID researcher profile", "node_type": "hyperlink", "href": "https://orcid.org/0009-0007-1218-1549" },
-              { "name": "gitlab", "tooltip": "My GitLab profile", "node_type": "hyperlink", "href": "https://gitlab.com/delta1512" }
+              { "name": "gitlab", "tooltip": "My GitLab profile", "node_type": "hyperlink", "href": "https://gitlab.com/delta1512" },
+              { "name": "github", "tooltip": "My GitHub profile", "node_type": "hyperlink", "href": "https://github.com/delta1513" }
             ]
           }
         ]
@@ -176,7 +177,9 @@
                 "node_type": "folder",
                 "nodes": [
                   { "name": "shodan", "tooltip": "IoT and web system search engine", "node_type": "hyperlink", "href": "https://www.shodan.io/" },
-                  { "name": "sourcegraph", "tooltip": "Global code search engine", "node_type": "hyperlink", "href": "https://sourcegraph.com/search" }
+                  { "name": "sourcegraph", "tooltip": "Global code search engine", "node_type": "hyperlink", "href": "https://sourcegraph.com/search" },
+                  { "name": "ecosia", "tooltip": "Search engine that plants trees with its ad revenue", "node_type": "hyperlink", "href": "https://www.ecosia.org/" },
+                  { "name": "semantic_scholar", "tooltip": "Search engine for academic papers", "node_type": "hyperlink", "href": "https://www.semanticscholar.org/" }
                 ]
               },
               { "name": "email2sms", "tooltip": "Learn how to send SMS via email", "node_type": "hyperlink", "href": "https://email2sms.info/" },
@@ -203,7 +206,8 @@
               { "name": "boinc", "tooltip": "Volunteer computing platform for distributed scientific research", "node_type": "hyperlink", "href": "https://boinc.berkeley.edu/" },
               { "name": "product_hunt", "tooltip": "", "node_type": "hyperlink", "href": "https://www.producthunt.com/" },
               { "name": "archive_md", "tooltip": "An alternative internet archive service", "node_type": "hyperlink", "href": "https://archive.md/" },
-              { "name": "awesome_selfhosted", "tooltip": "Awesome list of awesome stuff you can self-host", "node_type": "hyperlink", "href": "https://github.com/awesome-selfhosted/awesome-selfhosted" }
+              { "name": "awesome_selfhosted", "tooltip": "Awesome list of awesome stuff you can self-host", "node_type": "hyperlink", "href": "https://github.com/awesome-selfhosted/awesome-selfhosted" },
+              { "name": "opentools_studio", "tooltip": "", "node_type": "hyperlink", "href": "https://www.opentools.studio/" }
             ]
           },
           {
@@ -239,7 +243,15 @@
               { "name": "amazon_science", "tooltip": "Did you know that Amazon creates research papers for its technologies? You'll be able to find some of them here.", "node_type": "hyperlink", "href": "https://www.amazon.science/" },
               { "name": "wicg", "tooltip": "The web incubator project. I go here every now and then if I want to take a look at the cool stuff that might make it into modern web browsers.", "node_type": "hyperlink", "href": "https://wicg.io/" },
               { "name": "iso_42001", "tooltip": "ISO's new AI management system standards", "node_type": "hyperlink", "href": "https://www.iso.org/standard/42001" },
-              { "name": "websters_1913", "tooltip": "", "node_type": "hyperlink", "href": "https://www.websters1913.com/" }
+              { "name": "websters_1913", "tooltip": "", "node_type": "hyperlink", "href": "https://www.websters1913.com/" },
+              {
+                "name": "documentation",
+                "tooltip": "Docs and guides",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "htop_explained", "tooltip": "An annotated explanation of htop's output", "node_type": "hyperlink", "href": "https://peteris.rocks/blog/htop/" }
+                ]
+              }
             ]
           },
           {
