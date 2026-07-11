@@ -204,7 +204,8 @@
               { "name": "chatjimmy", "tooltip": "POC for Taalas — AI models as a chip", "node_type": "hyperlink", "href": "https://chatjimmy.ai/" },
               { "name": "p5js", "tooltip": "Great for coding-art", "node_type": "hyperlink", "href": "https://p5js.org/" },
               { "name": "eleventy", "tooltip": "They had me with the opossum! I use this to generate my blog pages", "node_type": "hyperlink", "href": "https://www.11ty.dev/" },
-              { "name": "academic_torrents", "tooltip": "Datasets, courses, papers and information freely available p2p using bittorrent", "node_type": "hyperlink", "href": "https://academictorrents.com/" }
+              { "name": "academic_torrents", "tooltip": "Datasets, courses, papers and information freely available p2p using bittorrent", "node_type": "hyperlink", "href": "https://academictorrents.com/" },
+              { "name": "boinc", "tooltip": "Volunteer computing platform for distributed scientific research", "node_type": "hyperlink", "href": "https://boinc.berkeley.edu/" }
             ]
           },
           {
@@ -237,7 +238,8 @@
               { "name": "guide_world", "tooltip": "A collection of travel blogs", "node_type": "hyperlink", "href": "https://guide.world/" },
               { "name": "killed_by_google", "tooltip": "Projects that Google has abandoned or shut down", "node_type": "hyperlink", "href": "https://killedbygoogle.com/" },
               { "name": "amazon_science", "tooltip": "Did you know that Amazon creates research papers for its technologies? You'll be able to find some of them here.", "node_type": "hyperlink", "href": "https://www.amazon.science/" },
-              { "name": "wicg", "tooltip": "The web incubator project. I go here every now and then if I want to take a look at the cool stuff that might make it into modern web browsers.", "node_type": "hyperlink", "href": "https://wicg.io/" }
+              { "name": "wicg", "tooltip": "The web incubator project. I go here every now and then if I want to take a look at the cool stuff that might make it into modern web browsers.", "node_type": "hyperlink", "href": "https://wicg.io/" },
+              { "name": "iso_42001", "tooltip": "ISO's new AI management system standards", "node_type": "hyperlink", "href": "https://www.iso.org/standard/42001" }
             ]
           },
           {
