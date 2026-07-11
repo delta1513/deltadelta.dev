@@ -261,6 +261,14 @@
                 ]
               },
               {
+                "name": "software_engineering",
+                "tooltip": "Software engineering reads",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "fintech_engineering_handbook", "tooltip": "A handbook on engineering practices in fintech", "node_type": "hyperlink", "href": "https://w.pitula.me/fintech-engineering-handbook/" }
+                ]
+              },
+              {
                 "name": "short_stories",
                 "tooltip": "short stories that I've read on the web",
                 "node_type": "folder",
@@ -280,7 +288,8 @@
                     "nodes": [
                       { "name": "self_determination_theory", "tooltip": "A paper that explains the origins of motivation", "node_type": "hyperlink", "href": "https://www.researchgate.net/publication/11946306_Self-Determination_Theory_and_the_Facilitation_of_Intrinsic_Motivation_Social_Development_and_Well-Being" }
                     ]
-                  }
+                  },
+                  { "name": "30_papers", "tooltip": "A curated collection of influential neural network papers", "node_type": "hyperlink", "href": "https://30papers.com/" }
                 ]
               }
             ]
