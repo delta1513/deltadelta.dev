@@ -107,11 +107,19 @@
                     ]
                   },
                   {
-                    "name": "mcp_servers",
-                    "tooltip": "MCP servers that I like using",
+                    "name": "ai",
+                    "tooltip": "AI tools and resources",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "aws_documentation_mcp_server", "tooltip": "MCP server for querying AWS documentation", "node_type": "hyperlink", "href": "https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server" }
+                      {
+                        "name": "mcp_servers",
+                        "tooltip": "MCP servers that I like using",
+                        "node_type": "folder",
+                        "nodes": [
+                          { "name": "aws_documentation_mcp_server", "tooltip": "MCP server for querying AWS documentation", "node_type": "hyperlink", "href": "https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server" }
+                        ]
+                      },
+                      { "name": "artificial_analysis", "tooltip": "A service that independently tests AI models and reports on the results.", "node_type": "hyperlink", "href": "https://artificialanalysis.ai/" }
                     ]
                   },
                   {
