@@ -66,14 +66,14 @@
                 "tooltip": "Tools for building software",
                 "node_type": "folder",
                 "nodes": [
+                  { "name": "endoflife_date", "tooltip": "Learn when major software frameworks reach end of life", "node_type": "hyperlink", "href": "https://endoflife.date/" },
                   {
                     "name": "diagnostics",
                     "tooltip": "Checking things are working",
                     "node_type": "folder",
                     "nodes": [
                       { "name": "librespeed_speedtest", "tooltip": "A no-BS FOSS speedtest site that you can host yourself", "node_type": "hyperlink", "href": "https://librespeed.org/#" },
-                      { "name": "ssl_tester", "tooltip": "", "node_type": "hyperlink", "href": "https://www.ssllabs.com/ssltest/analyze.html" },
-                      { "name": "endoflife_date", "tooltip": "Learn when major software frameworks reach end of life", "node_type": "hyperlink", "href": "https://endoflife.date/" }
+                      { "name": "ssl_tester", "tooltip": "", "node_type": "hyperlink", "href": "https://www.ssllabs.com/ssltest/analyze.html" }
                     ]
                   },
                   {
