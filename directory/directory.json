@@ -264,7 +264,8 @@
               { "name": "matts_site", "tooltip": "", "node_type": "hyperlink", "href": "https://mattjegan.com/" },
               { "name": "congusbongus_site", "tooltip": "", "node_type": "hyperlink", "href": "https://cxong.github.io/" },
               { "name": "hank_green", "tooltip": "Science communicator and epic guy", "node_type": "hyperlink", "href": "https://www.hankgreen.com/" },
-              { "name": "when_is_matt_working", "tooltip": "When will MAtt be working?", "node_type": "hyperlink", "href": "https://whenismattworking.com/" }
+              { "name": "when_is_matt_working", "tooltip": "When will MAtt be working?", "node_type": "hyperlink", "href": "https://whenismattworking.com/" },
+              { "name": "melonking", "tooltip": "", "node_type": "hyperlink", "href": "https://melonking.net/melon?z=/home" }
             ]
           },
           {
@@ -279,6 +280,7 @@
                 "nodes": [
                   { "name": "banned_book_library", "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe", "node_type": "hyperlink", "href": "https://www.richardosgood.com/posts/banned-book-library/" },
                   { "name": "ai_agent_battle_royale", "tooltip": "An interesting experiment", "node_type": "hyperlink", "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/" },
+                  { "name": "new_thoughts_for_the_web_revival", "tooltip": "", "node_type": "hyperlink", "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023" },
                   { "name": "drone_automation", "tooltip": "Carlos Gonzalez's blog", "node_type": "hyperlink", "href": "https://www.cggonzalez.com/blog/index.html" }
                 ]
               },
