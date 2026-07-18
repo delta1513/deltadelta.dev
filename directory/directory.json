@@ -331,6 +331,14 @@
                     "nodes": [
                       { "name": "ai_wellbeing", "tooltip": "Paper on AI 'happiness' and how it affects output", "node_type": "hyperlink", "href": "https://www.ai-wellbeing.org/paper.pdf" }
                     ]
+                  },
+                  {
+                    "name": "medicine",
+                    "tooltip": "Medicine and health research papers",
+                    "node_type": "folder",
+                    "nodes": [
+                      { "name": "forest_medicine", "tooltip": "The effects of \"forest bathing\" on physical and mental health.", "node_type": "hyperlink", "href": "https://doi.org/10.1265/ehpm.22-00160" }
+                    ]
                   }
                 ]
               }
