@@ -323,7 +323,15 @@
                       { "name": "self_determination_theory", "tooltip": "A paper that explains the origins of motivation", "node_type": "hyperlink", "href": "https://www.researchgate.net/publication/11946306_Self-Determination_Theory_and_the_Facilitation_of_Intrinsic_Motivation_Social_Development_and_Well-Being" }
                     ]
                   },
-                  { "name": "30_papers", "tooltip": "A curated collection of influential neural network papers", "node_type": "hyperlink", "href": "https://30papers.com/" }
+                  { "name": "30_papers", "tooltip": "A curated collection of influential neural network papers", "node_type": "hyperlink", "href": "https://30papers.com/" },
+                  {
+                    "name": "artificial_intelligence",
+                    "tooltip": "Artificial intelligence research papers",
+                    "node_type": "folder",
+                    "nodes": [
+                      { "name": "ai_wellbeing", "tooltip": "Paper on AI 'happiness' and how it affects output", "node_type": "hyperlink", "href": "https://www.ai-wellbeing.org/paper.pdf" }
+                    ]
+                  }
                 ]
               }
             ]
