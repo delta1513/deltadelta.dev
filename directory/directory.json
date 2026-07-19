@@ -188,7 +188,6 @@
                 "nodes": [
                   { "name": "shodan", "tooltip": "IoT and web system search engine", "node_type": "hyperlink", "href": "https://www.shodan.io/" },
                   { "name": "sourcegraph", "tooltip": "Global code search engine", "node_type": "hyperlink", "href": "https://sourcegraph.com/search" },
-                  { "name": "ecosia", "tooltip": "Search engine that plants trees with its ad revenue", "node_type": "hyperlink", "href": "https://www.ecosia.org/" },
                   { "name": "semantic_scholar", "tooltip": "Search engine for academic papers", "node_type": "hyperlink", "href": "https://www.semanticscholar.org/" }
                 ]
               },
