@@ -301,7 +301,8 @@
                   { "name": "banned_book_library", "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe", "node_type": "hyperlink", "href": "https://www.richardosgood.com/posts/banned-book-library/" },
                   { "name": "ai_agent_battle_royale", "tooltip": "An interesting experiment", "node_type": "hyperlink", "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/" },
                   { "name": "new_thoughts_for_the_web_revival", "tooltip": "", "node_type": "hyperlink", "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023" },
-                  { "name": "drone_automation", "tooltip": "Carlos Gonzalez's blog", "node_type": "hyperlink", "href": "https://www.cggonzalez.com/blog/index.html" }
+                  { "name": "drone_automation", "tooltip": "Carlos Gonzalez's blog", "node_type": "hyperlink", "href": "https://www.cggonzalez.com/blog/index.html" },
+                  { "name": "the_conspiracy_against_high_temperature_llm_sampling", "tooltip": "An article about LLM sampling methods and how it's used in the industry", "node_type": "hyperlink", "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397" }
                 ]
               },
               {
