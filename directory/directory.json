@@ -198,7 +198,8 @@
               { "name": "txtify", "tooltip": "Turn web pages into raw text", "node_type": "hyperlink", "href": "https://txtify.it/" },
               { "name": "world_time_buddy", "tooltip": "The best world clock and time converter I've ever used", "node_type": "hyperlink", "href": "https://www.worldtimebuddy.com/" },
               { "name": "ventoy", "tooltip": "Boot any OS without having to re-flash your drive", "node_type": "hyperlink", "href": "https://www.ventoy.net/en/index.html" },
-              { "name": "lexilogos", "tooltip": "Latin Keyboard", "node_type": "hyperlink", "href": "https://www.lexilogos.com/keyboard/latin.htm" }
+              { "name": "lexilogos", "tooltip": "Latin Keyboard", "node_type": "hyperlink", "href": "https://www.lexilogos.com/keyboard/latin.htm" },
+              { "name": "unslop", "tooltip": "A web tool to detect AI-generated writing.", "node_type": "hyperlink", "href": "https://unslop.run/" }
             ]
           },
           {
