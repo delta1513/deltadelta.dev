@@ -1,6 +1,6 @@
 ---
 title: Books I've Read
-description: This blog is basically my digital bookshelf (I have a real one tho)
+description: A digital bookshelf
 layout: markdown.njk
 date: 2025-12-29
 ---
@@ -127,6 +127,17 @@ In terms of the latter, this book has taught me a lot about the subjectiveness o
 This book contains a vast amount of knowledge about nuutrition, and I have found this exceptionally valuable. He even explains, in detail, bodily processes like synthesis of neurotransmitters, methylation and chelation. Even if most of the causations mentioned in this book are not statistically significant, the general advice is sound - that is, why would you not want to make sure you are getting the best nutrition possible?
 
 Am I convinced that orthomollecular psychiatry is effective? I don't swing either way, rather I believe it is an affectation of something that all humans should be allowed to have: Adequate nutrition.
+
+
+## The Origins of Capitalism, A Longer View - Ellen Meiksins Wood
+
+I could only read about a chapter or two into this book before I had to put it down, I just simply couldn't motivate myself to read any further. My expectations going into this book were that I'd learn a little bit about how capitalism came about and evolved throughout time, like how we went from feudalism, to other 'isms', to capitalism. Instead it completely disengaged me, and it was exceptionally difficult to read.
+
+What I was presented with in this text was a cacophony of judgements and summaries of prior texts. Honestly I'm not quite sure what the point of this book is, and the blurb certainly appears misleading now that I've had the chance to read some of the text. I think that the author required readers to have a deep understanding of prior texts and opinions prior to opening tis book.
+
+In general, the writing provided no substance, and elicited a sense of agenda against the subject.
+
+Would not reccommend reading this book unless you exhibit some sort of religious belief against capitalism, and capable of enduring the labour of reading scatterbrain thoughts and musings that have no material effect.
 
 
 ## Meditations - Marcus Aurelius
