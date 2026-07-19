@@ -310,7 +310,8 @@
                 "node_type": "folder",
                 "nodes": [
                   { "name": "fintech_engineering_handbook", "tooltip": "A handbook on engineering practices in fintech", "node_type": "hyperlink", "href": "https://w.pitula.me/fintech-engineering-handbook/" },
-                  { "name": "prompting_guide", "tooltip": "An in-depth guide on various prompting methods for AI.", "node_type": "hyperlink", "href": "https://www.promptingguide.ai/" }
+                  { "name": "prompting_guide", "tooltip": "An in-depth guide on various prompting methods for AI.", "node_type": "hyperlink", "href": "https://www.promptingguide.ai/" },
+                  { "name": "the_lethal_trifecta", "tooltip": "A safety model for usage of AI agents", "node_type": "hyperlink", "href": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/" }
                 ]
               },
               {
