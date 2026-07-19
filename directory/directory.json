@@ -308,7 +308,8 @@
                 "tooltip": "Software engineering reads",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "fintech_engineering_handbook", "tooltip": "A handbook on engineering practices in fintech", "node_type": "hyperlink", "href": "https://w.pitula.me/fintech-engineering-handbook/" }
+                  { "name": "fintech_engineering_handbook", "tooltip": "A handbook on engineering practices in fintech", "node_type": "hyperlink", "href": "https://w.pitula.me/fintech-engineering-handbook/" },
+                  { "name": "prompting_guide", "tooltip": "An in-depth guide on various prompting methods for AI.", "node_type": "hyperlink", "href": "https://www.promptingguide.ai/" }
                 ]
               },
               {
