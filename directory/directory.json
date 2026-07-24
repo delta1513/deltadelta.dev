@@ -301,7 +301,8 @@
                   { "name": "ai_agent_battle_royale", "tooltip": "An interesting experiment", "node_type": "hyperlink", "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/" },
                   { "name": "new_thoughts_for_the_web_revival", "tooltip": "", "node_type": "hyperlink", "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023" },
                   { "name": "drone_automation", "tooltip": "Carlos Gonzalez's blog", "node_type": "hyperlink", "href": "https://www.cggonzalez.com/blog/index.html" },
-                  { "name": "the_conspiracy_against_high_temperature_llm_sampling", "tooltip": "An article about LLM sampling methods and how it's used in the industry", "node_type": "hyperlink", "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397" }
+                  { "name": "the_conspiracy_against_high_temperature_llm_sampling", "tooltip": "An article about LLM sampling methods and how it's used in the industry", "node_type": "hyperlink", "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397" },
+                  { "name": "a_case_for_mindless_browsing", "tooltip": "A thoughtful defense of mindless browsing as something necessary and beneficial, comparing it to a walk in the woods", "node_type": "hyperlink", "href": "https://rybakov.com/blog/mindless/" }
                 ]
               },
               {
