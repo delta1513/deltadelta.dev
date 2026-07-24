@@ -363,6 +363,14 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "historical",
+                "tooltip": "Historical writings and documents",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "the_usefulness_of_useless_knowledge", "tooltip": "By Abraham Flexner - on scientific advancements that came from curiousity as opposed to utility.", "node_type": "hyperlink", "href": "https://faculty.lsu.edu/kharms/files/flexner_1939.pdf" }
+                ]
               }
             ]
           }
