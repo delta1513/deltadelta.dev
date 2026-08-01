@@ -303,7 +303,8 @@
                   { "name": "drone_automation", "tooltip": "Carlos Gonzalez's blog", "node_type": "hyperlink", "href": "https://www.cggonzalez.com/blog/index.html" },
                   { "name": "the_conspiracy_against_high_temperature_llm_sampling", "tooltip": "An article about LLM sampling methods and how it's used in the industry", "node_type": "hyperlink", "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397" },
                   { "name": "a_case_for_mindless_browsing", "tooltip": "A thoughtful defense of mindless browsing as something necessary and beneficial, comparing it to a walk in the woods", "node_type": "hyperlink", "href": "https://rybakov.com/blog/mindless/" },
-                  { "name": "writing_by_hand", "tooltip": "The benefits of handwriting, and some tips on how to get started with it.", "node_type": "hyperlink", "href": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your" }
+                  { "name": "writing_by_hand", "tooltip": "The benefits of handwriting, and some tips on how to get started with it.", "node_type": "hyperlink", "href": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your" },
+                  { "name": "how_to_exist", "tooltip": "Some notes on meditation", "node_type": "hyperlink", "href": "https://www.raptitude.com/2026/07/how-to-exist/" }
                 ]
               },
               {
