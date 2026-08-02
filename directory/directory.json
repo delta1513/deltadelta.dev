@@ -229,7 +229,8 @@
                   { "name": "einstein_at_home", "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena", "node_type": "hyperlink", "href": "https://einsteinathome.org/" }
                 ]
               },
-              { "name": "zooniverse", "tooltip": "A collection of online citizen-science projects that you can participate in", "node_type": "hyperlink", "href": "https://www.zooniverse.org/" }
+              { "name": "zooniverse", "tooltip": "A collection of online citizen-science projects that you can participate in", "node_type": "hyperlink", "href": "https://www.zooniverse.org/" },
+              { "name": "gutenberg", "tooltip": "Free eBooks", "node_type": "hyperlink", "href": "https://gutenberg.org/" }
             ]
           },
           {
