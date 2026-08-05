@@ -241,7 +241,8 @@
               { "name": "the_random_button", "tooltip": "", "node_type": "hyperlink", "href": "https://therandombutton.github.io/" },
               { "name": "zalgotext", "tooltip": "Cook any text", "node_type": "hyperlink", "href": "https://www.zalgo.org/" },
               { "name": "neal_fun", "tooltip": "", "node_type": "hyperlink", "href": "https://neal.fun/" },
-              { "name": "programming_idioms", "tooltip": "", "node_type": "hyperlink", "href": "https://www.programming-idioms.org/" }
+              { "name": "programming_idioms", "tooltip": "", "node_type": "hyperlink", "href": "https://www.programming-idioms.org/" },
+              { "name": "monstercat_wallpapers", "tooltip": "A drive link to an archive of monstercat wallpapers over the years", "node_type": "hyperlink", "href": "https://drive.google.com/drive/folders/152rf7-W7rJzwV7bhCeO63lUc9aZvEB00" }
             ]
           },
           {
