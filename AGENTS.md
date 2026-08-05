@@ -78,3 +78,9 @@ Folders nest arbitrarily deep — the template renders them recursively.
 
 **To change the tree, edit `directory/directory.json`** — node order in the file is the
 display order. No template changes are needed to add/move/remove entries.
+
+
+## Rules for pushing changes
+
+- This is a one-man repo, so pushing to main is fine
+- When pushing changes, only git-add the changes that are relevant to what you have done
