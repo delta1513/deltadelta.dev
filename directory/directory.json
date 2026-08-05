@@ -206,6 +206,15 @@
             "tooltip": "Interesting things people have built",
             "node_type": "folder",
             "nodes": [
+              {
+                "name": "distributed_computing",
+                "tooltip": "Distributed computing projects",
+                "node_type": "folder",
+                "nodes": [
+                  { "name": "boinc", "tooltip": "Volunteer computing platform for distributed scientific research", "node_type": "hyperlink", "href": "https://boinc.berkeley.edu/" },
+                  { "name": "einstein_at_home", "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena", "node_type": "hyperlink", "href": "https://einsteinathome.org/" }
+                ]
+              },
               { "name": "the_large_bitcoin_collider", "tooltip": "A distributed network methodically searching the whole bitcoin address space", "node_type": "hyperlink", "href": "https://lbc.cryptoguru.org/about" },
               { "name": "random_org", "tooltip": "Is there such a thing as truly random? This is the closest we'll get", "node_type": "hyperlink", "href": "https://www.random.org/" },
               { "name": "atlas_of_surveillance", "tooltip": "A community-driven project tracking the expansion of mass surveillance", "node_type": "hyperlink", "href": "https://www.atlasofsurveillance.org/" },
@@ -213,7 +222,6 @@
               { "name": "p5js", "tooltip": "Great for coding-art", "node_type": "hyperlink", "href": "https://p5js.org/" },
               { "name": "eleventy", "tooltip": "They had me with the opossum! I use this to generate my blog pages", "node_type": "hyperlink", "href": "https://www.11ty.dev/" },
               { "name": "academic_torrents", "tooltip": "Datasets, courses, papers and information freely available p2p using bittorrent", "node_type": "hyperlink", "href": "https://academictorrents.com/" },
-              { "name": "boinc", "tooltip": "Volunteer computing platform for distributed scientific research", "node_type": "hyperlink", "href": "https://boinc.berkeley.edu/" },
               { "name": "product_hunt", "tooltip": "", "node_type": "hyperlink", "href": "https://www.producthunt.com/" },
               { "name": "archive_md", "tooltip": "An alternative internet archive service", "node_type": "hyperlink", "href": "https://archive.md/" },
               { "name": "awesome_selfhosted", "tooltip": "Awesome list of awesome stuff you can self-host", "node_type": "hyperlink", "href": "https://github.com/awesome-selfhosted/awesome-selfhosted" },
@@ -221,14 +229,6 @@
               { "name": "annas_archive", "tooltip": "A shadow library search engine mirroring books, papers, and more", "node_type": "hyperlink", "href": "https://annas-archive.gl/" },
               { "name": "shadow_libraries", "tooltip": "A directory and history of shadow libraries", "node_type": "hyperlink", "href": "https://shadowlibraries.github.io/" },
               { "name": "acm_digital_library", "tooltip": "A digital library of computing and information technology research", "node_type": "hyperlink", "href": "https://dl.acm.org/" },
-              {
-                "name": "distributed_computing",
-                "tooltip": "Distributed computing projects",
-                "node_type": "folder",
-                "nodes": [
-                  { "name": "einstein_at_home", "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena", "node_type": "hyperlink", "href": "https://einsteinathome.org/" }
-                ]
-              },
               { "name": "zooniverse", "tooltip": "A collection of online citizen-science projects that you can participate in", "node_type": "hyperlink", "href": "https://www.zooniverse.org/" },
               { "name": "gutenberg", "tooltip": "Free eBooks", "node_type": "hyperlink", "href": "https://gutenberg.org/" }
             ]
