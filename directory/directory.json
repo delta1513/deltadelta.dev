@@ -29,9 +29,11 @@
               { "name": "youtube", "tooltip": "My YouTube channel with all my motorsports footage", "node_type": "hyperlink", "href": "https://www.youtube.com/@delta_1512" },
               { "name": "orcid", "tooltip": "My ORCID researcher profile", "node_type": "hyperlink", "href": "https://orcid.org/0009-0007-1218-1549" },
               { "name": "gitlab", "tooltip": "My GitLab profile", "node_type": "hyperlink", "href": "https://gitlab.com/delta1512" },
-              { "name": "github", "tooltip": "My GitHub profile", "node_type": "hyperlink", "href": "https://github.com/delta1513" }
+              { "name": "github", "tooltip": "My GitHub profile", "node_type": "hyperlink", "href": "https://github.com/delta1513" },
+              { "name": "linkedin", "tooltip": "My LinkedIn profile", "node_type": "hyperlink", "href": "https://www.linkedin.com/in/marcus-belcastro-96628a1a1/" }
             ]
-          }
+          },
+          { "name": "webring", "tooltip": "Sites from myself and people close to me", "node_type": "file", "href": "/writing/webring/" }
         ]
       },
       {
@@ -416,11 +418,8 @@
             "nodes": [
               { "name": "capturing_photographs", "tooltip": "My philosophy on the importance of photography", "node_type": "file", "href": "/writing/blog/capturing_photographs/" },
               { "name": "south_korea", "tooltip": "A small note on my travels to Korea", "node_type": "file", "href": "/writing/blog/south_korea/" },
-              { "name": "exercise_diary", "tooltip": "What happens when you exercise a little every day?", "node_type": "file", "href": "/writing/blog/exercise_diary/" },
               { "name": "rock_climbing", "tooltip": "My take on the sport and a short starter guide", "node_type": "file", "href": "/writing/blog/rock_climbing/" },
-              { "name": "go_ask_someone_how_they_are", "tooltip": "An alternative cure for depression", "node_type": "file", "href": "/writing/blog/go_ask_someone_how_they_are/" },
-              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" },
-              { "name": "learn_how_to_learn", "tooltip": "Understanding what it means to truly learn and adapt", "node_type": "file", "href": "/writing/blog/learn_how_to_learn/" }
+              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" }
             ]
           },
           {
@@ -456,7 +455,6 @@
           }
         ]
       },
-      { "name": "webring", "tooltip": "Sites from myself and people close to me", "node_type": "file", "href": "/writing/webring/" },
       { "name": "about", "tooltip": "Who I am and what this site is", "node_type": "file", "href": "/writing/about/" }
     ]
   }
