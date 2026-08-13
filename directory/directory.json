@@ -314,7 +314,8 @@
                   { "name": "200_ms", "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page", "node_type": "hyperlink", "href": "https://200ms.thenodebook.com/" },
                   { "name": "ai_and_middle_class_software_eng", "tooltip": "A perspective on how AI is affecting the middle class of software engineering", "node_type": "hyperlink", "href": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" },
                   { "name": "dont_humanise_llm_outputs", "tooltip": "Why attempting to humanise LLM outputs is a misguided approach", "node_type": "hyperlink", "href": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb" },
-                  { "name": "ideological_craziness", "tooltip": "On the development of crazy ideologies.", "node_type": "hyperlink", "href": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn" }
+                  { "name": "ideological_craziness", "tooltip": "On the development of crazy ideologies.", "node_type": "hyperlink", "href": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn" },
+                  { "name": "how_i_use_llms_to_learn", "tooltip": "A personal approach to using LLMs as learning tools", "node_type": "hyperlink", "href": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/" }
                 ]
               },
               {
