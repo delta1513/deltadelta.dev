@@ -330,7 +330,8 @@
                 "tooltip": "short stories that I've read on the web",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "library", "tooltip": "a short story about a community-run digital archive", "node_type": "hyperlink", "href": "https://benbrown.com/library/" }
+                  { "name": "library", "tooltip": "a short story about a community-run digital archive", "node_type": "hyperlink", "href": "https://benbrown.com/library/" },
+                  { "name": "felix_and_i", "tooltip": "", "node_type": "hyperlink", "href": "https://jacobfilipp.com/felix/" }
                 ]
               },
               {
