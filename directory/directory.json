@@ -420,7 +420,8 @@
               { "name": "capturing_photographs", "tooltip": "My philosophy on the importance of photography", "node_type": "file", "href": "/writing/blog/capturing_photographs/" },
               { "name": "south_korea", "tooltip": "A small note on my travels to Korea", "node_type": "file", "href": "/writing/blog/south_korea/" },
               { "name": "rock_climbing", "tooltip": "My take on the sport and a short starter guide", "node_type": "file", "href": "/writing/blog/rock_climbing/" },
-              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" }
+              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" },
+              { "name": "my_recipe_book", "tooltip": "A collection of recipes and cooking tips I like", "node_type": "file", "href": "/writing/blog/my_recipe_book/" }
             ]
           },
           {
