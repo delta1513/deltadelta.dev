@@ -84,3 +84,7 @@ display order. No template changes are needed to add/move/remove entries.
 
 - This is a one-man repo, so pushing to main is fine
 - When pushing changes, only git-add the changes that are relevant to what you have done
+
+## Preferences
+
+- Do not use sub-agents unless directly asked. This repo is small, and you can perform pretty much all tasks without sub-agents.
