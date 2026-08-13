@@ -269,6 +269,7 @@
               { "name": "iso_42001", "tooltip": "ISO's new AI management system standards", "node_type": "hyperlink", "href": "https://www.iso.org/standard/42001" },
               { "name": "websters_1913", "tooltip": "", "node_type": "hyperlink", "href": "https://www.websters1913.com/" },
               { "name": "specification_website", "tooltip": "A platform-agnostic specification of all the technical details that matter for a website.", "node_type": "hyperlink", "href": "https://specification.website/" },
+              { "name": "tuxedono2", "tooltip": "Cocktail recipes", "node_type": "hyperlink", "href": "https://tuxedono2.com/" },
               {
                 "name": "documentation",
                 "tooltip": "Docs and guides",
