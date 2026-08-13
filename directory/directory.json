@@ -311,7 +311,8 @@
                   { "name": "writing_by_hand", "tooltip": "The benefits of handwriting, and some tips on how to get started with it.", "node_type": "hyperlink", "href": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your" },
                   { "name": "how_to_exist", "tooltip": "Some notes on meditation", "node_type": "hyperlink", "href": "https://www.raptitude.com/2026/07/how-to-exist/" },
                   { "name": "dont_be_a_meat_proxy", "tooltip": "Don't be a meat proxy", "node_type": "hyperlink", "href": "https://gruhn.me/blog/2026-08-03/" },
-                  { "name": "200_ms", "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page", "node_type": "hyperlink", "href": "https://200ms.thenodebook.com/" }
+                  { "name": "200_ms", "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page", "node_type": "hyperlink", "href": "https://200ms.thenodebook.com/" },
+                  { "name": "ai_and_middle_class_software_eng", "tooltip": "A perspective on how AI is affecting the middle class of software engineering", "node_type": "hyperlink", "href": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" }
                 ]
               },
               {
