@@ -33,7 +33,7 @@
               { "name": "linkedin", "tooltip": "My LinkedIn profile", "node_type": "hyperlink", "href": "https://www.linkedin.com/in/marcus-belcastro-96628a1a1/" }
             ]
           },
-          { "name": "marcus_belcastro", "tooltip": "My personal website", "node_type": "hyperlink", "href": "https://marcusbelcastro.com/" },
+          { "name": "cv", "tooltip": "My CV in the form of a website", "node_type": "hyperlink", "href": "https://marcusbelcastro.com/" },
           { "name": "webring", "tooltip": "Sites from myself and people close to me", "node_type": "file", "href": "/writing/webring/" }
         ]
       },

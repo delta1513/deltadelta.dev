@@ -1,0 +1,4 @@
+<h2>Git hooks</h2>
+<p>This repo uses a tracked <code>pre-commit</code> hook (in <code>.githooks/</code>) that runs <code>npm run build</code> and blocks the commit if it produces any changes, to keep build artifacts in sync with source. After cloning, enable it with:</p>
+<pre><code class="language-sh">git config core.hooksPath .githooks
+</code></pre>
