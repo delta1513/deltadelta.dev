@@ -1,23 +1,12 @@
 ---
 title: Software Sophistry
-description: Some aphorisms that I live by when developing software.
+description: Random aphorisms for software engineering.
 layout: markdown.njk
 date: 2026-05-05
 ---
 
 
-
-There are clear ideas, mannerisms and principles that have been stored in my head for the longest time. These are principles that relate to my craft - software engineering. At the time of writing this, I am making a slow transition from being an individual contributor to leading a team, and I think it is more important than ever for me to have a solid set of values and world-views to work with.
-
-I really like writing, and after recently reading some of Marcus Aurelius' works, I came to like his prose of aphorisms.
-
-As with his work, you should also digest mine with some slight skepticism. In these works, I am not prescribing a complete rulebook. Rather I am simply speaking my mind and the culmination of almost 5 years of commercial experience in software engineering now.
-
-In other words, I just felt like writing this.
-
----
-
-Stupidity is dangerous, but those who are also ignorant of this become lethal. This statement is terse and jagged as this holds relevancy outside the domain of engineering, so please measure this rationally. It is the responsibility of the system to defend itself from such **known** actions, and the responsibility of the team to architect the system in this way. Even if one were to release a chimp into the codebase, one should not expect an outage. Subsequently, and favourably, architecting for such unsophisticated behaviour causes the emergence of simplicity akin to Occam's Razor.
+Stupidity is dangerous, but those who are also ignorant of this become lethal. This statement is terse and jagged for the purposes of sensationalisation. It also holds relevancy outside the domain of engineering. It is the responsibility of the system to defend itself from such **known** actions, and the responsibility of the team to architect the system in this way. Even if one were to release a chimp into the codebase, one should not expect an outage. Subsequently, and favourably, architecting for such unsophisticated behaviour causes the emergence of simplicity akin to Occam's Razor.
 
 ---
 
