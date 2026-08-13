@@ -233,7 +233,8 @@
               { "name": "shadow_libraries", "tooltip": "A directory and history of shadow libraries", "node_type": "hyperlink", "href": "https://shadowlibraries.github.io/" },
               { "name": "acm_digital_library", "tooltip": "A digital library of computing and information technology research", "node_type": "hyperlink", "href": "https://dl.acm.org/" },
               { "name": "zooniverse", "tooltip": "A collection of online citizen-science projects that you can participate in", "node_type": "hyperlink", "href": "https://www.zooniverse.org/" },
-              { "name": "gutenberg", "tooltip": "Free eBooks", "node_type": "hyperlink", "href": "https://gutenberg.org/" }
+              { "name": "gutenberg", "tooltip": "Free eBooks", "node_type": "hyperlink", "href": "https://gutenberg.org/" },
+              { "name": "opensource_lowtech", "tooltip": "Projects for self-sufficiency", "node_type": "hyperlink", "href": "https://opensourcelowtech.org/index.html" }
             ]
           },
           {
