@@ -228,17 +228,31 @@ Everything we currently know about ECS auto-scaling is all relevant here, we are
 
 I like to think of an EC2 fleet like a cargo train. Let's say this train is headed all the way from Calgary to Quebec City. Along the way, we might drop off, or add new cargo to the train. Before we take-off, we need to look at our current cargo. Currently, it seems we have 10 carriages (our EC2 instances), 8 of which are filled with containers (our apps).
 
+![](/media/art_of_deployment/choo_choo_AB.png)
+
 > A small side, note, it's possible for each carriage to contain multiple containers. Although, you might not be able to fit multiple containers onto the same carriage. Some containers might be unevenly sized (each ECS service uses different amounts of CPU/RAM) and might not fit seemlessly together into the instance in a process known as [bin-packing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html). Changing the EC2 instance type is akin to changing the size of each carriage - more CPU/RAM means a bigger carriage, so you might be able to binpack better.
 
 This means that we have two carriages that are totally empty. This is fine for us as we anticipate that we might collect a few things along the way.
 
 Let's say we've reached Regina, Saskatchewan. Here we pick up some more containers (ECS has requested more tasks start running). Now there are no more empty carriages, and the last carriage is only half-full. What happens if we have to pick up some more things when we enter Manitoba?
 
+![](/media/art_of_deployment/choo_choo_SK_1.png)
+
 The company demands that we pick up all containers when we get to each station, so we need to prepare for the worst, so we add a pit-stop to the journey and add a few extra carriages to the train (scaling-up our fleet) so that we have 12 total carriages (two of which are empty). Each pit-stop will take us some more time, so we don't want to have to do it as often, and there's only so many carriages we can add to our train before we need to change the engine (increase the upper limit on scaling).
 
-So we get to Winnipeg just on-time! We drop off some containers and end up with 4 empty carriages. We don't need 4 empty carriages, so let's dump 2 of them (terminate the instances) and save some fuel!
+![](/media/art_of_deployment/choo_choo_SK_2.png)
 
-We just entered Toronto, Ontario, and we find that the station wants us to carry 8 additional containers when we can only fit 4! Unfortunately, there's no time to add new carriages (we have to do this before we reach the station), and we have to abandon 4 of these containers at the station (we have under-provisioned our EC2 fleet. ECS wants more tasks to be placed, but can't place them because the fleet hasn't scaled-up yet).
+So we get to Winnipeg just on-time! We drop off some containers and end up with 4 empty carriages! 
+
+![](/media/art_of_deployment/choo_choo_MB_1.png)
+
+We don't need 4 empty carriages, so let's dump 2 of them (terminate the instances) and save some fuel!
+
+![](/media/art_of_deployment/choo_choo_MB_2.png)
+
+We just entered Toronto, Ontario, and we find that the station wants us to carry 8 additional containers from various services when we can only fit 2-5! Unfortunately, there's no time to add new carriages (we have to do this before we reach the station), and we have to abandon some of these containers at the station (we have under-provisioned our EC2 fleet. ECS wants more tasks to be placed, but can't place them because the fleet hasn't scaled-up yet).
+
+![](/media/art_of_deployment/choo_choo_ON.png)
 
 Hopefully that kinda gives you a rough concept of what we will be talking about next. Let's move onto some more concrete explanations...
 
