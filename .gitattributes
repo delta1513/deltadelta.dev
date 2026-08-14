@@ -11,3 +11,5 @@ media/art/this-little-piggy.jpg filter=lfs diff=lfs merge=lfs -text
 media/art/rouse-hill-rain.jpg filter=lfs diff=lfs merge=lfs -text
 media/art/wrx-2.jpg filter=lfs diff=lfs merge=lfs -text
 media/art/wrx-1.jpg filter=lfs diff=lfs merge=lfs -text
+media/art_of_deployment/*.png filter=lfs diff=lfs merge=lfs -text
+media/art_of_deployment/*.gif filter=lfs diff=lfs merge=lfs -text

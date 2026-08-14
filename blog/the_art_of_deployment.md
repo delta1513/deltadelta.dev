@@ -1,6 +1,6 @@
 ---
 title: The Art Of Deployment
-description: A journey through everything that I know about deploying software
+description: A journey through (mostly) everything that I know about deploying software
 layout: markdown.njk
 date: 2026-08-13
 ---
@@ -11,9 +11,9 @@ The idea for this blog article came to me when I was using an AI agent [gas town
 
 A lot of what I enjoy working on is something that runs without much intervention. Something that completes a repeatable task without any manual input from a human. Take for example, the time where I often had to manually deploy a system at work by shelling-into an EC2 instance, and later I had worked out a way to deploy it automatically after a PR merge. This I saw as my goal as a software engineer - find solutions to repeatable problems.
 
-But some of these problems are far more rare than others. Consider parts of your codebase that go untouched for eons until something breaks on a layer deep enough. Think about that Nginx instance that sits between the LB and your app on a unix socket. Think about the authentication backend in your Django app. These are rare problems that seem to often be solved once, and for good, and very rarely we work on them or improve them because they are already good enough. These sorts of problems are what I enjoy. They provide a necessary, difficult challenge. Like where an answer is hidden deep within one particular interpretation of the AWS documentation, and there are no Medium posts that you can find about it. As if you are the only one with this problem in the entire world.
+But some of these problems are far more rare than others. Consider parts of your codebase that go untouched for eons until something breaks on a layer deep enough. Think about that Nginx instance that sits between the LB and your app on a unix socket. Think about the authentication backend in your Django app. These are rare problem areas that seem to often be solved once, then left alone for a long time, and very rarely we work on them or improve them because they are already good enough. These sorts of problems are what I enjoy. They provide a necessary, difficult challenge. Like where an answer is hidden deep within one particular interpretation of the AWS documentation, and there are no Medium posts or GitHub issues that you can find about it. As if you are the only one with this problem in the entire world.
 
-Problems like these are ones that I worry are going unspoken or documented in public discourse, yet they are so valuable in what they can teach. So I'd like to share an accumulation of some of this knowledge from the time I've been spending building software systems.
+Problems like these are ones that I worry are going unspoken or undocumented in public discourse, yet they are so valuable in what they can teach. So I'd like to share an accumulation of some of this knowledge from the time I've been spending building software systems.
 
 In this article, I will be taking you through some various types of deployment strategies that I've used in my career and personal projects simply because I enjoy talking about it.
 
@@ -23,9 +23,9 @@ I've made plenty of systems that I've wanted to share with others. Whether it be
 
 It doesn't have to be pretty. Some of my first apps were systemd units that spun-up a Flask app. Others were frameworks that exposed a unix socket that was proxied through nginx to the public internet via a virtual host. The point of this section is to go into deep details about the 'bare app' and how it interacts with a multi-tenant host system - and also to reminisce in the beauty of such in the days of a handful of users, and often in situations where we could not isolate apps onto individual hosts!
 
-Before I learned docker (this is probably around my time in, and a little after, university), I had already learned that user isolation was the biggest advantage that I had for operating software that could get breached. Whenever I started hosting a new project, I would set up a new user account on my linux host, and remove its sudo privileges. Then I would drop all the build files into the user home directory, and then run `screen` so that I can launch the server process without it terminating when I detatch my tty. If the project demanded a degree of seriousness, then I'd launch it with a systemd unit instead. Once I picked up docker, I then simply switched over to running `dockerd` to run my application images.
+Before I learned docker (this is probably around my time in, and a little after, university), I had already learned that user isolation was the biggest advantage that I had for operating software that could get breached. Whenever I started hosting a new project, I would set up a new user account on my linux host, and remove its sudo privileges. Then I would drop all the build files into the user home directory, and then run `screen` so that I can launch the server process without it terminating when I detach my tty. If the project demanded a degree of seriousness, then I'd launch it with a systemd unit instead. Once I picked up docker, I simply started using `dockerd` to run my application images.
 
-On my machine, I'd have a single nginx instance running on the bare metal. Then whenever I would want a new project, I would set it up with a static docker networking configuration and tell nginx, via a config file, to route all HTTP traffic to that docker container. Another important thing to note is the `Host` header handling for nginx. In order to manage multiple applications running on a single host, you would typically distinguish them as a "virtual host" by using the `server_name` directive. Here's a snippet of the config from one of my old projects:
+On my machine, I'd have a single nginx instance running on the bare metal. Then whenever I would want a new project, I would set it up with a static docker networking configuration and tell nginx, via a config file, to route all HTTP traffic to that docker container. Another important thing to note is the `Host` header handling behaviour for nginx. In order to manage multiple applications running on a single host, you would typically distinguish them as a "virtual host" by using the `server_name` directive. Here's a snippet of the config from one of my old projects:
 
 ```
     ...
@@ -45,7 +45,7 @@ On my machine, I'd have a single nginx instance running on the bare metal. Then 
     ...
 ```
 
-So basically, when nginx sees the `Host` header from the browser is set to `lastfmwall.deltadelta.dev`, and the request path is literally anything, it will pull up this configuration and then follow the directives in this file. After changing anything, you would need to make a softlink from this config in `/etc/nginx/sites-available/` to `/etc/nginx/sites-enabled/`. Then to check if everything is okay, run `nginx -t`, and then restart the nginx service (yes, this would mean a very slight blip in downtime. But I didn't have any serious users to make angry!). After this I would then set up an SSL configuration using `certbot` which would set up a free SSL certificate for me.
+So basically, when nginx sees the `Host` header from the browser is set to `lastfmwall.deltadelta.dev`, and the request path is literally anything, it will pull up this configuration and then follow the directives in this file. To get this config working, you would need to create the config in `/etc/nginx/sites-available/`, then soft-link it to `/etc/nginx/sites-enabled/`. Then to check if everything is okay, run `nginx -t`, and then restart the nginx service (yes, this would mean a very slight blip in downtime. But I didn't have any serious users to make angry!). After this, I would then set up an SSL configuration using `certbot` which would set up a free SSL certificate for me.
 
 An advantage of this approach is that the firewall rules for this host machine are simple: Just open ports 80 and 443!
 
@@ -61,7 +61,7 @@ I hope you can see a lot of problems with this approach. Namely:
 - Difficult to continuously deploy
 - Mental load of remembering all the different software and how to deploy it
 
-But none of this really matters. I'm able to host things for my friends, and set up self-hosted services for myself on my own hardware sitting in my room. Apart from electricity, this is free, and it also gets you to understand the plumbing of any software you are using, or might build later on in your career.
+But none of this really matters. I'm able to host things for my friends, and set up self-hosted services for myself on my own hardware sitting in my room. Apart from electricity, this is free, and it also gets you to understand the plumbing of any software you are using, or might build, or deploy later on in your career.
 
 # AWS ECS + Fargate
 
@@ -116,7 +116,7 @@ Let's start with load. What happens when we get 1 million users trying to access
 
 So why don't we just add more FE tasks? Sure that would give us more instances to distribute the load over, but how do we actually get the load over to them if the DNS record we have for my-app.com points to only a single, public IP address? This is where the Application Load-Balancer (ALB) becomes useful!
 
-Do you remember our Nginx proxy from earlier? Instead of having this proxy on one machine, we can stick it on a different one, and so long as the application is reachable from the target system, Nginx will serve the application like normal. Now imagine if Nginx can pick from multiple possible IP addresses and round-robin proxy them for each connection. This now becomes a load balancer.
+Do you remember our Nginx reverse proxy from earlier? Instead of having this proxy on one machine, we can stick it on a different one, and so long as the application is reachable from the target system, Nginx will serve the application like normal. Now imagine if Nginx can pick from multiple possible IP addresses and round-robin proxy them for each connection. This now becomes a load balancer.
 
 AWS have their own solution (in the EC2 console) which allows you to create your own application load balancer for this very purpose. Just like our example above, the load balancer is kinda like Nginx. It will first establish the connection with the client computer, then select an instance in a 'target group' to assign the connection to. It will then establish a connection with the instance, and forward the socket data from the client into the new connection with the target instance. Then the instance will handle all of the processing from there as if it were being contacted directly by the client (*not exactly, but close enough without going into too many details).
 
@@ -134,7 +134,9 @@ So it seems we still have some work to do...
 
 # AWS ECS + Fargate + ALB + Blue/Green Deployments
 
-So next up, let's solve the problem of downtime during deployments. Forgetting about any infrastructure for a moment, let's think about how we'd do this for our app on the linux VPS we talked about earlier. Let's accept that this VPS you have contains some mission-critical software. That means you can't have any downtime when pushing updates. So how could we roll-out our next software update?
+So next up, let's solve the problem of downtime during deployments. 
+
+Forgetting about any infrastructure for a moment, let's think about how we'd do this for our app on the linux VPS we talked about earlier. Let's accept that this VPS you have contains some mission-critical software. That means you can't have any downtime when pushing updates. So how could we roll-out our next software update?
 
 Our VPS is the only instance that exists, and we point everyone to it using a DNS record for `my-app.com`. So, naturally, we have the option to alter the A-record with a different IPv4 address. What we can do is set up a new machine with the updated copy of the software, but with a different, public IPv4. We then do whatever Nginx and networking setup we need, and it's ready to go. Then all we need to do is update the A-record at the DNS, and slowly, you will find that *most* of your traffic will hop over to the new server. Once you are confident that there are no more clients connecting to your old server, you can bin it.
 
@@ -187,7 +189,7 @@ The basic principle is:
 - Given enough time breaching either metric, we should scale-up or scale-down our instances.
 
 Figuring out the rules for scaling up and down are unique to each application. Each product has its own behaviours, quirks, intended use-cases, and load patterns, so it's important to consider some things before you choose the scaling rules to enforce:
-- Is your load very spiky? Do vast amounts of people visit your app at regular intervals? - If so, you may want to consider an aggressive scaling policy that scales-up at the slightest sniff of increased traffic, and scales down just as quickly?.
+- Is your load very spiky? Do vast amounts of people visit your app at regular intervals? - If so, you may want to consider an aggressive scaling policy that scales-up at the slightest sniff of increased traffic, and scales down just as quickly.
 - Do people use your app for long periods of time? - If so, you may want to consider a gentle scale-down policy in case clients still need to fetch small things throughout the day.
 - Does your app take a very long time to start up? - If so, you may want to implement some sort of predictive scaling.
 - Does your app work across a single time-zone? - If so, you might want to set a schedule for scaling.
@@ -203,7 +205,7 @@ So in reality, it will go something like this:
 
 But what does the auto-scaling policy actually do to alter the amount of instances in service? - It's quite simple, it just alters the number of desired tasks, just like we did before when we wanted to increase our capacity manually!
 
-Whenever you alter the desired amount of tasks, ECS responds by adding or culling new tasks. All of the processes of adding new instances or removing them is managed by ECS behind the scenes. Same with adding and removing things from the right target group so that the ALB can actually connect to these new tasks.
+Whenever you alter the desired amount of tasks, ECS responds by adding or culling tasks. All of the processes of adding new instances or removing them is managed by ECS behind the scenes. Same with adding and removing things from the right target group so that the ALB can actually connect to these new tasks.
 
 # Wrapping up
 
@@ -230,7 +232,7 @@ I like to think of an EC2 fleet like a cargo train. Let's say this train is head
 
 ![](/media/art_of_deployment/choo_choo_AB.png)
 
-> A small side, note, it's possible for each carriage to contain multiple containers. Although, you might not be able to fit multiple containers onto the same carriage. Some containers might be unevenly sized (each ECS service uses different amounts of CPU/RAM) and might not fit seemlessly together into the instance in a process known as [bin-packing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html). Changing the EC2 instance type is akin to changing the size of each carriage - more CPU/RAM means a bigger carriage, so you might be able to binpack better.
+> A small side, note, it's possible for each carriage to contain multiple containers. Although, you might not be able to fit multiple containers onto the same carriage. Some containers might be unevenly sized (each ECS service uses different amounts of CPU/RAM) and might not fit seamlessly together into the instance in a process known as [bin-packing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html). Changing the EC2 instance type is akin to changing the size of each carriage - more CPU/RAM means a bigger carriage, so you might be able to binpack better.
 
 This means that we have two carriages that are totally empty. This is fine for us as we anticipate that we might collect a few things along the way.
 
@@ -263,3 +265,22 @@ So firstly, we need some new infrastructure. In EC2, we will need to set up what
 This, I believe, is set up with a couple alarms, just like the ECS auto-scaling we talked about before, and AWS can automatically calculate the `CapacityProviderReservation` for you based on your configuration.
 
 The final thing to do is to link up your new ASG with ECS so that your service knows that it can use your ASG as a capacity provider for the tasks (interesting fact: Fargate is linked to your ECS services as a capacity provider by default!). Then, so long as your task definition specifies EC2 as the platform, ECS should pick up your ASG as the capacity provider, and then start provisioning tasks to your EC2 fleet.
+
+
+# Is there a simpler way to do all of this?
+
+There are a few technologies that I am following that show huge amounts of promise in this domain. Currently these PaaS offerings are more suited to the domain of hobby projects since they are so new, but I've personally used them within an organisation in order to implement an internal app. So you shouldn't really discount them when considering using this for an early production workload.
+
+The specific set of services I am talking about are [Cloudflare Workers](https://developers.cloudflare.com/workers/) and [Cloudflare Containers](https://developers.cloudflare.com/containers/), and I think that you should know about these.
+
+Cloudflare workers are interesting. They are V8 isolates that run at the edge - to cut through the jargon, basically they are very ephemeral worker functions (like AWS lambda) that run Javascript, and often they are launched on servers that are as close to your users as possible (like in their country or region). You can handle API requests, serve web asset requests, handle HTTP requests, you can turn it into a proxy, and do basically anything that you can do in JS.
+
+The downside of Cloudflare workers is that they do not give you the versatility of a full OS runtime (like AWS lambda). Although they are limited to executing JS in their V8 isolate, there is a way to provide a similar capability to Lambda by giving the worker access to a Cloudflare Container.
+
+A container is basically what it says - it's a docker container that you can run at the edge. This is almost identical to the AWS Lambda feature that lets you run AWS Lambda functions from a docker image instead of a source code bundle.
+
+The way that a worker interacts with the container is by simply calling a single function in the Cloudflare SDK and forwarding the request like you would with a normal HTTP request.
+
+![](/media/art_of_deployment/its-shrimple-shrimp.gif)
+
+The simplicity here is quite alluring to say the least. As of writing this, it seems that [Cloudflare has improved on some of its limits](https://developers.cloudflare.com/containers/platform-details/limits/) since I last checked. The limits here seem very promising compared to the beta period that I was familiar with, so I would highly recommend checking this out if you are thinking of setting up a full-stack application!
