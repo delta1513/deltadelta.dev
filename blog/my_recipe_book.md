@@ -1,11 +1,15 @@
 ---
 title: My recipe book
-description: Random recipes that I thought I should write down.
+description: My personal cooking tips and recipes.
 layout: markdown.njk
 date: 2026-08-13
 ---
 
-# Some cooking tips
+# Welcome!
+
+This is my personal recipe book!
+
+Here you'll find some cooking tips and explanations that I've learned throughout the years, and also a list of recipes that I like and wish to preserve.
 
 ## Self-raising flour
 
@@ -28,6 +32,7 @@ When you turn an oven on, it will start heating up, however, not evenly. By lett
 
 What I'm also saying here is that light on your oven that tells you when it's heating up, is not a reliable indicator of when you should put something in. So long as you have left your oven pre-heating for 30min, then you should be fine!
 
+---
 
 # Minnestra
 

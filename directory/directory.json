@@ -404,6 +404,7 @@
             "tooltip": "Software, infrastructure and the craft",
             "node_type": "folder",
             "nodes": [
+              { "name": "the_art_of_deployment", "tooltip": "(Mostly) everything that I know about deploying software", "node_type": "file", "href": "/writing/blog/the_art_of_deployment/" },
               { "name": "the_journey_to_zero_maintenance", "tooltip": "A blog article about a system that I ran for about 8 years", "node_type": "file", "href": "/writing/blog/the_journey_to_zero_maintenance/" },
               { "name": "software_sophistry", "tooltip": "Aphorisms on developing commercial software", "node_type": "file", "href": "/writing/blog/software-sophistry/" },
               { "name": "disposable_code", "tooltip": "How AI is enabling more creative work in software engineering", "node_type": "file", "href": "/writing/blog/disposable_code/" },
@@ -426,11 +427,11 @@
             "tooltip": "Life, experiments and reflections",
             "node_type": "folder",
             "nodes": [
+              { "name": "my_recipe_book", "tooltip": "A collection of recipes and cooking tips I like", "node_type": "file", "href": "/writing/blog/my_recipe_book/" },
               { "name": "capturing_photographs", "tooltip": "My philosophy on the importance of photography", "node_type": "file", "href": "/writing/blog/capturing_photographs/" },
               { "name": "south_korea", "tooltip": "A small note on my travels to Korea", "node_type": "file", "href": "/writing/blog/south_korea/" },
               { "name": "rock_climbing", "tooltip": "My take on the sport and a short starter guide", "node_type": "file", "href": "/writing/blog/rock_climbing/" },
-              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" },
-              { "name": "my_recipe_book", "tooltip": "A collection of recipes and cooking tips I like", "node_type": "file", "href": "/writing/blog/my_recipe_book/" }
+              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" }
             ]
           },
           {
