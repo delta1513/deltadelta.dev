@@ -1156,6 +1156,12 @@
                     "tooltip": "A series of essays and papers that provides a collection of evidence-based discussion on software engineering",
                     "node_type": "hyperlink",
                     "href": "https://www.hillelwayne.com/talks/ese/"
+                  },
+                  {
+                    "name": "carl_kolon_reading_list",
+                    "tooltip": "A required reading list from an engineering leader.",
+                    "node_type": "hyperlink",
+                    "href": "https://carlkolon.com/reading/"
                   }
                 ]
               },

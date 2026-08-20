@@ -1,0 +1,1 @@
+About why you should use concurrent workers for uvicorn instead of sync.
