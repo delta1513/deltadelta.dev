@@ -1023,94 +1023,108 @@
                 "node_type": "folder",
                 "nodes": [
                   {
-                    "name": "banned_book_library",
-                    "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe",
-                    "node_type": "hyperlink",
-                    "href": "https://www.richardosgood.com/posts/banned-book-library/"
+                    "name": "philosophy",
+                    "tooltip": "Philosophical musings and reflections",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "a_case_for_mindless_browsing",
+                        "tooltip": "A thoughtful defense of mindless browsing as something necessary and beneficial, comparing it to a walk in the woods",
+                        "node_type": "hyperlink",
+                        "href": "https://rybakov.com/blog/mindless/"
+                      },
+                      {
+                        "name": "ideological_craziness",
+                        "tooltip": "On the development of crazy ideologies.",
+                        "node_type": "hyperlink",
+                        "href": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn"
+                      },
+                      {
+                        "name": "how_to_exist",
+                        "tooltip": "Some notes on meditation",
+                        "node_type": "hyperlink",
+                        "href": "https://www.raptitude.com/2026/07/how-to-exist/"
+                      },
+                      {
+                        "name": "new_thoughts_for_the_web_revival",
+                        "tooltip": "",
+                        "node_type": "hyperlink",
+                        "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023"
+                      }
+                    ]
                   },
                   {
-                    "name": "ai_agent_battle_royale",
-                    "tooltip": "An interesting experiment",
-                    "node_type": "hyperlink",
-                    "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/"
-                  },
-                  {
-                    "name": "new_thoughts_for_the_web_revival",
-                    "tooltip": "",
-                    "node_type": "hyperlink",
-                    "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023"
-                  },
-                  {
-                    "name": "drone_automation",
-                    "tooltip": "Carlos Gonzalez's blog",
-                    "node_type": "hyperlink",
-                    "href": "https://www.cggonzalez.com/blog/index.html"
-                  },
-                  {
-                    "name": "on_high_temperature_llm_sampling",
-                    "tooltip": "An article about LLM sampling methods and how it's used in the industry",
-                    "node_type": "hyperlink",
-                    "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397"
-                  },
-                  {
-                    "name": "a_case_for_mindless_browsing",
-                    "tooltip": "A thoughtful defense of mindless browsing as something necessary and beneficial, comparing it to a walk in the woods",
-                    "node_type": "hyperlink",
-                    "href": "https://rybakov.com/blog/mindless/"
+                    "name": "tech",
+                    "tooltip": "Tech and software blog posts",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "banned_book_library",
+                        "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe",
+                        "node_type": "hyperlink",
+                        "href": "https://www.richardosgood.com/posts/banned-book-library/"
+                      },
+                      {
+                        "name": "ai_agent_battle_royale",
+                        "tooltip": "An interesting experiment",
+                        "node_type": "hyperlink",
+                        "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/"
+                      },
+                      {
+                        "name": "drone_automation",
+                        "tooltip": "Carlos Gonzalez's blog",
+                        "node_type": "hyperlink",
+                        "href": "https://www.cggonzalez.com/blog/index.html"
+                      },
+                      {
+                        "name": "on_high_temperature_llm_sampling",
+                        "tooltip": "An article about LLM sampling methods and how it's used in the industry",
+                        "node_type": "hyperlink",
+                        "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397"
+                      },
+                      {
+                        "name": "dont_be_a_meat_proxy",
+                        "tooltip": "Don't be a meat proxy",
+                        "node_type": "hyperlink",
+                        "href": "https://gruhn.me/blog/2026-08-03/"
+                      },
+                      {
+                        "name": "200_ms",
+                        "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page",
+                        "node_type": "hyperlink",
+                        "href": "https://200ms.thenodebook.com/"
+                      },
+                      {
+                        "name": "ai_and_middle_class_software_eng",
+                        "tooltip": "A perspective on how AI is affecting the middle class of software engineering",
+                        "node_type": "hyperlink",
+                        "href": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html"
+                      },
+                      {
+                        "name": "dont_humanise_llm_outputs",
+                        "tooltip": "Why attempting to humanise LLM outputs is a misguided approach",
+                        "node_type": "hyperlink",
+                        "href": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb"
+                      },
+                      {
+                        "name": "how_i_use_llms_to_learn",
+                        "tooltip": "A personal approach to using LLMs as learning tools",
+                        "node_type": "hyperlink",
+                        "href": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/"
+                      },
+                      {
+                        "name": "website_traffic_is_bots",
+                        "tooltip": "A blog about the battle between bots and users on the modern web.",
+                        "node_type": "hyperlink",
+                        "href": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/"
+                      }
+                    ]
                   },
                   {
                     "name": "writing_by_hand",
                     "tooltip": "The benefits of handwriting, and some tips on how to get started with it.",
                     "node_type": "hyperlink",
                     "href": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your"
-                  },
-                  {
-                    "name": "how_to_exist",
-                    "tooltip": "Some notes on meditation",
-                    "node_type": "hyperlink",
-                    "href": "https://www.raptitude.com/2026/07/how-to-exist/"
-                  },
-                  {
-                    "name": "dont_be_a_meat_proxy",
-                    "tooltip": "Don't be a meat proxy",
-                    "node_type": "hyperlink",
-                    "href": "https://gruhn.me/blog/2026-08-03/"
-                  },
-                  {
-                    "name": "200_ms",
-                    "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page",
-                    "node_type": "hyperlink",
-                    "href": "https://200ms.thenodebook.com/"
-                  },
-                  {
-                    "name": "ai_and_middle_class_software_eng",
-                    "tooltip": "A perspective on how AI is affecting the middle class of software engineering",
-                    "node_type": "hyperlink",
-                    "href": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html"
-                  },
-                  {
-                    "name": "dont_humanise_llm_outputs",
-                    "tooltip": "Why attempting to humanise LLM outputs is a misguided approach",
-                    "node_type": "hyperlink",
-                    "href": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb"
-                  },
-                  {
-                    "name": "ideological_craziness",
-                    "tooltip": "On the development of crazy ideologies.",
-                    "node_type": "hyperlink",
-                    "href": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn"
-                  },
-                  {
-                    "name": "how_i_use_llms_to_learn",
-                    "tooltip": "A personal approach to using LLMs as learning tools",
-                    "node_type": "hyperlink",
-                    "href": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/"
-                  },
-                  {
-                    "name": "website_traffic_is_bots",
-                    "tooltip": "A blog about the battle between bots and users on the modern web.",
-                    "node_type": "hyperlink",
-                    "href": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/"
                   }
                 ]
               },
