@@ -1256,7 +1256,7 @@
         "name": "about",
         "tooltip": "Who I am and what this site is",
         "node_type": "file",
-        "href": "/writing/about/"
+        "href": "/about/"
       }
     ]
   }
