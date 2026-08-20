@@ -901,6 +901,19 @@
             "node_type": "folder",
             "nodes": [
               {
+                "name": "documentation",
+                "tooltip": "Docs and guides",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "htop_explained",
+                    "tooltip": "An annotated explanation of htop's output",
+                    "node_type": "hyperlink",
+                    "href": "https://peteris.rocks/blog/htop/"
+                  }
+                ]
+              },
+              {
                 "name": "guide_world",
                 "tooltip": "A collection of travel blogs",
                 "node_type": "hyperlink",
@@ -947,19 +960,6 @@
                 "tooltip": "Cocktail recipes",
                 "node_type": "hyperlink",
                 "href": "https://tuxedono2.com/"
-              },
-              {
-                "name": "documentation",
-                "tooltip": "Docs and guides",
-                "node_type": "folder",
-                "nodes": [
-                  {
-                    "name": "htop_explained",
-                    "tooltip": "An annotated explanation of htop's output",
-                    "node_type": "hyperlink",
-                    "href": "https://peteris.rocks/blog/htop/"
-                  }
-                ]
               }
             ]
           },
