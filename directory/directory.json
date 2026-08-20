@@ -717,6 +717,25 @@
             "node_type": "folder",
             "nodes": [
               {
+                "name": "low_tech_projects",
+                "tooltip": "Projects for self-sufficiency and low-tech living",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "opensource_lowtech",
+                    "tooltip": "Projects for self-sufficiency",
+                    "node_type": "hyperlink",
+                    "href": "https://opensourcelowtech.org/index.html"
+                  },
+                  {
+                    "name": "low_tech_lab_wiki",
+                    "tooltip": "A wiki of low-tech projects and knowledge",
+                    "node_type": "hyperlink",
+                    "href": "https://wiki.lowtechlab.org/wiki/Accueil"
+                  }
+                ]
+              },
+              {
                 "name": "distributed_computing",
                 "tooltip": "Distributed computing projects",
                 "node_type": "folder",
@@ -830,12 +849,6 @@
                 "tooltip": "Free eBooks",
                 "node_type": "hyperlink",
                 "href": "https://gutenberg.org/"
-              },
-              {
-                "name": "opensource_lowtech",
-                "tooltip": "Projects for self-sufficiency",
-                "node_type": "hyperlink",
-                "href": "https://opensourcelowtech.org/index.html"
               }
             ]
           },
