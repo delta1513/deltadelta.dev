@@ -8,15 +8,233 @@
         "node_type": "folder",
         "nodes": [
           {
+            "name": "blog",
+            "tooltip": "My personal and dev blog",
+            "node_type": "folder",
+            "nodes": [
+              {
+                "name": "tech_blogs",
+                "tooltip": "Software, infrastructure and the craft",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "the_art_of_deployment",
+                    "tooltip": "(Mostly) everything that I know about deploying software",
+                    "node_type": "file",
+                    "href": "/writing/blog/the_art_of_deployment/"
+                  },
+                  {
+                    "name": "the_journey_to_zero_maintenance",
+                    "tooltip": "A blog article about a system that I ran for about 8 years",
+                    "node_type": "file",
+                    "href": "/writing/blog/the_journey_to_zero_maintenance/"
+                  },
+                  {
+                    "name": "software_sophistry",
+                    "tooltip": "Aphorisms on developing commercial software",
+                    "node_type": "file",
+                    "href": "/writing/blog/software-sophistry/"
+                  },
+                  {
+                    "name": "disposable_code",
+                    "tooltip": "How AI is enabling more creative work in software engineering",
+                    "node_type": "file",
+                    "href": "/writing/blog/disposable_code/"
+                  },
+                  {
+                    "name": "how_i_use_ai",
+                    "tooltip": "How I work with AI, as a series of personas",
+                    "node_type": "file",
+                    "href": "/writing/blog/how_i_use_ai/"
+                  },
+                  {
+                    "name": "incident_lambda_memory_pressure",
+                    "tooltip": "A deep-dive into an exceptionally mysterious incident",
+                    "node_type": "file",
+                    "href": "/writing/blog/incident_lambda_memory_pressure/"
+                  },
+                  {
+                    "name": "aws_imdsv2_migration_guide",
+                    "tooltip": "Dead simple IMDSv1 to IMDSv2 migration guide",
+                    "node_type": "file",
+                    "href": "/writing/blog/aws_imdsv2_migration_guide/"
+                  },
+                  {
+                    "name": "linux",
+                    "tooltip": "My woes with linux",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "linux_index",
+                        "tooltip": "Linux Posting — collection of linux issues I've solved",
+                        "node_type": "file",
+                        "href": "/writing/blog/linux_index/"
+                      },
+                      {
+                        "name": "linux_001",
+                        "tooltip": "A firmware crash?",
+                        "node_type": "file",
+                        "href": "/writing/blog/linux_1/"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "personal_blogs",
+                "tooltip": "Life, experiments and reflections",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "my_recipe_book",
+                    "tooltip": "A collection of recipes and cooking tips I like",
+                    "node_type": "file",
+                    "href": "/writing/blog/my_recipe_book/"
+                  },
+                  {
+                    "name": "capturing_photographs",
+                    "tooltip": "My philosophy on the importance of photography",
+                    "node_type": "file",
+                    "href": "/writing/blog/capturing_photographs/"
+                  },
+                  {
+                    "name": "south_korea",
+                    "tooltip": "A small note on my travels to Korea",
+                    "node_type": "file",
+                    "href": "/writing/blog/south_korea/"
+                  },
+                  {
+                    "name": "rock_climbing",
+                    "tooltip": "My take on the sport and a short starter guide",
+                    "node_type": "file",
+                    "href": "/writing/blog/rock_climbing/"
+                  },
+                  {
+                    "name": "books_ive_read",
+                    "tooltip": "My digital bookshelf",
+                    "node_type": "file",
+                    "href": "/writing/blog/books_ive_read/"
+                  }
+                ]
+              },
+              {
+                "name": "creative_writing",
+                "tooltip": "Short creative pieces",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "un_natured",
+                    "tooltip": "Un-natured — 2026",
+                    "node_type": "file",
+                    "href": "/writing/blog/writing_un-natured/"
+                  },
+                  {
+                    "name": "timberwolf",
+                    "tooltip": "Timberwolf — 2017",
+                    "node_type": "file",
+                    "href": "/writing/blog/writing_timberwolf/"
+                  }
+                ]
+              },
+              {
+                "name": "art",
+                "tooltip": "Visual work and experiments",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "photography",
+                    "tooltip": "Photographs I've captured and think are worth sharing",
+                    "node_type": "file",
+                    "href": "/writing/blog/art_photography/"
+                  },
+                  {
+                    "name": "gymkhana_and_motorsports",
+                    "tooltip": "My YouTube channel with all my motorsports footage",
+                    "node_type": "hyperlink",
+                    "href": "https://www.youtube.com/@delta_1512"
+                  },
+                  {
+                    "name": "turbulent_flow",
+                    "tooltip": "Images surrounding the phenomena of turbulent flow",
+                    "node_type": "file",
+                    "href": "/writing/blog/art_turbulent_flow/"
+                  },
+                  {
+                    "name": "cellular_automata",
+                    "tooltip": "Random cellular automata I've experimented with",
+                    "node_type": "file",
+                    "href": "/writing/blog/art_cellular_automata/"
+                  }
+                ]
+              },
+              {
+                "name": "the_lenses",
+                "tooltip": "A line of meditations I call The Lenses",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "lens_000",
+                    "tooltip": "The definition of a Lens",
+                    "node_type": "file",
+                    "href": "/writing/blog/lens_000/"
+                  },
+                  {
+                    "name": "lens_001",
+                    "tooltip": "Anthropological products are a function of pain and pleasure",
+                    "node_type": "file",
+                    "href": "/writing/blog/lens_001/"
+                  },
+                  {
+                    "name": "lens_002",
+                    "tooltip": "Human will as a search algorithm",
+                    "node_type": "file",
+                    "href": "/writing/blog/lens_002/"
+                  },
+                  {
+                    "name": "lens_003",
+                    "tooltip": "Eddies",
+                    "node_type": "file",
+                    "href": "/writing/blog/lens_003/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "apps",
             "tooltip": "Web apps and tools I host",
             "node_type": "folder",
             "nodes": [
-              { "name": "emoji_picker", "tooltip": "A super simple emoji picker", "node_type": "hyperlink", "href": "https://emoji.deltadelta.dev/" },
-              { "name": "wastebin", "tooltip": "Self-hosted pastebin", "node_type": "hyperlink", "href": "https://wastebin.deltadelta.dev/" },
-              { "name": "lastfm_wall", "tooltip": "Generate an art wall of your last.fm top albums", "node_type": "hyperlink", "href": "https://lastfmwall.deltadelta.dev/?username=delta1512" },
-              { "name": "video_converter", "tooltip": "No bullshit, in-browser video converter", "node_type": "hyperlink", "href": "https://ffmpeg.deltadelta.dev/" },
-              { "name": "stateless_reversi", "tooltip": "A stateless implementation of the classic board game", "node_type": "hyperlink", "href": "https://delta1513.github.io/stateless-reversi/" }
+              {
+                "name": "emoji_picker",
+                "tooltip": "A super simple emoji picker",
+                "node_type": "hyperlink",
+                "href": "https://emoji.deltadelta.dev/"
+              },
+              {
+                "name": "wastebin",
+                "tooltip": "Self-hosted pastebin",
+                "node_type": "hyperlink",
+                "href": "https://wastebin.deltadelta.dev/"
+              },
+              {
+                "name": "lastfm_wall",
+                "tooltip": "Generate an art wall of your last.fm top albums",
+                "node_type": "hyperlink",
+                "href": "https://lastfmwall.deltadelta.dev/?username=delta1512"
+              },
+              {
+                "name": "video_converter",
+                "tooltip": "No bullshit, in-browser video converter",
+                "node_type": "hyperlink",
+                "href": "https://ffmpeg.deltadelta.dev/"
+              },
+              {
+                "name": "stateless_reversi",
+                "tooltip": "A stateless implementation of the classic board game",
+                "node_type": "hyperlink",
+                "href": "https://delta1513.github.io/stateless-reversi/"
+              }
             ]
           },
           {
@@ -24,17 +242,62 @@
             "tooltip": "My profiles around the web",
             "node_type": "folder",
             "nodes": [
-              { "name": "soundcloud", "tooltip": "I like to curate playlists. Take a listen!", "node_type": "hyperlink", "href": "https://soundcloud.com/delta-d-694387557" },
-              { "name": "lastfm", "tooltip": "My last.fm profile", "node_type": "hyperlink", "href": "https://www.last.fm/user/delta1512" },
-              { "name": "youtube", "tooltip": "My YouTube channel with all my motorsports footage", "node_type": "hyperlink", "href": "https://www.youtube.com/@delta_1512" },
-              { "name": "orcid", "tooltip": "My ORCID researcher profile", "node_type": "hyperlink", "href": "https://orcid.org/0009-0007-1218-1549" },
-              { "name": "gitlab", "tooltip": "My GitLab profile", "node_type": "hyperlink", "href": "https://gitlab.com/delta1512" },
-              { "name": "github", "tooltip": "My GitHub profile", "node_type": "hyperlink", "href": "https://github.com/delta1513" },
-              { "name": "linkedin", "tooltip": "My LinkedIn profile", "node_type": "hyperlink", "href": "https://www.linkedin.com/in/marcus-belcastro-96628a1a1/" }
+              {
+                "name": "soundcloud",
+                "tooltip": "I like to curate playlists. Take a listen!",
+                "node_type": "hyperlink",
+                "href": "https://soundcloud.com/delta-d-694387557"
+              },
+              {
+                "name": "lastfm",
+                "tooltip": "My last.fm profile",
+                "node_type": "hyperlink",
+                "href": "https://www.last.fm/user/delta1512"
+              },
+              {
+                "name": "youtube",
+                "tooltip": "My YouTube channel with all my motorsports footage",
+                "node_type": "hyperlink",
+                "href": "https://www.youtube.com/@delta_1512"
+              },
+              {
+                "name": "orcid",
+                "tooltip": "My ORCID researcher profile",
+                "node_type": "hyperlink",
+                "href": "https://orcid.org/0009-0007-1218-1549"
+              },
+              {
+                "name": "gitlab",
+                "tooltip": "My GitLab profile",
+                "node_type": "hyperlink",
+                "href": "https://gitlab.com/delta1512"
+              },
+              {
+                "name": "github",
+                "tooltip": "My GitHub profile",
+                "node_type": "hyperlink",
+                "href": "https://github.com/delta1513"
+              },
+              {
+                "name": "linkedin",
+                "tooltip": "My LinkedIn profile",
+                "node_type": "hyperlink",
+                "href": "https://www.linkedin.com/in/marcus-belcastro-96628a1a1/"
+              }
             ]
           },
-          { "name": "cv", "tooltip": "My CV in the form of a website", "node_type": "hyperlink", "href": "https://marcusbelcastro.com/" },
-          { "name": "webring", "tooltip": "Sites from myself and people close to me", "node_type": "file", "href": "/writing/webring/" }
+          {
+            "name": "cv",
+            "tooltip": "My CV in the form of a website",
+            "node_type": "hyperlink",
+            "href": "https://marcusbelcastro.com/"
+          },
+          {
+            "name": "webring",
+            "tooltip": "Sites from myself and people close to me",
+            "node_type": "file",
+            "href": "/writing/webring/"
+          }
         ]
       },
       {
@@ -47,16 +310,66 @@
             "tooltip": "Keeping up with things",
             "node_type": "folder",
             "nodes": [
-              { "name": "australian_computer_society_ict_news", "tooltip": "", "node_type": "hyperlink", "href": "https://ia.acs.org.au/category/analysis.html" },
-              { "name": "tldr", "tooltip": "Tech newsletter separated into various topics", "node_type": "hyperlink", "href": "https://tldr.tech/" },
-              { "name": "latent_space", "tooltip": "AI engineering newsletter", "node_type": "hyperlink", "href": "https://www.latent.space/" },
-              { "name": "fast_ai", "tooltip": "An AI engineering blog and community", "node_type": "hyperlink", "href": "https://www.fast.ai/" },
-              { "name": "google_ai_blog", "tooltip": "Google's blog on AI innovation and research", "node_type": "hyperlink", "href": "https://blog.google/innovation-and-ai/" },
-              { "name": "drone_xl", "tooltip": "News and advancements in drone technology", "node_type": "hyperlink", "href": "https://dronexl.co/" },
-              { "name": "ycombinator_hackernews", "tooltip": "The one we all know and love", "node_type": "hyperlink", "href": "https://news.ycombinator.com/" },
-              { "name": "lwn", "tooltip": "Linux and Free Software news", "node_type": "hyperlink", "href": "https://lwn.net/" },
-              { "name": "phoronix", "tooltip": "Linux hardware news", "node_type": "hyperlink", "href": "https://www.phoronix.com/" },
-              { "name": "science_daily", "tooltip": "", "node_type": "hyperlink", "href": "https://www.sciencedaily.com/" }
+              {
+                "name": "australian_computer_society_ict_news",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://ia.acs.org.au/category/analysis.html"
+              },
+              {
+                "name": "tldr",
+                "tooltip": "Tech newsletter separated into various topics",
+                "node_type": "hyperlink",
+                "href": "https://tldr.tech/"
+              },
+              {
+                "name": "latent_space",
+                "tooltip": "AI engineering newsletter",
+                "node_type": "hyperlink",
+                "href": "https://www.latent.space/"
+              },
+              {
+                "name": "fast_ai",
+                "tooltip": "An AI engineering blog and community",
+                "node_type": "hyperlink",
+                "href": "https://www.fast.ai/"
+              },
+              {
+                "name": "google_ai_blog",
+                "tooltip": "Google's blog on AI innovation and research",
+                "node_type": "hyperlink",
+                "href": "https://blog.google/innovation-and-ai/"
+              },
+              {
+                "name": "drone_xl",
+                "tooltip": "News and advancements in drone technology",
+                "node_type": "hyperlink",
+                "href": "https://dronexl.co/"
+              },
+              {
+                "name": "ycombinator_hackernews",
+                "tooltip": "The one we all know and love",
+                "node_type": "hyperlink",
+                "href": "https://news.ycombinator.com/"
+              },
+              {
+                "name": "lwn",
+                "tooltip": "Linux and Free Software news",
+                "node_type": "hyperlink",
+                "href": "https://lwn.net/"
+              },
+              {
+                "name": "phoronix",
+                "tooltip": "Linux hardware news",
+                "node_type": "hyperlink",
+                "href": "https://www.phoronix.com/"
+              },
+              {
+                "name": "science_daily",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://www.sciencedaily.com/"
+              }
             ]
           },
           {
@@ -74,8 +387,18 @@
                     "tooltip": "Checking things are working",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "librespeed_speedtest", "tooltip": "A no-BS FOSS speedtest site that you can host yourself", "node_type": "hyperlink", "href": "https://librespeed.org/#" },
-                      { "name": "ssl_tester", "tooltip": "", "node_type": "hyperlink", "href": "https://www.ssllabs.com/ssltest/analyze.html" }
+                      {
+                        "name": "librespeed_speedtest",
+                        "tooltip": "A no-BS FOSS speedtest site that you can host yourself",
+                        "node_type": "hyperlink",
+                        "href": "https://librespeed.org/#"
+                      },
+                      {
+                        "name": "ssl_tester",
+                        "tooltip": "",
+                        "node_type": "hyperlink",
+                        "href": "https://www.ssllabs.com/ssltest/analyze.html"
+                      }
                     ]
                   },
                   {
@@ -83,8 +406,18 @@
                     "tooltip": "Tools for testing software",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "big_list_of_naughty_strings", "tooltip": "Inputs known to be problematic — use this to test your software", "node_type": "hyperlink", "href": "https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.json" },
-                      { "name": "lipsum", "tooltip": "Lipsum generator", "node_type": "hyperlink", "href": "https://www.lipsum.com/" }
+                      {
+                        "name": "big_list_of_naughty_strings",
+                        "tooltip": "Inputs known to be problematic — use this to test your software",
+                        "node_type": "hyperlink",
+                        "href": "https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.json"
+                      },
+                      {
+                        "name": "lipsum",
+                        "tooltip": "Lipsum generator",
+                        "node_type": "hyperlink",
+                        "href": "https://www.lipsum.com/"
+                      }
                     ]
                   },
                   {
@@ -92,8 +425,18 @@
                     "tooltip": "Docs and diagrams",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "swimlanes", "tooltip": "Create sequence diagrams in your web browser", "node_type": "hyperlink", "href": "https://swimlanes.io/" },
-                      { "name": "deepwiki", "tooltip": "Documentation for anything", "node_type": "hyperlink", "href": "https://deepwiki.com/" }
+                      {
+                        "name": "swimlanes",
+                        "tooltip": "Create sequence diagrams in your web browser",
+                        "node_type": "hyperlink",
+                        "href": "https://swimlanes.io/"
+                      },
+                      {
+                        "name": "deepwiki",
+                        "tooltip": "Documentation for anything",
+                        "node_type": "hyperlink",
+                        "href": "https://deepwiki.com/"
+                      }
                     ]
                   },
                   {
@@ -101,8 +444,18 @@
                     "tooltip": "Formats and specifications",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "mimetype_io", "tooltip": "Search and analyze mimetypes", "node_type": "hyperlink", "href": "https://mimetype.io/" },
-                      { "name": "codepoints_net", "tooltip": "Search and browse Unicode code points", "node_type": "hyperlink", "href": "https://codepoints.net/" }
+                      {
+                        "name": "mimetype_io",
+                        "tooltip": "Search and analyze mimetypes",
+                        "node_type": "hyperlink",
+                        "href": "https://mimetype.io/"
+                      },
+                      {
+                        "name": "codepoints_net",
+                        "tooltip": "Search and browse Unicode code points",
+                        "node_type": "hyperlink",
+                        "href": "https://codepoints.net/"
+                      }
                     ]
                   },
                   {
@@ -115,10 +468,20 @@
                         "tooltip": "MCP servers that I like using",
                         "node_type": "folder",
                         "nodes": [
-                          { "name": "aws_documentation_mcp_server", "tooltip": "MCP server for querying AWS documentation", "node_type": "hyperlink", "href": "https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server" }
+                          {
+                            "name": "aws_documentation_mcp_server",
+                            "tooltip": "MCP server for querying AWS documentation",
+                            "node_type": "hyperlink",
+                            "href": "https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server"
+                          }
                         ]
                       },
-                      { "name": "artificial_analysis", "tooltip": "A service that independently tests AI models and reports on the results.", "node_type": "hyperlink", "href": "https://artificialanalysis.ai/" }
+                      {
+                        "name": "artificial_analysis",
+                        "tooltip": "A service that independently tests AI models and reports on the results.",
+                        "node_type": "hyperlink",
+                        "href": "https://artificialanalysis.ai/"
+                      }
                     ]
                   },
                   {
@@ -126,11 +489,26 @@
                     "tooltip": "Crunching numbers",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "crontab_guru", "tooltip": "", "node_type": "hyperlink", "href": "https://crontab.guru/" },
-                      { "name": "chmod_calculator", "tooltip": "", "node_type": "hyperlink", "href": "https://chmod-calculator.com/" }
+                      {
+                        "name": "crontab_guru",
+                        "tooltip": "",
+                        "node_type": "hyperlink",
+                        "href": "https://crontab.guru/"
+                      },
+                      {
+                        "name": "chmod_calculator",
+                        "tooltip": "",
+                        "node_type": "hyperlink",
+                        "href": "https://chmod-calculator.com/"
+                      }
                     ]
                   },
-                  { "name": "endoflife_date", "tooltip": "Learn when major software frameworks reach end of life", "node_type": "hyperlink", "href": "https://endoflife.date/" }
+                  {
+                    "name": "endoflife_date",
+                    "tooltip": "Learn when major software frameworks reach end of life",
+                    "node_type": "hyperlink",
+                    "href": "https://endoflife.date/"
+                  }
                 ]
               },
               {
@@ -138,10 +516,30 @@
                 "tooltip": "Getting files from A to B",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "portable_secret_creator", "tooltip": "Create and share locked files with zero-install", "node_type": "hyperlink", "href": "https://mprimi.github.io/portable-secret/creator/" },
-                  { "name": "ipfs_p2p_file_share", "tooltip": "Share files and folder browser-to-browser", "node_type": "hyperlink", "href": "https://share.ipfs.io/" },
-                  { "name": "iroh_dumbpipe", "tooltip": "Transfer data between any two computers in the world via NAT hole-punching", "node_type": "hyperlink", "href": "https://github.com/n0-computer/dumbpipe" },
-                  { "name": "syncthing", "tooltip": "E2E encrypted folder synchronisation (basically your own Dropbox)", "node_type": "hyperlink", "href": "https://syncthing.net/" }
+                  {
+                    "name": "portable_secret_creator",
+                    "tooltip": "Create and share locked files with zero-install",
+                    "node_type": "hyperlink",
+                    "href": "https://mprimi.github.io/portable-secret/creator/"
+                  },
+                  {
+                    "name": "ipfs_p2p_file_share",
+                    "tooltip": "Share files and folder browser-to-browser",
+                    "node_type": "hyperlink",
+                    "href": "https://share.ipfs.io/"
+                  },
+                  {
+                    "name": "iroh_dumbpipe",
+                    "tooltip": "Transfer data between any two computers in the world via NAT hole-punching",
+                    "node_type": "hyperlink",
+                    "href": "https://github.com/n0-computer/dumbpipe"
+                  },
+                  {
+                    "name": "syncthing",
+                    "tooltip": "E2E encrypted folder synchronisation (basically your own Dropbox)",
+                    "node_type": "hyperlink",
+                    "href": "https://syncthing.net/"
+                  }
                 ]
               },
               {
@@ -149,8 +547,18 @@
                 "tooltip": "Things to run on your own hardware",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "immich", "tooltip": "One of the best photo organisers I've used", "node_type": "hyperlink", "href": "https://immich.app/" },
-                  { "name": "microsocks", "tooltip": "Tiny HTTP SOCKS proxy", "node_type": "hyperlink", "href": "https://github.com/rofl0r/microsocks" }
+                  {
+                    "name": "immich",
+                    "tooltip": "One of the best photo organisers I've used",
+                    "node_type": "hyperlink",
+                    "href": "https://immich.app/"
+                  },
+                  {
+                    "name": "microsocks",
+                    "tooltip": "Tiny HTTP SOCKS proxy",
+                    "node_type": "hyperlink",
+                    "href": "https://github.com/rofl0r/microsocks"
+                  }
                 ]
               },
               {
@@ -158,9 +566,24 @@
                 "tooltip": "Money things",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "mortgage_monster", "tooltip": "Calculate what your mortgage would cost and how you'll build wealth over time", "node_type": "hyperlink", "href": "https://mortgage.monster/" },
-                  { "name": "australian_income_tax_calculator", "tooltip": "", "node_type": "hyperlink", "href": "https://paycalculator.com.au/" },
-                  { "name": "my_home_searcher", "tooltip": "A vibe-coded app made by a colleague I worked with", "node_type": "hyperlink", "href": "https://myhomesearcher.com/" }
+                  {
+                    "name": "mortgage_monster",
+                    "tooltip": "Calculate what your mortgage would cost and how you'll build wealth over time",
+                    "node_type": "hyperlink",
+                    "href": "https://mortgage.monster/"
+                  },
+                  {
+                    "name": "australian_income_tax_calculator",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://paycalculator.com.au/"
+                  },
+                  {
+                    "name": "my_home_searcher",
+                    "tooltip": "A vibe-coded app made by a colleague I worked with",
+                    "node_type": "hyperlink",
+                    "href": "https://myhomesearcher.com/"
+                  }
                 ]
               },
               {
@@ -168,8 +591,18 @@
                 "tooltip": "Multi-tool utilities",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "cyberchef", "tooltip": "Tools for text manipulation", "node_type": "hyperlink", "href": "https://gchq.github.io/CyberChef/" },
-                  { "name": "devina_io", "tooltip": "A Swiss army knife of developer utilities", "node_type": "hyperlink", "href": "https://devina.io/" }
+                  {
+                    "name": "cyberchef",
+                    "tooltip": "Tools for text manipulation",
+                    "node_type": "hyperlink",
+                    "href": "https://gchq.github.io/CyberChef/"
+                  },
+                  {
+                    "name": "devina_io",
+                    "tooltip": "A Swiss army knife of developer utilities",
+                    "node_type": "hyperlink",
+                    "href": "https://devina.io/"
+                  }
                 ]
               },
               {
@@ -177,11 +610,36 @@
                 "tooltip": "Swap these domains for better embeds",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "twitter_com_to_vxtwitter_com", "tooltip": "", "node_type": "hyperlink", "href": "https://vxtwitter.com/" },
-                  { "name": "x_com_to_fixupx_com", "tooltip": "", "node_type": "hyperlink", "href": "https://fixupx.com/" },
-                  { "name": "instagram_com_to_ddinstagram_com", "tooltip": "", "node_type": "hyperlink", "href": "https://ddinstagram.com/" },
-                  { "name": "tiktok_com_to_tiktxk_com", "tooltip": "", "node_type": "hyperlink", "href": "https://tiktxk.com/" },
-                  { "name": "cobalt_tools", "tooltip": "Download videos and other content from various platforms or URLs", "node_type": "hyperlink", "href": "https://cobalt.tools/" }
+                  {
+                    "name": "twitter_com_to_vxtwitter_com",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://vxtwitter.com/"
+                  },
+                  {
+                    "name": "x_com_to_fixupx_com",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://fixupx.com/"
+                  },
+                  {
+                    "name": "instagram_com_to_ddinstagram_com",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://ddinstagram.com/"
+                  },
+                  {
+                    "name": "tiktok_com_to_tiktxk_com",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://tiktxk.com/"
+                  },
+                  {
+                    "name": "cobalt_tools",
+                    "tooltip": "Download videos and other content from various platforms or URLs",
+                    "node_type": "hyperlink",
+                    "href": "https://cobalt.tools/"
+                  }
                 ]
               },
               {
@@ -189,19 +647,74 @@
                 "tooltip": "Specialised search tools",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "shodan", "tooltip": "IoT and web system search engine", "node_type": "hyperlink", "href": "https://www.shodan.io/" },
-                  { "name": "sourcegraph", "tooltip": "Global code search engine", "node_type": "hyperlink", "href": "https://sourcegraph.com/search" },
-                  { "name": "semantic_scholar", "tooltip": "Search engine for academic papers", "node_type": "hyperlink", "href": "https://www.semanticscholar.org/" }
+                  {
+                    "name": "shodan",
+                    "tooltip": "IoT and web system search engine",
+                    "node_type": "hyperlink",
+                    "href": "https://www.shodan.io/"
+                  },
+                  {
+                    "name": "sourcegraph",
+                    "tooltip": "Global code search engine",
+                    "node_type": "hyperlink",
+                    "href": "https://sourcegraph.com/search"
+                  },
+                  {
+                    "name": "semantic_scholar",
+                    "tooltip": "Search engine for academic papers",
+                    "node_type": "hyperlink",
+                    "href": "https://www.semanticscholar.org/"
+                  }
                 ]
               },
-              { "name": "email2sms", "tooltip": "Learn how to send SMS via email", "node_type": "hyperlink", "href": "https://email2sms.info/" },
-              { "name": "virustotal", "tooltip": "Quickly check if a file is infected by uploading it", "node_type": "hyperlink", "href": "https://www.virustotal.com/gui/home/upload" },
-              { "name": "desmos", "tooltip": "Mathematical graphing calculator", "node_type": "hyperlink", "href": "https://www.desmos.com/" },
-              { "name": "txtify", "tooltip": "Turn web pages into raw text", "node_type": "hyperlink", "href": "https://txtify.it/" },
-              { "name": "world_time_buddy", "tooltip": "The best world clock and time converter I've ever used", "node_type": "hyperlink", "href": "https://www.worldtimebuddy.com/" },
-              { "name": "ventoy", "tooltip": "Boot any OS without having to re-flash your drive", "node_type": "hyperlink", "href": "https://www.ventoy.net/en/index.html" },
-              { "name": "lexilogos", "tooltip": "Latin Keyboard", "node_type": "hyperlink", "href": "https://www.lexilogos.com/keyboard/latin.htm" },
-              { "name": "unslop", "tooltip": "A web tool to detect AI-generated writing.", "node_type": "hyperlink", "href": "https://unslop.run/" }
+              {
+                "name": "email2sms",
+                "tooltip": "Learn how to send SMS via email",
+                "node_type": "hyperlink",
+                "href": "https://email2sms.info/"
+              },
+              {
+                "name": "virustotal",
+                "tooltip": "Quickly check if a file is infected by uploading it",
+                "node_type": "hyperlink",
+                "href": "https://www.virustotal.com/gui/home/upload"
+              },
+              {
+                "name": "desmos",
+                "tooltip": "Mathematical graphing calculator",
+                "node_type": "hyperlink",
+                "href": "https://www.desmos.com/"
+              },
+              {
+                "name": "txtify",
+                "tooltip": "Turn web pages into raw text",
+                "node_type": "hyperlink",
+                "href": "https://txtify.it/"
+              },
+              {
+                "name": "world_time_buddy",
+                "tooltip": "The best world clock and time converter I've ever used",
+                "node_type": "hyperlink",
+                "href": "https://www.worldtimebuddy.com/"
+              },
+              {
+                "name": "ventoy",
+                "tooltip": "Boot any OS without having to re-flash your drive",
+                "node_type": "hyperlink",
+                "href": "https://www.ventoy.net/en/index.html"
+              },
+              {
+                "name": "lexilogos",
+                "tooltip": "Latin Keyboard",
+                "node_type": "hyperlink",
+                "href": "https://www.lexilogos.com/keyboard/latin.htm"
+              },
+              {
+                "name": "unslop",
+                "tooltip": "A web tool to detect AI-generated writing.",
+                "node_type": "hyperlink",
+                "href": "https://unslop.run/"
+              }
             ]
           },
           {
@@ -214,27 +727,122 @@
                 "tooltip": "Distributed computing projects",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "boinc", "tooltip": "Volunteer computing platform for distributed scientific research", "node_type": "hyperlink", "href": "https://boinc.berkeley.edu/" },
-                  { "name": "einstein_at_home", "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena", "node_type": "hyperlink", "href": "https://einsteinathome.org/" }
+                  {
+                    "name": "boinc",
+                    "tooltip": "Volunteer computing platform for distributed scientific research",
+                    "node_type": "hyperlink",
+                    "href": "https://boinc.berkeley.edu/"
+                  },
+                  {
+                    "name": "einstein_at_home",
+                    "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena",
+                    "node_type": "hyperlink",
+                    "href": "https://einsteinathome.org/"
+                  }
                 ]
               },
-              { "name": "the_large_bitcoin_collider", "tooltip": "A distributed network methodically searching the whole bitcoin address space", "node_type": "hyperlink", "href": "https://lbc.cryptoguru.org/about" },
-              { "name": "random_org", "tooltip": "Is there such a thing as truly random? This is the closest we'll get", "node_type": "hyperlink", "href": "https://www.random.org/" },
-              { "name": "atlas_of_surveillance", "tooltip": "A community-driven project tracking the expansion of mass surveillance", "node_type": "hyperlink", "href": "https://www.atlasofsurveillance.org/" },
-              { "name": "chatjimmy", "tooltip": "POC for Taalas — AI models as a chip", "node_type": "hyperlink", "href": "https://chatjimmy.ai/" },
-              { "name": "p5js", "tooltip": "Great for coding-art", "node_type": "hyperlink", "href": "https://p5js.org/" },
-              { "name": "eleventy", "tooltip": "They had me with the opossum! I use this to generate my blog pages", "node_type": "hyperlink", "href": "https://www.11ty.dev/" },
-              { "name": "academic_torrents", "tooltip": "Datasets, courses, papers and information freely available p2p using bittorrent", "node_type": "hyperlink", "href": "https://academictorrents.com/" },
-              { "name": "product_hunt", "tooltip": "", "node_type": "hyperlink", "href": "https://www.producthunt.com/" },
-              { "name": "archive_md", "tooltip": "An alternative internet archive service", "node_type": "hyperlink", "href": "https://archive.md/" },
-              { "name": "awesome_selfhosted", "tooltip": "Awesome list of awesome stuff you can self-host", "node_type": "hyperlink", "href": "https://github.com/awesome-selfhosted/awesome-selfhosted" },
-              { "name": "opentools_studio", "tooltip": "", "node_type": "hyperlink", "href": "https://www.opentools.studio/" },
-              { "name": "annas_archive", "tooltip": "A shadow library search engine mirroring books, papers, and more", "node_type": "hyperlink", "href": "https://annas-archive.gl/" },
-              { "name": "shadow_libraries", "tooltip": "A directory and history of shadow libraries", "node_type": "hyperlink", "href": "https://shadowlibraries.github.io/" },
-              { "name": "acm_digital_library", "tooltip": "A digital library of computing and information technology research", "node_type": "hyperlink", "href": "https://dl.acm.org/" },
-              { "name": "zooniverse", "tooltip": "A collection of online citizen-science projects that you can participate in", "node_type": "hyperlink", "href": "https://www.zooniverse.org/" },
-              { "name": "gutenberg", "tooltip": "Free eBooks", "node_type": "hyperlink", "href": "https://gutenberg.org/" },
-              { "name": "opensource_lowtech", "tooltip": "Projects for self-sufficiency", "node_type": "hyperlink", "href": "https://opensourcelowtech.org/index.html" }
+              {
+                "name": "the_large_bitcoin_collider",
+                "tooltip": "A distributed network methodically searching the whole bitcoin address space",
+                "node_type": "hyperlink",
+                "href": "https://lbc.cryptoguru.org/about"
+              },
+              {
+                "name": "random_org",
+                "tooltip": "Is there such a thing as truly random? This is the closest we'll get",
+                "node_type": "hyperlink",
+                "href": "https://www.random.org/"
+              },
+              {
+                "name": "atlas_of_surveillance",
+                "tooltip": "A community-driven project tracking the expansion of mass surveillance",
+                "node_type": "hyperlink",
+                "href": "https://www.atlasofsurveillance.org/"
+              },
+              {
+                "name": "chatjimmy",
+                "tooltip": "POC for Taalas — AI models as a chip",
+                "node_type": "hyperlink",
+                "href": "https://chatjimmy.ai/"
+              },
+              {
+                "name": "p5js",
+                "tooltip": "Great for coding-art",
+                "node_type": "hyperlink",
+                "href": "https://p5js.org/"
+              },
+              {
+                "name": "eleventy",
+                "tooltip": "They had me with the opossum! I use this to generate my blog pages",
+                "node_type": "hyperlink",
+                "href": "https://www.11ty.dev/"
+              },
+              {
+                "name": "academic_torrents",
+                "tooltip": "Datasets, courses, papers and information freely available p2p using bittorrent",
+                "node_type": "hyperlink",
+                "href": "https://academictorrents.com/"
+              },
+              {
+                "name": "product_hunt",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://www.producthunt.com/"
+              },
+              {
+                "name": "archive_md",
+                "tooltip": "An alternative internet archive service",
+                "node_type": "hyperlink",
+                "href": "https://archive.md/"
+              },
+              {
+                "name": "awesome_selfhosted",
+                "tooltip": "Awesome list of awesome stuff you can self-host",
+                "node_type": "hyperlink",
+                "href": "https://github.com/awesome-selfhosted/awesome-selfhosted"
+              },
+              {
+                "name": "opentools_studio",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://www.opentools.studio/"
+              },
+              {
+                "name": "annas_archive",
+                "tooltip": "A shadow library search engine mirroring books, papers, and more",
+                "node_type": "hyperlink",
+                "href": "https://annas-archive.gl/"
+              },
+              {
+                "name": "shadow_libraries",
+                "tooltip": "A directory and history of shadow libraries",
+                "node_type": "hyperlink",
+                "href": "https://shadowlibraries.github.io/"
+              },
+              {
+                "name": "acm_digital_library",
+                "tooltip": "A digital library of computing and information technology research",
+                "node_type": "hyperlink",
+                "href": "https://dl.acm.org/"
+              },
+              {
+                "name": "zooniverse",
+                "tooltip": "A collection of online citizen-science projects that you can participate in",
+                "node_type": "hyperlink",
+                "href": "https://www.zooniverse.org/"
+              },
+              {
+                "name": "gutenberg",
+                "tooltip": "Free eBooks",
+                "node_type": "hyperlink",
+                "href": "https://gutenberg.org/"
+              },
+              {
+                "name": "opensource_lowtech",
+                "tooltip": "Projects for self-sufficiency",
+                "node_type": "hyperlink",
+                "href": "https://opensourcelowtech.org/index.html"
+              }
             ]
           },
           {
@@ -242,11 +850,36 @@
             "tooltip": "Time wasters",
             "node_type": "folder",
             "nodes": [
-              { "name": "the_random_button", "tooltip": "", "node_type": "hyperlink", "href": "https://therandombutton.github.io/" },
-              { "name": "zalgotext", "tooltip": "Cook any text", "node_type": "hyperlink", "href": "https://www.zalgo.org/" },
-              { "name": "neal_fun", "tooltip": "", "node_type": "hyperlink", "href": "https://neal.fun/" },
-              { "name": "programming_idioms", "tooltip": "", "node_type": "hyperlink", "href": "https://www.programming-idioms.org/" },
-              { "name": "monstercat_wallpapers", "tooltip": "A drive link to an archive of monstercat wallpapers over the years", "node_type": "hyperlink", "href": "https://drive.google.com/drive/folders/152rf7-W7rJzwV7bhCeO63lUc9aZvEB00" }
+              {
+                "name": "the_random_button",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://therandombutton.github.io/"
+              },
+              {
+                "name": "zalgotext",
+                "tooltip": "Cook any text",
+                "node_type": "hyperlink",
+                "href": "https://www.zalgo.org/"
+              },
+              {
+                "name": "neal_fun",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://neal.fun/"
+              },
+              {
+                "name": "programming_idioms",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://www.programming-idioms.org/"
+              },
+              {
+                "name": "monstercat_wallpapers",
+                "tooltip": "A drive link to an archive of monstercat wallpapers over the years",
+                "node_type": "hyperlink",
+                "href": "https://drive.google.com/drive/folders/152rf7-W7rJzwV7bhCeO63lUc9aZvEB00"
+              }
             ]
           },
           {
@@ -254,8 +887,18 @@
             "tooltip": "Numbers and views",
             "node_type": "folder",
             "nodes": [
-              { "name": "steam_charts", "tooltip": "", "node_type": "hyperlink", "href": "https://steamcharts.com/" },
-              { "name": "wundermap", "tooltip": "An awesome weather dashboard", "node_type": "hyperlink", "href": "https://www.wunderground.com/wundermap" }
+              {
+                "name": "steam_charts",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://steamcharts.com/"
+              },
+              {
+                "name": "wundermap",
+                "tooltip": "An awesome weather dashboard",
+                "node_type": "hyperlink",
+                "href": "https://www.wunderground.com/wundermap"
+              }
             ]
           },
           {
@@ -263,20 +906,65 @@
             "tooltip": "Good to know",
             "node_type": "folder",
             "nodes": [
-              { "name": "guide_world", "tooltip": "A collection of travel blogs", "node_type": "hyperlink", "href": "https://guide.world/" },
-              { "name": "killed_by_google", "tooltip": "Projects that Google has abandoned or shut down", "node_type": "hyperlink", "href": "https://killedbygoogle.com/" },
-              { "name": "amazon_science", "tooltip": "Did you know that Amazon creates research papers for its technologies? You'll be able to find some of them here.", "node_type": "hyperlink", "href": "https://www.amazon.science/" },
-              { "name": "wicg", "tooltip": "The web incubator project. I go here every now and then if I want to take a look at the cool stuff that might make it into modern web browsers.", "node_type": "hyperlink", "href": "https://wicg.io/" },
-              { "name": "iso_42001", "tooltip": "ISO's new AI management system standards", "node_type": "hyperlink", "href": "https://www.iso.org/standard/42001" },
-              { "name": "websters_1913", "tooltip": "", "node_type": "hyperlink", "href": "https://www.websters1913.com/" },
-              { "name": "specification_website", "tooltip": "A platform-agnostic specification of all the technical details that matter for a website.", "node_type": "hyperlink", "href": "https://specification.website/" },
-              { "name": "tuxedono2", "tooltip": "Cocktail recipes", "node_type": "hyperlink", "href": "https://tuxedono2.com/" },
+              {
+                "name": "guide_world",
+                "tooltip": "A collection of travel blogs",
+                "node_type": "hyperlink",
+                "href": "https://guide.world/"
+              },
+              {
+                "name": "killed_by_google",
+                "tooltip": "Projects that Google has abandoned or shut down",
+                "node_type": "hyperlink",
+                "href": "https://killedbygoogle.com/"
+              },
+              {
+                "name": "amazon_science",
+                "tooltip": "Did you know that Amazon creates research papers for its technologies? You'll be able to find some of them here.",
+                "node_type": "hyperlink",
+                "href": "https://www.amazon.science/"
+              },
+              {
+                "name": "wicg",
+                "tooltip": "The web incubator project. I go here every now and then if I want to take a look at the cool stuff that might make it into modern web browsers.",
+                "node_type": "hyperlink",
+                "href": "https://wicg.io/"
+              },
+              {
+                "name": "iso_42001",
+                "tooltip": "ISO's new AI management system standards",
+                "node_type": "hyperlink",
+                "href": "https://www.iso.org/standard/42001"
+              },
+              {
+                "name": "websters_1913",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://www.websters1913.com/"
+              },
+              {
+                "name": "specification_website",
+                "tooltip": "A platform-agnostic specification of all the technical details that matter for a website.",
+                "node_type": "hyperlink",
+                "href": "https://specification.website/"
+              },
+              {
+                "name": "tuxedono2",
+                "tooltip": "Cocktail recipes",
+                "node_type": "hyperlink",
+                "href": "https://tuxedono2.com/"
+              },
               {
                 "name": "documentation",
                 "tooltip": "Docs and guides",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "htop_explained", "tooltip": "An annotated explanation of htop's output", "node_type": "hyperlink", "href": "https://peteris.rocks/blog/htop/" }
+                  {
+                    "name": "htop_explained",
+                    "tooltip": "An annotated explanation of htop's output",
+                    "node_type": "hyperlink",
+                    "href": "https://peteris.rocks/blog/htop/"
+                  }
                 ]
               }
             ]
@@ -286,13 +974,48 @@
             "tooltip": "I like to collect sites that people make",
             "node_type": "folder",
             "nodes": [
-              { "name": "geoffrey_huntly", "tooltip": "", "node_type": "hyperlink", "href": "https://ghuntley.com/" },
-              { "name": "raghavs_site", "tooltip": "", "node_type": "hyperlink", "href": "https://www.raghav.wiki/" },
-              { "name": "matts_site", "tooltip": "", "node_type": "hyperlink", "href": "https://mattjegan.com/" },
-              { "name": "congusbongus_site", "tooltip": "", "node_type": "hyperlink", "href": "https://cxong.github.io/" },
-              { "name": "hank_green", "tooltip": "Science communicator and epic guy", "node_type": "hyperlink", "href": "https://www.hankgreen.com/" },
-              { "name": "when_is_matt_working", "tooltip": "When will MAtt be working?", "node_type": "hyperlink", "href": "https://whenismattworking.com/" },
-              { "name": "melonking", "tooltip": "", "node_type": "hyperlink", "href": "https://melonking.net/melon?z=/home" }
+              {
+                "name": "geoffrey_huntly",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://ghuntley.com/"
+              },
+              {
+                "name": "raghavs_site",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://www.raghav.wiki/"
+              },
+              {
+                "name": "matts_site",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://mattjegan.com/"
+              },
+              {
+                "name": "congusbongus_site",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://cxong.github.io/"
+              },
+              {
+                "name": "hank_green",
+                "tooltip": "Science communicator and epic guy",
+                "node_type": "hyperlink",
+                "href": "https://www.hankgreen.com/"
+              },
+              {
+                "name": "when_is_matt_working",
+                "tooltip": "When will MAtt be working?",
+                "node_type": "hyperlink",
+                "href": "https://whenismattworking.com/"
+              },
+              {
+                "name": "melonking",
+                "tooltip": "",
+                "node_type": "hyperlink",
+                "href": "https://melonking.net/melon?z=/home"
+              }
             ]
           },
           {
@@ -305,21 +1028,96 @@
                 "tooltip": "blog posts that I like",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "banned_book_library", "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe", "node_type": "hyperlink", "href": "https://www.richardosgood.com/posts/banned-book-library/" },
-                  { "name": "ai_agent_battle_royale", "tooltip": "An interesting experiment", "node_type": "hyperlink", "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/" },
-                  { "name": "new_thoughts_for_the_web_revival", "tooltip": "", "node_type": "hyperlink", "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023" },
-                  { "name": "drone_automation", "tooltip": "Carlos Gonzalez's blog", "node_type": "hyperlink", "href": "https://www.cggonzalez.com/blog/index.html" },
-                  { "name": "on_high_temperature_llm_sampling", "tooltip": "An article about LLM sampling methods and how it's used in the industry", "node_type": "hyperlink", "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397" },
-                  { "name": "a_case_for_mindless_browsing", "tooltip": "A thoughtful defense of mindless browsing as something necessary and beneficial, comparing it to a walk in the woods", "node_type": "hyperlink", "href": "https://rybakov.com/blog/mindless/" },
-                  { "name": "writing_by_hand", "tooltip": "The benefits of handwriting, and some tips on how to get started with it.", "node_type": "hyperlink", "href": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your" },
-                  { "name": "how_to_exist", "tooltip": "Some notes on meditation", "node_type": "hyperlink", "href": "https://www.raptitude.com/2026/07/how-to-exist/" },
-                  { "name": "dont_be_a_meat_proxy", "tooltip": "Don't be a meat proxy", "node_type": "hyperlink", "href": "https://gruhn.me/blog/2026-08-03/" },
-                  { "name": "200_ms", "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page", "node_type": "hyperlink", "href": "https://200ms.thenodebook.com/" },
-                  { "name": "ai_and_middle_class_software_eng", "tooltip": "A perspective on how AI is affecting the middle class of software engineering", "node_type": "hyperlink", "href": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" },
-                  { "name": "dont_humanise_llm_outputs", "tooltip": "Why attempting to humanise LLM outputs is a misguided approach", "node_type": "hyperlink", "href": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb" },
-                  { "name": "ideological_craziness", "tooltip": "On the development of crazy ideologies.", "node_type": "hyperlink", "href": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn" },
-                  { "name": "how_i_use_llms_to_learn", "tooltip": "A personal approach to using LLMs as learning tools", "node_type": "hyperlink", "href": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/" },
-                  { "name": "website_traffic_is_bots", "tooltip": "A blog about the battle between bots and users on the modern web.", "node_type": "hyperlink", "href": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/" }
+                  {
+                    "name": "banned_book_library",
+                    "tooltip": "A nifty project that stores a small library of eBooks on a web server running on a smart globe",
+                    "node_type": "hyperlink",
+                    "href": "https://www.richardosgood.com/posts/banned-book-library/"
+                  },
+                  {
+                    "name": "ai_agent_battle_royale",
+                    "tooltip": "An interesting experiment",
+                    "node_type": "hyperlink",
+                    "href": "https://openrouter.ai/blog/insights/royale-last-agent-standing/"
+                  },
+                  {
+                    "name": "new_thoughts_for_the_web_revival",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023"
+                  },
+                  {
+                    "name": "drone_automation",
+                    "tooltip": "Carlos Gonzalez's blog",
+                    "node_type": "hyperlink",
+                    "href": "https://www.cggonzalez.com/blog/index.html"
+                  },
+                  {
+                    "name": "on_high_temperature_llm_sampling",
+                    "tooltip": "An article about LLM sampling methods and how it's used in the industry",
+                    "node_type": "hyperlink",
+                    "href": "https://gist.github.com/Hellisotherpeople/71ba712f9f899adcb08b94bce20d5397"
+                  },
+                  {
+                    "name": "a_case_for_mindless_browsing",
+                    "tooltip": "A thoughtful defense of mindless browsing as something necessary and beneficial, comparing it to a walk in the woods",
+                    "node_type": "hyperlink",
+                    "href": "https://rybakov.com/blog/mindless/"
+                  },
+                  {
+                    "name": "writing_by_hand",
+                    "tooltip": "The benefits of handwriting, and some tips on how to get started with it.",
+                    "node_type": "hyperlink",
+                    "href": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your"
+                  },
+                  {
+                    "name": "how_to_exist",
+                    "tooltip": "Some notes on meditation",
+                    "node_type": "hyperlink",
+                    "href": "https://www.raptitude.com/2026/07/how-to-exist/"
+                  },
+                  {
+                    "name": "dont_be_a_meat_proxy",
+                    "tooltip": "Don't be a meat proxy",
+                    "node_type": "hyperlink",
+                    "href": "https://gruhn.me/blog/2026-08-03/"
+                  },
+                  {
+                    "name": "200_ms",
+                    "tooltip": "An extensive, narrated deep-dive into everything involved in clicking a button on a web page",
+                    "node_type": "hyperlink",
+                    "href": "https://200ms.thenodebook.com/"
+                  },
+                  {
+                    "name": "ai_and_middle_class_software_eng",
+                    "tooltip": "A perspective on how AI is affecting the middle class of software engineering",
+                    "node_type": "hyperlink",
+                    "href": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html"
+                  },
+                  {
+                    "name": "dont_humanise_llm_outputs",
+                    "tooltip": "Why attempting to humanise LLM outputs is a misguided approach",
+                    "node_type": "hyperlink",
+                    "href": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb"
+                  },
+                  {
+                    "name": "ideological_craziness",
+                    "tooltip": "On the development of crazy ideologies.",
+                    "node_type": "hyperlink",
+                    "href": "https://blog.andymasley.com/p/the-main-way-ive-seen-people-turn"
+                  },
+                  {
+                    "name": "how_i_use_llms_to_learn",
+                    "tooltip": "A personal approach to using LLMs as learning tools",
+                    "node_type": "hyperlink",
+                    "href": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/"
+                  },
+                  {
+                    "name": "website_traffic_is_bots",
+                    "tooltip": "A blog about the battle between bots and users on the modern web.",
+                    "node_type": "hyperlink",
+                    "href": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/"
+                  }
                 ]
               },
               {
@@ -327,10 +1125,30 @@
                 "tooltip": "Software engineering reads",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "fintech_engineering_handbook", "tooltip": "A handbook on engineering practices in fintech", "node_type": "hyperlink", "href": "https://w.pitula.me/fintech-engineering-handbook/" },
-                  { "name": "prompting_guide", "tooltip": "An in-depth guide on various prompting methods for AI.", "node_type": "hyperlink", "href": "https://www.promptingguide.ai/" },
-                  { "name": "the_lethal_trifecta", "tooltip": "A safety model for usage of AI agents", "node_type": "hyperlink", "href": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/" },
-                  { "name": "empirical_software_engineering", "tooltip": "A series of essays and papers that provides a collection of evidence-based discussion on software engineering", "node_type": "hyperlink", "href": "https://www.hillelwayne.com/talks/ese/" }
+                  {
+                    "name": "fintech_engineering_handbook",
+                    "tooltip": "A handbook on engineering practices in fintech",
+                    "node_type": "hyperlink",
+                    "href": "https://w.pitula.me/fintech-engineering-handbook/"
+                  },
+                  {
+                    "name": "prompting_guide",
+                    "tooltip": "An in-depth guide on various prompting methods for AI.",
+                    "node_type": "hyperlink",
+                    "href": "https://www.promptingguide.ai/"
+                  },
+                  {
+                    "name": "the_lethal_trifecta",
+                    "tooltip": "A safety model for usage of AI agents",
+                    "node_type": "hyperlink",
+                    "href": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/"
+                  },
+                  {
+                    "name": "empirical_software_engineering",
+                    "tooltip": "A series of essays and papers that provides a collection of evidence-based discussion on software engineering",
+                    "node_type": "hyperlink",
+                    "href": "https://www.hillelwayne.com/talks/ese/"
+                  }
                 ]
               },
               {
@@ -338,8 +1156,18 @@
                 "tooltip": "short stories that I've read on the web",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "library", "tooltip": "a short story about a community-run digital archive", "node_type": "hyperlink", "href": "https://benbrown.com/library/" },
-                  { "name": "felix_and_i", "tooltip": "", "node_type": "hyperlink", "href": "https://jacobfilipp.com/felix/" }
+                  {
+                    "name": "library",
+                    "tooltip": "a short story about a community-run digital archive",
+                    "node_type": "hyperlink",
+                    "href": "https://benbrown.com/library/"
+                  },
+                  {
+                    "name": "felix_and_i",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://jacobfilipp.com/felix/"
+                  }
                 ]
               },
               {
@@ -352,7 +1180,12 @@
                     "tooltip": "Psychology papers",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "self_determination_theory", "tooltip": "A paper that explains the origins of motivation", "node_type": "hyperlink", "href": "https://www.researchgate.net/publication/11946306_Self-Determination_Theory_and_the_Facilitation_of_Intrinsic_Motivation_Social_Development_and_Well-Being" }
+                      {
+                        "name": "self_determination_theory",
+                        "tooltip": "A paper that explains the origins of motivation",
+                        "node_type": "hyperlink",
+                        "href": "https://www.researchgate.net/publication/11946306_Self-Determination_Theory_and_the_Facilitation_of_Intrinsic_Motivation_Social_Development_and_Well-Being"
+                      }
                     ]
                   },
                   {
@@ -360,8 +1193,18 @@
                     "tooltip": "Artificial intelligence research papers",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "ai_wellbeing", "tooltip": "Paper on AI 'happiness' and how it affects output", "node_type": "hyperlink", "href": "https://www.ai-wellbeing.org/paper.pdf" },
-                      { "name": "30_papers", "tooltip": "A curated collection of influential neural network papers", "node_type": "hyperlink", "href": "https://30papers.com/" }
+                      {
+                        "name": "ai_wellbeing",
+                        "tooltip": "Paper on AI 'happiness' and how it affects output",
+                        "node_type": "hyperlink",
+                        "href": "https://www.ai-wellbeing.org/paper.pdf"
+                      },
+                      {
+                        "name": "30_papers",
+                        "tooltip": "A curated collection of influential neural network papers",
+                        "node_type": "hyperlink",
+                        "href": "https://30papers.com/"
+                      }
                     ]
                   },
                   {
@@ -369,7 +1212,12 @@
                     "tooltip": "Medicine and health research papers",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "forest_medicine", "tooltip": "The effects of \"forest bathing\" on physical and mental health.", "node_type": "hyperlink", "href": "https://doi.org/10.1265/ehpm.22-00160" }
+                      {
+                        "name": "forest_medicine",
+                        "tooltip": "The effects of \"forest bathing\" on physical and mental health.",
+                        "node_type": "hyperlink",
+                        "href": "https://doi.org/10.1265/ehpm.22-00160"
+                      }
                     ]
                   },
                   {
@@ -377,7 +1225,12 @@
                     "tooltip": "Neuroscience research papers",
                     "node_type": "folder",
                     "nodes": [
-                      { "name": "handwriting_vs_typewriting", "tooltip": "The difference in brain activation regions in writing vs typing", "node_type": "hyperlink", "href": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1219945/full" }
+                      {
+                        "name": "handwriting_vs_typewriting",
+                        "tooltip": "The difference in brain activation regions in writing vs typing",
+                        "node_type": "hyperlink",
+                        "href": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1219945/full"
+                      }
                     ]
                   }
                 ]
@@ -387,7 +1240,12 @@
                 "tooltip": "Historical writings and documents",
                 "node_type": "folder",
                 "nodes": [
-                  { "name": "the_usefulness_of_useless_knowledge", "tooltip": "By Abraham Flexner - on scientific advancements that came from curiousity as opposed to utility.", "node_type": "hyperlink", "href": "https://faculty.lsu.edu/kharms/files/flexner_1939.pdf" }
+                  {
+                    "name": "the_usefulness_of_useless_knowledge",
+                    "tooltip": "By Abraham Flexner - on scientific advancements that came from curiousity as opposed to utility.",
+                    "node_type": "hyperlink",
+                    "href": "https://faculty.lsu.edu/kharms/files/flexner_1939.pdf"
+                  }
                 ]
               }
             ]
@@ -395,79 +1253,11 @@
         ]
       },
       {
-        "name": "blog",
-        "tooltip": "My personal and dev blog",
-        "node_type": "folder",
-        "nodes": [
-          {
-            "name": "tech_blogs",
-            "tooltip": "Software, infrastructure and the craft",
-            "node_type": "folder",
-            "nodes": [
-              { "name": "the_art_of_deployment", "tooltip": "(Mostly) everything that I know about deploying software", "node_type": "file", "href": "/writing/blog/the_art_of_deployment/" },
-              { "name": "the_journey_to_zero_maintenance", "tooltip": "A blog article about a system that I ran for about 8 years", "node_type": "file", "href": "/writing/blog/the_journey_to_zero_maintenance/" },
-              { "name": "software_sophistry", "tooltip": "Aphorisms on developing commercial software", "node_type": "file", "href": "/writing/blog/software-sophistry/" },
-              { "name": "disposable_code", "tooltip": "How AI is enabling more creative work in software engineering", "node_type": "file", "href": "/writing/blog/disposable_code/" },
-              { "name": "how_i_use_ai", "tooltip": "How I work with AI, as a series of personas", "node_type": "file", "href": "/writing/blog/how_i_use_ai/" },
-              { "name": "incident_lambda_memory_pressure", "tooltip": "A deep-dive into an exceptionally mysterious incident", "node_type": "file", "href": "/writing/blog/incident_lambda_memory_pressure/" },
-              { "name": "aws_imdsv2_migration_guide", "tooltip": "Dead simple IMDSv1 to IMDSv2 migration guide", "node_type": "file", "href": "/writing/blog/aws_imdsv2_migration_guide/" },
-              {
-                "name": "linux",
-                "tooltip": "My woes with linux",
-                "node_type": "folder",
-                "nodes": [
-                  { "name": "linux_index", "tooltip": "Linux Posting — collection of linux issues I've solved", "node_type": "file", "href": "/writing/blog/linux_index/" },
-                  { "name": "linux_001", "tooltip": "A firmware crash?", "node_type": "file", "href": "/writing/blog/linux_1/" }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "personal_blogs",
-            "tooltip": "Life, experiments and reflections",
-            "node_type": "folder",
-            "nodes": [
-              { "name": "my_recipe_book", "tooltip": "A collection of recipes and cooking tips I like", "node_type": "file", "href": "/writing/blog/my_recipe_book/" },
-              { "name": "capturing_photographs", "tooltip": "My philosophy on the importance of photography", "node_type": "file", "href": "/writing/blog/capturing_photographs/" },
-              { "name": "south_korea", "tooltip": "A small note on my travels to Korea", "node_type": "file", "href": "/writing/blog/south_korea/" },
-              { "name": "rock_climbing", "tooltip": "My take on the sport and a short starter guide", "node_type": "file", "href": "/writing/blog/rock_climbing/" },
-              { "name": "books_ive_read", "tooltip": "My digital bookshelf", "node_type": "file", "href": "/writing/blog/books_ive_read/" }
-            ]
-          },
-          {
-            "name": "creative_writing",
-            "tooltip": "Short creative pieces",
-            "node_type": "folder",
-            "nodes": [
-              { "name": "un_natured", "tooltip": "Un-natured — 2026", "node_type": "file", "href": "/writing/blog/writing_un-natured/" },
-              { "name": "timberwolf", "tooltip": "Timberwolf — 2017", "node_type": "file", "href": "/writing/blog/writing_timberwolf/" }
-            ]
-          },
-          {
-            "name": "art",
-            "tooltip": "Visual work and experiments",
-            "node_type": "folder",
-            "nodes": [
-              { "name": "photography", "tooltip": "Photographs I've captured and think are worth sharing", "node_type": "file", "href": "/writing/blog/art_photography/" },
-              { "name": "gymkhana_and_motorsports", "tooltip": "My YouTube channel with all my motorsports footage", "node_type": "hyperlink", "href": "https://www.youtube.com/@delta_1512" },
-              { "name": "turbulent_flow", "tooltip": "Images surrounding the phenomena of turbulent flow", "node_type": "file", "href": "/writing/blog/art_turbulent_flow/" },
-              { "name": "cellular_automata", "tooltip": "Random cellular automata I've experimented with", "node_type": "file", "href": "/writing/blog/art_cellular_automata/" }
-            ]
-          },
-          {
-            "name": "the_lenses",
-            "tooltip": "A line of meditations I call The Lenses",
-            "node_type": "folder",
-            "nodes": [
-              { "name": "lens_000", "tooltip": "The definition of a Lens", "node_type": "file", "href": "/writing/blog/lens_000/" },
-              { "name": "lens_001", "tooltip": "Anthropological products are a function of pain and pleasure", "node_type": "file", "href": "/writing/blog/lens_001/" },
-              { "name": "lens_002", "tooltip": "Human will as a search algorithm", "node_type": "file", "href": "/writing/blog/lens_002/" },
-              { "name": "lens_003", "tooltip": "Eddies", "node_type": "file", "href": "/writing/blog/lens_003/" }
-            ]
-          }
-        ]
-      },
-      { "name": "about", "tooltip": "Who I am and what this site is", "node_type": "file", "href": "/writing/about/" }
+        "name": "about",
+        "tooltip": "Who I am and what this site is",
+        "node_type": "file",
+        "href": "/writing/about/"
+      }
     ]
   }
 }
