@@ -1050,6 +1050,12 @@
                         "tooltip": "",
                         "node_type": "hyperlink",
                         "href": "https://thoughts.melonking.net/thoughts/new-thoughts-for-the-web-revival-in-may-2023"
+                      },
+                      {
+                        "name": "when_silicon_valley_reinvents_the_bus",
+                        "tooltip": "Humorous thoughts on weirdness in Silicon Valley",
+                        "node_type": "hyperlink",
+                        "href": "https://stanforddaily.com/2018/04/09/when-silicon-valley-accidentally-reinvents-the-city-bus/"
                       }
                     ]
                   },
