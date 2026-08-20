@@ -1174,6 +1174,12 @@
                     "tooltip": "A required reading list from an engineering leader.",
                     "node_type": "hyperlink",
                     "href": "https://carlkolon.com/reading/"
+                  },
+                  {
+                    "name": "anthropic_multiagent_systems",
+                    "tooltip": "Experimentation on multi-agent systems at scale",
+                    "node_type": "hyperlink",
+                    "href": "https://www.anthropic.com/research/multiagent-systems"
                   }
                 ]
               },
