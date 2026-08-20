@@ -360,9 +360,15 @@
               },
               {
                 "name": "science_daily",
-                "tooltip": "",
+                "tooltip": "Scientific papers summarised as news articles",
                 "node_type": "hyperlink",
                 "href": "https://www.sciencedaily.com/"
+              },
+              {
+                "name": "betakit",
+                "tooltip": "Canadian startup news and tech innovation",
+                "node_type": "hyperlink",
+                "href": "https://betakit.com/"
               }
             ]
           },
