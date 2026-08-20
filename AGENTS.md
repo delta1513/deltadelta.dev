@@ -28,7 +28,6 @@ Because Eleventy outputs to `writing/`, all generated pages live under **`/writi
 | `directory/index.njk` + `directory/directory.json` | `/` (and `/writing/directory/`) | The directory-tree homepage. Recursive Nunjucks macro renders the JSON; icons in `directory/icons/` (Windows XP set). |
 | `blog/*.md` | `/writing/blog/<slug>/` | Blog posts. Use the `_includes/markdown.njk` layout (a minimal themed markdown renderer). |
 | `about/index.html` | `/writing/about/` | Custom themed about page (with a live traffic chart). |
-| `webring/index.html` | `/writing/webring/` | Custom themed webring page. |
 | `ai_prompts/*.md` | `/writing/ai_prompts/<slug>/` | Prompt pages (not linked from the tree). |
 | `badges/ai-transparency.njk` | `/writing/badges/ai-transparency/` | Badge embedded externally — keep this path stable. |
 | `media/` | `/media/...` | Static images (tracked via Git LFS). |

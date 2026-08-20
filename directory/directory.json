@@ -291,12 +291,6 @@
             "tooltip": "My CV in the form of a website",
             "node_type": "hyperlink",
             "href": "https://marcusbelcastro.com/"
-          },
-          {
-            "name": "webring",
-            "tooltip": "Sites from myself and people close to me",
-            "node_type": "file",
-            "href": "/writing/webring/"
           }
         ]
       },
@@ -1253,8 +1247,27 @@
         ]
       },
       {
+        "name": "webring",
+        "tooltip": "If you came here via a webring, expand me!",
+        "node_type": "folder",
+        "nodes": [
+          {
+            "name": "zythia_art",
+            "tooltip": "zythia.art",
+            "node_type": "hyperlink",
+            "href": "https://www.zythia.art/"
+          },
+          {
+            "name": "aurailus",
+            "tooltip": "aurailus.com",
+            "node_type": "hyperlink",
+            "href": "https://www.aurailus.com/"
+          }
+        ]
+      },
+      {
         "name": "about",
-        "tooltip": "Who I am and what this site is",
+        "tooltip": "Who I am and what this site is about",
         "node_type": "file",
         "href": "/about/"
       }
