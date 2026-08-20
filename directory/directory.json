@@ -1129,6 +1129,12 @@
                         "tooltip": "A blog about the battle between bots and users on the modern web.",
                         "node_type": "hyperlink",
                         "href": "https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/"
+                      },
+                      {
+                        "name": "learn_about_finger",
+                        "tooltip": "the 1971 social network that never died",
+                        "node_type": "hyperlink",
+                        "href": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died/"
                       }
                     ]
                   },
