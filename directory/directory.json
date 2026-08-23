@@ -166,37 +166,6 @@
                     "href": "/writing/blog/art_cellular_automata/"
                   }
                 ]
-              },
-              {
-                "name": "the_lenses",
-                "tooltip": "A line of meditations I call The Lenses",
-                "node_type": "folder",
-                "nodes": [
-                  {
-                    "name": "lens_000",
-                    "tooltip": "The definition of a Lens",
-                    "node_type": "file",
-                    "href": "/writing/blog/lens_000/"
-                  },
-                  {
-                    "name": "lens_001",
-                    "tooltip": "Anthropological products are a function of pain and pleasure",
-                    "node_type": "file",
-                    "href": "/writing/blog/lens_001/"
-                  },
-                  {
-                    "name": "lens_002",
-                    "tooltip": "Human will as a search algorithm",
-                    "node_type": "file",
-                    "href": "/writing/blog/lens_002/"
-                  },
-                  {
-                    "name": "lens_003",
-                    "tooltip": "Eddies",
-                    "node_type": "file",
-                    "href": "/writing/blog/lens_003/"
-                  }
-                ]
               }
             ]
           },

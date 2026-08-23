@@ -11,26 +11,47 @@ This is my personal recipe book!
 
 Here you'll find some cooking tips and explanations that I've learned throughout the years, and also a list of recipes that I like and wish to preserve.
 
-## Self-raising flour
+---
+
+# Cooking Tips
+
+## Working with Ingredients
+
+Different foods and ingredients are made of different things. Learning about how they interact or are made can be quite useful.
+
+### Self-raising flour
 
 You can make self-raising flour at home if you have regular flour, and also some baking powder. The ratio is roughly 1 cup of flour to 1 teaspoon of baking powder.
 Make sure that after adding the powder, you mix the two together separately from all of your other ingredients. This way the powder is adequately mixed into the flour, and is not disrupted by any of the ingredients.
 
+### Melting butter
+
+Butter doesn't melt at room temperature, so you need to melt it down somehow. Most likely you will use your microwave, but this can be tricky if you are just using the highest setting - that said only if you've accidentally exploded your butter in the microwave before. To avoid this cleanup, here are some basic tips and an explanation on microwaving butter.
+
+Butter is mostly the fat solids of milk (basically if you boiled milk until mostly all of the water evaporated). Hence, it is a type of oil, but it also has some water in it too, and a lot when you compare it to other oils. As a result, it is excellent at responding to a microwave oven - because the microwaves vibrate the water mollecules to make things hot.
+
+If you were to try and melt a whole stick of butter, it would likely explode because water inside the stick evaporated and is continuing to increase in temperature (and hence pressure) in a small space that is surrounded by heavy and rigid solids. The water will continually increase in pressure until it manages to violently break through the outer walls of the butter - just like how a corn kernel turns into popcorn!
+
+In order to reduce the possibility of this, you can dice the butter into smaller pieces. Smaller pieces means less mass, and less mass means less energy required to melt completely compared with a full stick. The faster it melts before the water inside reaches boiling point, the less likely you are to have a massive explosion - since the butter would be softer at this point compared to a full stick, hence there's less energy required for the water vapour to escape the butter solids, and hence there's evaporation rather than an explosion.
+
 ## Utencils
+
+Some tools in your drawer or at the store can look quite funky, but they all were created with a specific purpose in mind.
 
 ### Spatula
 
 A spatula should not be used for mixing! It is a tool used for scraping.
 For example, if you have just poured a cake mix into a tin, surely there is some remaining in the bowl you used to mix it. To get all of that stuff out of the bowl so that it does not go to waste, you should use a spatula.
 
-## Your oven
+## Appliances
 
-### Pre-heating
+### Pre-heating your oven
 
-There's a reason why people start all of their recipes with pre-heating the oven.
+When I was younger, I noticed that every recipe I read that involved baking required the oven be set to pre-heat at the very first step. I thought that that this was quite wasteful, so instead, I chose to start cooking a little bit, then turn the oven on mid-way through the preparation. Later on (I think thanks to the help of Gordon Ramsay) I realised that there was a delicate reason behind it.
+
 When you turn an oven on, it will start heating up, however, not evenly. By letting the oven heat up for the entire time that you are preparing the meal, you ensure that the entire oven is at the correct temperature so that it cooks the food evenly and effectively.
 
-What I'm also saying here is that light on your oven that tells you when it's heating up, is not a reliable indicator of when you should put something in. So long as you have left your oven pre-heating for 30min, then you should be fine!
+What I'm also saying here is the light on your oven that tells you when it's heating up is not a reliable indicator of when you should put something in. So long as you have left your oven pre-heating for at least 30min, then you should be fine!
 
 ---
 
@@ -84,7 +105,7 @@ Ingredients:
 - 1 packet of digestives biscuits (minus about two biscuits - no, not just for a snack). At the time of writing, this is roughly 300-350g (fuck shrinkflation!).
 - 1 tin of sweetened, condensed milk
 - Dessicated coconut (roughly 1/2 to 1 cup depending on the texture you want)
-- Cocoa powder (For a very dark one, use 3 packed tablespoons, for a lighter one, 1/2 cup)
+- Cocoa powder (if you have a very dark/robust powder, use 3 packed tablespoons, for a lighter one, 1/2 cup)
 - (optional) Vanilla essence
 - (optional) Choc chips (not too much!)
 
@@ -99,6 +120,7 @@ Steps:
 
 Fun fact: If you remove the cocoa powder, and replace it with some red and green food dye (in separate batches), you can make some christmas-themed snowballs!
 
+Interesting note: If you forgot to bring the cocoa powder to your parents place after you promised them you would make snowballs with them, and they happen to have a tin of milo, you can replace the cocoa powder with at least 5 heaped teaspoons of milo. In order to make sure the texture is right when refridgerated, be sure to add a little bit of butter or coconut oil (I'd say about 1-2 tablespoons).
 
 # Apple Crumble
 
@@ -124,3 +146,27 @@ Steps:
 9. Put the apples into a baking tray, then cover them with the crumble
 10. Cook for 15-30min - it will be ready when the crumble starts turning a dark brown on the tips
 11. Top with cinnamon, and serve with vanilla ice cream.
+
+
+# Coconut Brown Rice Pudding
+
+I like brown rice because it has a lower glycemic index, and its texture is quite appealing to me. I like my pasta, rice, and generally everything else *al dente*, so this is a perfect choice for my favourite rice pudding.
+
+Ingredients:
+- Brown rice (1/2 cup per serving - make some for later, it's great as a cold dish too!)
+- Some sort of sugar - brown sugar, honey, etc
+- Coconut oil (1/2 tbsp per serving)
+- Full cream or soy milk
+- Equal part of coconut milk
+- (optional) cinnamon or milo - as a final topping
+
+Steps:
+1. Wash the rice - This is important for the absorbtion of the milks into the rice, and also the final texture.
+2. Put your rice in the pot and then add the milks in equal ratios until the waterline is about a knuckle's distance from the top of the rice (don't worry if it's a bit over).
+3. Set the stovetop to medium heat and bring to a boil.
+4. Add the oil and stir to ensure it melts into the mixture.
+5. Stir in the sugar, and ensure it is dissolved. Then taste it and add more if you'd like.
+6. Turn the heat down so that it continues to simmer - do not stir after this point!
+7. Wait until most of the milk is absorbed (there should still be a thin layer of milk over the top of it all), and then try eating some of the rice to see if it is ready.
+8. Add your toppings.
+9. You can eat this warm, or refridgerate and let it become a nice gooey dessert!
