@@ -57,6 +57,11 @@
 
     hr { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
 
+    .home-link,
+    .home-link:hover,
+    .home-link:visited,
+    .home-link:active { display: block; max-width: 760px; margin: 1rem auto; color: var(--fg); font-weight: bold; text-decoration: underline; }
+
     code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 2px; font-size: 0.9em; }
     pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; border: 1px solid var(--line); }
     pre code { background: none; padding: 0; font-size: 0.85em; }
@@ -65,7 +70,8 @@
     th, td { border: 1px solid var(--line); padding: 0.4rem 0.6rem; text-align: left; }
   </style>
 </head>
-<body>
+<body id="top">
+  <a class="home-link" href="/">&larr; Home</a>
   <main>
     <header class="post-head">
       <h1 style="font-size: 2.75em;text-decoration: underline;">Lens 002 - Human Will as a Search Algorithm</h1>
@@ -114,5 +120,6 @@
 <p>Know that comfort is a sign that you have reached the limits of what you know, and that there is always more that you can attain so long as you wish to expend the energy to chase it.</p>
 
   </main>
+  <a class="home-link" href="#top">&uarr; Back to top</a>
 </body>
 </html>
