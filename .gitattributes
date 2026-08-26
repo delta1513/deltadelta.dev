@@ -13,3 +13,5 @@ media/art/wrx-2.jpg filter=lfs diff=lfs merge=lfs -text
 media/art/wrx-1.jpg filter=lfs diff=lfs merge=lfs -text
 media/art_of_deployment/*.png filter=lfs diff=lfs merge=lfs -text
 media/art_of_deployment/*.gif filter=lfs diff=lfs merge=lfs -text
+media/unintentional_design/gearstick.png filter=lfs diff=lfs merge=lfs -text
+media/unintentional_design/software.png filter=lfs diff=lfs merge=lfs -text
