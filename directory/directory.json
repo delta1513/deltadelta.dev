@@ -18,6 +18,12 @@
                 "node_type": "folder",
                 "nodes": [
                   {
+                    "name": "unintentional_design",
+                    "tooltip": "A scourge that is more evident than ever in everything we interact with",
+                    "node_type": "file",
+                    "href": "/writing/blog/unintentional_design/"
+                  },
+                  {
                     "name": "the_art_of_deployment",
                     "tooltip": "(Mostly) everything that I know about deploying software",
                     "node_type": "file",
