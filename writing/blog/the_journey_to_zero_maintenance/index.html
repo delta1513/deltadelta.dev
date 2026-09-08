@@ -117,7 +117,7 @@
 <p>So what this system looked like now was:</p>
 <ol>
 <li>A Discord bot that would talk to a HTTP REST API</li>
-<li>A HTTP REST API that would perform any function on the Wallet Bot that required the database in some way</li>
+<li>A HTTP REST API that would perform any function on the Wallet Bot that queried the database in some way</li>
 <li>A job runner that would perform all write operations and anything that dealt with transacting. This was a hand-rolled system that I called the <a href="https://gitlab.com/delta1512/ryu-sequential-orchestrator">RYU Sequential Orchestrator</a></li>
 <li>A piece of OpenAPI client software that would run on a separate host, and interact with the HTTP REST API in order to perform all GRC Wallet operations</li>
 </ol>

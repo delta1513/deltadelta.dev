@@ -65,7 +65,7 @@ The year that this re-design occured was the year that OpenAPI/Swagger was being
 
 So what this system looked like now was:
 1. A Discord bot that would talk to a HTTP REST API
-2. A HTTP REST API that would perform any function on the Wallet Bot that required the database in some way
+2. A HTTP REST API that would perform any function on the Wallet Bot that queried the database in some way
 3. A job runner that would perform all write operations and anything that dealt with transacting. This was a hand-rolled system that I called the [RYU Sequential Orchestrator](https://gitlab.com/delta1512/ryu-sequential-orchestrator)
 4. A piece of OpenAPI client software that would run on a separate host, and interact with the HTTP REST API in order to perform all GRC Wallet operations
 
