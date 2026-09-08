@@ -11,7 +11,7 @@ After enough times failing, I soon realised that I was spreading myself thin ove
 
 As a result, and partially unknowingly, I had been sharpening a skill that would allow me to scale all of these projects - the art of zero-maintenance systems.
 
-Now when I look at a problem that someone presents me, I don't involve myself at all. If the solution is to work, then it's to be a tool that the person is capable of exploring and using themselves to get the work done. It might not be the best tool, it might only get them 80% there, but that's usually good enough, and I get the benefit of knowing that I'm not involved in the slightest. Doing this allows me to scale one of my own (and hopefully one of your) virtues - helping people!
+Now when I look at a problem that someone presents me, I don't involve myself at all. If the solution is to work, then it's to be a tool that the person is capable of exploring and using themselves to get the work done. It might not be the best tool, it might only get them 80% there, but that's usually good enough, and I get the benefit of knowing that I'm not involved in the slightest. Doing this allows me to scale one of my own virtues (and hopefully one of yours) - helping people!
 
 # My first big project
 
@@ -91,15 +91,19 @@ The SO's role was to durably process all transactions in a synchronous manner. T
 
 ### The GWB Client
 
-This is where the security comes into play. I needed a way to get piece of mind that the GRC Wallet that was holding many thousands of dollars worth of crypto would not get hacked.
+I needed a way to get piece of mind that the GRC Wallet that was holding many thousands of dollars worth of crypto would not get hacked, but also to be able to interact with it in a way that could make it autonomous and also durable.
 
-Back in the day, supply-chain attacks weren't that prevalent, so basically the only way for someone to get into your system was through an open port with something listening to it. So in my head, I thought: "Well, you can't get into my system if there's no port open, right?". This was the day that I discovered the [Reverse Connection Architecture](https://en.wikipedia.org/wiki/Reverse_connection).
+Back in the day, supply-chain attacks weren't that prevalent, so generally the easiest way to get into a remote system was through an open port with something listening to it. In my head, I thought: "Well, you can't get into my system if there's no port open, right?". This was the day that I unknowingly discovered the [Reverse Connection Architecture](https://en.wikipedia.org/wiki/Reverse_connection).
 
-By having the GRC wallet running on my home server (where nothing is exposed to the web except maybe a minecraft server every now and then), I was able to isolate the GRC Wallet so that no one could access it. Then, I would have some client software that would occasionally poll my API for instructions on withdrawals that people want to make, and also submit information to the API regarding deposits that are made in people's wallets.
+By having the GRC wallet running on my home server (where nothing is exposed to the web except maybe a minecraft server every now and then), I was able to isolate the GRC Wallet so that no one could access it. Then, I would have some client software that would occasionally poll my remote API for instructions on withdrawals that people want to make, and also submit information to the API regarding deposits that are made in people's wallets.
 
-At the time, I thought this was such an ingenious design!
+At the time, I thought this was an ingenious design, and it gets better!
 
-I had a few issues here and there when I realised my DB queries were O(N+1). The jobs would take so long that the cron tick would cause two jobs to spawn at the same time and cascade over each other. But after that was fixed, she was running smoothly.
+Having a polling client makes durability very easy to implement. I considered these failure scenarios in mind:
+- The power would go out in my house, or the home server would somehow go offline - This would be no problem at all, it just means that withdrawals wouldn't be processed regularly. As for deposits, they are on-chain, so when the server comes back up, it would read from the last known block height and process the transactions from there.
+- The wallet server would not be able to connect to the API - For some reason or another, my home server might get disconnected from the internet, or rather more likely, the remote API would have to go down for an update. A simple fix for this is wrapping the cron-jobs in a ping and handling a HTTP 502/503 in the code.
+- The API might run into an exception - This was handled by making (the important parts of) the code idempotent. Any subsequent attempt would result in a no-op.
+
 
 ### Maintenance
 
@@ -108,10 +112,11 @@ So in effect, all that needed maintaining was:
 - Every time there was an update to the GRC Wallet, I'd have to update the wallet on the client
 - Every now and then I'd have to come in and clean up the [dust](https://www.coingecko.com/learn/dusting-attack) in the wallet (because it would cause the wallet to chug and the transaction fee to explode). This was easy to implement with cron, but I quite enjoyed doing this myself and looking at the huge size of the transactions.
 - Sometimes the amount of users that were registering with the bot depleted the reservoir of available crypto addresses I could serve. So every now and then, I'd get pinged, an up the amount of addresses that get generated on the cron-job that replenishes them.
+- Every now and then, there would be a wallet update, most of them are mandatory, so I'd have to go in and re-compile the daemon binary on my home computer and then restart the wallet.
 
 These things happened fairly rarely, which was good enough for my busy lifestyle, and I was also content enough with the durability of my architecture that I felt I could just forget about the whole thing and it would be fine. In effect, I was checking this system roughly once per month.
 
-So in effect, this is not exactly zero-maintenance, although that's what I was striving for, and in some cases, it felt like this - the system could hum along in the background. If I were to point out that there is not any need to update libraries or operating systems in this particular project since the stakes are not that high, then you should be even more convinced that this project is nowhere near being zero-maintenance.
+So in effect, this is not exactly zero-maintenance, although that's what I was striving for, and in some cases, it actually felt like I really didn't need to do anything - the system could hum along in the background. You could point out that libraries, docker containers, the VPS itself, and many other things needed regular updates, however, the system was so low-stakes that this really wasn't necessary, so I let it age.
 
 # Final thoughts
 
