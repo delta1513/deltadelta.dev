@@ -991,6 +991,12 @@
                 "tooltip": "A free online music theory textbook",
                 "node_type": "hyperlink",
                 "href": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html"
+              },
+              {
+                "name": "open_culture",
+                "tooltip": "Free cultural and educational media — courses, ebooks, movies, and audio",
+                "node_type": "hyperlink",
+                "href": "https://www.openculture.com/"
               }
             ]
           },
