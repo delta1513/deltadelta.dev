@@ -964,6 +964,25 @@
             ]
           },
           {
+            "name": "educational",
+            "tooltip": "Free learning resources and courses",
+            "node_type": "folder",
+            "nodes": [
+              {
+                "name": "ck12",
+                "tooltip": "Free K-12 STEM textbooks, practice, and learning materials",
+                "node_type": "hyperlink",
+                "href": "https://www.ck12.org/"
+              },
+              {
+                "name": "khan_academy",
+                "tooltip": "Free courses and lessons on a huge range of subjects",
+                "node_type": "hyperlink",
+                "href": "https://www.khanacademy.org/"
+              }
+            ]
+          },
+          {
             "name": "personal_websites",
             "tooltip": "I like to collect sites that people make",
             "node_type": "folder",
