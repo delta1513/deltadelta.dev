@@ -1040,6 +1040,12 @@
                 "tooltip": "",
                 "node_type": "hyperlink",
                 "href": "https://melonking.net/melon?z=/home"
+              },
+              {
+                "name": "sean_carroll",
+                "tooltip": "Physicist Sean Carroll's personal website",
+                "node_type": "hyperlink",
+                "href": "https://preposterousuniverse.com/"
               }
             ]
           },
