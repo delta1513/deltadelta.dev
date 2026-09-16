@@ -985,6 +985,12 @@
                 "tooltip": "Free courses and lessons on a huge range of subjects",
                 "node_type": "hyperlink",
                 "href": "https://www.khanacademy.org/"
+              },
+              {
+                "name": "music_theory_puget_sound",
+                "tooltip": "A free online music theory textbook",
+                "node_type": "hyperlink",
+                "href": "https://musictheory.pugetsound.edu/mt21c/MusicTheory.html"
               }
             ]
           },
