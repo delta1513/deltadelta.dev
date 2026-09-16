@@ -1320,6 +1320,12 @@
                     "tooltip": "By Abraham Flexner - on scientific advancements that came from curiousity as opposed to utility.",
                     "node_type": "hyperlink",
                     "href": "https://faculty.lsu.edu/kharms/files/flexner_1939.pdf"
+                  },
+                  {
+                    "name": "anthropic_threat_intel",
+                    "tooltip": "Anthropic's threat intelligence report on misuse of AI, September 2026",
+                    "node_type": "hyperlink",
+                    "href": "https://www.anthropic.com/threat-intelligence-report-september-2026"
                   }
                 ]
               }
