@@ -873,6 +873,12 @@
                 "tooltip": "A drive link to an archive of monstercat wallpapers over the years",
                 "node_type": "hyperlink",
                 "href": "https://drive.google.com/drive/folders/152rf7-W7rJzwV7bhCeO63lUc9aZvEB00"
+              },
+              {
+                "name": "dayzle",
+                "tooltip": "An online logic puzzle game",
+                "node_type": "hyperlink",
+                "href": "https://play.dayzlegame.com/"
               }
             ]
           },
