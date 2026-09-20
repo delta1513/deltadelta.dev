@@ -723,21 +723,40 @@
                 ]
               },
               {
-                "name": "distributed_computing",
-                "tooltip": "Distributed computing projects",
+                "name": "citizen_science",
+                "tooltip": "Projects where volunteers contribute to real research",
                 "node_type": "folder",
                 "nodes": [
                   {
-                    "name": "boinc",
-                    "tooltip": "Volunteer computing platform for distributed scientific research",
-                    "node_type": "hyperlink",
-                    "href": "https://boinc.berkeley.edu/"
+                    "name": "distributed_computing",
+                    "tooltip": "Distributed computing projects",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "boinc",
+                        "tooltip": "Volunteer computing platform for distributed scientific research",
+                        "node_type": "hyperlink",
+                        "href": "https://boinc.berkeley.edu/"
+                      },
+                      {
+                        "name": "einstein_at_home",
+                        "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena",
+                        "node_type": "hyperlink",
+                        "href": "https://einsteinathome.org/"
+                      }
+                    ]
                   },
                   {
-                    "name": "einstein_at_home",
-                    "tooltip": "A BOINC project where you can use your computer to detect pulsars, supernovae, gravitational waves and other astronomical phenomena",
+                    "name": "zooniverse",
+                    "tooltip": "A collection of online citizen-science projects that you can participate in",
                     "node_type": "hyperlink",
-                    "href": "https://einsteinathome.org/"
+                    "href": "https://www.zooniverse.org/"
+                  },
+                  {
+                    "name": "ooni",
+                    "tooltip": "Open Observatory of Network Interference — global internet censorship measurement project",
+                    "node_type": "hyperlink",
+                    "href": "https://ooni.org/"
                   }
                 ]
               },
@@ -826,22 +845,10 @@
                 "href": "https://dl.acm.org/"
               },
               {
-                "name": "zooniverse",
-                "tooltip": "A collection of online citizen-science projects that you can participate in",
-                "node_type": "hyperlink",
-                "href": "https://www.zooniverse.org/"
-              },
-              {
                 "name": "gutenberg",
                 "tooltip": "Free eBooks",
                 "node_type": "hyperlink",
                 "href": "https://gutenberg.org/"
-              },
-              {
-                "name": "ooni",
-                "tooltip": "Open Observatory of Network Interference — global internet censorship measurement project",
-                "node_type": "hyperlink",
-                "href": "https://ooni.org/"
               }
             ]
           },
