@@ -836,6 +836,12 @@
                 "tooltip": "Free eBooks",
                 "node_type": "hyperlink",
                 "href": "https://gutenberg.org/"
+              },
+              {
+                "name": "ooni",
+                "tooltip": "Open Observatory of Network Interference — global internet censorship measurement project",
+                "node_type": "hyperlink",
+                "href": "https://ooni.org/"
               }
             ]
           },
