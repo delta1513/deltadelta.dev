@@ -645,6 +645,12 @@
                     "tooltip": "Search verified user reviews of software and services",
                     "node_type": "hyperlink",
                     "href": "https://www.gartner.com/peer-insights/home"
+                  },
+                  {
+                    "name": "openverse",
+                    "tooltip": "Search engine for openly licensed and public domain media",
+                    "node_type": "hyperlink",
+                    "href": "https://openverse.org/"
                   }
                 ]
               },
