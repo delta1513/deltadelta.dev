@@ -879,6 +879,12 @@
                 "tooltip": "An online logic puzzle game",
                 "node_type": "hyperlink",
                 "href": "https://play.dayzlegame.com/"
+              },
+              {
+                "name": "nikon_small_world_in_motion",
+                "tooltip": "Nikon's award-winning gallery of microscopy videos",
+                "node_type": "hyperlink",
+                "href": "https://www.nikonsmallworld.com/galleries/small-world-in-motion"
               }
             ]
           },
