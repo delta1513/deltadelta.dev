@@ -827,28 +827,35 @@
                 "href": "https://www.opentools.studio/"
               },
               {
-                "name": "annas_archive",
-                "tooltip": "A shadow library search engine mirroring books, papers, and more",
-                "node_type": "hyperlink",
-                "href": "https://annas-archive.gl/"
-              },
-              {
-                "name": "shadow_libraries",
-                "tooltip": "A directory and history of shadow libraries",
-                "node_type": "hyperlink",
-                "href": "https://shadowlibraries.github.io/"
-              },
-              {
-                "name": "acm_digital_library",
-                "tooltip": "A digital library of computing and information technology research",
-                "node_type": "hyperlink",
-                "href": "https://dl.acm.org/"
-              },
-              {
-                "name": "gutenberg",
-                "tooltip": "Free eBooks",
-                "node_type": "hyperlink",
-                "href": "https://gutenberg.org/"
+                "name": "literary_works",
+                "tooltip": "Libraries, archives and repositories of written works",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "annas_archive",
+                    "tooltip": "A shadow library search engine mirroring books, papers, and more",
+                    "node_type": "hyperlink",
+                    "href": "https://annas-archive.gl/"
+                  },
+                  {
+                    "name": "acm_digital_library",
+                    "tooltip": "A digital library of computing and information technology research",
+                    "node_type": "hyperlink",
+                    "href": "https://dl.acm.org/"
+                  },
+                  {
+                    "name": "shadow_libraries",
+                    "tooltip": "A directory and history of shadow libraries",
+                    "node_type": "hyperlink",
+                    "href": "https://shadowlibraries.github.io/"
+                  },
+                  {
+                    "name": "gutenberg",
+                    "tooltip": "Free eBooks",
+                    "node_type": "hyperlink",
+                    "href": "https://gutenberg.org/"
+                  }
+                ]
               }
             ]
           },
