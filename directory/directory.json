@@ -1029,6 +1029,12 @@
                 "tooltip": "Free cultural and educational media — courses, ebooks, movies, and audio",
                 "node_type": "hyperlink",
                 "href": "https://www.openculture.com/"
+              },
+              {
+                "name": "xss_game",
+                "tooltip": "Google's interactive game for learning to find and exploit XSS vulnerabilities",
+                "node_type": "hyperlink",
+                "href": "https://xss-game.appspot.com/"
               }
             ]
           },
