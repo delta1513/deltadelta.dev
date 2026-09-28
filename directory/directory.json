@@ -1216,6 +1216,12 @@
                         "tooltip": "the 1971 social network that never died",
                         "node_type": "hyperlink",
                         "href": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died/"
+                      },
+                      {
+                        "name": "the_normalization_of_inexplicable",
+                        "tooltip": "On the acceleration of inexplicable failures in software",
+                        "node_type": "hyperlink",
+                        "href": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html?m=1"
                       }
                     ]
                   },
