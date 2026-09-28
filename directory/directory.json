@@ -373,6 +373,12 @@
                         "tooltip": "",
                         "node_type": "hyperlink",
                         "href": "https://www.ssllabs.com/ssltest/analyze.html"
+                      },
+                      {
+                        "name": "urlquery",
+                        "tooltip": "A database and tool for understanding the behaviour of a website in a real browser",
+                        "node_type": "hyperlink",
+                        "href": "https://urlquery.net/"
                       }
                     ]
                   },
