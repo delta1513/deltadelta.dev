@@ -1047,6 +1047,12 @@
                 "tooltip": "Google's interactive game for learning to find and exploit XSS vulnerabilities",
                 "node_type": "hyperlink",
                 "href": "https://xss-game.appspot.com/"
+              },
+              {
+                "name": "webqc_chemistry",
+                "tooltip": "Free chemistry calculators, periodic table, and reference tools",
+                "node_type": "hyperlink",
+                "href": "https://www.webqc.org/"
               }
             ]
           },
