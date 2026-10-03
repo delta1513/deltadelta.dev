@@ -140,6 +140,17 @@ In general, the writing provided no substance, and elicited a sense of agenda ag
 Would not reccommend reading this book unless you exhibit some sort of religious belief against capitalism, and capable of enduring the labour of reading scatterbrain thoughts and musings that have no material effect.
 
 
+## The Particle at the Edge of the Universe - Sean Carroll
+
+I feel like this is the book I've been waiting for my entire life. This book presents the particle physics and implications of the Higgs Boson in a fashion which is digestible by someone like me. I bet that (with some effort, and deliberate intrigue) someone who graduated high-school might be able to understand this too.
+
+This book delivers the thrilling parts of science, and the great endeavour of building the LHC in both earnest and intimate detail. While reading this, I felt like I was in the room with various instrumental figures of science, feeling what they felt and feeling the immense awe of such a creation built on such a small budget.
+
+The way that Sean writes is the right mix of scholarly and engaging. The text is not so dry that it feels like wading through mud, but it packs enough detail to give you the feeling that you are following along. That said, although I couldn't confidently explain to you how the Higgs Boson works, I feel like I'm a step closer to understanding this.
+
+Now that I've read this one, I'm committed to reading all of Sean's works. I hope you find this book as enjoyable as I did.
+
+
 ## Meditations - Marcus Aurelius
 
 Currently Reading...
