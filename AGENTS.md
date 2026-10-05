@@ -18,18 +18,6 @@ build — there is no CSS step and no post-processing.
 
 `dist/` is **git-ignored**. Never commit build output; Cloudflare produces it.
 
-Eleventy uses `input: "."`, so `eleventy.config.js` ignores the repo docs
-(`README.md`, `AGENTS.md`, `CLAUDE.md`, `.claude/`) to keep them from becoming pages.
-It also passthrough-copies `media/`, `favicon.png`, `directory/icons/`, and `_redirects`.
-
-The only production dependency is `@11ty/eleventy`. `wrangler` is a devDependency used
-for `npm run preview` and `npx wrangler deploy --dry-run`. Keep it that way — if you
-think you need a new dependency, say so first.
-
-> `npm audit` reports 5 high-severity advisories. All five trace to one root: `braces`
-> (stack-exhaustion DoS) reached via `chokidar`, Eleventy's file watcher. There is no
-> non-breaking fix in Eleventy 3's range — `npm audit fix --force` downgrades Eleventy
-> to 0.6.0. It's build-time only with no attacker-controlled input. Leave it.
 
 ## Pages
 
@@ -38,7 +26,6 @@ think you need a new dependency, say so first.
 | `directory/index.njk` + `directory/directory.json` | `/` | The directory-tree homepage. Recursive Nunjucks macro renders the JSON; icons in `directory/icons/` (Windows XP set). Uses an explicit `permalink: /index.html`. |
 | `blog/*.md` | `/blog/<slug>/` | Blog posts. Use the `_includes/markdown.njk` layout (a minimal themed markdown renderer). |
 | `about.md` | `/about/` | The about page. |
-| `ai_prompts/*.md` | `/ai_prompts/<slug>/` | Prompt pages (not linked from the tree). |
 | `badges/ai-transparency.njk` | `/writing/badges/ai-transparency/` | Badge embedded by an external service. **This URL must never change** — it is pinned with an explicit `permalink` and is the reason there is no blanket `/writing/*` redirect. |
 | `404.md` | `/404.html` | Served for unknown URLs via `not_found_handling` in `wrangler.jsonc`. |
 | `media/` | `/media/...` | Static images and video, plain git blobs (no LFS). |
@@ -90,9 +77,9 @@ Folders nest arbitrarily deep — the template renders them recursively.
 ```
 
 **To change the tree, edit `directory/directory.json`** — node order in the file is the
-display order. No template changes are needed to add/move/remove entries. Keep the
-file's formatting convention: containers are expanded over multiple lines, leaf nodes
-stay on a single line, so diffs show only the changed entry.
+display order. No template changes are needed to add/move/remove entries.
+
+Node ordering within a folder: All folders should be at the top and all other sibling nodes should be below all folders (like how a modern file explorer works)
 
 ## Cloudflare
 
