@@ -1,0 +1,8 @@
+# Content used to live under /writing/ because Eleventy built into that folder.
+# Deliberately no bare /writing/* rule — that would swallow the badge path
+# below, which an external service pulls and must not move.
+/writing/blog/*        /blog/:splat        301
+/writing/ai_prompts/*  /ai_prompts/:splat  301
+/writing/about/        /about/             301
+/writing/              /                   301
+/directory/            /                   301

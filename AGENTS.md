@@ -3,8 +3,8 @@
 ## What this is
 
 `deltadelta.dev` — a personal website built with [Eleventy (11ty)](https://www.11ty.dev/)
-and deployed old-school: nginx serves the **repository root** directly, and the server
-redeploys by running `git pull` + `npm run build` (see `update_all.sh`).
+and served as static assets by a **Cloudflare Worker**. Cloudflare builds and deploys
+on every push to `main`; there is no GitHub workflow and none should be added.
 
 The homepage is an intentionally archaic, hierarchical, collapsible **directory-tree**
 interface, generated from a JSON definition. Theme everywhere: near-white background
@@ -13,27 +13,41 @@ bordered "window".
 
 ## Build
 
-`npm run build` runs three steps:
-1. Tailwind compiles `styles.css` → `dist/output.css` (legacy CSS; the directory theme is self-contained inline CSS).
-2. Eleventy builds with `input: "."`, `output: "writing/"`, `includes: "_includes"`.
-3. `cp writing/directory/index.html index.html` — copies the rendered tree to the repo-root `index.html`, which nginx serves as `/`.
+`npm run build` runs `eleventy`, which writes everything to `dist/`. That's the whole
+build — there is no CSS step and no post-processing.
 
-Because Eleventy outputs to `writing/`, all generated pages live under **`/writing/...`**
-(the homepage is the one exception — it's copied to the root). `.eleventyignore` excludes `.claude`.
+`dist/` is **git-ignored**. Never commit build output; Cloudflare produces it.
+
+Eleventy uses `input: "."`, so `eleventy.config.js` ignores the repo docs
+(`README.md`, `AGENTS.md`, `CLAUDE.md`, `.claude/`) to keep them from becoming pages.
+It also passthrough-copies `media/`, `favicon.png`, `directory/icons/`, and `_redirects`.
+
+The only production dependency is `@11ty/eleventy`. `wrangler` is a devDependency used
+for `npm run preview` and `npx wrangler deploy --dry-run`. Keep it that way — if you
+think you need a new dependency, say so first.
+
+> `npm audit` reports 5 high-severity advisories. All five trace to one root: `braces`
+> (stack-exhaustion DoS) reached via `chokidar`, Eleventy's file watcher. There is no
+> non-breaking fix in Eleventy 3's range — `npm audit fix --force` downgrades Eleventy
+> to 0.6.0. It's build-time only with no attacker-controlled input. Leave it.
 
 ## Pages
 
 | Source | Output URL | Purpose |
 |---|---|---|
-| `directory/index.njk` + `directory/directory.json` | `/` (and `/writing/directory/`) | The directory-tree homepage. Recursive Nunjucks macro renders the JSON; icons in `directory/icons/` (Windows XP set). |
-| `blog/*.md` | `/writing/blog/<slug>/` | Blog posts. Use the `_includes/markdown.njk` layout (a minimal themed markdown renderer). |
-| `about/index.html` | `/writing/about/` | Custom themed about page (with a live traffic chart). |
-| `ai_prompts/*.md` | `/writing/ai_prompts/<slug>/` | Prompt pages (not linked from the tree). |
-| `badges/ai-transparency.njk` | `/writing/badges/ai-transparency/` | Badge embedded externally — keep this path stable. |
-| `media/` | `/media/...` | Static images (tracked via Git LFS). |
+| `directory/index.njk` + `directory/directory.json` | `/` | The directory-tree homepage. Recursive Nunjucks macro renders the JSON; icons in `directory/icons/` (Windows XP set). Uses an explicit `permalink: /index.html`. |
+| `blog/*.md` | `/blog/<slug>/` | Blog posts. Use the `_includes/markdown.njk` layout (a minimal themed markdown renderer). |
+| `about.md` | `/about/` | The about page. |
+| `ai_prompts/*.md` | `/ai_prompts/<slug>/` | Prompt pages (not linked from the tree). |
+| `badges/ai-transparency.njk` | `/writing/badges/ai-transparency/` | Badge embedded by an external service. **This URL must never change** — it is pinned with an explicit `permalink` and is the reason there is no blanket `/writing/*` redirect. |
+| `404.md` | `/404.html` | Served for unknown URLs via `not_found_handling` in `wrangler.jsonc`. |
+| `media/` | `/media/...` | Static images and video, plain git blobs (no LFS). |
 
-`_includes/base.njk` and `_includes/blog-base.njk` are legacy layouts, no longer used.
-`writing/` is committed build output (regenerated on deploy).
+### Legacy URLs
+
+Content used to live under `/writing/...` because Eleventy built into a `writing/`
+folder that nginx served. `_redirects` 301s the old paths. If you add a page, you do
+not need to touch `_redirects`.
 
 ## The directory JSON definition
 
@@ -69,21 +83,39 @@ Folders nest arbitrarily deep — the template renders them recursively.
           { "name": "wastebin", "tooltip": "Self-hosted pastebin", "node_type": "hyperlink", "href": "https://wastebin.deltadelta.dev/" }
         ]
       },
-      { "name": "about", "tooltip": "Who I am and what this site is", "node_type": "file", "href": "/writing/about/" }
+      { "name": "about", "tooltip": "Who I am and what this site is", "node_type": "file", "href": "/about/" }
     ]
   }
 }
 ```
 
 **To change the tree, edit `directory/directory.json`** — node order in the file is the
-display order. No template changes are needed to add/move/remove entries.
+display order. No template changes are needed to add/move/remove entries. Keep the
+file's formatting convention: containers are expanded over multiple lines, leaf nodes
+stay on a single line, so diffs show only the changed entry.
 
+## Cloudflare
+
+`wrangler.jsonc` is the deploy config. Things that must not drift:
+
+- `name` must equal the Worker name in the Cloudflare dashboard, or the build fails.
+- `assets.directory` must stay `./dist`.
+- `build.command` must stay `npm run build`.
+
+Cloudflare build logs live under the Worker's Deployments → build history. You cannot
+see them from here; ask the user to check if a deploy misbehaves.
+
+Cloudflare docs are available as markdown — append `index.md` to any docs URL, e.g.
+`https://developers.cloudflare.com/workers/static-assets/index.md`. Cheaper than HTML.
 
 ## Rules for pushing changes
 
-- This is a one-man repo, so pushing to main is fine
-- When pushing changes, only git-add the changes that are relevant to what you have done
+- This is a one-man repo, so pushing to main is fine.
+- When pushing changes, only git-add the changes that are relevant to what you have done.
+- Never commit `dist/` or `node_modules/`.
+- Never rewrite published history.
 
 ## Preferences
 
-- Do not use sub-agents unless directly asked. This repo is small, and you can perform pretty much all tasks without sub-agents.
+- Do not use sub-agents unless directly asked. This repo is small, and you can perform
+  pretty much all tasks without sub-agents.

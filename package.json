@@ -1,35 +1,23 @@
 {
-  "name": "deltadelta.dev",
+  "name": "deltadelta-dev",
   "version": "1.0.0",
   "description": "Main website at deltadelta.dev",
-  "homepage": "https://gitlab.com/delta1512/deltadelta.dev#readme",
-  "bugs": {
-    "url": "https://gitlab.com/delta1512/deltadelta.dev/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/delta1512/deltadelta.dev.git"
+    "url": "git+https://github.com/delta1513/deltadelta.dev.git"
   },
   "license": "ISC",
-  "author": "",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./styles.css -o ./dist/output.css && npm run eleventy:build && cp writing/directory/index.html index.html",
-    "watch": "npm run tailwind:watch & npm run eleventy:watch",
-    "serve": "python3 -m http.server",
-    "eleventy:build": "eleventy",
-    "eleventy:watch": "eleventy --watch",
-    "dev": "npm run watch & npm run serve"
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.1.6"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17"
+    "wrangler": "^4.48.0"
   }
 }

@@ -21,49 +21,49 @@
                     "name": "unintentional_design",
                     "tooltip": "A scourge that is more evident than ever in everything we interact with",
                     "node_type": "file",
-                    "href": "/writing/blog/unintentional_design/"
+                    "href": "/blog/unintentional_design/"
                   },
                   {
                     "name": "the_art_of_deployment",
                     "tooltip": "(Mostly) everything that I know about deploying software",
                     "node_type": "file",
-                    "href": "/writing/blog/the_art_of_deployment/"
+                    "href": "/blog/the_art_of_deployment/"
                   },
                   {
                     "name": "the_journey_to_zero_maintenance",
                     "tooltip": "A blog article about a system that I ran for about 8 years",
                     "node_type": "file",
-                    "href": "/writing/blog/the_journey_to_zero_maintenance/"
+                    "href": "/blog/the_journey_to_zero_maintenance/"
                   },
                   {
                     "name": "software_sophistry",
                     "tooltip": "Aphorisms on developing commercial software",
                     "node_type": "file",
-                    "href": "/writing/blog/software-sophistry/"
+                    "href": "/blog/software-sophistry/"
                   },
                   {
                     "name": "disposable_code",
                     "tooltip": "How AI is enabling more creative work in software engineering",
                     "node_type": "file",
-                    "href": "/writing/blog/disposable_code/"
+                    "href": "/blog/disposable_code/"
                   },
                   {
                     "name": "how_i_use_ai",
                     "tooltip": "How I work with AI, as a series of personas",
                     "node_type": "file",
-                    "href": "/writing/blog/how_i_use_ai/"
+                    "href": "/blog/how_i_use_ai/"
                   },
                   {
                     "name": "incident_lambda_memory_pressure",
                     "tooltip": "A deep-dive into an exceptionally mysterious incident",
                     "node_type": "file",
-                    "href": "/writing/blog/incident_lambda_memory_pressure/"
+                    "href": "/blog/incident_lambda_memory_pressure/"
                   },
                   {
                     "name": "aws_imdsv2_migration_guide",
                     "tooltip": "Dead simple IMDSv1 to IMDSv2 migration guide",
                     "node_type": "file",
-                    "href": "/writing/blog/aws_imdsv2_migration_guide/"
+                    "href": "/blog/aws_imdsv2_migration_guide/"
                   },
                   {
                     "name": "linux",
@@ -74,13 +74,13 @@
                         "name": "linux_index",
                         "tooltip": "Linux Posting — collection of linux issues I've solved",
                         "node_type": "file",
-                        "href": "/writing/blog/linux_index/"
+                        "href": "/blog/linux_index/"
                       },
                       {
                         "name": "linux_001",
                         "tooltip": "A firmware crash?",
                         "node_type": "file",
-                        "href": "/writing/blog/linux_1/"
+                        "href": "/blog/linux_1/"
                       }
                     ]
                   }
@@ -95,31 +95,31 @@
                     "name": "my_recipe_book",
                     "tooltip": "A collection of recipes and cooking tips I like",
                     "node_type": "file",
-                    "href": "/writing/blog/my_recipe_book/"
+                    "href": "/blog/my_recipe_book/"
                   },
                   {
                     "name": "capturing_photographs",
                     "tooltip": "My philosophy on the importance of photography",
                     "node_type": "file",
-                    "href": "/writing/blog/capturing_photographs/"
+                    "href": "/blog/capturing_photographs/"
                   },
                   {
                     "name": "south_korea",
                     "tooltip": "A small note on my travels to Korea",
                     "node_type": "file",
-                    "href": "/writing/blog/south_korea/"
+                    "href": "/blog/south_korea/"
                   },
                   {
                     "name": "rock_climbing",
                     "tooltip": "My take on the sport and a short starter guide",
                     "node_type": "file",
-                    "href": "/writing/blog/rock_climbing/"
+                    "href": "/blog/rock_climbing/"
                   },
                   {
                     "name": "books_ive_read",
                     "tooltip": "My digital bookshelf",
                     "node_type": "file",
-                    "href": "/writing/blog/books_ive_read/"
+                    "href": "/blog/books_ive_read/"
                   }
                 ]
               },
@@ -132,13 +132,13 @@
                     "name": "un_natured",
                     "tooltip": "Un-natured — 2026",
                     "node_type": "file",
-                    "href": "/writing/blog/writing_un-natured/"
+                    "href": "/blog/writing_un-natured/"
                   },
                   {
                     "name": "timberwolf",
                     "tooltip": "Timberwolf — 2017",
                     "node_type": "file",
-                    "href": "/writing/blog/writing_timberwolf/"
+                    "href": "/blog/writing_timberwolf/"
                   }
                 ]
               },
@@ -151,7 +151,7 @@
                     "name": "photography",
                     "tooltip": "Photographs I've captured and think are worth sharing",
                     "node_type": "file",
-                    "href": "/writing/blog/art_photography/"
+                    "href": "/blog/art_photography/"
                   },
                   {
                     "name": "gymkhana_and_motorsports",
@@ -163,13 +163,13 @@
                     "name": "turbulent_flow",
                     "tooltip": "Images surrounding the phenomena of turbulent flow",
                     "node_type": "file",
-                    "href": "/writing/blog/art_turbulent_flow/"
+                    "href": "/blog/art_turbulent_flow/"
                   },
                   {
                     "name": "cellular_automata",
                     "tooltip": "Random cellular automata I've experimented with",
                     "node_type": "file",
-                    "href": "/writing/blog/art_cellular_automata/"
+                    "href": "/blog/art_cellular_automata/"
                   }
                 ]
               }

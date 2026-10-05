@@ -1,3 +1,9 @@
+---
+title: Has It Been Done Before?
+description: A prompt for researching whether an idea already exists in the wild
+layout: markdown.njk
+---
+
 # Overview
 
 
