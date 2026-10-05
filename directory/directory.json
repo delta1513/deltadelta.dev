@@ -18,6 +18,25 @@
                 "node_type": "folder",
                 "nodes": [
                   {
+                    "name": "linux",
+                    "tooltip": "My woes with linux",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "linux_index",
+                        "tooltip": "Linux Posting — collection of linux issues I've solved",
+                        "node_type": "file",
+                        "href": "/blog/linux_index/"
+                      },
+                      {
+                        "name": "linux_001",
+                        "tooltip": "A firmware crash?",
+                        "node_type": "file",
+                        "href": "/blog/linux_1/"
+                      }
+                    ]
+                  },
+                  {
                     "name": "unintentional_design",
                     "tooltip": "A scourge that is more evident than ever in everything we interact with",
                     "node_type": "file",
@@ -64,25 +83,6 @@
                     "tooltip": "Dead simple IMDSv1 to IMDSv2 migration guide",
                     "node_type": "file",
                     "href": "/blog/aws_imdsv2_migration_guide/"
-                  },
-                  {
-                    "name": "linux",
-                    "tooltip": "My woes with linux",
-                    "node_type": "folder",
-                    "nodes": [
-                      {
-                        "name": "linux_index",
-                        "tooltip": "Linux Posting — collection of linux issues I've solved",
-                        "node_type": "file",
-                        "href": "/blog/linux_index/"
-                      },
-                      {
-                        "name": "linux_001",
-                        "tooltip": "A firmware crash?",
-                        "node_type": "file",
-                        "href": "/blog/linux_1/"
-                      }
-                    ]
                   }
                 ]
               },

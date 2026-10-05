@@ -16,11 +16,20 @@ The user wants to add a URL to `directory/directory.json`. They will provide som
 4. Insert the new node into the correct `nodes` array in `directory/directory.json` as:
    `{ "name": "<name>", "tooltip": "<tooltip>", "node_type": "hyperlink", "href": "<url>" }`
 
-5. Before committing, show the user:
+   Place it **below every `folder` sibling** in that array — folders sort first,
+   leaves after, like a file explorer. Match the file's formatting: standard
+   2-space-indented JSON, one key per line.
+
+5. Run `npm run build`. It must pass. This is the only thing standing between a
+   malformed `directory.json` and a failed Cloudflare deploy, so do not skip it.
+
+6. Before committing, show the user:
    - The exact JSON object that will be inserted
    - Which folder it will be placed in
    - That you will `git commit` and `git push` after confirmation
 
    Then ask: **"Does this look correct? I'll commit and push once you confirm."**
 
-6. Only after the user confirms: commit the change with a short message (e.g. `Add <name> to <folder>`) and then push to origin.
+7. Only after the user confirms: commit the change with a short message (e.g.
+   `Add <name> to <folder>`) and then push to origin. Pushing triggers a
+   Cloudflare build and deploys the change live.
