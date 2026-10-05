@@ -1,0 +1,26 @@
+# Browser caching rules, applied by Cloudflare Workers static assets.
+# Where several rules match a URL, their headers are merged.
+
+# Pages: never cache the homepage or any blog page.
+/
+  Cache-Control: no-store
+/index.html
+  Cache-Control: no-store
+/blog
+  Cache-Control: no-store
+/blog/*
+  Cache-Control: no-store
+
+# Static media: cache for 30 days (2592000s) at most.
+/*.png
+  Cache-Control: public, max-age=2592000
+/*.jpg
+  Cache-Control: public, max-age=2592000
+/*.jpeg
+  Cache-Control: public, max-age=2592000
+/*.gif
+  Cache-Control: public, max-age=2592000
+/*.mp4
+  Cache-Control: public, max-age=2592000
+/*.webm
+  Cache-Control: public, max-age=2592000
