@@ -868,6 +868,12 @@
                 "tooltip": "",
                 "node_type": "hyperlink",
                 "href": "https://www.opentools.studio/"
+              },
+              {
+                "name": "foundermail",
+                "tooltip": "Free business email on your own domain, with SMTP/IMAP, a REST API and an MCP server",
+                "node_type": "hyperlink",
+                "href": "https://foundermail.mx/"
               }
             ]
           },
