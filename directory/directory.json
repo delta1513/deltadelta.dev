@@ -1402,6 +1402,19 @@
                     "href": "https://www.anthropic.com/threat-intelligence-report-september-2026"
                   }
                 ]
+              },
+              {
+                "name": "banking_and_finance",
+                "tooltip": "Reads on money, banking and finance",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "hierarchy_of_money",
+                    "tooltip": "How money and central banking works - explained via a simple narrative",
+                    "node_type": "hyperlink",
+                    "href": "https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/"
+                  }
+                ]
               }
             ]
           }
