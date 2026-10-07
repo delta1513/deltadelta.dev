@@ -24,6 +24,7 @@ build — there is no CSS step and no post-processing.
 | Source | Output URL | Purpose |
 |---|---|---|
 | `directory/index.njk` + `directory/directory.json` | `/` | The directory-tree homepage. Recursive Nunjucks macro renders the JSON; icons in `directory/icons/` (Windows XP set). Uses an explicit `permalink: /index.html`. |
+| `directory/llms.njk` | `/llms.txt` | [llms.txt](https://llmstxt.org) for AI agents, generated from the same `directory.json` (site pages first, external links under `## Optional`). The intro blurb is the `description` key in `directory.json`. |
 | `blog/*.md` | `/blog/<slug>/` | Blog posts. Use the `_includes/markdown.njk` layout (a minimal themed markdown renderer). |
 | `about.md` | `/about/` | The about page. |
 | `badges/ai-transparency.njk` | `/writing/badges/ai-transparency/` | Badge embedded by an external service. **This URL must never change** — it is pinned with an explicit `permalink` and is the reason there is no blanket `/writing/*` redirect. |
@@ -42,6 +43,7 @@ not need to touch `_redirects`.
 available to templates in `directory/`. It exposes:
 
 - `title` — the page `<title>`.
+- `description` — the blockquote summary in `/llms.txt`.
 - `webdirectory.nodes` — the ordered top-level list of tree nodes.
 
 Each **node** is one of three `node_type`s:

@@ -1,0 +1,27 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{%- set base = "https://deltadelta.dev" -%}
+{#- Emits one heading per folder that directly contains nodes of the given type. -#}
+{%- macro section(nodes, path, kind, level) -%}
+{%- set own = [] -%}
+{%- for n in nodes -%}{%- if n.node_type == kind -%}{%- set own = (own.push(n), own) -%}{%- endif -%}{%- endfor -%}
+{%- if own.length %}
+{{ level }} {{ (path if path else "site") | safe }}
+{% for n in own -%}
+- [{{ n.name | safe }}]({{ base + n.href if kind == "file" else n.href }}){% if n.tooltip %}: {{ n.tooltip | safe }}{% endif %}
+{% endfor -%}
+{%- endif -%}
+{%- for n in nodes -%}
+{%- if n.node_type == "folder" -%}{{ section(n.nodes, (path + " / " if path else "") + n.name, kind, level) }}{%- endif -%}
+{%- endfor -%}
+{%- endmacro -%}
+# {{ title | safe }}
+
+> {{ description | safe }}
+
+Site pages are listed first; links to external websites are under "Optional".
+{{ section(webdirectory.nodes, "", "file", "##") }}
+## Optional
+{{ section(webdirectory.nodes, "", "hyperlink", "###") }}

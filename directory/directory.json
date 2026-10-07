@@ -1,5 +1,6 @@
 {
   "title": "deltadelta.dev",
+  "description": "Personal website of a full-stack software engineer (Python, ReactJS/TypeScript, NextJS; keen on infrastructure and networking). It is an old-school web directory of curated links, alongside blog posts, writing and small apps.",
   "webdirectory": {
     "nodes": [
       {
