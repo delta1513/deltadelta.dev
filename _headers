@@ -13,6 +13,8 @@
 /llms.txt
   Cache-Control: no-store
   Content-Type: text/plain; charset=utf-8
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
 
 # Static media: cache for 30 days (2592000s) at most.
 /*.png
