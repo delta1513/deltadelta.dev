@@ -374,6 +374,12 @@
                         "tooltip": "A database and tool for understanding the behaviour of a website in a real browser",
                         "node_type": "hyperlink",
                         "href": "https://urlquery.net/"
+                      },
+                      {
+                        "name": "isitagentready",
+                        "tooltip": "Scores how readable and usable a website is for AI agents (llms.txt, robots.txt, markdown and more)",
+                        "node_type": "hyperlink",
+                        "href": "https://isitagentready.com/"
                       }
                     ]
                   },
