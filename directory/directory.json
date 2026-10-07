@@ -380,6 +380,12 @@
                         "tooltip": "Scores how readable and usable a website is for AI agents (llms.txt, robots.txt, markdown and more)",
                         "node_type": "hyperlink",
                         "href": "https://isitagentready.com/"
+                      },
+                      {
+                        "name": "icann_lookup",
+                        "tooltip": "ICANN's official lookup tool for domain registration data (RDAP/WHOIS)",
+                        "node_type": "hyperlink",
+                        "href": "https://lookup.icann.org/en"
                       }
                     ]
                   },
