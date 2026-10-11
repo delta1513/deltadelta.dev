@@ -899,6 +899,12 @@
                 "tooltip": "Free business email on your own domain, with SMTP/IMAP, a REST API and an MCP server",
                 "node_type": "hyperlink",
                 "href": "https://foundermail.mx/"
+              },
+              {
+                "name": "lightbulb_computer",
+                "tooltip": "Reimagining spatial and ambient computing with projectors",
+                "node_type": "hyperlink",
+                "href": "https://lightbulbcomputer.com/"
               }
             ]
           },
