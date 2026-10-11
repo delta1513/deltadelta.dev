@@ -1316,6 +1316,12 @@
                     "tooltip": "Experimentation on multi-agent systems at scale",
                     "node_type": "hyperlink",
                     "href": "https://www.anthropic.com/research/multiagent-systems"
+                  },
+                  {
+                    "name": "readrare",
+                    "tooltip": "A curated collection of rare, high-quality software engineering reads",
+                    "node_type": "hyperlink",
+                    "href": "https://readrare.com/"
                   }
                 ]
               },
