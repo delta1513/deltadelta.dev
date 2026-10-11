@@ -1035,6 +1035,12 @@
                 "tooltip": "Cocktail recipes",
                 "node_type": "hyperlink",
                 "href": "https://tuxedono2.com/"
+              },
+              {
+                "name": "cloudflare_radar",
+                "tooltip": "Live global internet traffic, attack and outage trends from Cloudflare",
+                "node_type": "hyperlink",
+                "href": "https://radar.cloudflare.com/"
               }
             ]
           },
