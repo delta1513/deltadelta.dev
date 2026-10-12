@@ -720,6 +720,12 @@
                 "tooltip": "Check whether media was made with Google's AI and carries a SynthID watermark",
                 "node_type": "hyperlink",
                 "href": "https://synthid.com/"
+              },
+              {
+                "name": "cover_your_tracks",
+                "tooltip": "EFF's test of how well your browser protects you from tracking and fingerprinting",
+                "node_type": "hyperlink",
+                "href": "https://coveryourtracks.eff.org/"
               }
             ]
           },
