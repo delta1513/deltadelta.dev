@@ -200,6 +200,12 @@
                 "href": "https://ffmpeg.deltadelta.dev/"
               },
               {
+                "name": "whiteboard",
+                "tooltip": "A simple online whiteboard",
+                "node_type": "hyperlink",
+                "href": "https://whiteboard.deltadelta.dev/"
+              },
+              {
                 "name": "stateless_reversi",
                 "tooltip": "A stateless implementation of the classic board game",
                 "node_type": "hyperlink",
