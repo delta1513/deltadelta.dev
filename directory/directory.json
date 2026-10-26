@@ -469,6 +469,12 @@
                         "tooltip": "A service that independently tests AI models and reports on the results.",
                         "node_type": "hyperlink",
                         "href": "https://artificialanalysis.ai/"
+                      },
+                      {
+                        "name": "synthid",
+                        "tooltip": "Check whether media was made with Google's AI and carries a SynthID watermark",
+                        "node_type": "hyperlink",
+                        "href": "https://synthid.com/"
                       }
                     ]
                   },
@@ -714,12 +720,6 @@
                 "tooltip": "A web tool to detect AI-generated writing.",
                 "node_type": "hyperlink",
                 "href": "https://unslop.run/"
-              },
-              {
-                "name": "synthid",
-                "tooltip": "Check whether media was made with Google's AI and carries a SynthID watermark",
-                "node_type": "hyperlink",
-                "href": "https://synthid.com/"
               },
               {
                 "name": "cover_your_tracks",
