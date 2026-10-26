@@ -386,6 +386,12 @@
                         "tooltip": "ICANN's official lookup tool for domain registration data (RDAP/WHOIS)",
                         "node_type": "hyperlink",
                         "href": "https://lookup.icann.org/en"
+                      },
+                      {
+                        "name": "key_event_viewer",
+                        "tooltip": "W3C's tool for inspecting keyboard events (key, code, location and more) as you type",
+                        "node_type": "hyperlink",
+                        "href": "https://w3c.github.io/uievents/tools/key-event-viewer.html"
                       }
                     ]
                   },
