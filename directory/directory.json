@@ -392,6 +392,12 @@
                         "tooltip": "W3C's tool for inspecting keyboard events (key, code, location and more) as you type",
                         "node_type": "hyperlink",
                         "href": "https://w3c.github.io/uievents/tools/key-event-viewer.html"
+                      },
+                      {
+                        "name": "pointer_events_viewer",
+                        "tooltip": "W3C's tool for inspecting pointer events (mouse, touch and pen) as they fire",
+                        "node_type": "hyperlink",
+                        "href": "https://www.w3.org/2018/07/pointerevents.html"
                       }
                     ]
                   },
