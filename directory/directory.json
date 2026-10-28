@@ -841,6 +841,25 @@
                 ]
               },
               {
+                "name": "saas",
+                "tooltip": "Hosted services and tools for builders",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "foundermail",
+                    "tooltip": "Free business email on your own domain, with SMTP/IMAP, a REST API and an MCP server",
+                    "node_type": "hyperlink",
+                    "href": "https://foundermail.mx/"
+                  },
+                  {
+                    "name": "vast_ai",
+                    "tooltip": "GPU cloud marketplace for renting compute",
+                    "node_type": "hyperlink",
+                    "href": "https://vast.ai/"
+                  }
+                ]
+              },
+              {
                 "name": "fileverse",
                 "tooltip": "Open-source, decentralized workspace for docs, sheets, and file sharing (E2E encrypted)",
                 "node_type": "hyperlink",
@@ -911,12 +930,6 @@
                 "tooltip": "",
                 "node_type": "hyperlink",
                 "href": "https://www.opentools.studio/"
-              },
-              {
-                "name": "foundermail",
-                "tooltip": "Free business email on your own domain, with SMTP/IMAP, a REST API and an MCP server",
-                "node_type": "hyperlink",
-                "href": "https://foundermail.mx/"
               },
               {
                 "name": "lightbulb_computer",
