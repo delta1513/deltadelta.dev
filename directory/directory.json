@@ -901,12 +901,6 @@
                 "href": "https://www.producthunt.com/"
               },
               {
-                "name": "archive_md",
-                "tooltip": "An alternative internet archive service",
-                "node_type": "hyperlink",
-                "href": "https://archive.md/"
-              },
-              {
                 "name": "awesome_selfhosted",
                 "tooltip": "Awesome list of awesome stuff you can self-host",
                 "node_type": "hyperlink",
