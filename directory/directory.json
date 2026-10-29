@@ -109,12 +109,6 @@
                     "tooltip": "My take on the sport and a short starter guide",
                     "node_type": "file",
                     "href": "/blog/rock_climbing/"
-                  },
-                  {
-                    "name": "books_ive_read",
-                    "tooltip": "My digital bookshelf",
-                    "node_type": "file",
-                    "href": "/blog/books_ive_read/"
                   }
                 ]
               },
@@ -261,6 +255,12 @@
                 "href": "https://www.linkedin.com/in/marcus-belcastro-96628a1a1/"
               }
             ]
+          },
+          {
+            "name": "my_bookshelf",
+            "tooltip": "My digital bookshelf",
+            "node_type": "hyperlink",
+            "href": "https://www.librarything.com/profile/mbelcastro"
           },
           {
             "name": "cv",
