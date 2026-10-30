@@ -1,26 +1,21 @@
 ---
 title: Software Sophistry
-description: Random aphorisms for software engineering.
+description: Just a fun little muse of mine.
 layout: markdown.njk
 date: 2026-05-05
----
-
-
-Stupidity is dangerous, but those who are also ignorant of this become lethal. This statement is terse and jagged for the purposes of sensationalisation. It also holds relevancy outside the domain of engineering. It is the responsibility of the system to defend itself from such **known** actions, and the responsibility of the team to architect the system in this way. Even if one were to release a chimp into the codebase, one should not expect an outage. Subsequently, and favourably, architecting for such unsophisticated behaviour causes the emergence of simplicity akin to Occam's Razor.
-
 ---
 
 Code is merely a language, and a computer is simply the recipient of a message. The prose, syntax, and choice of language for our message is only enhancing our convenience of changing it, and experimenting with new ways of coercing the behaviour of the computer. The difference between code and any other language is that it's sophistication demands a particular and precise, coherent understanding between all messengers.
 
 ---
 
-If you were to quantify your salary to attempt a comparison to your inferred "output", you are destined to experience a dread that will drain your energy and your soul, leaving you a sycophantic husk that will forever be teetering upon the edge of art and insanity, like an impoverished beggar. Imposterisms form determinations that will lead you to a defined edge of a court, and are no doubt a fantastic survival tool. But those who acquire lucidly genuine dedication have solved this, and now aim for a metaphysical plane that extends itself from survival. An example of this is simply the pursuit of knowledge beyond their own, or that which can lay the concrete for the next step of the organisation.
+If you were to quantify your salary to attempt a comparison to your inferred "output", you are destined to experience a dread that will drain your energy and your soul, leaving you a sycophantic husk that will forever be teetering upon the edge of art and insanity, like an impoverished beggar. Imposterisms form determinations that will lead you to the edge of a cliff, and are no doubt a fantastic survival tool. But those who acquire lucidly genuine dedication have solved this, and now aim for a metaphysical plane that extends itself from survival. An example of this is simply the pursuit of knowledge beyond their own, or that which can lay the concrete for the next step of the organisation.
 
 ---
 
 Behind the ivory plaque of a company structure exists an organism. This organism is not unlike our own human cells, it contains organelles, obeys certain processes, and when observed at a macro scale, exhibits emergent behaviours and cultures which determine the tangential destiny of the organism.
 
-That which is also spoken by Marcus Aurelius is the statement which describes that of a limb being separated from the body. That is, if any one function, person, or process is not fully integrated with the organism, it's cause and circulatory system (flux of capital), then it will eventually become gangrenous and must be skimmed like a cruft.
+That which is also spoken by Marcus Aurelius is the statement which describes that of a limb being separated from the body. That is, if any one function, person, or process is not fully integrated with the organism, that is it's symbiosis and flux of capital, then it will eventually become gangrenous and will eventually be skimmed like a cruft.
 
 ---
 
