@@ -688,6 +688,12 @@
                     "tooltip": "Search engine for openly licensed and public domain media",
                     "node_type": "hyperlink",
                     "href": "https://openverse.org/"
+                  },
+                  {
+                    "name": "hackerbooks",
+                    "tooltip": "Browse books mentioned in Hacker News comments, ranked by how many people mention them",
+                    "node_type": "hyperlink",
+                    "href": "https://hackerbooks.org/"
                   }
                 ]
               },
