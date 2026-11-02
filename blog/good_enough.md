@@ -1,5 +1,5 @@
 ---
-title: \"Good Enough\"
+title: Good Enough
 description: A tale of building an admin panel solo, from scratch, in a medium-sized org.
 layout: markdown.njk
 date: 2026-11-01
