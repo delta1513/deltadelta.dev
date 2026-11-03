@@ -997,6 +997,12 @@
                 "tooltip": "Nikon's award-winning gallery of microscopy videos",
                 "node_type": "hyperlink",
                 "href": "https://www.nikonsmallworld.com/galleries/small-world-in-motion"
+              },
+              {
+                "name": "storytella",
+                "tooltip": "Open-source, private text-to-speech that turns articles into audio entirely on your device",
+                "node_type": "hyperlink",
+                "href": "https://storytella.io/"
               }
             ]
           },
