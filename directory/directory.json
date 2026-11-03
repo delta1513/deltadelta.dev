@@ -1000,7 +1000,7 @@
               },
               {
                 "name": "storytella",
-                "tooltip": "Open-source, private text-to-speech that turns articles into audio entirely on your device",
+                "tooltip": "on-device TTS converter for whole articles",
                 "node_type": "hyperlink",
                 "href": "https://storytella.io/"
               }
