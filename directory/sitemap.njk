@@ -1,0 +1,26 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+{%- set base = "https://deltadelta.dev" -%}
+{#- Emits a <url> for every node that lives on deltadelta.dev: "file" nodes, and
+    hyperlinks whose absolute URL is on the apex domain (subdomains are other hosts,
+    which the sitemap protocol disallows). -#}
+{%- macro urls(nodes) -%}
+{%- for n in nodes -%}
+{%- if n.node_type == "folder" -%}{{ urls(n.nodes) }}
+{%- elif n.node_type == "file" or (n.node_type == "hyperlink" and (n.href.startsWith(base + "/") or n.href == base)) %}
+  <url>
+    <loc>{{ (base + n.href if n.node_type == "file" else n.href) | escape }}</loc>
+  </url>
+{%- endif -%}
+{%- endfor -%}
+{%- endmacro -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ base }}/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+{{- urls(webdirectory.nodes) }}
+</urlset>
