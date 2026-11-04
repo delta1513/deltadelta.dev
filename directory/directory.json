@@ -667,7 +667,7 @@
                 "nodes": [
                   {
                     "name": "technical",
-                    "tooltip": "Search tools for code, devices and research",
+                    "tooltip": "anything used for highly technical work",
                     "node_type": "folder",
                     "nodes": [
                       {
@@ -711,7 +711,7 @@
                   },
                   {
                     "name": "saas",
-                    "tooltip": "Search tools for software reviews",
+                    "tooltip": "search for software as a service",
                     "node_type": "folder",
                     "nodes": [
                       {
