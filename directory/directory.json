@@ -984,6 +984,12 @@
             "node_type": "folder",
             "nodes": [
               {
+                "name": "wiby",
+                "tooltip": "A search engine for the old-style web",
+                "node_type": "hyperlink",
+                "href": "https://wiby.me/"
+              },
+              {
                 "name": "the_random_button",
                 "tooltip": "",
                 "node_type": "hyperlink",
