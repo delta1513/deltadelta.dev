@@ -666,40 +666,61 @@
                 "node_type": "folder",
                 "nodes": [
                   {
-                    "name": "shodan",
-                    "tooltip": "IoT and web system search engine",
-                    "node_type": "hyperlink",
-                    "href": "https://www.shodan.io/"
+                    "name": "technical",
+                    "tooltip": "Search tools for code, devices and research",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "shodan",
+                        "tooltip": "IoT and web system search engine",
+                        "node_type": "hyperlink",
+                        "href": "https://www.shodan.io/"
+                      },
+                      {
+                        "name": "sourcegraph",
+                        "tooltip": "Global code search engine",
+                        "node_type": "hyperlink",
+                        "href": "https://sourcegraph.com/search"
+                      },
+                      {
+                        "name": "semantic_scholar",
+                        "tooltip": "Search engine for academic papers",
+                        "node_type": "hyperlink",
+                        "href": "https://www.semanticscholar.org/"
+                      }
+                    ]
                   },
                   {
-                    "name": "sourcegraph",
-                    "tooltip": "Global code search engine",
-                    "node_type": "hyperlink",
-                    "href": "https://sourcegraph.com/search"
+                    "name": "creative",
+                    "tooltip": "Search tools for media and books",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "openverse",
+                        "tooltip": "Search engine for openly licensed and public domain media",
+                        "node_type": "hyperlink",
+                        "href": "https://openverse.org/"
+                      },
+                      {
+                        "name": "hackerbooks",
+                        "tooltip": "Browse books mentioned in Hacker News comments, ranked by how many people mention them",
+                        "node_type": "hyperlink",
+                        "href": "https://hackerbooks.org/"
+                      }
+                    ]
                   },
                   {
-                    "name": "semantic_scholar",
-                    "tooltip": "Search engine for academic papers",
-                    "node_type": "hyperlink",
-                    "href": "https://www.semanticscholar.org/"
-                  },
-                  {
-                    "name": "gartner_peer_insights",
-                    "tooltip": "Search verified user reviews of software and services",
-                    "node_type": "hyperlink",
-                    "href": "https://www.gartner.com/peer-insights/home"
-                  },
-                  {
-                    "name": "openverse",
-                    "tooltip": "Search engine for openly licensed and public domain media",
-                    "node_type": "hyperlink",
-                    "href": "https://openverse.org/"
-                  },
-                  {
-                    "name": "hackerbooks",
-                    "tooltip": "Browse books mentioned in Hacker News comments, ranked by how many people mention them",
-                    "node_type": "hyperlink",
-                    "href": "https://hackerbooks.org/"
+                    "name": "saas",
+                    "tooltip": "Search tools for software reviews",
+                    "node_type": "folder",
+                    "nodes": [
+                      {
+                        "name": "gartner_peer_insights",
+                        "tooltip": "Search verified user reviews of software and services",
+                        "node_type": "hyperlink",
+                        "href": "https://www.gartner.com/peer-insights/home"
+                      }
+                    ]
                   }
                 ]
               },
