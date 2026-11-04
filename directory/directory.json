@@ -719,6 +719,12 @@
                         "tooltip": "Search verified user reviews of software and services",
                         "node_type": "hyperlink",
                         "href": "https://www.gartner.com/peer-insights/home"
+                      },
+                      {
+                        "name": "product_hunt",
+                        "tooltip": "",
+                        "node_type": "hyperlink",
+                        "href": "https://www.producthunt.com/"
                       }
                     ]
                   }
@@ -945,12 +951,6 @@
                 "tooltip": "Datasets, courses, papers and information freely available p2p using bittorrent",
                 "node_type": "hyperlink",
                 "href": "https://academictorrents.com/"
-              },
-              {
-                "name": "product_hunt",
-                "tooltip": "",
-                "node_type": "hyperlink",
-                "href": "https://www.producthunt.com/"
               },
               {
                 "name": "awesome_selfhosted",
