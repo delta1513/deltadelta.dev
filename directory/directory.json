@@ -725,6 +725,12 @@
                         "tooltip": "",
                         "node_type": "hyperlink",
                         "href": "https://www.producthunt.com/"
+                      },
+                      {
+                        "name": "theres_an_ai_for_that",
+                        "tooltip": "Directory of AI tools for any task",
+                        "node_type": "hyperlink",
+                        "href": "https://theresanaiforthat.com/"
                       }
                     ]
                   }
