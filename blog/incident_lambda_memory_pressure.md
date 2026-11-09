@@ -1,6 +1,6 @@
 ---
 title: Incident stories - Lambda Memory Pressure
-description: An alternative cure for depression
+description: You won't believe what the root cause of this one is!
 layout: markdown.njk
 date: 2025-11-19
 ---
