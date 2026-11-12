@@ -266,7 +266,7 @@
             "name": "my_bookshelf",
             "tooltip": "My digital bookshelf",
             "node_type": "hyperlink",
-            "href": "https://www.librarything.com/profile/mbelcastro"
+            "href": "https://www.librarything.com/catalog/mbelcastro?shelf=shelves"
           },
           {
             "name": "cv",
