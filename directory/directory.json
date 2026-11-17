@@ -779,12 +779,6 @@
                 "href": "https://www.lexilogos.com/keyboard/latin.htm"
               },
               {
-                "name": "unslop",
-                "tooltip": "A web tool to detect AI-generated writing.",
-                "node_type": "hyperlink",
-                "href": "https://unslop.run/"
-              },
-              {
                 "name": "cover_your_tracks",
                 "tooltip": "EFF's test of how well your browser protects you from tracking and fingerprinting",
                 "node_type": "hyperlink",
