@@ -733,6 +733,12 @@
                         "href": "https://theresanaiforthat.com/"
                       }
                     ]
+                  },
+                  {
+                    "name": "novum_signals_startups",
+                    "tooltip": "Browse newly launched startups, spotted as their websites go live",
+                    "node_type": "hyperlink",
+                    "href": "https://startups.novumsignals.com/"
                   }
                 ]
               },
@@ -1036,6 +1042,12 @@
                 "tooltip": "on-device TTS converter for whole articles",
                 "node_type": "hyperlink",
                 "href": "https://storytella.io/"
+              },
+              {
+                "name": "cells",
+                "tooltip": "An ASCII microscope slide of living cells for your terminal",
+                "node_type": "hyperlink",
+                "href": "https://github.com/kborer/cells/"
               }
             ]
           },
