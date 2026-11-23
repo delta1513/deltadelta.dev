@@ -1048,6 +1048,12 @@
                 "tooltip": "An ASCII microscope slide of living cells for your terminal",
                 "node_type": "hyperlink",
                 "href": "https://github.com/kborer/cells/"
+              },
+              {
+                "name": "spelunkr",
+                "tooltip": "Cable TV, but weirder",
+                "node_type": "hyperlink",
+                "href": "https://spelunkr.tv/"
               }
             ]
           },
