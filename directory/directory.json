@@ -990,6 +990,31 @@
             "node_type": "folder",
             "nodes": [
               {
+                "name": "tests_and_quizzes",
+                "tooltip": "Personality tests and quizzes",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "idrlabs_tests",
+                    "tooltip": "A big collection of psychological and personality tests",
+                    "node_type": "hyperlink",
+                    "href": "https://www.idrlabs.com/tests.php"
+                  },
+                  {
+                    "name": "tech_bro_purity_test",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://www.techbropurity.xyz/"
+                  }
+                ]
+              },
+              {
+                "name": "bored",
+                "tooltip": "Things to do when you're bored",
+                "node_type": "hyperlink",
+                "href": "https://bored.com/"
+              },
+              {
                 "name": "wiby",
                 "tooltip": "A search engine for the old-style web",
                 "node_type": "hyperlink",
