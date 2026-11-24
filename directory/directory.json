@@ -1414,6 +1414,12 @@
                         "tooltip": "On the acceleration of inexplicable failures in software",
                         "node_type": "hyperlink",
                         "href": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html?m=1"
+                      },
+                      {
+                        "name": "how_to_become_known_as_a_good_engineer",
+                        "tooltip": "On building a good reputation as a software engineer",
+                        "node_type": "hyperlink",
+                        "href": "https://www.approachwithalacrity.com/p/how-do-you-become-known-as-a-good"
                       }
                     ]
                   },
