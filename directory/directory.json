@@ -287,70 +287,96 @@
             "node_type": "folder",
             "nodes": [
               {
-                "name": "australian_computer_society_ict_news",
-                "tooltip": "",
-                "node_type": "hyperlink",
-                "href": "https://ia.acs.org.au/category/analysis.html"
+                "name": "local",
+                "tooltip": "News about a single country or region",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "australian_computer_society_ict_news",
+                    "tooltip": "",
+                    "node_type": "hyperlink",
+                    "href": "https://ia.acs.org.au/category/analysis.html"
+                  },
+                  {
+                    "name": "betakit",
+                    "tooltip": "Canadian startup news and tech innovation",
+                    "node_type": "hyperlink",
+                    "href": "https://betakit.com/"
+                  },
+                  {
+                    "name": "vancouver_island_news",
+                    "tooltip": "Local news from Vancouver Island",
+                    "node_type": "hyperlink",
+                    "href": "https://cheknews.ca/"
+                  },
+                  {
+                    "name": "australian_news",
+                    "tooltip": "Australian national broadcaster news",
+                    "node_type": "hyperlink",
+                    "href": "https://www.abc.net.au/"
+                  }
+                ]
               },
               {
-                "name": "tldr",
-                "tooltip": "Tech newsletter separated into various topics",
-                "node_type": "hyperlink",
-                "href": "https://tldr.tech/"
-              },
-              {
-                "name": "latent_space",
-                "tooltip": "AI engineering newsletter",
-                "node_type": "hyperlink",
-                "href": "https://www.latent.space/"
-              },
-              {
-                "name": "fast_ai",
-                "tooltip": "An AI engineering blog and community",
-                "node_type": "hyperlink",
-                "href": "https://www.fast.ai/"
-              },
-              {
-                "name": "google_ai_blog",
-                "tooltip": "Google's blog on AI innovation and research",
-                "node_type": "hyperlink",
-                "href": "https://blog.google/innovation-and-ai/"
-              },
-              {
-                "name": "drone_xl",
-                "tooltip": "News and advancements in drone technology",
-                "node_type": "hyperlink",
-                "href": "https://dronexl.co/"
-              },
-              {
-                "name": "ycombinator_hackernews",
-                "tooltip": "The one we all know and love",
-                "node_type": "hyperlink",
-                "href": "https://news.ycombinator.com/"
-              },
-              {
-                "name": "lwn",
-                "tooltip": "Linux and Free Software news",
-                "node_type": "hyperlink",
-                "href": "https://lwn.net/"
-              },
-              {
-                "name": "phoronix",
-                "tooltip": "Linux hardware news",
-                "node_type": "hyperlink",
-                "href": "https://www.phoronix.com/"
-              },
-              {
-                "name": "science_daily",
-                "tooltip": "Scientific papers summarised as news articles",
-                "node_type": "hyperlink",
-                "href": "https://www.sciencedaily.com/"
-              },
-              {
-                "name": "betakit",
-                "tooltip": "Canadian startup news and tech innovation",
-                "node_type": "hyperlink",
-                "href": "https://betakit.com/"
+                "name": "global",
+                "tooltip": "News not tied to a single country",
+                "node_type": "folder",
+                "nodes": [
+                  {
+                    "name": "tldr",
+                    "tooltip": "Tech newsletter separated into various topics",
+                    "node_type": "hyperlink",
+                    "href": "https://tldr.tech/"
+                  },
+                  {
+                    "name": "latent_space",
+                    "tooltip": "AI engineering newsletter",
+                    "node_type": "hyperlink",
+                    "href": "https://www.latent.space/"
+                  },
+                  {
+                    "name": "fast_ai",
+                    "tooltip": "An AI engineering blog and community",
+                    "node_type": "hyperlink",
+                    "href": "https://www.fast.ai/"
+                  },
+                  {
+                    "name": "google_ai_blog",
+                    "tooltip": "Google's blog on AI innovation and research",
+                    "node_type": "hyperlink",
+                    "href": "https://blog.google/innovation-and-ai/"
+                  },
+                  {
+                    "name": "drone_xl",
+                    "tooltip": "News and advancements in drone technology",
+                    "node_type": "hyperlink",
+                    "href": "https://dronexl.co/"
+                  },
+                  {
+                    "name": "ycombinator_hackernews",
+                    "tooltip": "The one we all know and love",
+                    "node_type": "hyperlink",
+                    "href": "https://news.ycombinator.com/"
+                  },
+                  {
+                    "name": "lwn",
+                    "tooltip": "Linux and Free Software news",
+                    "node_type": "hyperlink",
+                    "href": "https://lwn.net/"
+                  },
+                  {
+                    "name": "phoronix",
+                    "tooltip": "Linux hardware news",
+                    "node_type": "hyperlink",
+                    "href": "https://www.phoronix.com/"
+                  },
+                  {
+                    "name": "science_daily",
+                    "tooltip": "Scientific papers summarised as news articles",
+                    "node_type": "hyperlink",
+                    "href": "https://www.sciencedaily.com/"
+                  }
+                ]
               }
             ]
           },
