@@ -269,6 +269,12 @@
             "href": "https://www.librarything.com/catalog/mbelcastro?shelf=shelves"
           },
           {
+            "name": "in_progress_projects",
+            "tooltip": "Projects I'm currently working on",
+            "node_type": "file",
+            "href": "/blog/in_progress_projects/"
+          },
+          {
             "name": "cv",
             "tooltip": "My CV in the form of a website",
             "node_type": "hyperlink",
