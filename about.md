@@ -1,6 +1,6 @@
 ---
 title: Hello internet!
-description: Who I am and what this site is
+description: How are you today?
 layout: markdown.njk
 ---
 
